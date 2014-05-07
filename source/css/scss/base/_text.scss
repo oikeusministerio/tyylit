@@ -1,0 +1,18 @@
+/* Text-Related Elements */
+p {
+	margin-bottom: $space;
+}
+
+/* Blockquote */
+blockquote {
+    font-style:italic;
+    border-left: 1px solid $gray;
+    color: $gray;
+	padding-left: $pad;
+	margin-bottom: $space;
+}
+
+abbr {
+    border-bottom: 1px dotted $gray;
+    cursor: help;
+}

@@ -1,0 +1,192 @@
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+.btn {
+	display: inline-block;
+	background: $gray-dark;
+	color: $white;
+	line-height: 1;
+	font: {
+		weight: 700;
+		size: $font-size-normal;
+		family: $font;
+	}
+	text: {
+		align: center;
+		decoration: none;
+	}
+	padding: $pad;
+	margin: 0;
+	border: 1px solid #ccc;
+	cursor: pointer;
+
+	@include border-radius(1px, 1px, 1px, 1px);
+
+	&:hover, &:focus {
+		background: lighten($gray-dark, 10%);
+		color: $white;
+	}
+
+	&.disabled {
+		background: $gray-light;
+		color: rgba(128, 128, 128, 0.6);
+		cursor: default;
+	}
+
+	&.alt{
+
+	}
+
+	&.sub-text{
+		text-align: left;
+
+		span{
+			display: block;
+			margin-top: 3px;
+			font: {
+				size: $font-size-small;
+				weight: 400;
+			}
+		}
+	}
+
+	&.light{
+		background-color: $gray-light;
+		color: $text-color;
+
+		&:hover, &:focus{
+			background-color: darken($gray-light, 10%);
+		}
+	}
+
+	& i{
+		display: inline-block;
+		vertical-align: middle;
+
+		&:before{
+			display: inline-block;
+			vertical-align: middle;
+			margin-right:  $pad;
+		}
+	}
+}
+
+.btn-small {
+	padding: $pad-half;
+}
+
+.btn-large {
+	padding: $pad-half;
+	text-transform: uppercase;
+	background: $gray;
+	font: {
+		size: $font-size-large;
+		weight: 400;
+	}
+}
+
+
+.text-btn {
+	font-style: italic;
+}
+
+.btn-otk{
+	background-color: $otk-cyan;
+
+	&:hover, &:focus{
+		background-color: darken($otk-cyan, 10%);
+	}
+
+	&.alt{
+		background-color: $otk-gray-blue;
+
+		&:hover, &:focus{
+			background-color: lighten($otk-gray-blue, 10%);
+		}
+	}
+}
+
+.btn-kaa{
+
+}
+
+.btn-kua{
+
+}
+
+.btn-lap{
+	background-color: $lap-cyan;
+
+	&:hover, &:focus{
+		background-color: lighten($lap-cyan, 10%);
+	}
+
+	&.alt{
+		background-color: $lap-gray-light;
+
+		&:hover, &:focus{
+			background-color: darken($lap-gray-light, 10%);
+		}
+	}
+}
+
+// Button groups
+
+.btn-group{
+	@extend .cf;
+	margin-bottom: 25px;
+
+	a{
+		padding: $pad/2 $pad;
+		float: left;
+		color: $text-color;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		background-color: $gray-light;
+		text-decoration: none;
+
+
+		&.active{
+			background-color: $lap-cyan;
+			color: $white;
+		}
+
+		&:first-child{
+			border-left: 1px solid #ccc;
+			@include border-radius(0,0, 1px, 1px);
+		}
+		&:last-child{
+			border-right: 1px solid #ccc;
+			@include border-radius(1px, 1px, 0, 0);
+		}
+
+		.count{
+			display: block;
+			text-align: center;
+			line-height: 1;
+			font-weight: 700;
+		}
+	}
+
+	&.sorting{
+
+
+		a{
+			padding: $pad/4 $pad/2;
+			border: none;
+			background-color: transparent;
+			color: $blue;
+
+			@include border-radius();
+
+			&.active{
+				background-color: $lap-cyan;
+				color: $white;
+				@include border-radius(1px, 1px, 1px, 1px);
+			}
+		}
+	}
+}
+
+
+

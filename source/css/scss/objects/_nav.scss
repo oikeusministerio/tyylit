@@ -1,0 +1,50 @@
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+
+.nav {
+	clear: both;
+	overflow: hidden;
+	max-height: 0;
+
+	a {
+		display: block;
+		padding: $pad;
+	}
+
+	&.active {
+		max-height: 40em;
+	}
+
+	@media all and (min-width: $bp-med) {
+		max-height: none;
+		float: right;
+		clear: none;
+
+		li {
+			float: left;
+		}
+
+		a {
+			border: 0;
+		}
+
+	}
+}
+
+//Pagination
+.pagination {
+	overflow: hidden;
+
+	li {
+		float: left;
+
+		&:last-child {
+			border: 0;
+		}
+	}
+
+	a {
+		padding: $pad;
+	}
+}

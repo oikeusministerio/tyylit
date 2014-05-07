@@ -1,0 +1,19 @@
+.global-colors{
+	.color--a{ background-color: $white; }
+	.color--b{ background-color: $gray-light; }
+	.color--c{ background-color: $gray-dark; }
+	.color--d{ background-color: $blue; }
+}
+.otk-colors{
+	.color--a{ background-color: $otk-red; }
+	.color--b{ background-color: $otk-gray-blue; }
+	.color--c{ background-color: $otk-cyan; }
+	.color--d{ background-color: $otk-green; }
+	.color--e{ background-color: $otk-blue; }
+}
+.lap-colors{
+	.color--a{ background-color: $lap-gray-light; }
+	.color--b{ background-color: $lap-gray-dark; }
+	.color--c{ background-color: $lap-cyan; }
+	.color--d{ background-color: $lap-blue; }
+}
