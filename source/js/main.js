@@ -10,17 +10,48 @@ if( $('.btn-group').length ){
 }
 
 //Form stuff
-if( $('form').length ){
-	/*
+if( $('.form-element').length ){
 	//Email validation
-	if( $('#email').val ){
-		var email = $('#email');
+	function IsEmail(email) {
+		var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		return regex.test(email);
 	}
-	//URL validation
+	$('#email').blur(function(){
+		var email = $('#email').val();
+
+		if( IsEmail(email) ){
+			// Add visibility to icon-ok if it's hidden
+			if( $('.icon-ok').hasClass('is-hidden') ){
+				$('.icon-ok').removeClass('is-hidden');
+				$('.icon-ok').addClass('is-visible');
+			}
+			// Remove visibility from error-text unless it's already hidden
+			if( $('.error-text').hasClass('is-visible') ){
+				$('.error-text').addClass('is-hidden');
+				$('.error-text').removeClass('is-visible');
+			}
+
+		}else{
+
+			// Remove visibility from icon-ok if it's visible
+			if( $('.icon-ok').hasClass('is-visible') ){
+				$('.icon-ok').removeClass('is-visible');
+				$('.icon-ok').addClass('is-hidden');
+			}
+			// Add visibility to error-text unless it's already visible
+			if( $('.error-text').hasClass('is-hidden') ){
+				$('.error-text').addClass('is-visible');
+				$('.error-text').removeClass('is-hidden');
+			}
+
+		}
+	});
+
+	//URL validation. Not needed?
 	if( $('#url').val ){
 		var url = $('#url');
 	}
-*/
+
 
 	//Text area word count
 	if( $('textarea').length ){
@@ -34,3 +65,62 @@ if( $('form').length ){
 		});
 	}
 }
+
+
+// Navigation
+
+$('.navi-sample ul li ul').css('visibility', 'hidden');
+$('.navi-sample ul li.toplevel .arrow-link').click(function (e) {
+	e.stopPropagation();
+	if ($(this).next('ul').css('visibility') == 'hidden') {
+		$('.navi-top ul li ul').css('visibility', 'hidden');
+		$(this).next('ul').css('visibility', 'visible');
+	} else {
+		$(this).next('ul').css('visibility', 'hidden');
+	}
+});
+
+// -- Responsive Nav
+if( $('.navi-responsive').length ){
+	var m_trigger = $('.mobile-trigger a');
+	var sn_trigger = $('.sub-nav-trigger');
+	var nav = $('.navi-responsive');
+
+	m_trigger.click(function(event){
+		event.preventDefault();
+		nav.slideToggle(350);
+	});
+
+	sn_trigger.click( function(event){
+		event.preventDefault();
+
+		$(this).parent().find('ul').slideToggle(200);
+		$(this).toggleClass('sub-nav-open');
+	});
+
+}
+
+
+
+
+// Fadeout
+if( $('.fadeout').length ){
+	var orig_text = $('.read-more').find('a').text();
+
+	$('.read-more').find('a').click(function(event){
+		event.preventDefault();
+
+		$('.fadeout').toggleClass('open');
+
+		if( $('.fadeout').hasClass('open') ){
+			$(this).text('Pienennä teksti');
+			$(this).addClass('pt-fix');
+		}else{
+			$(this).text(orig_text);
+			$(this).removeClass('pt-fix');
+		}
+	});
+}
+
+
+

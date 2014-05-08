@@ -44,3 +44,50 @@
 	}
 }
 
+// Fadeout
+$fadeout-space: 40px;
+
+.fadeout{
+	position: relative;
+	overflow: hidden;
+	max-width: 600px;
+	width: 100%;
+	max-height: 200px;
+	padding-bottom: $fadeout-space;
+
+	&.open{
+		max-height: 100%;
+	}
+
+	.read-more{
+		position: absolute;
+		bottom: 0;
+		margin-bottom: 0;
+		z-index: 2;
+		width: 100%;
+		height: $fadeout-space;
+
+
+		background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 50%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(50%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 50%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+
+		a{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			color: $blue;
+			text-decoration: none;
+
+			&.pt-fix{
+				top: 0;
+			}
+		}
+	}
+}
+

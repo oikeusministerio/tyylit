@@ -2,8 +2,8 @@
     $Table
 \*------------------------------------*/
 table {
-	border-collapse: collapse; 
-	border-spacing: 0; 
+	border-collapse: collapse;
+	border-spacing: 0;
 	border: 1px solid $gray;
 	width: 100%;
 }
@@ -15,4 +15,69 @@ th {
 td {
 	border: 1px solid $gray;
 	padding: 0.2em;
+}
+
+.table-borderless{
+	border: 0;
+	width: auto;
+
+	th, td{
+		vertical-align: top;
+		text-align: left;
+		padding: 0 $pad/2 $pad/2 0;
+		border: 0;
+	}
+
+	tr > th {
+		min-width: 200px;
+	}
+
+	tr:nth-child(2n){
+		background-color: $gray-light;
+		width: 100%;
+		td, th{
+			background-color: $gray-light;
+		}
+	}
+	.table-cell-list{
+		margin-right: 0;
+		padding-right: 0;
+		p{
+			margin-bottom: 0;
+		}
+		a, p, h4{
+			border-bottom: 1px solid #ccc;
+			padding-right: $pad/2;
+
+			&:last-child{
+				border-bottom: none;
+			}
+		}
+		&:last-child{
+			padding-right: $pad/4;
+			a, p, h4{ padding-right: $pad/4; }
+		}
+	}
+	td{
+		border: 0;
+
+		h4{
+			margin: 0;
+		}
+	}
+
+	td th{
+
+	}
+
+	td a{
+		display: block;
+		color: $blue;
+		text-decoration: none;
+	}
+
+	td ul{
+		list-style: disc inside;
+	}
+
 }

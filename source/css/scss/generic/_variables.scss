@@ -7,7 +7,7 @@ $text-color : #444;
 $gray : #808080;
 $gray-light : rgb(240,240,240);
 $gray-med : #666;
-$gray-dark : rgb(68,68,68);
+$gray-dark : #444;
 $white : #fff;
 $black : #000;
 $blue : rgb(0,137,242);
@@ -78,4 +78,21 @@ $bp-xl : 73em;
 $bp-xxl : 89em;
 $bp-xxxl : 93em;
 
-//
+// Customs
+$desktop-width : 80em;
+$laptop-width  : 60em;
+$tablet-width  : $bp-med-2;
+// ----------------------------- //
+$mobile-width  : $bp-small-2;
+
+
+// Media Widths
+$desktop : "screen and (min-width: #{$desktop-width})";
+$laptop : "screen and (min-width: #{$laptop-width})";
+$tablet : "screen and (min-width: #{$tablet-width})";
+	// -- max-width = 476px;
+	$mobile : "screen and (max-width: #{$mobile-width})";
+
+
+
+
