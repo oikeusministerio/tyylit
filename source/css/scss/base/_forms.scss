@@ -24,7 +24,8 @@ button, input, select, textarea {
 }
 
 input, textarea {
-	width: 100%;
+	//width: 100%;
+	min-width: 50%;
 	border: 1px solid $gray;
 	padding: $pad-half 0.65rem;
 }
@@ -77,6 +78,13 @@ input[type="search"]::-webkit-search-decoration {
 	}
 }
 
+.form-element{
+	i{
+		display: inline-block;
+		margin-left: 10px;
+	}
+}
+
 /* Textarea letter counter */
 .textarea-word-count{
 	color: $text-color;
@@ -101,12 +109,14 @@ input[type="search"]::-webkit-search-decoration {
 \*------------------------------------*/
 
 /* Search Form */
+.search-form fieldset{ width: 50%; }
 .search-field {
 	padding-right: 3em;
+	width: 100%;
 }
 .inline-form .search-submit {
 	background: none;
-	padding: 0.78em 1em;
+	padding: 0.55em 1em;
 	border: 0;
 	border-left: 1px solid $gray;
 	color: $gray;
