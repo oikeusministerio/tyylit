@@ -13,9 +13,7 @@
 	transition: $transition-property $transition-time $method;
 }
 
-$font: $font-size-normal;
-
-@function em($pixels, $context-font-size: $font) {
+@function em($pixels, $context-font-size: $font-size-normal) {
  @return ($pixels / $context-font-size) * 1em;
 }
 

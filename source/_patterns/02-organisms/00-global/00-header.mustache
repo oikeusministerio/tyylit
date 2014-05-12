@@ -1,9 +1,20 @@
 <!-- Begin .header -->
 <header class="header cf" role="banner">
-	{{> atoms-logo }}
-	<a href="#search-form" class="nav-toggle nav-toggle-search icon-search"><span class="is-vishidden">Search</span></a>
-	<a href="#nav" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
-	{{> molecules-primary-nav }}
-	{{> molecules-search }}
+	<div class="element-group ">
+		<div class="inner-block align-left">
+			{{> atoms-logo }}
+		</div>
+		<div class="inner-block align-right">
+			{{> molecules-search }}
+			{{> molecules-lang-sel }}
+		</div>
+	</div>
+	<div class="element-group">
+		{{> molecules-login }}
+	</div>
+	<div class="element-group">
+		<a href="#nav" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
+		{{> molecules-responsive-dropdown }}
+	</div>
 </header>
 <!-- End .header -->

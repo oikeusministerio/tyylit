@@ -25,9 +25,13 @@ button, input, select, textarea {
 
 input, textarea {
 	//width: 100%;
-	min-width: 50%;
+	width: 100%;
 	border: 1px solid $gray;
 	padding: $pad-half 0.65rem;
+}
+
+textarea{
+	min-height: 100px;
 }
 
 input[type=text], input[type=search], input[type=url], input[type=number], textarea {
@@ -55,6 +59,10 @@ input[type="search"] {
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
+}
+
+.sg-pattern-body form{
+	width: 50%;
 }
 
 //Form Field Container
@@ -88,7 +96,7 @@ input[type="search"]::-webkit-search-decoration {
 /* Textarea letter counter */
 .textarea-word-count{
 	color: $text-color;
-	display: inline-block;
+	display: block;
 	text-align: right;
 }
 
@@ -109,7 +117,6 @@ input[type="search"]::-webkit-search-decoration {
 \*------------------------------------*/
 
 /* Search Form */
-.search-form fieldset{ width: 50%; }
 .search-field {
 	padding-right: 3em;
 	width: 100%;
