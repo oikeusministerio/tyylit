@@ -1,6 +1,6 @@
 <!-- Begin .header -->
 <header class="header cf" role="banner">
-	<div class="element-group ">
+	<div class="element-group">
 		<div class="inner-block align-left">
 			{{> atoms-logo }}
 		</div>
@@ -10,11 +10,60 @@
 		</div>
 	</div>
 	<div class="element-group">
+		<!-- Use mobile trigger (molecules-responsive-dropdown) here to keep it in place when menus are open. -->
+		<div class="mobile-trigger"> <a href="#"> <i class="icon-menu"></i><span class="is-vishidden">Valikko</span> </a></div>
+
 		{{> molecules-login }}
 	</div>
 	<div class="element-group">
-		<a href="#nav" class="nav-toggle nav-toggle-menu icon-menu"><span class="is-vishidden">Menu</span></a>
-		{{> molecules-responsive-dropdown }}
+		<!-- molecules-responsive-dropdown. Not called as mustache because mobile-trigger needs to be within the previous element-group  -->
+		<div class="navi-responsive">
+			<ul>
+				<li>
+					<a href="#">Valinta 1</a>
+					<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+					<ul>
+						<li><a href="">Alavalinta 1</a></li>
+						<li><a href="">Alavalinta 2</a></li>
+						<li><a href="">Alavalinta 3</a></li>
+						<li><a href="">Alavalinta 4</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Valinta 2</a>
+					<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+					<ul>
+						<li><a href="">Alavalinta 1</a></li>
+						<li><a href="">Alavalinta 2</a></li>
+						<li><a href="">Alavalinta 3</a></li>
+						<li><a href="">Alavalinta 4</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">Valinta</a>
+				</li>
+				<li>
+					<a href="#">Valinta 3</a>
+					<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+					<ul>
+						<li><a href="">Alavalinta 1</a></li>
+						<li><a href="">Alavalinta 2</a></li>
+						<li><a href="">Alavalinta 3</a></li>
+						<li><a href="">Alavalinta 4</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Valinta 4</a>
+					<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+					<ul>
+						<li><a href="">Alavalinta 1</a></li>
+						<li><a href="">Alavalinta 2</a></li>
+						<li><a href="">Alavalinta 3</a></li>
+						<li><a href="">Alavalinta 4</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</div>
 </header>
 <!-- End .header -->

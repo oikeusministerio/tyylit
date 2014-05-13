@@ -22,8 +22,8 @@
 }
 
 .is-visible {
-    display: block;
-    visibility: visible;
+    display: block !important;
+    visibility: visible !important;
 }
 
 /* Completely remove from the flow but leave available to screen readers. */

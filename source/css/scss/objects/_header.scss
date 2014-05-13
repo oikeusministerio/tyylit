@@ -1,5 +1,6 @@
 .header {
 	background: $white;
+	position: relative;
 	padding: 0;
 	border-bottom: 1px solid #dbdbdb;
 	@extend .lc;
@@ -7,21 +8,32 @@
 
 	.element-group{
 		width: 100%;
-
+		position: relative;
 		@extend .cf;
 
 		&:first-child{
-			float: none;
 			height: 64px;
-			.align-right{ height: 100%; width: 70%; }
-			.align-left{ height: 100%; width: 30%; }
+			margin-top: 0;
+			.align-right{ height: 100%; max-width: 60%; width: 100%; }
+			.align-left{ height: 100%; min-width: 30%; }
 		}
 
-		@media #{$tablet}{
-			&:first-child{
-				float: right;
-			}
+		&:nth-child(2){
+			position: relative;
 
+			@media #{$laptop}{
+				position: absolute;
+				top: 0;
+				height: 39px;
+			}
+		}
+
+		@media #{$laptop}{
+			&:first-child{
+				margin-top: 39px;
+				margin-bottom: 25px;
+				height: 100px;
+			}
 		}
 
 		.inner-block{
@@ -35,6 +47,9 @@
 		float: right;
 		min-width: 20%;
 		padding: 13px 0;
+
+		@media #{$laptop}{ padding: 31px 0; }
+
 		.form-element{ margin: 0; position: relative; }
 
 		.search-field{
@@ -66,8 +81,9 @@
 		height: auto;
 		vertical-align: middle;
 
-		@media all and (min-width: $bp-med) {
-			max-width: 9rem;
+		@media #{$laptop} {
+			width: 77px;
+			margin: 11.5px $pad/2;
 		}
 	}
 }
@@ -84,6 +100,10 @@
 		li{
 			line-height: 64px;
 
+			@media #{$laptop}{
+				line-height: 100px;
+			}
+
 			a{ color: $blue; text-decoration: none; }
 
 			&.selected{
@@ -93,3 +113,119 @@
 	}
 }
 
+/* Dirty stuff to fix pasted-horror.css */
+
+.header #topnavibar{
+	z-index: 1;
+	&.expanded{
+		height: 465px;
+		.expanding{ height: 423px; }
+	}
+
+	.close{ right: 10px; }
+
+	.container{ width: 100%; max-width: 960px; }
+	.navigation > a {
+		display: none;
+
+		@media #{$laptop}{
+			display: inline-block
+		}
+	}
+	.column-main > * { width: auto; }
+
+	.main-login .input-with-icon{
+		margin-top: 10px;
+	}
+
+	.section{
+		padding: 15px 10px 0;
+
+		h3{
+			margin-top: 5px;
+			color: $white;
+		}
+	}
+
+	.site-actions{
+		float: none;
+		text-align: center;
+		line-height: 1;
+
+		@media #{$laptop}{
+			float: right;
+			text-align: left;
+		}
+
+		a{
+			display: inline-block;
+			float: none;
+			border: 0;
+
+			@media #{$laptop}{ float: left; display: inline; }
+		}
+	}
+	.column-alt{
+		padding-top: 0;
+		max-width: 380px;
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+
+		@media #{$laptop}{ max-width: 440px; }
+
+		.or{
+			display: block;
+		}
+	}
+
+	.ctl-btn {
+		margin-top: 15px;
+		margin-left: 0;
+		padding: 0.5em 2em;
+		width: 100%;
+	}
+	.update-progress{
+		height: 15px;
+	}
+
+	.input-with-icon{
+		text-align: left;
+
+		input{
+			width: 100%;
+		}
+	}
+	.section.register .ctl-text.email{ float: none; }
+	.forgotten{ text-align: right; }
+	.remember {
+		text-align: left;
+		margin-top: 3px;
+
+		input, label{
+			float: left;
+		}
+	}
+	.footer{
+		background: transparent;
+		position: relative;
+		top: auto;
+		margin-top: 1em;
+	}
+}
+
+.topnavi-bar .section{ text-align: center; }
+
+.topnavi-bar .column-main {
+	max-width: 380px;
+	width: 100%;
+	float: none;
+	margin: 0 auto;
+
+	@media #{$laptop}{ max-width: 440px; }
+}
+
+.topnavi-bar .section.register [type=submit] {
+	width: 100%;
+	float: none;
+}

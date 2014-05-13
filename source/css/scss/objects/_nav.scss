@@ -149,6 +149,35 @@
 	@media #{$laptop}{ display: none; }
 }
 
+	// Kickass mobile trigger for full header tryout. This element controls navi-responsive, but is located within the previous element-group due to positioning while menus open.
+	.header .mobile-trigger{
+		z-index: 2;
+		background-color: transparent;
+		text-align: right;
+		right: 0;
+		top: 0;
+		position: absolute;
+		width: auto;
+
+		a{
+			display: block;
+			padding-right: 15px;
+		}
+
+		i{
+			color: darken($white, 20%);
+			margin-right: 10px;
+			vertical-align: middle;
+			line-height: 40px;
+			height: auto;
+			width: 40px;
+			position: relative;
+			display: inline-block;
+			&:hover{ color: $white; }
+		}
+		@media #{$laptop}{ display: none; }
+	}
+
 .navi-responsive{
 	width: 100%;
 	display: none;
@@ -161,10 +190,12 @@
 			background-color: $white;
 			a{
 				color: $text-color;
+				line-height: em(30px);
 			}
 		}
 
 		ul{
+			z-index: 1;
 			display: none;
 			padding: 10px 0;
 			background-color: $gray-light;
@@ -193,12 +224,15 @@
 		cursor: pointer;
 
 		& i:before{
-			content: '+';
-			font-size: $font-size-large;
+			font-size: $font-size-normal;
 			display: inline-block;
 			margin-left: 5px;
 			vertical-align: middle;
 			cursor: pointer;
+
+			@media #{$laptop}{
+				font-size: $font-size-large;
+			}
 		}
 
 		& i.sub-nav-open{
@@ -240,7 +274,6 @@
 
 		.sub-nav-trigger {
 			& i:before{
-				content: '>';
 				background: #B4B4B4;
 				color: #fff;
 				width: 1.25em;
@@ -250,7 +283,8 @@
 			}
 			&.sub-nav-open{
 				& i:before{
-					content: '<';
+					font-family: FontAwesome;
+					content: "\f0d8";
 				}
 			}
 		}

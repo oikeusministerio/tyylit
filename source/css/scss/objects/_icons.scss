@@ -159,7 +159,7 @@
 	}
 }
 
-.icon-search, .icon-play, .icon-ok, .icon-notify, .icon-warning, .icon-close, .icon-add, .icon-delete, .icon-tip{
+.icon-search, .icon-play, .icon-ok, .icon-notify, .icon-warning, .icon-close, .icon-add, .icon-delete, .icon-tip, .icon-menu, .icon-menu-arrow{
 	@extend .icon-style;
 }
 
@@ -198,8 +198,16 @@
 .icon-tip{
 
 }
+.icon-menu:before {
+	content: "\f0c9";
+}
+.icon-menu-arrow:before{
+	content: "\f067";
 
-
+	@media #{$laptop}{
+		content: "\f0d7";
+	}
+}
 
 
 

@@ -122,5 +122,51 @@ if( $('.fadeout').length ){
 	});
 }
 
+	// Pasted from old site {
+
+    $('.site-actions > a, #closeButtonContainer').click(function () {
+        $('.site-actions > a').removeClass('selected');
+        $(this).addClass('selected');
+        // Tyhjennetään lomakkeiden kenttien arvot IE8/IE9 selaimilla
+        /* if (getInternetExplorerVersion() <= 9 && getInternetExplorerVersion() != -1) {
+            $('input.ctl-text').val('');
+            showIEPlaceholders();
+        } */
+    });
+
+    //-------------Hide possible info message
+    /* $("#infoMessage").fadeIn(3000); */
+
+    //-------------Show hide login/register
+    $('.expandable').each(function () {
+        var expandable = $(this);
+        var close = $('.close', expandable);
+        close.click(function () {
+            expandable.removeClass('expanded');
+        });
+    });
+
+    var show_section = function (section) {
+        section.addClass('is-visible').siblings('.section').removeClass('is-visible');
+        section.closest('.expandable').addClass('expanded');
+    }
+
+    $('#hlLogin,#hlLogin2').click(function (event) {
+        show_section($('#pnlLogin'));
+        event.preventDefault();
+    });
+
+    $('#hlRegister,#hlRegister2').click(function (event) {
+        show_section($('#pnlRegistration'));
+        event.preventDefault();
+    });
+
+    $('#hlPasswordRecover').click(function (event) {
+        show_section($('#pnlPasswordRecover'));
+        event.preventDefault();
+    });
+
+	// } - Paste ends.
+
 
 
