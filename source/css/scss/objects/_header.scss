@@ -44,7 +44,7 @@
 
 	.search-form {
 		float: right;
-		min-width: 20%;
+		min-width: 15%;
 		padding: 13px 0;
 
 		@media #{$laptop}{ padding: 31px 0; }
@@ -61,7 +61,7 @@
 		button{
 			line-height: 38px;
 			margin: 0;
-			padding: 0 $pad-and-half;
+			padding: 0 $pad;
 			@media #{$laptop}{ padding: 0 $pad/2 0 $pad; }
 
 			i{ margin-left: 0; }
@@ -97,8 +97,9 @@
 
 .lang-sel{
 	float: right;
-	padding: 0 2em 0 0;
+	padding: 0 1em 0 0;
 	margin: 0;
+	@media #{$tablet}{ padding-right: 2em; }
 
 	.lang-list{
 		list-style: none;
@@ -167,7 +168,11 @@
 			display: inline-block;
 			float: none;
 			border: 0;
-
+			padding: 6px 10px 2px;
+			&:first-child{ padding-left: 0; }
+			@media #{$tablet}{ padding: 6px 20px 2px;
+				&:first-child{ padding-left: 10px; }
+			}
 			@media #{$laptop}{ float: left; display: inline; }
 		}
 	}
@@ -230,6 +235,8 @@
 
 	@media #{$laptop}{ max-width: 440px; }
 }
+
+.topnavi-bar .navigation a{  }
 
 .topnavi-bar .section.register [type=submit] {
 	width: 100%;
