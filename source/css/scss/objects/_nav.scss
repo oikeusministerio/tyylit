@@ -225,6 +225,10 @@
 		margin-left: -15px;
 		padding-right: 5px;
 
+		@media #{$laptop}{
+			margin-left: 0; padding-left: 0;
+		}
+
 		& i:before{
 			font-size: $font-size-normal;
 			display: inline-block;
