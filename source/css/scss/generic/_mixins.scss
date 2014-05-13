@@ -1,0 +1,45 @@
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+
+/* CSS Transition
+	Usage: @include transition(width,0.3s,ease-out);
+ */
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+
+@function em($pixels, $context-font-size: $font-size-normal) {
+ @return ($pixels / $context-font-size) * 1em;
+}
+
+/* Rem Unit font sizes with relative fallback http:/seesparkbox.com/foundry/scss_rem_mixin_now_with_a_better_fallback
+	Usage: @include font-size(1, large);
+*/
+@mixin font-size( $decimal-size, $keyword: null ) {
+  @if $keyword{ font-size: $keyword; }
+  @else { font-size: $decimal-size * $base-font-multiplier * 16px;}
+  font-size: $decimal-size * 1rem;
+}
+
+@mixin border-radius($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
+	-webkit-border-top-right-radius : $topright;
+	-webkit-border-bottom-right-radius : $bottomright;
+	-webkit-border-bottom-left-radius : $bottomleft;
+	-webkit-border-top-left-radius : $topleft;
+	-moz-border-radius-topright : $topright;
+	-moz-border-radius-bottomright : $bottomright;
+	-moz-border-radius-bottomleft : $bottomleft;
+	-moz-border-radius-topleft : $topleft;
+	border-top-right-radius : $topright;
+	border-bottom-right-radius : $bottomright;
+	border-bottom-left-radius : $bottomleft;
+	border-top-left-radius : $topleft;
+	-webkit-background-clip : padding-box;
+	-moz-background-clip : padding;
+	background-clip : padding-box;
+}

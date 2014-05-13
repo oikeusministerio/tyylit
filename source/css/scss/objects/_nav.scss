@@ -1,0 +1,305 @@
+/*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+
+.nav {
+	clear: both;
+	overflow: hidden;
+	max-height: 0;
+
+	a {
+		display: block;
+		padding: $pad;
+	}
+
+	&.active {
+		max-height: 40em;
+	}
+
+	@media all and (min-width: $bp-med) {
+		max-height: none;
+		float: right;
+		clear: none;
+
+		li {
+			float: left;
+		}
+
+		a {
+			border: 0;
+		}
+
+	}
+}
+
+//Pagination
+.pagination {
+	overflow: hidden;
+
+	li {
+		float: left;
+
+		&:last-child {
+			border: 0;
+		}
+	}
+
+	a {
+		padding: $pad;
+	}
+}
+
+// Normal old navi
+
+.navi-sample{
+	margin-left: 0px;
+	background-color: transparent;
+	height: 35px;
+
+	a{
+		text-decoration: none;
+		color: $text-color;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+	ul {
+		margin: 0px;
+		padding: 0px;
+
+		.toplevel {
+			display: block;
+			float: left;
+			list-style-type: none;
+			position: relative;
+			height: 35px;
+			line-height: 35px;
+			margin-right: 10px;
+			padding: 0 7px 0 15px;
+			border-left: 1px solid #ccc;
+
+			&.has-children {
+				padding-right: 2.25em;
+				position: relative;
+
+				ul li {
+					padding-right: 0px;
+					font-weight: normal;
+					line-height: normal;
+				}
+			}
+		}
+
+		li a {
+			display: block;
+		}
+
+		li ul li a {
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-top: 4px;
+			padding-bottom: 4px;
+		}
+	}
+	.arrow-link{
+		cursor: pointer;
+
+		&:after {
+			font-family: 'FontAwesome';
+			font-size: .75em;
+			content: '\f0d7'; /* fa-caret-down */
+			position: absolute;
+			top: .4em;
+			right: .5em;
+			background: #B4B4B4;
+			color: #fff;
+			height: 1.75em;
+			width: 1.75em;
+			line-height: 1.8em;
+			text-align: center;
+			border-radius: .2em;
+			cursor: pointer;
+		}
+	}
+}
+
+// Responsive navi
+
+.mobile-trigger{
+	display: block;
+	height: 40px;
+	width: 100%;
+	background-color: $gray-dark;
+	text-align: right;
+	a{
+		display: block;
+	}
+
+	i{
+		color: $white;
+		margin-right: 10px;
+		vertical-align: middle;
+		line-height: 40px;
+		height: auto;
+		width: 40px;
+		position: relative;
+		display: inline-block;
+	}
+	@media #{$laptop}{ display: none; }
+}
+
+	// Kickass mobile trigger for full header tryout. This element controls navi-responsive, but is located within the previous element-group due to positioning while menus open.
+	.header .mobile-trigger{
+		z-index: 2;
+		background-color: transparent;
+		text-align: right;
+		right: 0;
+		top: 0;
+		position: absolute;
+		width: auto;
+
+		a{
+			display: block;
+			padding-right: 15px;
+		}
+
+		i{
+			color: darken($white, 20%);
+			margin-right: 10px;
+			vertical-align: middle;
+			line-height: 40px;
+			height: auto;
+			width: 40px;
+			position: relative;
+			display: inline-block;
+			&:hover{ color: $white; }
+		}
+		@media #{$laptop}{ display: none; }
+	}
+
+.navi-responsive{
+	width: 100%;
+	display: none;
+	text-align: center;
+
+	i{ font-style: normal; }
+
+	> ul{
+		> li{
+			background-color: $white;
+			a{
+				color: $text-color;
+				line-height: em(30px);
+			}
+		}
+
+		ul{
+			z-index: 1;
+			display: none;
+			padding: 10px 0;
+			background-color: $gray-light;
+
+			li{
+				background-color: $gray-light;
+
+				a{
+					color: $text-color;
+					line-height: 2;
+				}
+			}
+		}
+	}
+
+	a{
+		text-decoration: none;
+		color: $gray-light;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	.sub-nav-trigger {
+		display: inline-block;
+		cursor: pointer;
+
+		& i:before{
+			font-size: $font-size-normal;
+			display: inline-block;
+			margin-left: 5px;
+			vertical-align: middle;
+			cursor: pointer;
+
+			@media #{$laptop}{
+				font-size: $font-size-large;
+			}
+		}
+
+		& i.sub-nav-open{
+			&:before{
+				content: '-';
+			}
+		}
+	}
+
+	@media #{$laptop}{
+		display: block !important;
+		text-align: left;
+
+		> ul > li{
+			float: left;
+			height: 30px;
+			margin-left: 14px;
+			padding-left: 10px;
+			border-left: 1px solid #ccc;
+
+			&:first-child{ margin-left: 0; padding-left: 0; border-left: 0; }
+		}
+		ul li ul{
+				position: absolute;
+				margin-top: 5px;
+				margin-left: -5px;
+
+				border: 1px solid #ccc;
+
+				li{
+					float: none;
+					width: 100%;
+					margin-left: 0;
+					padding: 0 20px 0 10px;
+
+					a{ display:block; }
+				}
+			}
+
+		.sub-nav-trigger {
+			& i:before{
+				background: #B4B4B4;
+				color: #fff;
+				width: 1.25em;
+				line-height: 1.25em;
+				text-align: center;
+				border-radius: .2em;
+			}
+			&.sub-nav-open{
+				& i:before{
+					font-family: FontAwesome;
+					content: "\f0d8";
+				}
+			}
+		}
+	}
+
+	@media #{$desktop}{
+
+	}
+}
+
+
+
+
+
+
+
+
+

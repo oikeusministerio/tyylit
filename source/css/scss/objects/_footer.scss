@@ -1,0 +1,156 @@
+/*------------------------------------*\
+    $FOOTER
+\*------------------------------------*/
+.footer {
+	clear: both;
+	overflow: hidden;
+	background: $gray-dark;
+	color: $white;
+	line-height: 1.2;
+
+	a {
+		color: $gray-light;
+	}
+}
+
+//Footer Nav
+.nav-footer {
+	margin: (-$pad) (-$pad) $space;
+
+	li {
+		border-bottom: 1px solid $gray-dark;
+
+		@media all and (min-width: $bp-med) {
+			border: 0;
+			float: left;
+		}
+	}
+
+	a {
+		display: block;
+		padding: $pad;
+	}
+}
+
+.copyright {
+	@media all and (min-width: $bp-med) {
+		float: right;
+	}
+}
+
+.dummy-footer{
+	background-color: #1f1f1f;
+	padding-bottom: 100px;
+}
+
+.footer-nav{
+	@extend .cf;
+
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 em(10px);
+	color: $white;
+
+	.footer-nav-item {
+		float: left;
+		width: 50%;
+		padding: 2% 0 2%;
+
+		&:first-child{
+			margin-left: 0;
+			padding-left: 0;
+		}
+
+		&:nth-child(2){
+			float: left;
+
+			li{
+				margin-top: em(10px);
+
+				i{
+					width: em(24px);
+				}
+				span{ margin-left: em(10px); }
+			}
+		}
+
+		&:last-child{
+			width: 100%;
+			padding-right: 2%;
+			padding-left: 2%;
+
+			.column-even, .column-odd{
+				width: 50%;
+				margin-bottom: 1em;
+
+				.level-1{ > a{ font-weight: 700; } }
+				.level-2{ margin-left: em(25px); line-height: 2; }
+			}
+
+			.column-even{
+				float: left;
+			}
+
+			.column-odd{
+				float: right;
+			}
+		}
+	}
+
+	@media #{$mobile}{
+		.footer-nav-item{ width: 100%; float: right; margin-top: 1em;
+			&:nth-child(2), &:first-child{ div{ margin-left: 20%; text-align: left; } }
+			&:last-child{
+				float: left;
+				.column-even, .column-odd{
+					float: left;
+					width: 100%;
+					text-align: left;
+					> ul{
+						margin-left: 20%;
+					}
+				}
+			}
+		}
+
+	}
+
+	@media #{$tablet}{
+
+		.footer-nav-item {
+			float: left;
+			width: 25%;
+
+			&:first-child{
+
+			}
+
+			&:last-child{
+				width: 50%;
+
+			}
+
+			&:nth-child(2){
+				float: right;
+				padding-right: 0;
+			}
+		}
+	}
+
+	@media #{$laptop}{
+
+	}
+
+	ul, li{
+		list-style: none;
+		color: $white;
+	}
+	a{
+		color: $white;
+		text-decoration: none;
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+/* Links */
+a {
+	color: $blue;
+	font-size: $font-size-medium;
+	text-decoration: none;
+	outline: 0;
+
+	&:hover, &:focus {
+		color: $gray;
+		text-decoration: none;
+	}
+	&:active{
+		color: $lap-blue;
+	}
+}

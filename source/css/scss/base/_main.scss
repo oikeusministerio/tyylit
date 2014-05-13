@@ -1,0 +1,9 @@
+body {
+	background: $white;
+	font: {
+		family: $font;
+		size: 100%/1.5;
+	}
+	-webkit-text-size-adjust: 100%;
+	color: $text-color;
+}
