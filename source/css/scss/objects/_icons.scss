@@ -204,6 +204,10 @@
 .icon-menu-arrow:before{
 	content: "\f067";
 
+	.sub-nav-open &{
+		content: "\f068";
+	}
+
 	@media #{$laptop}{
 		content: "\f0d7";
 	}

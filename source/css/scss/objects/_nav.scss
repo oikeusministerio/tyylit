@@ -197,14 +197,14 @@
 		ul{
 			z-index: 1;
 			display: none;
-			padding: 10px 0;
+			padding: 10px 0 10px 30px;
 			background-color: $gray-light;
 
 			li{
 				background-color: $gray-light;
 
 				a{
-					color: $text-color;
+					color: lighten($text-color, 10%);
 					line-height: 2;
 				}
 			}
@@ -222,6 +222,8 @@
 	.sub-nav-trigger {
 		display: inline-block;
 		cursor: pointer;
+		margin-left: -15px;
+		padding-right: 5px;
 
 		& i:before{
 			font-size: $font-size-normal;
@@ -232,12 +234,6 @@
 
 			@media #{$laptop}{
 				font-size: $font-size-large;
-			}
-		}
-
-		& i.sub-nav-open{
-			&:before{
-				content: '-';
 			}
 		}
 	}
