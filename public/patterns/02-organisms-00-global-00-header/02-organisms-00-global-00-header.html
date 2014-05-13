@@ -7,7 +7,7 @@
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&text=ÄÖäö' rel='stylesheet' type='text/css'>
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-		<link rel="stylesheet" href="../../css/style.css?1399975107" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1399982306" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -17,8 +17,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1399975107" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1399975107" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1399982306" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1399982306" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -27,27 +27,6 @@
 	<body class="body">
 <!-- Begin .header -->
 <header class="header cf" role="banner">
-	<div class="element-group">
-		<div class="inner-block align-left">
-			<a href="#" id="hlLogo" class="header-logo"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /><strong>ota</strong>kantaa.fi</a>		</div>
-		<div class="inner-block align-right">
-			<form action="#" method="post" class="inline-form search-form">
-				<legend class="is-vishidden">Search</legend>
-				<div class="form-element">
-					<label for="search-field" class="is-vishidden">Search</label>
-					<input type="search" placeholder="Search" id="search-field" class="search-field" />
-					<button class="search-submit">
-						<i class="icon-search" aria-hidden="true"></i>
-						<span class="is-vishidden">Search</span>
-					</button>
-				</div>
-			</form>			<div class="lang-sel">
-				<ul class="lang-list">
-					<li class="selected"> <a href="">Suomeksi</a></li>
-					<li><a href="">På svenska</a></li>
-				</ul>
-			</div>		</div>
-	</div>
 	<div class="element-group">
 		<!-- Use mobile trigger (molecules-responsive-dropdown) here to keep it in place when menus are open. -->
 		<div class="mobile-trigger"> <a href="#"> <i class="icon-menu"></i><span class="is-vishidden">Valikko</span> </a></div>
@@ -191,6 +170,27 @@
 				</div>
 			</div>
 		</div>	</div>
+		<div class="element-group">
+		<div class="inner-block align-left">
+			<a href="#" id="hlLogo" class="header-logo"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /><strong>ota</strong>kantaa.fi</a>		</div>
+		<div class="inner-block align-right">
+			<form action="#" method="post" class="inline-form search-form">
+				<legend class="is-vishidden">Search</legend>
+				<div class="form-element">
+					<label for="search-field" class="is-vishidden">Search</label>
+					<input type="search" placeholder="Search" id="search-field" class="search-field" />
+					<button class="search-submit js-expand-search">
+						<i class="icon-search" aria-hidden="true"></i>
+						<span class="is-vishidden">Search</span>
+					</button>
+				</div>
+			</form>			<div class="lang-sel">
+				<ul class="lang-list">
+					<li class="selected"> <a href="">Suomeksi</a></li>
+					<li><a href="">På svenska</a></li>
+				</ul>
+			</div>		</div>
+	</div>
 	<div class="element-group">
 		<!-- molecules-responsive-dropdown. Not called as mustache because mobile-trigger needs to be within the previous element-group  -->
 		<div class="navi-responsive">
@@ -249,7 +249,7 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "organisms-header";
-		var lineage        = [{"lineagePattern":"atoms-logo","lineagePath":"..\/..\/patterns\/00-atoms-04-images-00-logo\/00-atoms-04-images-00-logo.html"},{"lineagePattern":"molecules-search","lineagePath":"..\/..\/patterns\/01-molecules-04-forms-00-search\/01-molecules-04-forms-00-search.html"},{"lineagePattern":"molecules-lang-sel","lineagePath":"..\/..\/patterns\/01-molecules-06-components-03-lang-sel\/01-molecules-06-components-03-lang-sel.html"},{"lineagePattern":"molecules-login","lineagePath":"..\/..\/patterns\/01-molecules-06-components-04-login\/01-molecules-06-components-04-login.html"}];
+		var lineage        = [{"lineagePattern":"molecules-login","lineagePath":"..\/..\/patterns\/01-molecules-06-components-04-login\/01-molecules-06-components-04-login.html"},{"lineagePattern":"atoms-logo","lineagePath":"..\/..\/patterns\/00-atoms-04-images-00-logo\/00-atoms-04-images-00-logo.html"},{"lineagePattern":"molecules-search","lineagePath":"..\/..\/patterns\/01-molecules-04-forms-00-search\/01-molecules-04-forms-00-search.html"},{"lineagePattern":"molecules-lang-sel","lineagePath":"..\/..\/patterns\/01-molecules-06-components-03-lang-sel\/01-molecules-06-components-03-lang-sel.html"}];
 		var lineageR       = [{"lineagePattern":"templates-homepage","lineagePath":"..\/..\/patterns\/03-templates-00-homepage\/03-templates-00-homepage.html"},{"lineagePattern":"templates-blog","lineagePath":"..\/..\/patterns\/03-templates-01-blog\/03-templates-01-blog.html"},{"lineagePattern":"templates-article","lineagePath":"..\/..\/patterns\/03-templates-02-article\/03-templates-02-article.html"},{"lineagePattern":"pages-blog","lineagePath":"..\/..\/patterns\/04-pages-01-blog\/04-pages-01-blog.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
@@ -286,10 +286,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1399975107">
+	<script id="pl-js-polyfill-insert-1399982306">
 		(function() {
 			if (self != top) {
-				var cb = '1399975107';
+				var cb = '1399982306';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -298,10 +298,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1399975107">
+	<script id="pl-js-insert-1399982306">
 		(function() {
 			if (self != top) {
-				var cb = '1399975107';
+				var cb = '1399982306';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}

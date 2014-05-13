@@ -100,6 +100,23 @@ if( $('.navi-responsive').length ){
 
 }
 
+// -- Header search
+if( $('.header').find('.js-expand-search').length && $('.search-field').css('display') === 'none' ){
+	var search = $('.search-form');
+/*
+	search.find('.js-expand-search').click( function(event){
+		event.preventDefault();
+		$(this).parent().find('.search-field').animate( {width: 'toggle'} );
+		$(this).removeClass('js-expand-search');
+	});
+*/
+	search.on( 'click', '.js-expand-search', function(event){
+		event.preventDefault();
+		$(this).parent().find('.search-field').animate( {width: 'toggle'} );
+		$(this).removeClass('js-expand-search');
+	});
+
+}
 
 
 

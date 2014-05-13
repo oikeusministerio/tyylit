@@ -1,6 +1,12 @@
 <!-- Begin .header -->
 <header class="header cf" role="banner">
 	<div class="element-group">
+		<!-- Use mobile trigger (molecules-responsive-dropdown) here to keep it in place when menus are open. -->
+		<div class="mobile-trigger"> <a href="#"> <i class="icon-menu"></i><span class="is-vishidden">Valikko</span> </a></div>
+
+		{{> molecules-login }}
+	</div>
+		<div class="element-group">
 		<div class="inner-block align-left">
 			{{> atoms-logo }}
 		</div>
@@ -8,12 +14,6 @@
 			{{> molecules-search }}
 			{{> molecules-lang-sel }}
 		</div>
-	</div>
-	<div class="element-group">
-		<!-- Use mobile trigger (molecules-responsive-dropdown) here to keep it in place when menus are open. -->
-		<div class="mobile-trigger"> <a href="#"> <i class="icon-menu"></i><span class="is-vishidden">Valikko</span> </a></div>
-
-		{{> molecules-login }}
 	</div>
 	<div class="element-group">
 		<!-- molecules-responsive-dropdown. Not called as mustache because mobile-trigger needs to be within the previous element-group  -->
