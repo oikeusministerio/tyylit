@@ -13,16 +13,32 @@
 		@extend .cf;
 
 		&:first-child{
-			margin-top: 64px;
 
 			.align-right{ height: 100%; max-width: 60%; width: 100%; }
 			.align-left{ height: 100%; min-width: 30%; }
 		}
 
 		&:nth-child(2){
-			position: absolute;
-			top: 0;
-			height: 64px;
+
+		}
+
+		&:nth-child(3){
+
+		}
+
+		@media #{$tablet}{
+			&:first-child{
+				margin-top: 0;
+			}
+
+			&:nth-child(2){
+				position: relative;
+				margin-top: 20px;
+			}
+			&:nth-child(3){
+				position: absolute;
+				top: 0;
+			}
 		}
 
 		@media #{$laptop}{
@@ -32,31 +48,48 @@
 
 			&:nth-child(2){
 				position: relative;
-				top: 0;
-				height: 100px;
+				margin-top: 60px;
 			}
 		}
-
 		.inner-block{
 			position: relative;
+		}
+		&.nav-container{
+			position: static;
+			@media #{$tablet}{
+				position: relative;
+			}
+		}
+	}
+
+	.responsive-modifier-block{
+		position: static;
+
+		@media #{$tablet}{
+			position: relative;
+			padding-top: 60px;
 		}
 	}
 
 	.search-form {
-		float: right;
-		min-width: 15%;
 		padding: 13px 0;
+		top: 0;
+		position: absolute;
+
+		@media #{$tablet}{
+			width: 50%;
+			right: 10px;
+		}
 
 		@media #{$laptop}{ padding: 31px 0; }
 
-		.form-element{ margin: 0; position: relative; }
+		.form-element{
+			margin: 0 0 0 40px;
+			position: relative;
+			z-index: 2;
+		}
 
 		.search-field{
-			display: none;
-
-			@media #{$tablet}{
-				display: inline-block;
-			}
 		}
 		button{
 			line-height: 38px;
@@ -65,13 +98,6 @@
 			@media #{$laptop}{ padding: 0 $pad/2 0 $pad; }
 
 			i{ margin-left: 0; }
-		}
-
-		.js-search-expand{
-			zoom: 1;
-			@media #{$tablet}{
-				zoom: 0;
-			}
 		}
 	}
 }
@@ -99,7 +125,7 @@
 	float: right;
 	padding: 0 1em 0 0;
 	margin: 0;
-	@media #{$tablet}{ padding-right: 2em; }
+	@media #{$tablet}{ margin-right: 50%; }
 
 	.lang-list{
 		list-style: none;
@@ -124,9 +150,24 @@
 
 .header #topnavibar{
 	z-index: 1;
+	padding: 0;
+
 	&.expanded{
-		height: 465px;
-		.expanding{ height: 423px; }
+		height: 485px;
+		.expanding{ height: 420px; }
+
+		&.expanded-navi{
+			height: 280px;
+				.expanding{
+					height: 216px;
+				}
+			&.expanded-full-navi{
+				height: 400px;
+				.expanding{
+					height: 336px;
+				}
+			}
+		}
 	}
 
 	.close{ right: 10px; }
@@ -135,8 +176,14 @@
 	.navigation > a {
 		display: none;
 
+		@media #{$tablet}{
+			display: inline-block;
+			padding: 0 13px;
+			margin: 8px 4px 0 0;
+		}
 		@media #{$laptop}{
-			display: inline-block
+			padding: 0 20px;
+			margin: 8px 8px 0 0;
 		}
 	}
 	.column-main > * { width: auto; }
@@ -155,25 +202,33 @@
 	}
 
 	.site-actions{
-		float: none;
-		text-align: center;
+		float: right;
 		line-height: 1;
+		margin-right: 10px;
 
-		@media #{$laptop}{
+		@media #{$tablet}{
 			float: right;
-			text-align: left;
 		}
 
 		a{
-			display: inline-block;
-			float: none;
-			border: 0;
-			padding: 6px 10px 2px;
-			&:first-child{ padding-left: 0; }
-			@media #{$tablet}{ padding: 6px 20px 2px;
-				&:first-child{ padding-left: 10px; }
+			padding: 14px 8px;
+			float: left;
+			line-height: 33px;
+
+			span{ display: inline; opacity: 1; }
+			i{ display: none; opacity: 0; }
+
+			@media screen and (max-width: 500px){
+				i{ display: inline; opacity: 1; }
+				span{ display: none; opacity: 0; }
 			}
-			@media #{$laptop}{ float: left; display: inline; }
+
+			@media #{$tablet}{ padding: 6px 6px 0px;
+				border-left: 1px solid #5A5A5A;
+				border-right: 1px solid #000000;
+				&:first-child{ padding-left: 5px; }
+			}
+			@media #{$desktop}{ float: left; display: inline; }
 		}
 	}
 	.column-alt{

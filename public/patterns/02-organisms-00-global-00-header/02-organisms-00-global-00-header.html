@@ -7,7 +7,7 @@
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&text=ÄÖäö' rel='stylesheet' type='text/css'>
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-		<link rel="stylesheet" href="../../css/style.css?1399986613" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1400148157" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -17,8 +17,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1399986613" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1399986613" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1400148157" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1400148157" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -29,9 +29,7 @@
 <header class="header cf" role="banner">
 	<div class="element-group">
 		<!-- Use mobile trigger (molecules-responsive-dropdown) here to keep it in place when menus are open. -->
-		<div class="mobile-trigger"> <a href="#"> <i class="icon-menu"></i><span class="is-vishidden">Valikko</span> </a></div>
-
-		<!-- Heads up! pasted code ahead -->
+		<div class="mobile-trigger"><a href="#"><i class="icon-menu"></i><span class="is-vishidden">Valikko</span></a></div>		<!-- Heads up! pasted code ahead -->
 
 		<div id="topnavibar" class="topnavi-bar inverse-contrast expandable">
 			<div class="container">
@@ -41,23 +39,19 @@
 						<!-- Paste ends. -->
 
 						<div class="site-actions">
-							<a id="hlLogin" class="pnlLogin">Kirjaudu sisään</a>
-							<a id="hlRegister" class="pnlRegistration">Rekisteröidy</a>
+							<a id="hlLogin" class="pnlLogin"> <span>Kirjaudu sisään</span><i class="icon-login"></i> </a>
+							<a id="hlRegister" class="pnlRegistration"><span>Rekisteröidy</span><i class="icon-register"></i> </a>
 						</div>
 
 						<!-- Heads up! pasted code ahead -->
 					<a id="lvOtherServices_HyperLink1_0" class="tab" href="http://www.kansalaisaloite.fi">Kansalaisaloite.fi</a>
-
-					        <a id="lvOtherServices_HyperLink1_1" class="tab" href="https://www.kuntalaisaloite.fi">Kuntalaisaloite.fi</a>
-
-					        <a id="lvOtherServices_HyperLink1_2" class="tab active" href="fi-FI">Otakantaa beta</a>
-
-					        <a id="lvOtherServices_HyperLink1_3" class="tab" href="fi-FI/Tietopankki">Tietopankki beta</a>
+					<a id="lvOtherServices_HyperLink1_1" class="tab" href="https://www.kuntalaisaloite.fi">Kuntalaisaloite.fi</a>
+					<a id="lvOtherServices_HyperLink1_2" class="tab active" href="fi-FI">Otakantaa</a>
+					<a id="lvOtherServices_HyperLink1_3" class="tab" href="fi-FI/Tietopankki">Tietopankki</a>
 
 					</div>
-					<div id="pnlLoginRegistrationContainer" class="expanding">
-
-					<div id="pnlLogin" class="section login visible" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnLogin')">
+					<div id="pnlLoginRegistrationContainer" class="expanding" >
+						<div id="pnlLogin" class="section login" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnLogin')">
 
 					    <h3>Kirjaudu sisään</h3>
 					    <p>Syötä kirjautumistietosi tai kirjaudu Facebook-tunnuksillasi</p>
@@ -170,77 +164,77 @@
 				</div>
 			</div>
 		</div>	</div>
-		<div class="element-group">
-		<div class="inner-block align-left">
-			<a href="#" id="hlLogo" class="header-logo"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /><strong>ota</strong>kantaa.fi</a>		</div>
-		<div class="inner-block align-right">
-			<form action="#" method="post" class="inline-form search-form">
-				<legend class="is-vishidden">Search</legend>
-				<div class="form-element">
-					<label for="search-field" class="is-vishidden">Search</label>
-					<input type="search" placeholder="Search" id="search-field" class="search-field" />
-					<button class="search-submit js-expand-search">
-						<i class="icon-search" aria-hidden="true"></i>
-						<span class="is-vishidden">Search</span>
-					</button>
-				</div>
-			</form>			<div class="lang-sel">
-				<ul class="lang-list">
-					<li class="selected"> <a href="">Suomeksi</a></li>
-					<li><a href="">På svenska</a></li>
+	<section class="responsive-modifier-block">
+		<form action="#" method="post" class="inline-form search-form">
+			<legend class="is-vishidden">Search</legend>
+			<div class="form-element">
+				<label for="search-field" class="is-vishidden">Search</label>
+				<input type="search" placeholder="Search" id="search-field" class="search-field" />
+				<button class="search-submit js-expand-search">
+					<i class="icon-search" aria-hidden="true"></i>
+					<span class="is-vishidden">Search</span>
+				</button>
+			</div>
+		</form>		<div class="element-group nav-container">
+			<div class="navi-responsive section">
+				<ul>
+					<li>
+						<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+						<a href="#">Valinta 1</a>
+						<ul>
+							<li><a href="">Alavalinta 1</a></li>
+							<li><a href="">Alavalinta 2</a></li>
+							<li><a href="">Alavalinta 3</a></li>
+							<li><a href="">Alavalinta 4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+						<a href="#">Valinta 2</a>
+						<ul>
+							<li><a href="">Alavalinta 1</a></li>
+							<li><a href="">Alavalinta 2</a></li>
+							<li><a href="">Alavalinta 3</a></li>
+							<li><a href="">Alavalinta 4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">Valinta</a>
+					</li>
+					<li>
+						<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+						<a href="#">Valinta 3</a>
+						<ul>
+							<li><a href="">Alavalinta 1</a></li>
+							<li><a href="">Alavalinta 2</a></li>
+							<li><a href="">Alavalinta 3</a></li>
+							<li><a href="">Alavalinta 4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+						<a href="#">Valinta 4</a>
+						<ul>
+							<li><a href="">Alavalinta 1</a></li>
+							<li><a href="">Alavalinta 2</a></li>
+							<li><a href="">Alavalinta 3</a></li>
+							<li><a href="">Alavalinta 4</a></li>
+						</ul>
+					</li>
 				</ul>
 			</div>		</div>
-	</div>
-	<div class="element-group">
-		<!-- molecules-responsive-dropdown. Not called as mustache because mobile-trigger needs to be within the previous element-group  -->
-		<div class="navi-responsive">
-			<ul>
-				<li>
-					<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
-					<a href="#">Valinta 1</a>
-					<ul>
-						<li><a href="">Alavalinta 1</a></li>
-						<li><a href="">Alavalinta 2</a></li>
-						<li><a href="">Alavalinta 3</a></li>
-						<li><a href="">Alavalinta 4</a></li>
+		<div class="element-group">
+			<div class="inner-block align-left">
+				<a href="#" id="hlLogo" class="header-logo"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /><strong>ota</strong>kantaa.fi</a>			</div>
+			<div class="inner-block align-right">
+				<div class="lang-sel">
+					<ul class="lang-list">
+						<li class="selected"> <a href="">Suomeksi</a></li>
+						<li><a href="">På svenska</a></li>
 					</ul>
-				</li>
-				<li>
-					<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
-					<a href="#">Valinta 2</a>
-					<ul>
-						<li><a href="">Alavalinta 1</a></li>
-						<li><a href="">Alavalinta 2</a></li>
-						<li><a href="">Alavalinta 3</a></li>
-						<li><a href="">Alavalinta 4</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="">Valinta</a>
-				</li>
-				<li>
-					<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
-					<a href="#">Valinta 3</a>
-					<ul>
-						<li><a href="">Alavalinta 1</a></li>
-						<li><a href="">Alavalinta 2</a></li>
-						<li><a href="">Alavalinta 3</a></li>
-						<li><a href="">Alavalinta 4</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
-					<a href="#">Valinta 4</a>
-					<ul>
-						<li><a href="">Alavalinta 1</a></li>
-						<li><a href="">Alavalinta 2</a></li>
-						<li><a href="">Alavalinta 3</a></li>
-						<li><a href="">Alavalinta 4</a></li>
-					</ul>
-				</li>
-			</ul>
+				</div>			</div>
 		</div>
-	</div>
+	</section>
 </header>
 <!-- End .header -->	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="../../js/main.min.js"></script>
@@ -249,7 +243,7 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "organisms-header";
-		var lineage        = [{"lineagePattern":"molecules-login","lineagePath":"..\/..\/patterns\/01-molecules-06-components-04-login\/01-molecules-06-components-04-login.html"},{"lineagePattern":"atoms-logo","lineagePath":"..\/..\/patterns\/00-atoms-04-images-00-logo\/00-atoms-04-images-00-logo.html"},{"lineagePattern":"molecules-search","lineagePath":"..\/..\/patterns\/01-molecules-04-forms-00-search\/01-molecules-04-forms-00-search.html"},{"lineagePattern":"molecules-lang-sel","lineagePath":"..\/..\/patterns\/01-molecules-06-components-03-lang-sel\/01-molecules-06-components-03-lang-sel.html"}];
+		var lineage        = [{"lineagePattern":"atoms-mobile-nav-trigger","lineagePath":"..\/..\/patterns\/00-atoms-06-buttons-02-mobile-nav-trigger\/00-atoms-06-buttons-02-mobile-nav-trigger.html"},{"lineagePattern":"molecules-login","lineagePath":"..\/..\/patterns\/01-molecules-06-components-04-login\/01-molecules-06-components-04-login.html"},{"lineagePattern":"molecules-search","lineagePath":"..\/..\/patterns\/01-molecules-04-forms-00-search\/01-molecules-04-forms-00-search.html"},{"lineagePattern":"molecules-dropdown-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-05-dropdown-nav\/01-molecules-05-navigation-05-dropdown-nav.html"},{"lineagePattern":"atoms-logo","lineagePath":"..\/..\/patterns\/00-atoms-04-images-00-logo\/00-atoms-04-images-00-logo.html"},{"lineagePattern":"molecules-lang-sel","lineagePath":"..\/..\/patterns\/01-molecules-06-components-03-lang-sel\/01-molecules-06-components-03-lang-sel.html"}];
 		var lineageR       = [{"lineagePattern":"templates-homepage","lineagePath":"..\/..\/patterns\/03-templates-00-homepage\/03-templates-00-homepage.html"},{"lineagePattern":"templates-blog","lineagePath":"..\/..\/patterns\/03-templates-01-blog\/03-templates-01-blog.html"},{"lineagePattern":"templates-article","lineagePath":"..\/..\/patterns\/03-templates-02-article\/03-templates-02-article.html"},{"lineagePattern":"pages-blog","lineagePath":"..\/..\/patterns\/04-pages-01-blog\/04-pages-01-blog.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
@@ -286,10 +280,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1399986613">
+	<script id="pl-js-polyfill-insert-1400148157">
 		(function() {
 			if (self != top) {
-				var cb = '1399986613';
+				var cb = '1400148157';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -298,10 +292,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1399986613">
+	<script id="pl-js-insert-1400148157">
 		(function() {
 			if (self != top) {
-				var cb = '1399986613';
+				var cb = '1400148157';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}

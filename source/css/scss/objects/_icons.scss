@@ -159,7 +159,7 @@
 	}
 }
 
-.icon-search, .icon-play, .icon-ok, .icon-notify, .icon-warning, .icon-close, .icon-add, .icon-delete, .icon-tip, .icon-menu, .icon-menu-arrow{
+i{
 	@extend .icon-style;
 }
 
@@ -208,11 +208,22 @@
 		content: "\f068";
 	}
 
-	@media #{$laptop}{
+	@media #{$tablet}{
 		content: "\f0d7";
 	}
 }
 
+.icon-login:before{
+	content: "\f08b";
+}
+
+.icon-logout:before{
+	content: "\f090";
+}
+
+.icon-register:before{
+	content: "\f044";
+}
 
 
 
