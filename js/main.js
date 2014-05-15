@@ -137,61 +137,68 @@ if( $('.fadeout').length ){
 
 	// Pasted from old site {
 
-    $('.site-actions > a, #closeButtonContainer').click(function () {
-        $('.site-actions > a').removeClass('selected');
-        $(this).addClass('selected');
-        // Tyhjennetään lomakkeiden kenttien arvot IE8/IE9 selaimilla
-        /* if (getInternetExplorerVersion() <= 9 && getInternetExplorerVersion() != -1) {
-            $('input.ctl-text').val('');
-            showIEPlaceholders();
-        } */
-    });
+	$('.site-actions > a, #closeButtonContainer').click(function () {
+		$('.site-actions > a').removeClass('selected');
+		$(this).addClass('selected');
+		// Tyhjennetään lomakkeiden kenttien arvot IE8/IE9 selaimilla
+		/* if (getInternetExplorerVersion() <= 9 && getInternetExplorerVersion() != -1) {
+			$('input.ctl-text').val('');
+			showIEPlaceholders();
+		} */
+	});
 
-    //-------------Hide possible info message
-    /* $("#infoMessage").fadeIn(3000); */
+	//-------------Hide possible info message
+	/* $("#infoMessage").fadeIn(3000); */
 
-    //-------------Show hide login/register
-    $('.expandable').each(function () {
-        var expandable = $(this);
-        var close = $('.close', expandable);
-        close.click(function () {
-            expandable.removeClass('expanded');
-            $('.navi-responsive').removeClass('is-visible');
-        });
-    });
+	//-------------Show hide login/register
+	$('.expandable').each(function () {
+		var expandable = $(this);
+		var close = $('.close', expandable);
+		close.click(function () {
+			expandable.removeClass('expanded');
+			$('.navi-responsive').removeClass('is-visible');
+		});
+	});
 
-    var show_section = function (section) {
-    	if( section.hasClass('navi-responsive') ){
-    		section.addClass('is-visible').find('.section').removeClass('is-visible');
-    		$('body').find('.expandable').addClass('expanded expanded-navi');
-    		$('.expandable').find('.section').removeClass('is-visible');
-    		$('.site-actions').find('a').removeClass('selected');
-    	}else{
-	        section.addClass('is-visible').siblings('.section').removeClass('is-visible');
-	        $('.navi-responsive').removeClass('is-visible');
-	        $('.navi-responsive').find('.sub-nav-open').parent().find('ul').slideUp();
-	        $('.navi-responsive').find('.sub-nav-open').removeClass('sub-nav-open');
+	var show_section = function (section) {
+		if( section.hasClass('is-visible') ){
+			$('.expandable').removeClass('expanded');
+			$('.navi-responsive').removeClass('is-visible');
+			$(section.selector).removeClass('is-visible');
+			$('.site-actions').find('a').removeClass('selected');
+		}else{
+			if( section.hasClass('navi-responsive') ){
+				section.addClass('is-visible').find('.section').removeClass('is-visible');
+				$('body').find('.expandable').addClass('expanded expanded-navi');
+				$('.expandable').find('.section').removeClass('is-visible');
+				$('.site-actions').find('a').removeClass('selected');
+			}else{
+				section.addClass('is-visible').siblings('.section').removeClass('is-visible');
+				$('.navi-responsive').removeClass('is-visible');
+				$('.navi-responsive').find('.sub-nav-open').parent().find('ul').slideUp();
+				$('.navi-responsive').find('.sub-nav-open').removeClass('sub-nav-open');
 
-	        section.closest('.expandable').removeClass('expanded-navi expanded-full-navi');
-	        section.closest('.expandable').addClass('expanded');
-	    }
+				section.closest('.expandable').removeClass('expanded-navi expanded-full-navi');
+				section.closest('.expandable').addClass('expanded');
+			}
+		}
 
-    }
+	}
 
-    $('#hlLogin,#hlLogin2').click(function (event) {
-        show_section($('#pnlLogin'));
-        event.preventDefault();
-    });
+	$('#hlLogin,#hlLogin2').click(function (event) {
+		show_section($('#pnlLogin'));
+		event.preventDefault();
+	});
 
-    $('#hlRegister,#hlRegister2').click(function (event) {
-        show_section($('#pnlRegistration'));
-        event.preventDefault();
-    });
+	$('#hlRegister,#hlRegister2').click(function (event) {
+		show_section($('#pnlRegistration'));
+		event.preventDefault();
+	});
 
-    $('#hlPasswordRecover').click(function (event) {
-        show_section($('#pnlPasswordRecover'));
-        event.preventDefault();
-    });
+	$('#hlPasswordRecover').click(function (event) {
+		show_section($('#pnlPasswordRecover'));
+		event.preventDefault();
+	});
 
 	// } - Paste ends.
 
