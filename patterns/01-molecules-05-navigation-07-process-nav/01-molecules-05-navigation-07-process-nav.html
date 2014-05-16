@@ -26,12 +26,25 @@
 
 	</head>
 	<body class="body">
-<div class="fadeout">
-	<p>
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis iaculis viverra. Quisque mollis vestibulum justo, a aliquam lacus sodales quis. Proin quis aliquet enim. Etiam aliquet, augue et aliquam tristique,urna odio rhoncus metus, a imperdiet diam urna et tortor. Nunc ligula sapien, bibendum nec laoreet eu, hendrerit et est. Vestibulum volutpat, tellus pretium iaculis malesuada, metus leo condimentum elit, vitae bibendum augue dolor vitae quam. Proin quis aliquet enim. Etiam aliquet, augue et aliquam tristique,urna odio rhoncus metus, a imperdiet diam urna et tortor.
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis iaculis viverra. Quisque mollis vestibulum justo, a aliquam lacus sodales quis. Proin quis aliquet enim. Etiam aliquet, augue et aliquam tristique,urna odio rhoncus metus, a imperdiet diam urna et tortor. Nunc ligula sapien, bibendum nec laoreet eu, hendrerit et est. Vestibulum volutpat, tellus pretium iaculis malesuada, metus leo condimentum elit, vitae bibendum augue dolor vitae quam. Proin quis aliquet enim. Etiam aliquet, augue et aliquam tristique,urna odio rhoncus metus, a imperdiet diam urna et tortor.
-	</p>
-	<p class="read-more"> <a href="">Lue lisää</a></p>
+<div class="process-nav dummmy-container">
+	<ul>
+		<li class="process-item">
+			<a href="" class="process-button">
+				<i class="icon-register"></i>Luo/Muokkaa</a>
+		</li>
+		<li class="process-item">
+			<a href="" class="process-button">
+				<i class="icon-mail"></i>Lähetä</a>
+		</li>
+		<li class="process-item">
+			<a href="" class="process-button">
+				<i class="icon-people"></i>Lausunnonantajat</a>
+		</li>
+		<li class="process-item">
+			<a href="" class="process-button">
+				<i class="icon-chart"></i>Yhteenveto</a>
+		</li>
+	</ul>
 </div>	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
 	<script type="text/javascript" src="../../js/plugins.min.js"></script>
@@ -40,7 +53,7 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "atoms-fadeout-text";
+		var patternPartial = "molecules-process-nav";
 		var lineage        = [];
 		var lineageR       = [];
 		var patternState   = "";

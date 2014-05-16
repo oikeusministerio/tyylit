@@ -263,7 +263,7 @@ if( $('.fadeout').length ){
 
 	toastr.options.positionClass = 'toast-top-full-width';
 	toastr.options.extendedTimeOut = 0; //1000;
-	toastr.options.timeOut = 6000;
+	toastr.options.timeOut = 0;//6000;
 	toastr.options.fadeOut = 250;
 	toastr.options.fadeIn = 250;
 
