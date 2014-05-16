@@ -188,5 +188,27 @@
 	}
 }
 
+.select-style select{
+	background: $lap-cyan;
+	border: 1px solid $border-color;
+	color: $white;
+	padding: 4px 4px 4px 6px;
+	-webkit-appearance: none;
+	@include border-radius(1px, 1px, 1px, 1px);
+}
+.select-style:after{
+	content: "\f0d7";
+	font-family: fontAwesome;
+	margin-left: -30px;
+	display: inline-block;
+	color: $white;
+	border-left: 1px solid $white;
+	padding-left: 7px;
+
+}
+
+
+
+
 
 

@@ -4,23 +4,28 @@
 
 // Toasts
 
-.toast i{
-	&.inverse:before{
-		width: 28px; height: 28px; line-height: 28px; text-align: center;
-		font-size: 1em;
-		background-color: #444;
-		background-color: rgba(68,68,68, .66);
-		@include border-radius(15px, 15px, 15px, 15px);
-	}
+.toast{
+	border-width: 1px;
+	border-style: solid;
+	background-color: $white;
+	i{
+		&.inverse:before{
+			width: 28px; height: 28px; line-height: 28px; text-align: center;
+			font-size: 1em;
+			color: $white;
+			margin-top: -3px;
+			@include border-radius(15px, 15px, 15px, 15px);
+		}
 
-	&:before{
-		display: block;
-		margin-right: 12px;
-		line-height: 1;
-		font-size: 1.7em;
-		float: left;
-		color: $text-color;
-		opacity: 0.8;
+		&:before{
+			display: block;
+			margin-right: 12px;
+			line-height: 1;
+			font-size: 1.7em;
+			float: left;
+			color: $text-color;
+			opacity: 0.8;
+		}
 	}
 }
 
@@ -30,46 +35,39 @@
 	width: 100%;
 }
 
-.toast-success {
-	background-color: $valid;
 
-	/*i{
-		@extend .toast-icon;
-		@extend .icon-ok;
-	}*/
-}
+
 #toast-container > .toast {
 	background-image: none !important;
 }
-.toast-success {
-	background-color: $valid;
 
+.toast-success {
+	border-color: $valid;
 	& i.inverse:before{
-		color: $valid;
+		background-color: $valid;
 	}
 }
 
 .toast-error {
-	background-color: $error;
-	.toast-message{ color: $white; }
+	border-color: $error;
 
 	& i.inverse:before{
-		color: $error;
+		background-color: $error;
 		font-size: 1.2em;
 	}
 }
 .toast-info {
-	background-color: #e2e2e2;
+	border-color: #e2e2e2;
 
 	& i.inverse:before{
-		color: #ccc;
+		background-color: #ccc;
 	}
 }
 .toast-warning {
-	background-color: $warning;
+	border-color: $warning;
 
 	& i.inverse:before{
-		color: $warning;
+		background-color: $warning;
 	}
 }
 

@@ -229,7 +229,20 @@ i{
 .icon-register:before{
 	content: "\f044";
 }
+.icon-mail:before{
+	content: "\f0e0";
+}
+.icon-people:before{
+	content: "\f0c0";
+}
+.icon-chart:before{
+	content: "\f080";
+}
 
-
+// Non pre-pseudos. Call from pseudos.
+.icon-process-arrow{
+	content: "\f105";
+	@extend .icon-style;
+}
 
 

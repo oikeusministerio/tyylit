@@ -311,7 +311,79 @@
 	}
 }
 
+.process-nav{
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
 
+	ul{
+		list-style: none;
+		display: inline-block;
+		width: 100%;
+
+	}
+	li{
+		display: inline-block;
+		padding: 0 10px 0 35px;
+		line-height: 60px;
+		position: relative;
+		text-align: center;
+
+		@media #{$tablet}{
+			width: 24%;
+		}
+		@media #{$laptop}{
+
+		}
+
+		@media #{$desktop}{
+			&:before{
+				margin-right: 25px;
+			}
+		}
+
+
+		a{
+			color: $text-color;
+			text-decoration: none;
+			vertical-align: middle;
+
+			&:hover, &:active{
+				color: $lap-cyan;
+			}
+		}
+
+		i:before{
+			margin-right: 8px;
+			font-size: 1.25em;
+		}
+
+		&:before{
+			@extend .icon-process-arrow;
+			color: $gray-light;
+			font-size: 3.6em;
+			position: absolute;
+			left: 0;
+
+		}
+		&:first-child{
+			text-align: left;
+			padding-left: 0;
+			@media #{$tablet}{
+
+				width: 20%;
+
+			}
+
+			&:before{
+				content: '';
+				display: none;
+				margin: 0;
+			}
+		}
+	}
+}
 
 
 
