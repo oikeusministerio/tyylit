@@ -6,8 +6,9 @@
 		<meta name="viewport" content="width=device-width" />
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&text=ÄÖäö' rel='stylesheet' type='text/css'>
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css" rel="stylesheet"/>
 
-		<link rel="stylesheet" href="../../css/style.css?1399975107" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1400243832" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -17,8 +18,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1399975107" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1399975107" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1400243832" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1400243832" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -31,19 +32,113 @@
 			
 			<!-- Patterns -->
 			<div id="sg-patterns">
-					<div id="molecules-alert" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-07-messaging-00-alert/01-molecules-07-messaging-00-alert.html" class="patternLink" data-patternpartial="molecules-alert">Alert</a></h2>
+					<div id="molecules-warning" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-07-messaging-00-warning/01-molecules-07-messaging-00-warning.html" class="patternLink" data-patternpartial="molecules-warning">Warning</a></h2>
 						<div class="sg-pattern-body">
-							<div class="alert alert-">
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+							
+<div class="msg-warning toast-container">
+	<p>Try toaster message by clicking the button below this message</p>
+
+	<div class="msg-toast is-hidden"> <i class="icon-lbulb"></i><p>I'm the hidden warning message</p></div>
+	<button id="warning" class="toast-trigger warning">Button</button>
 </div>
+
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;div class=&quot;alert alert-&quot;&gt;
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+										
+&lt;div class=&quot;msg-warning toast-container&quot;&gt;
+	&lt;p&gt;Try toaster message by clicking the button below this message&lt;/p&gt;
+
+	&lt;div class=&quot;msg-toast is-hidden&quot;&gt; &lt;i class=&quot;icon-lbulb&quot;&gt;&lt;/i&gt;&lt;p&gt;I'm the hidden warning message&lt;/p&gt;&lt;/div&gt;
+	&lt;button id=&quot;warning&quot; class=&quot;toast-trigger warning&quot;&gt;Button&lt;/button&gt;
 &lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-info" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-07-messaging-01-info/01-molecules-07-messaging-01-info.html" class="patternLink" data-patternpartial="molecules-info">Info</a></h2>
+						<div class="sg-pattern-body">
+							
+<div class="msg-info toast-container">
+	<p>Try toaster message by clicking the button below this message</p>
+
+	<div class="msg-toast is-hidden"> <i class="icon-info"></i><p>I'm the hidden info message</p></div>
+	<button id="info" class="toast-trigger info">Button</button>
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										
+&lt;div class=&quot;msg-info toast-container&quot;&gt;
+	&lt;p&gt;Try toaster message by clicking the button below this message&lt;/p&gt;
+
+	&lt;div class=&quot;msg-toast is-hidden&quot;&gt; &lt;i class=&quot;icon-info&quot;&gt;&lt;/i&gt;&lt;p&gt;I'm the hidden info message&lt;/p&gt;&lt;/div&gt;
+	&lt;button id=&quot;info&quot; class=&quot;toast-trigger info&quot;&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-success" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-07-messaging-02-success/01-molecules-07-messaging-02-success.html" class="patternLink" data-patternpartial="molecules-success">Success</a></h2>
+						<div class="sg-pattern-body">
+							
+<div class="msg-success toast-container">
+	<p>Try toaster message by clicking the button below this message</p>
+
+	<div class="msg-toast is-hidden"> <i class="icon-ok inverse"></i><p>I'm the hidden success message</p></div>
+	<button id="success" class="toast-trigger success">Button</button>
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										
+&lt;div class=&quot;msg-success toast-container&quot;&gt;
+	&lt;p&gt;Try toaster message by clicking the button below this message&lt;/p&gt;
+
+	&lt;div class=&quot;msg-toast is-hidden&quot;&gt; &lt;i class=&quot;icon-ok inverse&quot;&gt;&lt;/i&gt;&lt;p&gt;I'm the hidden success message&lt;/p&gt;&lt;/div&gt;
+	&lt;button id=&quot;success&quot; class=&quot;toast-trigger success&quot;&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-error" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-07-messaging-03-error/01-molecules-07-messaging-03-error.html" class="patternLink" data-patternpartial="molecules-error">Error</a></h2>
+						<div class="sg-pattern-body">
+							
+<div class="msg-error toast-container">
+	<p>Try toaster message by clicking the button below this message</p>
+
+	<div class="msg-toast is-hidden"> <i class="icon-error inverse"></i><p>I'm the hidden error message</p></div>
+	<button id="error" class="toast-trigger error">Button</button>
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										
+&lt;div class=&quot;msg-error toast-container&quot;&gt;
+	&lt;p&gt;Try toaster message by clicking the button below this message&lt;/p&gt;
+
+	&lt;div class=&quot;msg-toast is-hidden&quot;&gt; &lt;i class=&quot;icon-error inverse&quot;&gt;&lt;/i&gt;&lt;p&gt;I'm the hidden error message&lt;/p&gt;&lt;/div&gt;
+	&lt;button id=&quot;error&quot; class=&quot;toast-trigger error&quot;&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+
 									</code>
 								</pre>
 							</div>
@@ -61,6 +156,8 @@
 		</script>
 		
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
+	<script type="text/javascript" src="../../js/plugins.min.js"></script>
 	<script type="text/javascript" src="../../js/main.min.js"></script>
 	<!--DO NOT REMOVE-->
 		<script>
@@ -95,10 +192,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1399975107">
+	<script id="pl-js-polyfill-insert-1400243832">
 		(function() {
 			if (self != top) {
-				var cb = '1399975107';
+				var cb = '1400243832';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -107,10 +204,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1399975107">
+	<script id="pl-js-insert-1400243832">
 		(function() {
 			if (self != top) {
-				var cb = '1399975107';
+				var cb = '1400243832';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
