@@ -1,40 +1,40 @@
 /*------------------------------------*\
-    $GLOBAL CLASSES
+	$GLOBAL CLASSES
 \*------------------------------------*/
 
 /* Clearfix */
 .cf {
-    *zoom: 1;
+	*zoom: 1;
 }
 .cf:before, .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+	content: " "; /* 1 */
+	display: table; /* 2 */
 }
 
 .cf:after {
-    clear: both;
+	clear: both;
 }
 
 /* Completely remove from the flow and screen readers. */
 .is-hidden {
-    display: none !important;
-    visibility: hidden !important;
+	display: none !important;
+	visibility: hidden !important;
 }
 
 .is-visible {
-    display: block !important;
-    visibility: visible !important;
+	display: block !important;
+	visibility: visible !important;
 }
 
 /* Completely remove from the flow but leave available to screen readers. */
 .is-vishidden {
-    position: absolute !important;
-    overflow: hidden;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    border: 0;
-    clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
 }
 
 /* Floats */
@@ -68,42 +68,38 @@
 
 /* Display Classes */
 .hide-small {
-    @media all and (max-width: $bp-med) {
-        display: none;
-    }
+	@media all and (max-width: $bp-med) {
+		display: none;
+	}
 }
 
 .hide-med {
-    @media all and (min-width: $bp-med) and (max-width: $bp-large) {
-        display: none;
-    }
+	@media all and (min-width: $bp-med) and (max-width: $bp-large) {
+		display: none;
+	}
 }
 
 .hide-large {
-    @media all and (min-width: $bp-large) {
-        display: none;
-    }
+	@media all and (min-width: $bp-large) {
+		display: none;
+	}
 }
 
 //States
-.valid {
+.valid-color {
 	color: $valid;
 }
 
-.error {
+.error-color {
 	color: $error;
 }
 
-.warning {
-    color: $warning;
+.warning-color {
+	color: $warning;
 }
 
-.information {
-    color: $information;
-}
-
-.font-secondary {
-    font-family: $font-secondary;
+.information-color {
+	color: $information;
 }
 
 

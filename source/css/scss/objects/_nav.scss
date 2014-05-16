@@ -50,7 +50,7 @@
 }
 
 // Normal old navi
-
+/*
 .navi-sample{
 	margin-left: 0px;
 	background-color: transparent;
@@ -108,7 +108,7 @@
 		&:after {
 			font-family: 'FontAwesome';
 			font-size: .75em;
-			content: '\f0d7'; /* fa-caret-down */
+			content: '\f0d7'; //fa-caret-down
 			position: absolute;
 			top: .4em;
 			right: .5em;
@@ -123,6 +123,7 @@
 		}
 	}
 }
+*/
 
 // Responsive navi
 
@@ -150,12 +151,12 @@
 }
 
 	// Kickass mobile trigger for full header tryout. This element controls navi-responsive, but is located within the previous element-group due to positioning while menus open.
-	.header .mobile-trigger{
+	.mobile-trigger{
 		z-index: 2;
 		background-color: transparent;
-		text-align: right;
-		right: 0;
-		top: 0;
+		text-align: left;
+		left: 10px;
+		top: 10px;
 		position: absolute;
 		width: auto;
 
@@ -175,21 +176,28 @@
 			display: inline-block;
 			&:hover{ color: $white; }
 		}
-		@media #{$laptop}{ display: none; }
+		@media #{$tablet}{ display: none; }
 	}
 
 .navi-responsive{
 	width: 100%;
 	display: none;
 	text-align: center;
+	position: absolute;
+	top: 64px;
+	z-index: 3;
+
+	// Scroll
+	overflow-y: auto;
+	max-height: 310px;
 
 	i{ font-style: normal; }
 
 	> ul{
 		> li{
-			background-color: $white;
+			background-color: transparent;
 			a{
-				color: $text-color;
+				color: darken($white, 20%);
 				line-height: em(30px);
 			}
 		}
@@ -197,14 +205,14 @@
 		ul{
 			z-index: 1;
 			display: none;
-			padding: 10px 0;
-			background-color: $gray-light;
+			padding: 10px 0 10px 30px;
+			background-color: $gray-med;
 
 			li{
-				background-color: $gray-light;
+				background-color: $gray-med;
 
 				a{
-					color: $text-color;
+					color: darken($white, 10%);
 					line-height: 2;
 				}
 			}
@@ -222,6 +230,12 @@
 	.sub-nav-trigger {
 		display: inline-block;
 		cursor: pointer;
+		margin-left: -15px;
+		padding-right: 5px;
+
+		@media #{$tablet}{
+			margin-left: 0; padding-left: 0;
+		}
 
 		& i:before{
 			font-size: $font-size-normal;
@@ -230,21 +244,20 @@
 			vertical-align: middle;
 			cursor: pointer;
 
-			@media #{$laptop}{
+			@media #{$tablet}{
 				font-size: $font-size-large;
-			}
-		}
-
-		& i.sub-nav-open{
-			&:before{
-				content: '-';
 			}
 		}
 	}
 
-	@media #{$laptop}{
+	@media #{$tablet}{
 		display: block !important;
 		text-align: left;
+		position: relative;
+		top: auto;
+		z-index: 1;
+		overflow-y: visible;
+		max-height: auto;
 
 		> ul > li{
 			float: left;
@@ -253,6 +266,7 @@
 			padding-left: 10px;
 			border-left: 1px solid #ccc;
 
+			a{ color: $text-color; }
 			&:first-child{ margin-left: 0; padding-left: 0; border-left: 0; }
 		}
 		ul li ul{
@@ -261,14 +275,16 @@
 				margin-left: -5px;
 
 				border: 1px solid #ccc;
+				background-color: $gray-light;
 
 				li{
 					float: none;
 					width: 100%;
 					margin-left: 0;
 					padding: 0 20px 0 10px;
+					background-color: $gray-light;
 
-					a{ display:block; }
+					a{ display:block; color: $text-color; }
 				}
 			}
 
@@ -295,6 +311,79 @@
 	}
 }
 
+.process-nav{
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+
+	ul{
+		list-style: none;
+		display: inline-block;
+		width: 100%;
+
+	}
+	li{
+		display: inline-block;
+		padding: 0 10px 0 35px;
+		line-height: 60px;
+		position: relative;
+		text-align: center;
+
+		@media #{$tablet}{
+			width: 24%;
+		}
+		@media #{$laptop}{
+
+		}
+
+		@media #{$desktop}{
+			&:before{
+				margin-right: 25px;
+			}
+		}
+
+
+		a{
+			color: $text-color;
+			text-decoration: none;
+			vertical-align: middle;
+
+			&:hover, &:active{
+				color: $lap-cyan;
+			}
+		}
+
+		i:before{
+			margin-right: 8px;
+			font-size: 1.25em;
+		}
+
+		&:before{
+			@extend .icon-process-arrow;
+			color: $gray-light;
+			font-size: 3.6em;
+			position: absolute;
+			left: 0;
+
+		}
+		&:first-child{
+			text-align: left;
+			padding-left: 0;
+			@media #{$tablet}{
+
+				width: 20%;
+
+			}
+
+			&:before{
+				content: '';
+				display: none;
+				margin: 0;
+			}
+		}
+	}
+}
 
 
 

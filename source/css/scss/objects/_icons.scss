@@ -159,12 +159,16 @@
 	}
 }
 
-.icon-search, .icon-play, .icon-ok, .icon-notify, .icon-warning, .icon-close, .icon-add, .icon-delete, .icon-tip, .icon-menu, .icon-menu-arrow{
+i{
 	@extend .icon-style;
 }
 
-.icon-ok:before{
+.icon-ok:before {
 	content: "\f00c";
+}
+
+.icon-info:before{
+	content: "\f129";
 }
 
 .icon-search:before{
@@ -175,7 +179,7 @@
 	content: "\f04b";
 }
 
-.icon-close:before{
+.icon-close:before, .icon-error:before{
 	content: "\f00d";
 }
 
@@ -195,21 +199,50 @@
 	content: "\f067";
 }
 
-.icon-tip{
-
+.icon-lbulb:before{
+	content: "\f0eb";
 }
+
 .icon-menu:before {
 	content: "\f0c9";
 }
 .icon-menu-arrow:before{
 	content: "\f067";
 
-	@media #{$laptop}{
+	.sub-nav-open &{
+		content: "\f068";
+	}
+
+	@media #{$tablet}{
 		content: "\f0d7";
 	}
 }
 
+.icon-login:before{
+	content: "\f08b";
+}
 
+.icon-logout:before{
+	content: "\f090";
+}
 
+.icon-register:before{
+	content: "\f044";
+}
+.icon-mail:before{
+	content: "\f0e0";
+}
+.icon-people:before{
+	content: "\f0c0";
+}
+.icon-chart:before{
+	content: "\f080";
+}
+
+// Non pre-pseudos. Call from pseudos.
+.icon-process-arrow{
+	content: "\f105";
+	@extend .icon-style;
+}
 
 

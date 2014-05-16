@@ -2,17 +2,109 @@
     $MESSAGING
 \*------------------------------------*/
 
-// Alerts
-.alert {
-	text-align: center;
-	padding: $pad;
-	margin-bottom: $space-half;
-	border: 1px solid $gray;
-	background: $gray-light;
+// Toasts
+
+.toast{
+	border-width: 1px;
+	border-style: solid;
+	background-color: $white;
+	i{
+		&.inverse:before{
+			width: 28px; height: 28px; line-height: 28px; text-align: center;
+			font-size: 1em;
+			color: $white;
+			margin-top: -3px;
+			@include border-radius(15px, 15px, 15px, 15px);
+		}
+
+		&:before{
+			display: block;
+			margin-right: 12px;
+			line-height: 1;
+			font-size: 1.7em;
+			float: left;
+			color: $text-color;
+			opacity: 0.8;
+		}
+	}
 }
 
-.alert-error {
-	color: $error;
+.toast-message{
+	display: inline-block;
+	color: $text-color;
+	width: 100%;
+}
+
+
+
+#toast-container > .toast {
+	background-image: none !important;
+}
+
+.toast-success {
+	border-color: $valid;
+	& i.inverse:before{
+		background-color: $valid;
+	}
+}
+
+.toast-error {
 	border-color: $error;
-	background: #ffbebe;
+
+	& i.inverse:before{
+		background-color: $error;
+		font-size: 1.2em;
+	}
+}
+.toast-info {
+	border-color: #e2e2e2;
+
+	& i.inverse:before{
+		background-color: #ccc;
+	}
+}
+.toast-warning {
+	border-color: $warning;
+
+	& i.inverse:before{
+		background-color: $warning;
+	}
+}
+
+#toast-container > div {
+	margin: 0 0 6px;
+	padding: 15px 15px 15px 30px;
+	width: 300px;
+
+	background-image: none;
+	background-position: 15px center;
+	background-repeat: no-repeat;
+	-moz-box-shadow: 0 0 8px #999999;
+	-webkit-box-shadow: 0 0 8px #999999;
+	box-shadow: 0 0 8px #999999;
+	color: #ffffff;
+	opacity: 0.9;
+	  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+	  filter: alpha(opacity=90);
+
+	@include border-radius(2px, 2px, 2px, 2px);
+}
+
+.toast-container{
+
+}
+
+.msg-warning {
+
+}
+
+.msg-info{
+
+}
+
+.msg-success{
+
+}
+.msg-error{
+
 }

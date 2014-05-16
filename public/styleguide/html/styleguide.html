@@ -6,8 +6,9 @@
 		<meta name="viewport" content="width=device-width" />
 		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&text=ÄÖäö' rel='stylesheet' type='text/css'>
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+		<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css" rel="stylesheet"/>
 
-		<link rel="stylesheet" href="../../css/style.css?1399975107" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1400243832" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -17,8 +18,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1399975107" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1399975107" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1400243832" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1400243832" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -813,6 +814,13 @@
   <a href="#">Lajittelu 2</a>
   <a href="#">Lajittelu 3</a>
 </div>
+
+<div class="select-style">
+  <select id="" class="btn-group">
+    <option selected="selected" value="0">Kaikille</option>
+    <option value="1">Vain kutsutuille</option>
+  </select>
+</div>
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
@@ -840,6 +848,27 @@
   &lt;a href=&quot;#&quot;&gt;Lajittelu 2&lt;/a&gt;
   &lt;a href=&quot;#&quot;&gt;Lajittelu 3&lt;/a&gt;
 &lt;/div&gt;
+
+&lt;div class=&quot;select-style&quot;&gt;
+  &lt;select id=&quot;&quot; class=&quot;btn-group&quot;&gt;
+    &lt;option selected=&quot;selected&quot; value=&quot;0&quot;&gt;Kaikille&lt;/option&gt;
+    &lt;option value=&quot;1&quot;&gt;Vain kutsutuille&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="atoms-mobile-nav-trigger" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-06-buttons-02-mobile-nav-trigger/00-atoms-06-buttons-02-mobile-nav-trigger.html" class="patternLink" data-patternpartial="atoms-mobile-nav-trigger">Mobile Nav Trigger</a></h2>
+						<div class="sg-pattern-body">
+							<div class="mobile-trigger"><a href="#"><i class="icon-menu"></i><span class="is-vishidden">Valikko</span></a></div>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;mobile-trigger&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-menu&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Valikko&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;
 									</code>
 								</pre>
 							</div>
@@ -1285,7 +1314,7 @@
 	<div class="form-element">
 		<label for="search-field" class="is-vishidden">Search</label>
 		<input type="search" placeholder="Search" id="search-field" class="search-field" />
-		<button class="search-submit">
+		<button class="search-submit js-expand-search">
 			<i class="icon-search" aria-hidden="true"></i>
 			<span class="is-vishidden">Search</span>
 		</button>
@@ -1300,7 +1329,7 @@
 	&lt;div class=&quot;form-element&quot;&gt;
 		&lt;label for=&quot;search-field&quot; class=&quot;is-vishidden&quot;&gt;Search&lt;/label&gt;
 		&lt;input type=&quot;search&quot; placeholder=&quot;Search&quot; id=&quot;search-field&quot; class=&quot;search-field&quot; /&gt;
-		&lt;button class=&quot;search-submit&quot;&gt;
+		&lt;button class=&quot;search-submit js-expand-search&quot;&gt;
 			&lt;i class=&quot;icon-search&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
 			&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;/span&gt;
 		&lt;/button&gt;
@@ -1838,23 +1867,27 @@
 					<div id="molecules-tabs" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-05-navigation-04-tabs/01-molecules-05-navigation-04-tabs.html" class="patternLink" data-patternpartial="molecules-tabs">Tabs</a></h2>
 						<div class="sg-pattern-body">
-							<div class="tabs">
-	<ul class="tab-list">
-		<li><a href="#" class="active">Tab 1</a></li>
-		<li><a href="#">Tab 2</a></li>
-		<li><a href="#">Tab 3</a></li>
+							<div class="header-tabs">
+	<ul class="service-tabs">
+		<li class="active"><a href="#" class="active">Service 1</a></li>
+		<li><a href="#">Service 2</a></li>
+		<li><a href="#">Service 3</a></li>
 	</ul>
+	<a href="" rel="nofollow" target="_blank" class="other-service">Muu palvelu 1</a>
+	<a href="" rel="nofollow" target="_blank" class="other-service">Muu palvelu 2</a>
 </div>
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;div class=&quot;tabs&quot;&gt;
-	&lt;ul class=&quot;tab-list&quot;&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot; class=&quot;active&quot;&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tab 2&lt;/a&gt;&lt;/li&gt;
-		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tab 3&lt;/a&gt;&lt;/li&gt;
+										&lt;div class=&quot;header-tabs&quot;&gt;
+	&lt;ul class=&quot;service-tabs&quot;&gt;
+		&lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;active&quot;&gt;Service 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Service 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Service 3&lt;/a&gt;&lt;/li&gt;
 	&lt;/ul&gt;
+	&lt;a href=&quot;&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; class=&quot;other-service&quot;&gt;Muu palvelu 1&lt;/a&gt;
+	&lt;a href=&quot;&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; class=&quot;other-service&quot;&gt;Muu palvelu 2&lt;/a&gt;
 &lt;/div&gt;
 									</code>
 								</pre>
@@ -1864,11 +1897,11 @@
 					<div id="molecules-dropdown-nav" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-05-navigation-05-dropdown-nav/01-molecules-05-navigation-05-dropdown-nav.html" class="patternLink" data-patternpartial="molecules-dropdown-nav">Dropdown Nav</a></h2>
 						<div class="sg-pattern-body">
-							<div class="navi-sample">
+							<div class="navi-responsive section">
 	<ul>
-		<li class="toplevel">
-			<a href="">Valinta 1</a>
-			<div class="arrow-link"></div>
+		<li>
+			<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+			<a href="#">Valinta 1</a>
 			<ul>
 				<li><a href="">Alavalinta 1</a></li>
 				<li><a href="">Alavalinta 2</a></li>
@@ -1876,9 +1909,9 @@
 				<li><a href="">Alavalinta 4</a></li>
 			</ul>
 		</li>
-		<li class="toplevel">
-			<a href="">Valinta 2</a>
-			<div class="arrow-link"></div>
+		<li>
+			<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+			<a href="#">Valinta 2</a>
 			<ul>
 				<li><a href="">Alavalinta 1</a></li>
 				<li><a href="">Alavalinta 2</a></li>
@@ -1886,9 +1919,12 @@
 				<li><a href="">Alavalinta 4</a></li>
 			</ul>
 		</li>
-		<li class="toplevel">
-			<a href="">Valinta 3</a>
-			<div class="arrow-link"></div>
+		<li>
+			<a href="">Valinta</a>
+		</li>
+		<li>
+			<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+			<a href="#">Valinta 3</a>
 			<ul>
 				<li><a href="">Alavalinta 1</a></li>
 				<li><a href="">Alavalinta 2</a></li>
@@ -1896,9 +1932,9 @@
 				<li><a href="">Alavalinta 4</a></li>
 			</ul>
 		</li>
-		<li class="toplevel">
-			<a href="">Valinta 4</a>
-			<div class="arrow-link"></div>
+		<li>
+			<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+			<a href="#">Valinta 4</a>
 			<ul>
 				<li><a href="">Alavalinta 1</a></li>
 				<li><a href="">Alavalinta 2</a></li>
@@ -1912,11 +1948,11 @@
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;div class=&quot;navi-sample&quot;&gt;
+										&lt;div class=&quot;navi-responsive section&quot;&gt;
 	&lt;ul&gt;
-		&lt;li class=&quot;toplevel&quot;&gt;
-			&lt;a href=&quot;&quot;&gt;Valinta 1&lt;/a&gt;
-			&lt;div class=&quot;arrow-link&quot;&gt;&lt;/div&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot; class=&quot;sub-nav-trigger&quot;&gt;&lt;i class=&quot;icon-menu-arrow&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Alavalikko&lt;/span&gt;&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;Valinta 1&lt;/a&gt;
 			&lt;ul&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 1&lt;/a&gt;&lt;/li&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 2&lt;/a&gt;&lt;/li&gt;
@@ -1924,9 +1960,9 @@
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 4&lt;/a&gt;&lt;/li&gt;
 			&lt;/ul&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;toplevel&quot;&gt;
-			&lt;a href=&quot;&quot;&gt;Valinta 2&lt;/a&gt;
-			&lt;div class=&quot;arrow-link&quot;&gt;&lt;/div&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot; class=&quot;sub-nav-trigger&quot;&gt;&lt;i class=&quot;icon-menu-arrow&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Alavalikko&lt;/span&gt;&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;Valinta 2&lt;/a&gt;
 			&lt;ul&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 1&lt;/a&gt;&lt;/li&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 2&lt;/a&gt;&lt;/li&gt;
@@ -1934,9 +1970,12 @@
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 4&lt;/a&gt;&lt;/li&gt;
 			&lt;/ul&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;toplevel&quot;&gt;
-			&lt;a href=&quot;&quot;&gt;Valinta 3&lt;/a&gt;
-			&lt;div class=&quot;arrow-link&quot;&gt;&lt;/div&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;&quot;&gt;Valinta&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot; class=&quot;sub-nav-trigger&quot;&gt;&lt;i class=&quot;icon-menu-arrow&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Alavalikko&lt;/span&gt;&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;Valinta 3&lt;/a&gt;
 			&lt;ul&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 1&lt;/a&gt;&lt;/li&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 2&lt;/a&gt;&lt;/li&gt;
@@ -1944,9 +1983,9 @@
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 4&lt;/a&gt;&lt;/li&gt;
 			&lt;/ul&gt;
 		&lt;/li&gt;
-		&lt;li class=&quot;toplevel&quot;&gt;
-			&lt;a href=&quot;&quot;&gt;Valinta 4&lt;/a&gt;
-			&lt;div class=&quot;arrow-link&quot;&gt;&lt;/div&gt;
+		&lt;li&gt;
+			&lt;a href=&quot;#&quot; class=&quot;sub-nav-trigger&quot;&gt;&lt;i class=&quot;icon-menu-arrow&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Alavalikko&lt;/span&gt;&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;Valinta 4&lt;/a&gt;
 			&lt;ul&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 1&lt;/a&gt;&lt;/li&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 2&lt;/a&gt;&lt;/li&gt;
@@ -1964,12 +2003,11 @@
 					<div id="molecules-responsive-dropdown" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-05-navigation-06-responsive-dropdown/01-molecules-05-navigation-06-responsive-dropdown.html" class="patternLink" data-patternpartial="molecules-responsive-dropdown">Responsive Dropdown</a></h2>
 						<div class="sg-pattern-body">
-							<div class="mobile-trigger"> <a href="#"> <i class="icon-menu"></i><span class="is-vishidden">Valikko</span> </a></div>
-<div class="navi-responsive">
+							<div class="mobile-trigger"><a href="#"><i class="icon-menu"></i><span class="is-vishidden">Valikko</span></a></div><div class="navi-responsive section">
 	<ul>
 		<li>
-			<a href="#">Valinta 1</a>
 			<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+			<a href="#">Valinta 1</a>
 			<ul>
 				<li><a href="">Alavalinta 1</a></li>
 				<li><a href="">Alavalinta 2</a></li>
@@ -1978,8 +2016,8 @@
 			</ul>
 		</li>
 		<li>
-			<a href="#">Valinta 2</a>
 			<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+			<a href="#">Valinta 2</a>
 			<ul>
 				<li><a href="">Alavalinta 1</a></li>
 				<li><a href="">Alavalinta 2</a></li>
@@ -1991,8 +2029,8 @@
 			<a href="">Valinta</a>
 		</li>
 		<li>
-			<a href="#">Valinta 3</a>
 			<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+			<a href="#">Valinta 3</a>
 			<ul>
 				<li><a href="">Alavalinta 1</a></li>
 				<li><a href="">Alavalinta 2</a></li>
@@ -2001,8 +2039,8 @@
 			</ul>
 		</li>
 		<li>
-			<a href="#">Valinta 4</a>
 			<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+			<a href="#">Valinta 4</a>
 			<ul>
 				<li><a href="">Alavalinta 1</a></li>
 				<li><a href="">Alavalinta 2</a></li>
@@ -2013,15 +2051,19 @@
 	</ul>
 </div>
 							<div class="sg-code" style="display: none">
+									<div class="sg-code-contains">
+										This pattern contains: 
+											<a href="../../patterns/00-atoms-06-buttons-02-mobile-nav-trigger/00-atoms-06-buttons-02-mobile-nav-trigger.html"><code>atoms-mobile-nav-trigger</code></a>
+											<a href="../../patterns/01-molecules-05-navigation-05-dropdown-nav/01-molecules-05-navigation-05-dropdown-nav.html"><code>molecules-dropdown-nav</code></a>
+									</div>
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;div class=&quot;mobile-trigger&quot;&gt; &lt;a href=&quot;#&quot;&gt; &lt;i class=&quot;icon-menu&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Valikko&lt;/span&gt; &lt;/a&gt;&lt;/div&gt;
-&lt;div class=&quot;navi-responsive&quot;&gt;
+										&lt;div class=&quot;mobile-trigger&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-menu&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Valikko&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;navi-responsive section&quot;&gt;
 	&lt;ul&gt;
 		&lt;li&gt;
-			&lt;a href=&quot;#&quot;&gt;Valinta 1&lt;/a&gt;
 			&lt;a href=&quot;#&quot; class=&quot;sub-nav-trigger&quot;&gt;&lt;i class=&quot;icon-menu-arrow&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Alavalikko&lt;/span&gt;&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;Valinta 1&lt;/a&gt;
 			&lt;ul&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 1&lt;/a&gt;&lt;/li&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 2&lt;/a&gt;&lt;/li&gt;
@@ -2030,8 +2072,8 @@
 			&lt;/ul&gt;
 		&lt;/li&gt;
 		&lt;li&gt;
-			&lt;a href=&quot;#&quot;&gt;Valinta 2&lt;/a&gt;
 			&lt;a href=&quot;#&quot; class=&quot;sub-nav-trigger&quot;&gt;&lt;i class=&quot;icon-menu-arrow&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Alavalikko&lt;/span&gt;&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;Valinta 2&lt;/a&gt;
 			&lt;ul&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 1&lt;/a&gt;&lt;/li&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 2&lt;/a&gt;&lt;/li&gt;
@@ -2043,8 +2085,8 @@
 			&lt;a href=&quot;&quot;&gt;Valinta&lt;/a&gt;
 		&lt;/li&gt;
 		&lt;li&gt;
-			&lt;a href=&quot;#&quot;&gt;Valinta 3&lt;/a&gt;
 			&lt;a href=&quot;#&quot; class=&quot;sub-nav-trigger&quot;&gt;&lt;i class=&quot;icon-menu-arrow&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Alavalikko&lt;/span&gt;&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;Valinta 3&lt;/a&gt;
 			&lt;ul&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 1&lt;/a&gt;&lt;/li&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 2&lt;/a&gt;&lt;/li&gt;
@@ -2053,14 +2095,66 @@
 			&lt;/ul&gt;
 		&lt;/li&gt;
 		&lt;li&gt;
-			&lt;a href=&quot;#&quot;&gt;Valinta 4&lt;/a&gt;
 			&lt;a href=&quot;#&quot; class=&quot;sub-nav-trigger&quot;&gt;&lt;i class=&quot;icon-menu-arrow&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Alavalikko&lt;/span&gt;&lt;/a&gt;
+			&lt;a href=&quot;#&quot;&gt;Valinta 4&lt;/a&gt;
 			&lt;ul&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 1&lt;/a&gt;&lt;/li&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 2&lt;/a&gt;&lt;/li&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 3&lt;/a&gt;&lt;/li&gt;
 				&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 4&lt;/a&gt;&lt;/li&gt;
 			&lt;/ul&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-process-nav" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-05-navigation-07-process-nav/01-molecules-05-navigation-07-process-nav.html" class="patternLink" data-patternpartial="molecules-process-nav">Process Nav</a></h2>
+						<div class="sg-pattern-body">
+							<div class="process-nav dummmy-container">
+	<ul>
+		<li class="process-item">
+			<a href="" class="process-button">
+				<i class="icon-register"></i>Luo/Muokkaa</a>
+		</li>
+		<li class="process-item">
+			<a href="" class="process-button">
+				<i class="icon-mail"></i>Lähetä</a>
+		</li>
+		<li class="process-item">
+			<a href="" class="process-button">
+				<i class="icon-people"></i>Lausunnonantajat</a>
+		</li>
+		<li class="process-item">
+			<a href="" class="process-button">
+				<i class="icon-chart"></i>Yhteenveto</a>
+		</li>
+	</ul>
+</div>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;process-nav dummmy-container&quot;&gt;
+	&lt;ul&gt;
+		&lt;li class=&quot;process-item&quot;&gt;
+			&lt;a href=&quot;&quot; class=&quot;process-button&quot;&gt;
+				&lt;i class=&quot;icon-register&quot;&gt;&lt;/i&gt;Luo/Muokkaa&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;process-item&quot;&gt;
+			&lt;a href=&quot;&quot; class=&quot;process-button&quot;&gt;
+				&lt;i class=&quot;icon-mail&quot;&gt;&lt;/i&gt;L&auml;het&auml;&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;process-item&quot;&gt;
+			&lt;a href=&quot;&quot; class=&quot;process-button&quot;&gt;
+				&lt;i class=&quot;icon-people&quot;&gt;&lt;/i&gt;Lausunnonantajat&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;process-item&quot;&gt;
+			&lt;a href=&quot;&quot; class=&quot;process-button&quot;&gt;
+				&lt;i class=&quot;icon-chart&quot;&gt;&lt;/i&gt;Yhteenveto&lt;/a&gt;
 		&lt;/li&gt;
 	&lt;/ul&gt;
 &lt;/div&gt;
@@ -2216,128 +2310,124 @@
 				<!-- Paste ends. -->
 
 				<div class="site-actions">
-					<a id="hlLogin" class="pnlLogin">Kirjaudu sisään</a>
-					<a id="hlRegister" class="pnlRegistration">Rekisteröidy</a>
+					<a id="hlLogin" class="pnlLogin"> <span>Kirjaudu sisään</span><i class="icon-login"></i> </a>
+					<a id="hlRegister" class="pnlRegistration"><span>Rekisteröidy</span><i class="icon-register"></i> </a>
 				</div>
 
 				<!-- Heads up! pasted code ahead -->
 			<a id="lvOtherServices_HyperLink1_0" class="tab" href="http://www.kansalaisaloite.fi">Kansalaisaloite.fi</a>
-
-			        <a id="lvOtherServices_HyperLink1_1" class="tab" href="https://www.kuntalaisaloite.fi">Kuntalaisaloite.fi</a>
-
-			        <a id="lvOtherServices_HyperLink1_2" class="tab active" href="fi-FI">Otakantaa beta</a>
-
-			        <a id="lvOtherServices_HyperLink1_3" class="tab" href="fi-FI/Tietopankki">Tietopankki beta</a>
+			<a id="lvOtherServices_HyperLink1_1" class="tab" href="https://www.kuntalaisaloite.fi">Kuntalaisaloite.fi</a>
+			<a id="lvOtherServices_HyperLink1_2" class="tab active" href="fi-FI">Otakantaa</a>
+			<a id="lvOtherServices_HyperLink1_3" rel="nofollow" class="other-service" target="_blank" href="fi-FI/Tietopankki">Tietopankki</a>
 
 			</div>
-			<div id="pnlLoginRegistrationContainer" class="expanding">
+			<div id="pnlLoginRegistrationContainer" class="expanding" >
+				<div id="pnlLogin" class="section login" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnLogin')">
 
-			<div id="pnlLogin" class="section login visible" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnLogin')">
+				<h3>Kirjaudu sisään</h3>
+				<p>Syötä kirjautumistietosi tai kirjaudu Facebook-tunnuksillasi</p>
+				<div class="column-main main-login">
+					<span id="lblUsername" class="lbl-text lbl-input">Käyttäjätunnus</span>
+					<div class="input-with-icon fa fa-user">
+						<input name="ctl00$tbUsername" type="text" id="tbUsername" tabindex="1" class="ctl-text username" placeholder="Käyttäjätunnus" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');">
+						<span id="rfvLoginUsername" class="login-validation" style="color:Red;display:none;"></span>
+					</div>
+					<span id="lblPassword" class="lbl-text lbl-password">Salasana</span>
+					<div class="input-with-icon fa fa-lock">
+						<input name="ctl00$tbPassword" type="password" id="tbPassword" tabindex="2" class="ctl-text password" placeholder="Salasana" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');">
+						<span id="rfvLoginPassword" class="login-validation" style="color:Red;display:none;"></span>
+					</div>
+					<a id="hlPasswordRecover" class="forgotten show-if-js-enabled">Unohtuiko salasanasi?</a>
+					<span class="remember"><input id="cbRemember" type="checkbox" name="ctl00$cbRemember"><label for="cbRemember">Muista kirjautuminen</label></span>
+					<span id="upLogin">
+							<input type="submit" name="ctl00$btnLogin" value="OK" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnLogin&quot;, &quot;&quot;, true, &quot;Login&quot;, &quot;&quot;, false, false))" id="btnLogin" tabindex="3" title="Syötä käyttäjätunnus sekä salasana niille varattuihin kenttiin ja klikkaa OK-nappia,minkä jälkeen siirryt kirjautuneen käyttäjän etusivunäkymään. " class="ctl-btn">
+							<div id="loginProgess" class="update-progress" style="visibility:hidden;display:block;" role="status" aria-hidden="true">
 
-			    <h3>Kirjaudu sisään</h3>
-			    <p>Syötä kirjautumistietosi tai kirjaudu Facebook-tunnuksillasi</p>
-			    <div class="column-main main-login">
-			        <span id="lblUsername" class="lbl-text lbl-input">Käyttäjätunnus</span>
-			        <div class="input-with-icon fa fa-user">
-			            <input name="ctl00$tbUsername" type="text" id="tbUsername" tabindex="1" class="ctl-text username" placeholder="Käyttäjätunnus" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');">
-			            <span id="rfvLoginUsername" class="login-validation" style="color:Red;display:none;"></span>
-			        </div>
-			        <span id="lblPassword" class="lbl-text lbl-password">Salasana</span>
-			        <div class="input-with-icon fa fa-lock">
-			            <input name="ctl00$tbPassword" type="password" id="tbPassword" tabindex="2" class="ctl-text password" placeholder="Salasana" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');">
-			            <span id="rfvLoginPassword" class="login-validation" style="color:Red;display:none;"></span>
-			        </div>
-			        <a id="hlPasswordRecover" class="forgotten show-if-js-enabled">Unohtuiko salasanasi?</a>
-			        <span class="remember"><input id="cbRemember" type="checkbox" name="ctl00$cbRemember"><label for="cbRemember">Muista kirjautuminen</label></span>
-			        <span id="upLogin">
-			                <input type="submit" name="ctl00$btnLogin" value="OK" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnLogin&quot;, &quot;&quot;, true, &quot;Login&quot;, &quot;&quot;, false, false))" id="btnLogin" tabindex="3" title="Syötä käyttäjätunnus sekä salasana niille varattuihin kenttiin ja klikkaa OK-nappia,minkä jälkeen siirryt kirjautuneen käyttäjän etusivunäkymään. " class="ctl-btn">
-			                <div id="loginProgess" class="update-progress" style="visibility:hidden;display:block;" role="status" aria-hidden="true">
-
-			                        <img src="img/ajax-loader.gif" id="imgLoginLoader" alt="...">
+									<img src="img/ajax-loader.gif" id="imgLoginLoader" alt="...">
 
 			</div>
 
-			                <div id="ValidationSummary1" class="errorMessage" display="Dynamic" style="color:Red;display:none;">
+							<div id="ValidationSummary1" class="errorMessage" display="Dynamic" style="color:Red;display:none;">
 
 			</div>
-			            </span>
-			    </div>
-			    <div class="show-if-js-enabled column-alt alt-login">
-			        <span class="or">
-			            tai
-			        </span>
-			        <button onclick="FB.login(); return false;" class="ctl-btn facebook">Kirjaudu Facebook-tunnuksillasi</button>
-			    </div>
-			    <div class="footer">
-			        tai
-			        <a id="hlRegister2" class="pnlRegistration">Rekisteröidy käyttäjäksi</a>
-			    </div>
+						</span>
+				</div>
+				<div class="show-if-js-enabled column-alt alt-login">
+					<span class="or">
+						tai
+					</span>
+					<button onclick="FB.login(); return false;" class="ctl-btn facebook">Kirjaudu Facebook-tunnuksillasi</button>
+				</div>
+				<div class="footer">
+					tai
+					<a id="hlRegister2" class="pnlRegistration">Rekisteröidy käyttäjäksi</a>
+				</div>
 
 			</div>
 			<div id="pnlPasswordRecover" class="section forgotten">
 
-			    <h3>Ongelmia kirjautumisessa?</h3>
-			    <p>Saadaksesi uuden salasanan kirjoita sähköpostiosoitteesi, jolla olet rekisteröitynyt otakantaa.fi-palveluun. Palvelu lähettää sinulle sähköpostiisi linkin, jonka kautta saat uuden salasanan.</p>
-			    <div id="pnlPasswordRecoverEmail" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnPasswordRecoverSend')">
+				<h3>Ongelmia kirjautumisessa?</h3>
+				<p>Saadaksesi uuden salasanan kirjoita sähköpostiosoitteesi, jolla olet rekisteröitynyt otakantaa.fi-palveluun. Palvelu lähettää sinulle sähköpostiisi linkin, jonka kautta saat uuden salasanan.</p>
+				<div id="pnlPasswordRecoverEmail" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnPasswordRecoverSend')">
 
-			        <span id="lblPasswordRecoverEmail" class="lbl-text lbl-input">Sähköpostiosoite</span>
-			        <div class="input-with-icon fa fa-envelope">
-			            <input name="ctl00$tbPasswordRecoverEmail" maxlength="256" id="tbPasswordRecoverEmail" class="ctl-text" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');" placeholder="Sähköpostiosoite" type="email">
-			        </div>
-			        <span id="rfvPasswordRecoverEmail" class="password-recover-validation" style="color:Red;display:none;"></span>
-			        <span id="revPasswordRecoverEmail" class="password-recover-validation" style="color:Red;display:none;"></span>
-			        <span id="upPasswordRecover">
-			                <input type="submit" name="ctl00$btnPasswordRecoverSend" value="Jatka" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnPasswordRecoverSend&quot;, &quot;&quot;, true, &quot;PasswordRecoverSend&quot;, &quot;&quot;, false, false))" id="btnPasswordRecoverSend" title="Klikkaamalla Jatka-nappia palvelu lähettää sinulle sähköpostiisi linkin, jonka kautta saat uuden salasanan." class="ctl-btn">
-			                <div id="passwordRecoverProgress" class="update-progress" style="visibility:hidden;display:block;" role="status" aria-hidden="true">
+					<span id="lblPasswordRecoverEmail" class="lbl-text lbl-input">Sähköpostiosoite</span>
+					<div class="input-with-icon fa fa-envelope">
+						<input name="ctl00$tbPasswordRecoverEmail" maxlength="256" id="tbPasswordRecoverEmail" class="ctl-text" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');" placeholder="Sähköpostiosoite" type="email">
+					</div>
+					<span id="rfvPasswordRecoverEmail" class="password-recover-validation" style="color:Red;display:none;"></span>
+					<span id="revPasswordRecoverEmail" class="password-recover-validation" style="color:Red;display:none;"></span>
+					<span id="upPasswordRecover">
+							<input type="submit" name="ctl00$btnPasswordRecoverSend" value="Jatka" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnPasswordRecoverSend&quot;, &quot;&quot;, true, &quot;PasswordRecoverSend&quot;, &quot;&quot;, false, false))" id="btnPasswordRecoverSend" title="Klikkaamalla Jatka-nappia palvelu lähettää sinulle sähköpostiisi linkin, jonka kautta saat uuden salasanan." class="ctl-btn">
+							<div id="passwordRecoverProgress" class="update-progress" style="visibility:hidden;display:block;" role="status" aria-hidden="true">
 
-			                        <img src="img/ajax-loader.gif" id="imgPasswordRecoverLoader" alt="...">
-
-			</div>
-			                <span id="cvEmailFieldDoesntExistsValidator" class="password-recover-validation" style="color:Red;display:none;"></span>
-			                <span id="cvAccountRegisteredWithFacebook" class="password-recover-validation" style="color:Red;display:none;"></span>
-
-			                <div id="vsPasswordRecover" class="errorMessage" display="Dynamic" style="color:Red;display:none;">
+									<img src="img/ajax-loader.gif" id="imgPasswordRecoverLoader" alt="...">
 
 			</div>
-			            </span>
+							<span id="cvEmailFieldDoesntExistsValidator" class="password-recover-validation" style="color:Red;display:none;"></span>
+							<span id="cvAccountRegisteredWithFacebook" class="password-recover-validation" style="color:Red;display:none;"></span>
+
+							<div id="vsPasswordRecover" class="errorMessage" display="Dynamic" style="color:Red;display:none;">
+
+			</div>
+						</span>
 
 			</div>
 
 			</div>
 			<div id="pnlRegistration" class="section register" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnRegistration')">
 
-			    <h3>Rekisteröidy palvelun käyttäjäksi</h3>
-			    <p>Syötä sähköpostisi tai rekisteröidy Facebook-tunnuksillasi</p>
-			    <div class="column-main main-register">
-			        <span id="lblRegistrationEmail" class="lbl-text lbl-input">Sähköpostiosoite</span>
-			        <div class="input-with-icon fa fa-envelope">
-			            <input name="ctl00$tbRegistrationEmail" id="tbRegistrationEmail" class="ctl-text email" placeholder="Sähköpostiosoite" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');" type="email">
-			        </div>
-			        <span id="revRegistrationEmail" class="registration-validation" style="color:Red;display:none;"></span>
-			        <span id="rfvRegistrationEmail" class="registration-validation" style="color:Red;display:none;"></span>
-			        <span id="upEmailValidation">
-			                <input type="submit" name="ctl00$btnRegistration" value="Rekisteröidy" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnRegistration&quot;, &quot;&quot;, true, &quot;Registration&quot;, &quot;&quot;, false, false))" id="btnRegistration" title="Syötä sähköpostiosoitteesi sille varattuun kenttään ja klikkaa Rekisteröidy-painiketta. Palvelu lähettää sähköpostiisi vahvistusviestin, joka sisältää linkin rekisteröitymisen viimeistelemiseksi." class="ctl-btn">
-			                <div id="emailValidationProgress" class="update-progress" style="visibility:hidden;display:block;" role="status" aria-hidden="true">
+				<h3>Rekisteröidy palvelun käyttäjäksi</h3>
+				<p>Syötä sähköpostisi tai rekisteröidy Facebook-tunnuksillasi</p>
+				<div class="column-main main-register">
+					<span id="lblRegistrationEmail" class="lbl-text lbl-input">Sähköpostiosoite</span>
+					<div class="input-with-icon fa fa-envelope">
+						<input name="ctl00$tbRegistrationEmail" id="tbRegistrationEmail" class="ctl-text email" placeholder="Sähköpostiosoite" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');" type="email">
+					</div>
+					<span id="revRegistrationEmail" class="registration-validation" style="color:Red;display:none;"></span>
+					<span id="rfvRegistrationEmail" class="registration-validation" style="color:Red;display:none;"></span>
+					<span id="upEmailValidation">
+							<input type="submit" name="ctl00$btnRegistration" value="Rekisteröidy" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnRegistration&quot;, &quot;&quot;, true, &quot;Registration&quot;, &quot;&quot;, false, false))" id="btnRegistration" title="Syötä sähköpostiosoitteesi sille varattuun kenttään ja klikkaa Rekisteröidy-painiketta. Palvelu lähettää sähköpostiisi vahvistusviestin, joka sisältää linkin rekisteröitymisen viimeistelemiseksi." class="ctl-btn">
+							<div id="emailValidationProgress" class="update-progress" style="visibility:hidden;display:block;" role="status" aria-hidden="true">
 
-			                        <img src="img/ajax-loader.gif" id="imgRegistrationLoader" alt="...">
-
-			</div>
-			                <span id="cvRegistrationEmail" class="registration-validation" style="color:Red;display:none;"></span>
-			                <span id="lblRegistrationEmailError" class="registration-validation" style="color:Red;"></span>
-			                <div id="vsRegistration" class="errorMessage" display="Dynamic" style="color:Red;display:none;">
+									<img src="img/ajax-loader.gif" id="imgRegistrationLoader" alt="...">
 
 			</div>
-			            </span>
-			    </div>
-			    <div class="show-if-js-enabled column-alt alt-register">
-			        <span class="or">
-			            tai</span>
-			        <button onclick="__doPostBack('ctl00$btnFacebookRegistration','')" id="btnFacebookRegistration" class="ctl-btn facebook">Rekisteröidy Facebook-tunnuksillasi</button>
-			    </div>
-			    <div class="footer">
-			        Oletko jo rekisteröitynyt?
-			        <a id="hlLogin2" class="pnlLogin">Kirjaudu sisään</a>
-			    </div>
+							<span id="cvRegistrationEmail" class="registration-validation" style="color:Red;display:none;"></span>
+							<span id="lblRegistrationEmailError" class="registration-validation" style="color:Red;"></span>
+							<div id="vsRegistration" class="errorMessage" display="Dynamic" style="color:Red;display:none;">
+
+			</div>
+						</span>
+				</div>
+				<div class="show-if-js-enabled column-alt alt-register">
+					<span class="or">
+						tai</span>
+					<button onclick="__doPostBack('ctl00$btnFacebookRegistration','')" id="btnFacebookRegistration" class="ctl-btn facebook">Rekisteröidy Facebook-tunnuksillasi</button>
+				</div>
+				<div class="footer">
+					Oletko jo rekisteröitynyt?
+					<a id="hlLogin2" class="pnlLogin">Kirjaudu sisään</a>
+				</div>
 
 			</div>
 
@@ -2359,128 +2449,124 @@
 				&lt;!-- Paste ends. --&gt;
 
 				&lt;div class=&quot;site-actions&quot;&gt;
-					&lt;a id=&quot;hlLogin&quot; class=&quot;pnlLogin&quot;&gt;Kirjaudu sis&auml;&auml;n&lt;/a&gt;
-					&lt;a id=&quot;hlRegister&quot; class=&quot;pnlRegistration&quot;&gt;Rekister&ouml;idy&lt;/a&gt;
+					&lt;a id=&quot;hlLogin&quot; class=&quot;pnlLogin&quot;&gt; &lt;span&gt;Kirjaudu sis&auml;&auml;n&lt;/span&gt;&lt;i class=&quot;icon-login&quot;&gt;&lt;/i&gt; &lt;/a&gt;
+					&lt;a id=&quot;hlRegister&quot; class=&quot;pnlRegistration&quot;&gt;&lt;span&gt;Rekister&ouml;idy&lt;/span&gt;&lt;i class=&quot;icon-register&quot;&gt;&lt;/i&gt; &lt;/a&gt;
 				&lt;/div&gt;
 
 				&lt;!-- Heads up! pasted code ahead --&gt;
 			&lt;a id=&quot;lvOtherServices_HyperLink1_0&quot; class=&quot;tab&quot; href=&quot;http://www.kansalaisaloite.fi&quot;&gt;Kansalaisaloite.fi&lt;/a&gt;
-
-			        &lt;a id=&quot;lvOtherServices_HyperLink1_1&quot; class=&quot;tab&quot; href=&quot;https://www.kuntalaisaloite.fi&quot;&gt;Kuntalaisaloite.fi&lt;/a&gt;
-
-			        &lt;a id=&quot;lvOtherServices_HyperLink1_2&quot; class=&quot;tab active&quot; href=&quot;fi-FI&quot;&gt;Otakantaa beta&lt;/a&gt;
-
-			        &lt;a id=&quot;lvOtherServices_HyperLink1_3&quot; class=&quot;tab&quot; href=&quot;fi-FI/Tietopankki&quot;&gt;Tietopankki beta&lt;/a&gt;
+			&lt;a id=&quot;lvOtherServices_HyperLink1_1&quot; class=&quot;tab&quot; href=&quot;https://www.kuntalaisaloite.fi&quot;&gt;Kuntalaisaloite.fi&lt;/a&gt;
+			&lt;a id=&quot;lvOtherServices_HyperLink1_2&quot; class=&quot;tab active&quot; href=&quot;fi-FI&quot;&gt;Otakantaa&lt;/a&gt;
+			&lt;a id=&quot;lvOtherServices_HyperLink1_3&quot; rel=&quot;nofollow&quot; class=&quot;other-service&quot; target=&quot;_blank&quot; href=&quot;fi-FI/Tietopankki&quot;&gt;Tietopankki&lt;/a&gt;
 
 			&lt;/div&gt;
-			&lt;div id=&quot;pnlLoginRegistrationContainer&quot; class=&quot;expanding&quot;&gt;
+			&lt;div id=&quot;pnlLoginRegistrationContainer&quot; class=&quot;expanding&quot; &gt;
+				&lt;div id=&quot;pnlLogin&quot; class=&quot;section login&quot; onkeypress=&quot;javascript:return WebForm_FireDefaultButton(event, 'btnLogin')&quot;&gt;
 
-			&lt;div id=&quot;pnlLogin&quot; class=&quot;section login visible&quot; onkeypress=&quot;javascript:return WebForm_FireDefaultButton(event, 'btnLogin')&quot;&gt;
+				&lt;h3&gt;Kirjaudu sis&auml;&auml;n&lt;/h3&gt;
+				&lt;p&gt;Sy&ouml;t&auml; kirjautumistietosi tai kirjaudu Facebook-tunnuksillasi&lt;/p&gt;
+				&lt;div class=&quot;column-main main-login&quot;&gt;
+					&lt;span id=&quot;lblUsername&quot; class=&quot;lbl-text lbl-input&quot;&gt;K&auml;ytt&auml;j&auml;tunnus&lt;/span&gt;
+					&lt;div class=&quot;input-with-icon fa fa-user&quot;&gt;
+						&lt;input name=&quot;ctl00$tbUsername&quot; type=&quot;text&quot; id=&quot;tbUsername&quot; tabindex=&quot;1&quot; class=&quot;ctl-text username&quot; placeholder=&quot;K&auml;ytt&auml;j&auml;tunnus&quot; onfocus=&quot;setInputValue(this, 'focus');&quot; onblur=&quot;setInputValue(this, 'blur');&quot;&gt;
+						&lt;span id=&quot;rfvLoginUsername&quot; class=&quot;login-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;span id=&quot;lblPassword&quot; class=&quot;lbl-text lbl-password&quot;&gt;Salasana&lt;/span&gt;
+					&lt;div class=&quot;input-with-icon fa fa-lock&quot;&gt;
+						&lt;input name=&quot;ctl00$tbPassword&quot; type=&quot;password&quot; id=&quot;tbPassword&quot; tabindex=&quot;2&quot; class=&quot;ctl-text password&quot; placeholder=&quot;Salasana&quot; onfocus=&quot;setInputValue(this, 'focus');&quot; onblur=&quot;setInputValue(this, 'blur');&quot;&gt;
+						&lt;span id=&quot;rfvLoginPassword&quot; class=&quot;login-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+					&lt;/div&gt;
+					&lt;a id=&quot;hlPasswordRecover&quot; class=&quot;forgotten show-if-js-enabled&quot;&gt;Unohtuiko salasanasi?&lt;/a&gt;
+					&lt;span class=&quot;remember&quot;&gt;&lt;input id=&quot;cbRemember&quot; type=&quot;checkbox&quot; name=&quot;ctl00$cbRemember&quot;&gt;&lt;label for=&quot;cbRemember&quot;&gt;Muista kirjautuminen&lt;/label&gt;&lt;/span&gt;
+					&lt;span id=&quot;upLogin&quot;&gt;
+							&lt;input type=&quot;submit&quot; name=&quot;ctl00$btnLogin&quot; value=&quot;OK&quot; onclick=&quot;javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&amp;quot;ctl00$btnLogin&amp;quot;, &amp;quot;&amp;quot;, true, &amp;quot;Login&amp;quot;, &amp;quot;&amp;quot;, false, false))&quot; id=&quot;btnLogin&quot; tabindex=&quot;3&quot; title=&quot;Sy&ouml;t&auml; k&auml;ytt&auml;j&auml;tunnus sek&auml; salasana niille varattuihin kenttiin ja klikkaa OK-nappia,mink&auml; j&auml;lkeen siirryt kirjautuneen k&auml;ytt&auml;j&auml;n etusivun&auml;kym&auml;&auml;n. &quot; class=&quot;ctl-btn&quot;&gt;
+							&lt;div id=&quot;loginProgess&quot; class=&quot;update-progress&quot; style=&quot;visibility:hidden;display:block;&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;
 
-			    &lt;h3&gt;Kirjaudu sis&auml;&auml;n&lt;/h3&gt;
-			    &lt;p&gt;Sy&ouml;t&auml; kirjautumistietosi tai kirjaudu Facebook-tunnuksillasi&lt;/p&gt;
-			    &lt;div class=&quot;column-main main-login&quot;&gt;
-			        &lt;span id=&quot;lblUsername&quot; class=&quot;lbl-text lbl-input&quot;&gt;K&auml;ytt&auml;j&auml;tunnus&lt;/span&gt;
-			        &lt;div class=&quot;input-with-icon fa fa-user&quot;&gt;
-			            &lt;input name=&quot;ctl00$tbUsername&quot; type=&quot;text&quot; id=&quot;tbUsername&quot; tabindex=&quot;1&quot; class=&quot;ctl-text username&quot; placeholder=&quot;K&auml;ytt&auml;j&auml;tunnus&quot; onfocus=&quot;setInputValue(this, 'focus');&quot; onblur=&quot;setInputValue(this, 'blur');&quot;&gt;
-			            &lt;span id=&quot;rfvLoginUsername&quot; class=&quot;login-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-			        &lt;/div&gt;
-			        &lt;span id=&quot;lblPassword&quot; class=&quot;lbl-text lbl-password&quot;&gt;Salasana&lt;/span&gt;
-			        &lt;div class=&quot;input-with-icon fa fa-lock&quot;&gt;
-			            &lt;input name=&quot;ctl00$tbPassword&quot; type=&quot;password&quot; id=&quot;tbPassword&quot; tabindex=&quot;2&quot; class=&quot;ctl-text password&quot; placeholder=&quot;Salasana&quot; onfocus=&quot;setInputValue(this, 'focus');&quot; onblur=&quot;setInputValue(this, 'blur');&quot;&gt;
-			            &lt;span id=&quot;rfvLoginPassword&quot; class=&quot;login-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-			        &lt;/div&gt;
-			        &lt;a id=&quot;hlPasswordRecover&quot; class=&quot;forgotten show-if-js-enabled&quot;&gt;Unohtuiko salasanasi?&lt;/a&gt;
-			        &lt;span class=&quot;remember&quot;&gt;&lt;input id=&quot;cbRemember&quot; type=&quot;checkbox&quot; name=&quot;ctl00$cbRemember&quot;&gt;&lt;label for=&quot;cbRemember&quot;&gt;Muista kirjautuminen&lt;/label&gt;&lt;/span&gt;
-			        &lt;span id=&quot;upLogin&quot;&gt;
-			                &lt;input type=&quot;submit&quot; name=&quot;ctl00$btnLogin&quot; value=&quot;OK&quot; onclick=&quot;javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&amp;quot;ctl00$btnLogin&amp;quot;, &amp;quot;&amp;quot;, true, &amp;quot;Login&amp;quot;, &amp;quot;&amp;quot;, false, false))&quot; id=&quot;btnLogin&quot; tabindex=&quot;3&quot; title=&quot;Sy&ouml;t&auml; k&auml;ytt&auml;j&auml;tunnus sek&auml; salasana niille varattuihin kenttiin ja klikkaa OK-nappia,mink&auml; j&auml;lkeen siirryt kirjautuneen k&auml;ytt&auml;j&auml;n etusivun&auml;kym&auml;&auml;n. &quot; class=&quot;ctl-btn&quot;&gt;
-			                &lt;div id=&quot;loginProgess&quot; class=&quot;update-progress&quot; style=&quot;visibility:hidden;display:block;&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;
-
-			                        &lt;img src=&quot;img/ajax-loader.gif&quot; id=&quot;imgLoginLoader&quot; alt=&quot;...&quot;&gt;
+									&lt;img src=&quot;img/ajax-loader.gif&quot; id=&quot;imgLoginLoader&quot; alt=&quot;...&quot;&gt;
 
 			&lt;/div&gt;
 
-			                &lt;div id=&quot;ValidationSummary1&quot; class=&quot;errorMessage&quot; display=&quot;Dynamic&quot; style=&quot;color:Red;display:none;&quot;&gt;
+							&lt;div id=&quot;ValidationSummary1&quot; class=&quot;errorMessage&quot; display=&quot;Dynamic&quot; style=&quot;color:Red;display:none;&quot;&gt;
 
 			&lt;/div&gt;
-			            &lt;/span&gt;
-			    &lt;/div&gt;
-			    &lt;div class=&quot;show-if-js-enabled column-alt alt-login&quot;&gt;
-			        &lt;span class=&quot;or&quot;&gt;
-			            tai
-			        &lt;/span&gt;
-			        &lt;button onclick=&quot;FB.login(); return false;&quot; class=&quot;ctl-btn facebook&quot;&gt;Kirjaudu Facebook-tunnuksillasi&lt;/button&gt;
-			    &lt;/div&gt;
-			    &lt;div class=&quot;footer&quot;&gt;
-			        tai
-			        &lt;a id=&quot;hlRegister2&quot; class=&quot;pnlRegistration&quot;&gt;Rekister&ouml;idy k&auml;ytt&auml;j&auml;ksi&lt;/a&gt;
-			    &lt;/div&gt;
+						&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;show-if-js-enabled column-alt alt-login&quot;&gt;
+					&lt;span class=&quot;or&quot;&gt;
+						tai
+					&lt;/span&gt;
+					&lt;button onclick=&quot;FB.login(); return false;&quot; class=&quot;ctl-btn facebook&quot;&gt;Kirjaudu Facebook-tunnuksillasi&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;footer&quot;&gt;
+					tai
+					&lt;a id=&quot;hlRegister2&quot; class=&quot;pnlRegistration&quot;&gt;Rekister&ouml;idy k&auml;ytt&auml;j&auml;ksi&lt;/a&gt;
+				&lt;/div&gt;
 
 			&lt;/div&gt;
 			&lt;div id=&quot;pnlPasswordRecover&quot; class=&quot;section forgotten&quot;&gt;
 
-			    &lt;h3&gt;Ongelmia kirjautumisessa?&lt;/h3&gt;
-			    &lt;p&gt;Saadaksesi uuden salasanan kirjoita s&auml;hk&ouml;postiosoitteesi, jolla olet rekister&ouml;itynyt otakantaa.fi-palveluun. Palvelu l&auml;hett&auml;&auml; sinulle s&auml;hk&ouml;postiisi linkin, jonka kautta saat uuden salasanan.&lt;/p&gt;
-			    &lt;div id=&quot;pnlPasswordRecoverEmail&quot; onkeypress=&quot;javascript:return WebForm_FireDefaultButton(event, 'btnPasswordRecoverSend')&quot;&gt;
+				&lt;h3&gt;Ongelmia kirjautumisessa?&lt;/h3&gt;
+				&lt;p&gt;Saadaksesi uuden salasanan kirjoita s&auml;hk&ouml;postiosoitteesi, jolla olet rekister&ouml;itynyt otakantaa.fi-palveluun. Palvelu l&auml;hett&auml;&auml; sinulle s&auml;hk&ouml;postiisi linkin, jonka kautta saat uuden salasanan.&lt;/p&gt;
+				&lt;div id=&quot;pnlPasswordRecoverEmail&quot; onkeypress=&quot;javascript:return WebForm_FireDefaultButton(event, 'btnPasswordRecoverSend')&quot;&gt;
 
-			        &lt;span id=&quot;lblPasswordRecoverEmail&quot; class=&quot;lbl-text lbl-input&quot;&gt;S&auml;hk&ouml;postiosoite&lt;/span&gt;
-			        &lt;div class=&quot;input-with-icon fa fa-envelope&quot;&gt;
-			            &lt;input name=&quot;ctl00$tbPasswordRecoverEmail&quot; maxlength=&quot;256&quot; id=&quot;tbPasswordRecoverEmail&quot; class=&quot;ctl-text&quot; onfocus=&quot;setInputValue(this, 'focus');&quot; onblur=&quot;setInputValue(this, 'blur');&quot; placeholder=&quot;S&auml;hk&ouml;postiosoite&quot; type=&quot;email&quot;&gt;
-			        &lt;/div&gt;
-			        &lt;span id=&quot;rfvPasswordRecoverEmail&quot; class=&quot;password-recover-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-			        &lt;span id=&quot;revPasswordRecoverEmail&quot; class=&quot;password-recover-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-			        &lt;span id=&quot;upPasswordRecover&quot;&gt;
-			                &lt;input type=&quot;submit&quot; name=&quot;ctl00$btnPasswordRecoverSend&quot; value=&quot;Jatka&quot; onclick=&quot;javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&amp;quot;ctl00$btnPasswordRecoverSend&amp;quot;, &amp;quot;&amp;quot;, true, &amp;quot;PasswordRecoverSend&amp;quot;, &amp;quot;&amp;quot;, false, false))&quot; id=&quot;btnPasswordRecoverSend&quot; title=&quot;Klikkaamalla Jatka-nappia palvelu l&auml;hett&auml;&auml; sinulle s&auml;hk&ouml;postiisi linkin, jonka kautta saat uuden salasanan.&quot; class=&quot;ctl-btn&quot;&gt;
-			                &lt;div id=&quot;passwordRecoverProgress&quot; class=&quot;update-progress&quot; style=&quot;visibility:hidden;display:block;&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;
+					&lt;span id=&quot;lblPasswordRecoverEmail&quot; class=&quot;lbl-text lbl-input&quot;&gt;S&auml;hk&ouml;postiosoite&lt;/span&gt;
+					&lt;div class=&quot;input-with-icon fa fa-envelope&quot;&gt;
+						&lt;input name=&quot;ctl00$tbPasswordRecoverEmail&quot; maxlength=&quot;256&quot; id=&quot;tbPasswordRecoverEmail&quot; class=&quot;ctl-text&quot; onfocus=&quot;setInputValue(this, 'focus');&quot; onblur=&quot;setInputValue(this, 'blur');&quot; placeholder=&quot;S&auml;hk&ouml;postiosoite&quot; type=&quot;email&quot;&gt;
+					&lt;/div&gt;
+					&lt;span id=&quot;rfvPasswordRecoverEmail&quot; class=&quot;password-recover-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+					&lt;span id=&quot;revPasswordRecoverEmail&quot; class=&quot;password-recover-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+					&lt;span id=&quot;upPasswordRecover&quot;&gt;
+							&lt;input type=&quot;submit&quot; name=&quot;ctl00$btnPasswordRecoverSend&quot; value=&quot;Jatka&quot; onclick=&quot;javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&amp;quot;ctl00$btnPasswordRecoverSend&amp;quot;, &amp;quot;&amp;quot;, true, &amp;quot;PasswordRecoverSend&amp;quot;, &amp;quot;&amp;quot;, false, false))&quot; id=&quot;btnPasswordRecoverSend&quot; title=&quot;Klikkaamalla Jatka-nappia palvelu l&auml;hett&auml;&auml; sinulle s&auml;hk&ouml;postiisi linkin, jonka kautta saat uuden salasanan.&quot; class=&quot;ctl-btn&quot;&gt;
+							&lt;div id=&quot;passwordRecoverProgress&quot; class=&quot;update-progress&quot; style=&quot;visibility:hidden;display:block;&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;
 
-			                        &lt;img src=&quot;img/ajax-loader.gif&quot; id=&quot;imgPasswordRecoverLoader&quot; alt=&quot;...&quot;&gt;
-
-			&lt;/div&gt;
-			                &lt;span id=&quot;cvEmailFieldDoesntExistsValidator&quot; class=&quot;password-recover-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-			                &lt;span id=&quot;cvAccountRegisteredWithFacebook&quot; class=&quot;password-recover-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-
-			                &lt;div id=&quot;vsPasswordRecover&quot; class=&quot;errorMessage&quot; display=&quot;Dynamic&quot; style=&quot;color:Red;display:none;&quot;&gt;
+									&lt;img src=&quot;img/ajax-loader.gif&quot; id=&quot;imgPasswordRecoverLoader&quot; alt=&quot;...&quot;&gt;
 
 			&lt;/div&gt;
-			            &lt;/span&gt;
+							&lt;span id=&quot;cvEmailFieldDoesntExistsValidator&quot; class=&quot;password-recover-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+							&lt;span id=&quot;cvAccountRegisteredWithFacebook&quot; class=&quot;password-recover-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+
+							&lt;div id=&quot;vsPasswordRecover&quot; class=&quot;errorMessage&quot; display=&quot;Dynamic&quot; style=&quot;color:Red;display:none;&quot;&gt;
+
+			&lt;/div&gt;
+						&lt;/span&gt;
 
 			&lt;/div&gt;
 
 			&lt;/div&gt;
 			&lt;div id=&quot;pnlRegistration&quot; class=&quot;section register&quot; onkeypress=&quot;javascript:return WebForm_FireDefaultButton(event, 'btnRegistration')&quot;&gt;
 
-			    &lt;h3&gt;Rekister&ouml;idy palvelun k&auml;ytt&auml;j&auml;ksi&lt;/h3&gt;
-			    &lt;p&gt;Sy&ouml;t&auml; s&auml;hk&ouml;postisi tai rekister&ouml;idy Facebook-tunnuksillasi&lt;/p&gt;
-			    &lt;div class=&quot;column-main main-register&quot;&gt;
-			        &lt;span id=&quot;lblRegistrationEmail&quot; class=&quot;lbl-text lbl-input&quot;&gt;S&auml;hk&ouml;postiosoite&lt;/span&gt;
-			        &lt;div class=&quot;input-with-icon fa fa-envelope&quot;&gt;
-			            &lt;input name=&quot;ctl00$tbRegistrationEmail&quot; id=&quot;tbRegistrationEmail&quot; class=&quot;ctl-text email&quot; placeholder=&quot;S&auml;hk&ouml;postiosoite&quot; onfocus=&quot;setInputValue(this, 'focus');&quot; onblur=&quot;setInputValue(this, 'blur');&quot; type=&quot;email&quot;&gt;
-			        &lt;/div&gt;
-			        &lt;span id=&quot;revRegistrationEmail&quot; class=&quot;registration-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-			        &lt;span id=&quot;rfvRegistrationEmail&quot; class=&quot;registration-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-			        &lt;span id=&quot;upEmailValidation&quot;&gt;
-			                &lt;input type=&quot;submit&quot; name=&quot;ctl00$btnRegistration&quot; value=&quot;Rekister&ouml;idy&quot; onclick=&quot;javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&amp;quot;ctl00$btnRegistration&amp;quot;, &amp;quot;&amp;quot;, true, &amp;quot;Registration&amp;quot;, &amp;quot;&amp;quot;, false, false))&quot; id=&quot;btnRegistration&quot; title=&quot;Sy&ouml;t&auml; s&auml;hk&ouml;postiosoitteesi sille varattuun kentt&auml;&auml;n ja klikkaa Rekister&ouml;idy-painiketta. Palvelu l&auml;hett&auml;&auml; s&auml;hk&ouml;postiisi vahvistusviestin, joka sis&auml;lt&auml;&auml; linkin rekister&ouml;itymisen viimeistelemiseksi.&quot; class=&quot;ctl-btn&quot;&gt;
-			                &lt;div id=&quot;emailValidationProgress&quot; class=&quot;update-progress&quot; style=&quot;visibility:hidden;display:block;&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;
+				&lt;h3&gt;Rekister&ouml;idy palvelun k&auml;ytt&auml;j&auml;ksi&lt;/h3&gt;
+				&lt;p&gt;Sy&ouml;t&auml; s&auml;hk&ouml;postisi tai rekister&ouml;idy Facebook-tunnuksillasi&lt;/p&gt;
+				&lt;div class=&quot;column-main main-register&quot;&gt;
+					&lt;span id=&quot;lblRegistrationEmail&quot; class=&quot;lbl-text lbl-input&quot;&gt;S&auml;hk&ouml;postiosoite&lt;/span&gt;
+					&lt;div class=&quot;input-with-icon fa fa-envelope&quot;&gt;
+						&lt;input name=&quot;ctl00$tbRegistrationEmail&quot; id=&quot;tbRegistrationEmail&quot; class=&quot;ctl-text email&quot; placeholder=&quot;S&auml;hk&ouml;postiosoite&quot; onfocus=&quot;setInputValue(this, 'focus');&quot; onblur=&quot;setInputValue(this, 'blur');&quot; type=&quot;email&quot;&gt;
+					&lt;/div&gt;
+					&lt;span id=&quot;revRegistrationEmail&quot; class=&quot;registration-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+					&lt;span id=&quot;rfvRegistrationEmail&quot; class=&quot;registration-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+					&lt;span id=&quot;upEmailValidation&quot;&gt;
+							&lt;input type=&quot;submit&quot; name=&quot;ctl00$btnRegistration&quot; value=&quot;Rekister&ouml;idy&quot; onclick=&quot;javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&amp;quot;ctl00$btnRegistration&amp;quot;, &amp;quot;&amp;quot;, true, &amp;quot;Registration&amp;quot;, &amp;quot;&amp;quot;, false, false))&quot; id=&quot;btnRegistration&quot; title=&quot;Sy&ouml;t&auml; s&auml;hk&ouml;postiosoitteesi sille varattuun kentt&auml;&auml;n ja klikkaa Rekister&ouml;idy-painiketta. Palvelu l&auml;hett&auml;&auml; s&auml;hk&ouml;postiisi vahvistusviestin, joka sis&auml;lt&auml;&auml; linkin rekister&ouml;itymisen viimeistelemiseksi.&quot; class=&quot;ctl-btn&quot;&gt;
+							&lt;div id=&quot;emailValidationProgress&quot; class=&quot;update-progress&quot; style=&quot;visibility:hidden;display:block;&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;
 
-			                        &lt;img src=&quot;img/ajax-loader.gif&quot; id=&quot;imgRegistrationLoader&quot; alt=&quot;...&quot;&gt;
-
-			&lt;/div&gt;
-			                &lt;span id=&quot;cvRegistrationEmail&quot; class=&quot;registration-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-			                &lt;span id=&quot;lblRegistrationEmailError&quot; class=&quot;registration-validation&quot; style=&quot;color:Red;&quot;&gt;&lt;/span&gt;
-			                &lt;div id=&quot;vsRegistration&quot; class=&quot;errorMessage&quot; display=&quot;Dynamic&quot; style=&quot;color:Red;display:none;&quot;&gt;
+									&lt;img src=&quot;img/ajax-loader.gif&quot; id=&quot;imgRegistrationLoader&quot; alt=&quot;...&quot;&gt;
 
 			&lt;/div&gt;
-			            &lt;/span&gt;
-			    &lt;/div&gt;
-			    &lt;div class=&quot;show-if-js-enabled column-alt alt-register&quot;&gt;
-			        &lt;span class=&quot;or&quot;&gt;
-			            tai&lt;/span&gt;
-			        &lt;button onclick=&quot;__doPostBack('ctl00$btnFacebookRegistration','')&quot; id=&quot;btnFacebookRegistration&quot; class=&quot;ctl-btn facebook&quot;&gt;Rekister&ouml;idy Facebook-tunnuksillasi&lt;/button&gt;
-			    &lt;/div&gt;
-			    &lt;div class=&quot;footer&quot;&gt;
-			        Oletko jo rekister&ouml;itynyt?
-			        &lt;a id=&quot;hlLogin2&quot; class=&quot;pnlLogin&quot;&gt;Kirjaudu sis&auml;&auml;n&lt;/a&gt;
-			    &lt;/div&gt;
+							&lt;span id=&quot;cvRegistrationEmail&quot; class=&quot;registration-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+							&lt;span id=&quot;lblRegistrationEmailError&quot; class=&quot;registration-validation&quot; style=&quot;color:Red;&quot;&gt;&lt;/span&gt;
+							&lt;div id=&quot;vsRegistration&quot; class=&quot;errorMessage&quot; display=&quot;Dynamic&quot; style=&quot;color:Red;display:none;&quot;&gt;
+
+			&lt;/div&gt;
+						&lt;/span&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;show-if-js-enabled column-alt alt-register&quot;&gt;
+					&lt;span class=&quot;or&quot;&gt;
+						tai&lt;/span&gt;
+					&lt;button onclick=&quot;__doPostBack('ctl00$btnFacebookRegistration','')&quot; id=&quot;btnFacebookRegistration&quot; class=&quot;ctl-btn facebook&quot;&gt;Rekister&ouml;idy Facebook-tunnuksillasi&lt;/button&gt;
+				&lt;/div&gt;
+				&lt;div class=&quot;footer&quot;&gt;
+					Oletko jo rekister&ouml;itynyt?
+					&lt;a id=&quot;hlLogin2&quot; class=&quot;pnlLogin&quot;&gt;Kirjaudu sis&auml;&auml;n&lt;/a&gt;
+				&lt;/div&gt;
 
 			&lt;/div&gt;
 
@@ -2493,19 +2579,113 @@
 							</div>
 						</div>
 					</div>
-					<div id="molecules-alert" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-07-messaging-00-alert/01-molecules-07-messaging-00-alert.html" class="patternLink" data-patternpartial="molecules-alert">Alert</a></h2>
+					<div id="molecules-warning" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-07-messaging-00-warning/01-molecules-07-messaging-00-warning.html" class="patternLink" data-patternpartial="molecules-warning">Warning</a></h2>
 						<div class="sg-pattern-body">
-							<div class="alert alert-">
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+							
+<div class="msg-warning toast-container">
+	<p>Try toaster message by clicking the button below this message</p>
+
+	<div class="msg-toast is-hidden"> <i class="icon-lbulb"></i><p>I'm the hidden warning message</p></div>
+	<button id="warning" class="toast-trigger warning">Button</button>
 </div>
+
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;div class=&quot;alert alert-&quot;&gt;
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+										
+&lt;div class=&quot;msg-warning toast-container&quot;&gt;
+	&lt;p&gt;Try toaster message by clicking the button below this message&lt;/p&gt;
+
+	&lt;div class=&quot;msg-toast is-hidden&quot;&gt; &lt;i class=&quot;icon-lbulb&quot;&gt;&lt;/i&gt;&lt;p&gt;I'm the hidden warning message&lt;/p&gt;&lt;/div&gt;
+	&lt;button id=&quot;warning&quot; class=&quot;toast-trigger warning&quot;&gt;Button&lt;/button&gt;
 &lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-info" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-07-messaging-01-info/01-molecules-07-messaging-01-info.html" class="patternLink" data-patternpartial="molecules-info">Info</a></h2>
+						<div class="sg-pattern-body">
+							
+<div class="msg-info toast-container">
+	<p>Try toaster message by clicking the button below this message</p>
+
+	<div class="msg-toast is-hidden"> <i class="icon-info"></i><p>I'm the hidden info message</p></div>
+	<button id="info" class="toast-trigger info">Button</button>
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										
+&lt;div class=&quot;msg-info toast-container&quot;&gt;
+	&lt;p&gt;Try toaster message by clicking the button below this message&lt;/p&gt;
+
+	&lt;div class=&quot;msg-toast is-hidden&quot;&gt; &lt;i class=&quot;icon-info&quot;&gt;&lt;/i&gt;&lt;p&gt;I'm the hidden info message&lt;/p&gt;&lt;/div&gt;
+	&lt;button id=&quot;info&quot; class=&quot;toast-trigger info&quot;&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-success" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-07-messaging-02-success/01-molecules-07-messaging-02-success.html" class="patternLink" data-patternpartial="molecules-success">Success</a></h2>
+						<div class="sg-pattern-body">
+							
+<div class="msg-success toast-container">
+	<p>Try toaster message by clicking the button below this message</p>
+
+	<div class="msg-toast is-hidden"> <i class="icon-ok inverse"></i><p>I'm the hidden success message</p></div>
+	<button id="success" class="toast-trigger success">Button</button>
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										
+&lt;div class=&quot;msg-success toast-container&quot;&gt;
+	&lt;p&gt;Try toaster message by clicking the button below this message&lt;/p&gt;
+
+	&lt;div class=&quot;msg-toast is-hidden&quot;&gt; &lt;i class=&quot;icon-ok inverse&quot;&gt;&lt;/i&gt;&lt;p&gt;I'm the hidden success message&lt;/p&gt;&lt;/div&gt;
+	&lt;button id=&quot;success&quot; class=&quot;toast-trigger success&quot;&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+					<div id="molecules-error" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-07-messaging-03-error/01-molecules-07-messaging-03-error.html" class="patternLink" data-patternpartial="molecules-error">Error</a></h2>
+						<div class="sg-pattern-body">
+							
+<div class="msg-error toast-container">
+	<p>Try toaster message by clicking the button below this message</p>
+
+	<div class="msg-toast is-hidden"> <i class="icon-error inverse"></i><p>I'm the hidden error message</p></div>
+	<button id="error" class="toast-trigger error">Button</button>
+</div>
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										
+&lt;div class=&quot;msg-error toast-container&quot;&gt;
+	&lt;p&gt;Try toaster message by clicking the button below this message&lt;/p&gt;
+
+	&lt;div class=&quot;msg-toast is-hidden&quot;&gt; &lt;i class=&quot;icon-error inverse&quot;&gt;&lt;/i&gt;&lt;p&gt;I'm the hidden error message&lt;/p&gt;&lt;/div&gt;
+	&lt;button id=&quot;error&quot; class=&quot;toast-trigger error&quot;&gt;Button&lt;/button&gt;
+&lt;/div&gt;
+
 									</code>
 								</pre>
 							</div>
@@ -2517,31 +2697,8 @@
 							<!-- Begin .header -->
 <header class="header cf" role="banner">
 	<div class="element-group">
-		<div class="inner-block align-left">
-			<a href="#" id="hlLogo" class="header-logo"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /><strong>ota</strong>kantaa.fi</a>		</div>
-		<div class="inner-block align-right">
-			<form action="#" method="post" class="inline-form search-form">
-				<legend class="is-vishidden">Search</legend>
-				<div class="form-element">
-					<label for="search-field" class="is-vishidden">Search</label>
-					<input type="search" placeholder="Search" id="search-field" class="search-field" />
-					<button class="search-submit">
-						<i class="icon-search" aria-hidden="true"></i>
-						<span class="is-vishidden">Search</span>
-					</button>
-				</div>
-			</form>			<div class="lang-sel">
-				<ul class="lang-list">
-					<li class="selected"> <a href="">Suomeksi</a></li>
-					<li><a href="">På svenska</a></li>
-				</ul>
-			</div>		</div>
-	</div>
-	<div class="element-group">
 		<!-- Use mobile trigger (molecules-responsive-dropdown) here to keep it in place when menus are open. -->
-		<div class="mobile-trigger"> <a href="#"> <i class="icon-menu"></i><span class="is-vishidden">Valikko</span> </a></div>
-
-		<!-- Heads up! pasted code ahead -->
+		<div class="mobile-trigger"><a href="#"><i class="icon-menu"></i><span class="is-vishidden">Valikko</span></a></div>		<!-- Heads up! pasted code ahead -->
 
 		<div id="topnavibar" class="topnavi-bar inverse-contrast expandable">
 			<div class="container">
@@ -2551,128 +2708,124 @@
 						<!-- Paste ends. -->
 
 						<div class="site-actions">
-							<a id="hlLogin" class="pnlLogin">Kirjaudu sisään</a>
-							<a id="hlRegister" class="pnlRegistration">Rekisteröidy</a>
+							<a id="hlLogin" class="pnlLogin"> <span>Kirjaudu sisään</span><i class="icon-login"></i> </a>
+							<a id="hlRegister" class="pnlRegistration"><span>Rekisteröidy</span><i class="icon-register"></i> </a>
 						</div>
 
 						<!-- Heads up! pasted code ahead -->
 					<a id="lvOtherServices_HyperLink1_0" class="tab" href="http://www.kansalaisaloite.fi">Kansalaisaloite.fi</a>
-
-					        <a id="lvOtherServices_HyperLink1_1" class="tab" href="https://www.kuntalaisaloite.fi">Kuntalaisaloite.fi</a>
-
-					        <a id="lvOtherServices_HyperLink1_2" class="tab active" href="fi-FI">Otakantaa beta</a>
-
-					        <a id="lvOtherServices_HyperLink1_3" class="tab" href="fi-FI/Tietopankki">Tietopankki beta</a>
+					<a id="lvOtherServices_HyperLink1_1" class="tab" href="https://www.kuntalaisaloite.fi">Kuntalaisaloite.fi</a>
+					<a id="lvOtherServices_HyperLink1_2" class="tab active" href="fi-FI">Otakantaa</a>
+					<a id="lvOtherServices_HyperLink1_3" rel="nofollow" class="other-service" target="_blank" href="fi-FI/Tietopankki">Tietopankki</a>
 
 					</div>
-					<div id="pnlLoginRegistrationContainer" class="expanding">
+					<div id="pnlLoginRegistrationContainer" class="expanding" >
+						<div id="pnlLogin" class="section login" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnLogin')">
 
-					<div id="pnlLogin" class="section login visible" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnLogin')">
+						<h3>Kirjaudu sisään</h3>
+						<p>Syötä kirjautumistietosi tai kirjaudu Facebook-tunnuksillasi</p>
+						<div class="column-main main-login">
+							<span id="lblUsername" class="lbl-text lbl-input">Käyttäjätunnus</span>
+							<div class="input-with-icon fa fa-user">
+								<input name="ctl00$tbUsername" type="text" id="tbUsername" tabindex="1" class="ctl-text username" placeholder="Käyttäjätunnus" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');">
+								<span id="rfvLoginUsername" class="login-validation" style="color:Red;display:none;"></span>
+							</div>
+							<span id="lblPassword" class="lbl-text lbl-password">Salasana</span>
+							<div class="input-with-icon fa fa-lock">
+								<input name="ctl00$tbPassword" type="password" id="tbPassword" tabindex="2" class="ctl-text password" placeholder="Salasana" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');">
+								<span id="rfvLoginPassword" class="login-validation" style="color:Red;display:none;"></span>
+							</div>
+							<a id="hlPasswordRecover" class="forgotten show-if-js-enabled">Unohtuiko salasanasi?</a>
+							<span class="remember"><input id="cbRemember" type="checkbox" name="ctl00$cbRemember"><label for="cbRemember">Muista kirjautuminen</label></span>
+							<span id="upLogin">
+									<input type="submit" name="ctl00$btnLogin" value="OK" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnLogin&quot;, &quot;&quot;, true, &quot;Login&quot;, &quot;&quot;, false, false))" id="btnLogin" tabindex="3" title="Syötä käyttäjätunnus sekä salasana niille varattuihin kenttiin ja klikkaa OK-nappia,minkä jälkeen siirryt kirjautuneen käyttäjän etusivunäkymään. " class="ctl-btn">
+									<div id="loginProgess" class="update-progress" style="visibility:hidden;display:block;" role="status" aria-hidden="true">
 
-					    <h3>Kirjaudu sisään</h3>
-					    <p>Syötä kirjautumistietosi tai kirjaudu Facebook-tunnuksillasi</p>
-					    <div class="column-main main-login">
-					        <span id="lblUsername" class="lbl-text lbl-input">Käyttäjätunnus</span>
-					        <div class="input-with-icon fa fa-user">
-					            <input name="ctl00$tbUsername" type="text" id="tbUsername" tabindex="1" class="ctl-text username" placeholder="Käyttäjätunnus" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');">
-					            <span id="rfvLoginUsername" class="login-validation" style="color:Red;display:none;"></span>
-					        </div>
-					        <span id="lblPassword" class="lbl-text lbl-password">Salasana</span>
-					        <div class="input-with-icon fa fa-lock">
-					            <input name="ctl00$tbPassword" type="password" id="tbPassword" tabindex="2" class="ctl-text password" placeholder="Salasana" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');">
-					            <span id="rfvLoginPassword" class="login-validation" style="color:Red;display:none;"></span>
-					        </div>
-					        <a id="hlPasswordRecover" class="forgotten show-if-js-enabled">Unohtuiko salasanasi?</a>
-					        <span class="remember"><input id="cbRemember" type="checkbox" name="ctl00$cbRemember"><label for="cbRemember">Muista kirjautuminen</label></span>
-					        <span id="upLogin">
-					                <input type="submit" name="ctl00$btnLogin" value="OK" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnLogin&quot;, &quot;&quot;, true, &quot;Login&quot;, &quot;&quot;, false, false))" id="btnLogin" tabindex="3" title="Syötä käyttäjätunnus sekä salasana niille varattuihin kenttiin ja klikkaa OK-nappia,minkä jälkeen siirryt kirjautuneen käyttäjän etusivunäkymään. " class="ctl-btn">
-					                <div id="loginProgess" class="update-progress" style="visibility:hidden;display:block;" role="status" aria-hidden="true">
-
-					                        <img src="img/ajax-loader.gif" id="imgLoginLoader" alt="...">
+											<img src="img/ajax-loader.gif" id="imgLoginLoader" alt="...">
 
 					</div>
 
-					                <div id="ValidationSummary1" class="errorMessage" display="Dynamic" style="color:Red;display:none;">
+									<div id="ValidationSummary1" class="errorMessage" display="Dynamic" style="color:Red;display:none;">
 
 					</div>
-					            </span>
-					    </div>
-					    <div class="show-if-js-enabled column-alt alt-login">
-					        <span class="or">
-					            tai
-					        </span>
-					        <button onclick="FB.login(); return false;" class="ctl-btn facebook">Kirjaudu Facebook-tunnuksillasi</button>
-					    </div>
-					    <div class="footer">
-					        tai
-					        <a id="hlRegister2" class="pnlRegistration">Rekisteröidy käyttäjäksi</a>
-					    </div>
+								</span>
+						</div>
+						<div class="show-if-js-enabled column-alt alt-login">
+							<span class="or">
+								tai
+							</span>
+							<button onclick="FB.login(); return false;" class="ctl-btn facebook">Kirjaudu Facebook-tunnuksillasi</button>
+						</div>
+						<div class="footer">
+							tai
+							<a id="hlRegister2" class="pnlRegistration">Rekisteröidy käyttäjäksi</a>
+						</div>
 
 					</div>
 					<div id="pnlPasswordRecover" class="section forgotten">
 
-					    <h3>Ongelmia kirjautumisessa?</h3>
-					    <p>Saadaksesi uuden salasanan kirjoita sähköpostiosoitteesi, jolla olet rekisteröitynyt otakantaa.fi-palveluun. Palvelu lähettää sinulle sähköpostiisi linkin, jonka kautta saat uuden salasanan.</p>
-					    <div id="pnlPasswordRecoverEmail" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnPasswordRecoverSend')">
+						<h3>Ongelmia kirjautumisessa?</h3>
+						<p>Saadaksesi uuden salasanan kirjoita sähköpostiosoitteesi, jolla olet rekisteröitynyt otakantaa.fi-palveluun. Palvelu lähettää sinulle sähköpostiisi linkin, jonka kautta saat uuden salasanan.</p>
+						<div id="pnlPasswordRecoverEmail" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnPasswordRecoverSend')">
 
-					        <span id="lblPasswordRecoverEmail" class="lbl-text lbl-input">Sähköpostiosoite</span>
-					        <div class="input-with-icon fa fa-envelope">
-					            <input name="ctl00$tbPasswordRecoverEmail" maxlength="256" id="tbPasswordRecoverEmail" class="ctl-text" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');" placeholder="Sähköpostiosoite" type="email">
-					        </div>
-					        <span id="rfvPasswordRecoverEmail" class="password-recover-validation" style="color:Red;display:none;"></span>
-					        <span id="revPasswordRecoverEmail" class="password-recover-validation" style="color:Red;display:none;"></span>
-					        <span id="upPasswordRecover">
-					                <input type="submit" name="ctl00$btnPasswordRecoverSend" value="Jatka" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnPasswordRecoverSend&quot;, &quot;&quot;, true, &quot;PasswordRecoverSend&quot;, &quot;&quot;, false, false))" id="btnPasswordRecoverSend" title="Klikkaamalla Jatka-nappia palvelu lähettää sinulle sähköpostiisi linkin, jonka kautta saat uuden salasanan." class="ctl-btn">
-					                <div id="passwordRecoverProgress" class="update-progress" style="visibility:hidden;display:block;" role="status" aria-hidden="true">
+							<span id="lblPasswordRecoverEmail" class="lbl-text lbl-input">Sähköpostiosoite</span>
+							<div class="input-with-icon fa fa-envelope">
+								<input name="ctl00$tbPasswordRecoverEmail" maxlength="256" id="tbPasswordRecoverEmail" class="ctl-text" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');" placeholder="Sähköpostiosoite" type="email">
+							</div>
+							<span id="rfvPasswordRecoverEmail" class="password-recover-validation" style="color:Red;display:none;"></span>
+							<span id="revPasswordRecoverEmail" class="password-recover-validation" style="color:Red;display:none;"></span>
+							<span id="upPasswordRecover">
+									<input type="submit" name="ctl00$btnPasswordRecoverSend" value="Jatka" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnPasswordRecoverSend&quot;, &quot;&quot;, true, &quot;PasswordRecoverSend&quot;, &quot;&quot;, false, false))" id="btnPasswordRecoverSend" title="Klikkaamalla Jatka-nappia palvelu lähettää sinulle sähköpostiisi linkin, jonka kautta saat uuden salasanan." class="ctl-btn">
+									<div id="passwordRecoverProgress" class="update-progress" style="visibility:hidden;display:block;" role="status" aria-hidden="true">
 
-					                        <img src="img/ajax-loader.gif" id="imgPasswordRecoverLoader" alt="...">
-
-					</div>
-					                <span id="cvEmailFieldDoesntExistsValidator" class="password-recover-validation" style="color:Red;display:none;"></span>
-					                <span id="cvAccountRegisteredWithFacebook" class="password-recover-validation" style="color:Red;display:none;"></span>
-
-					                <div id="vsPasswordRecover" class="errorMessage" display="Dynamic" style="color:Red;display:none;">
+											<img src="img/ajax-loader.gif" id="imgPasswordRecoverLoader" alt="...">
 
 					</div>
-					            </span>
+									<span id="cvEmailFieldDoesntExistsValidator" class="password-recover-validation" style="color:Red;display:none;"></span>
+									<span id="cvAccountRegisteredWithFacebook" class="password-recover-validation" style="color:Red;display:none;"></span>
+
+									<div id="vsPasswordRecover" class="errorMessage" display="Dynamic" style="color:Red;display:none;">
+
+					</div>
+								</span>
 
 					</div>
 
 					</div>
 					<div id="pnlRegistration" class="section register" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnRegistration')">
 
-					    <h3>Rekisteröidy palvelun käyttäjäksi</h3>
-					    <p>Syötä sähköpostisi tai rekisteröidy Facebook-tunnuksillasi</p>
-					    <div class="column-main main-register">
-					        <span id="lblRegistrationEmail" class="lbl-text lbl-input">Sähköpostiosoite</span>
-					        <div class="input-with-icon fa fa-envelope">
-					            <input name="ctl00$tbRegistrationEmail" id="tbRegistrationEmail" class="ctl-text email" placeholder="Sähköpostiosoite" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');" type="email">
-					        </div>
-					        <span id="revRegistrationEmail" class="registration-validation" style="color:Red;display:none;"></span>
-					        <span id="rfvRegistrationEmail" class="registration-validation" style="color:Red;display:none;"></span>
-					        <span id="upEmailValidation">
-					                <input type="submit" name="ctl00$btnRegistration" value="Rekisteröidy" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnRegistration&quot;, &quot;&quot;, true, &quot;Registration&quot;, &quot;&quot;, false, false))" id="btnRegistration" title="Syötä sähköpostiosoitteesi sille varattuun kenttään ja klikkaa Rekisteröidy-painiketta. Palvelu lähettää sähköpostiisi vahvistusviestin, joka sisältää linkin rekisteröitymisen viimeistelemiseksi." class="ctl-btn">
-					                <div id="emailValidationProgress" class="update-progress" style="visibility:hidden;display:block;" role="status" aria-hidden="true">
+						<h3>Rekisteröidy palvelun käyttäjäksi</h3>
+						<p>Syötä sähköpostisi tai rekisteröidy Facebook-tunnuksillasi</p>
+						<div class="column-main main-register">
+							<span id="lblRegistrationEmail" class="lbl-text lbl-input">Sähköpostiosoite</span>
+							<div class="input-with-icon fa fa-envelope">
+								<input name="ctl00$tbRegistrationEmail" id="tbRegistrationEmail" class="ctl-text email" placeholder="Sähköpostiosoite" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');" type="email">
+							</div>
+							<span id="revRegistrationEmail" class="registration-validation" style="color:Red;display:none;"></span>
+							<span id="rfvRegistrationEmail" class="registration-validation" style="color:Red;display:none;"></span>
+							<span id="upEmailValidation">
+									<input type="submit" name="ctl00$btnRegistration" value="Rekisteröidy" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnRegistration&quot;, &quot;&quot;, true, &quot;Registration&quot;, &quot;&quot;, false, false))" id="btnRegistration" title="Syötä sähköpostiosoitteesi sille varattuun kenttään ja klikkaa Rekisteröidy-painiketta. Palvelu lähettää sähköpostiisi vahvistusviestin, joka sisältää linkin rekisteröitymisen viimeistelemiseksi." class="ctl-btn">
+									<div id="emailValidationProgress" class="update-progress" style="visibility:hidden;display:block;" role="status" aria-hidden="true">
 
-					                        <img src="img/ajax-loader.gif" id="imgRegistrationLoader" alt="...">
-
-					</div>
-					                <span id="cvRegistrationEmail" class="registration-validation" style="color:Red;display:none;"></span>
-					                <span id="lblRegistrationEmailError" class="registration-validation" style="color:Red;"></span>
-					                <div id="vsRegistration" class="errorMessage" display="Dynamic" style="color:Red;display:none;">
+											<img src="img/ajax-loader.gif" id="imgRegistrationLoader" alt="...">
 
 					</div>
-					            </span>
-					    </div>
-					    <div class="show-if-js-enabled column-alt alt-register">
-					        <span class="or">
-					            tai</span>
-					        <button onclick="__doPostBack('ctl00$btnFacebookRegistration','')" id="btnFacebookRegistration" class="ctl-btn facebook">Rekisteröidy Facebook-tunnuksillasi</button>
-					    </div>
-					    <div class="footer">
-					        Oletko jo rekisteröitynyt?
-					        <a id="hlLogin2" class="pnlLogin">Kirjaudu sisään</a>
-					    </div>
+									<span id="cvRegistrationEmail" class="registration-validation" style="color:Red;display:none;"></span>
+									<span id="lblRegistrationEmailError" class="registration-validation" style="color:Red;"></span>
+									<div id="vsRegistration" class="errorMessage" display="Dynamic" style="color:Red;display:none;">
+
+					</div>
+								</span>
+						</div>
+						<div class="show-if-js-enabled column-alt alt-register">
+							<span class="or">
+								tai</span>
+							<button onclick="__doPostBack('ctl00$btnFacebookRegistration','')" id="btnFacebookRegistration" class="ctl-btn facebook">Rekisteröidy Facebook-tunnuksillasi</button>
+						</div>
+						<div class="footer">
+							Oletko jo rekisteröitynyt?
+							<a id="hlLogin2" class="pnlLogin">Kirjaudu sisään</a>
+						</div>
 
 					</div>
 
@@ -2680,65 +2833,88 @@
 				</div>
 			</div>
 		</div>	</div>
-	<div class="element-group">
-		<!-- molecules-responsive-dropdown. Not called as mustache because mobile-trigger needs to be within the previous element-group  -->
-		<div class="navi-responsive">
-			<ul>
-				<li>
-					<a href="#">Valinta 1</a>
-					<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
-					<ul>
-						<li><a href="">Alavalinta 1</a></li>
-						<li><a href="">Alavalinta 2</a></li>
-						<li><a href="">Alavalinta 3</a></li>
-						<li><a href="">Alavalinta 4</a></li>
+	<section class="responsive-modifier-block">
+		<form action="#" method="post" class="inline-form search-form">
+			<legend class="is-vishidden">Search</legend>
+			<div class="form-element">
+				<label for="search-field" class="is-vishidden">Search</label>
+				<input type="search" placeholder="Search" id="search-field" class="search-field" />
+				<button class="search-submit js-expand-search">
+					<i class="icon-search" aria-hidden="true"></i>
+					<span class="is-vishidden">Search</span>
+				</button>
+			</div>
+		</form>		<div class="element-group nav-container">
+			<div class="navi-responsive section">
+				<ul>
+					<li>
+						<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+						<a href="#">Valinta 1</a>
+						<ul>
+							<li><a href="">Alavalinta 1</a></li>
+							<li><a href="">Alavalinta 2</a></li>
+							<li><a href="">Alavalinta 3</a></li>
+							<li><a href="">Alavalinta 4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+						<a href="#">Valinta 2</a>
+						<ul>
+							<li><a href="">Alavalinta 1</a></li>
+							<li><a href="">Alavalinta 2</a></li>
+							<li><a href="">Alavalinta 3</a></li>
+							<li><a href="">Alavalinta 4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">Valinta</a>
+					</li>
+					<li>
+						<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+						<a href="#">Valinta 3</a>
+						<ul>
+							<li><a href="">Alavalinta 1</a></li>
+							<li><a href="">Alavalinta 2</a></li>
+							<li><a href="">Alavalinta 3</a></li>
+							<li><a href="">Alavalinta 4</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
+						<a href="#">Valinta 4</a>
+						<ul>
+							<li><a href="">Alavalinta 1</a></li>
+							<li><a href="">Alavalinta 2</a></li>
+							<li><a href="">Alavalinta 3</a></li>
+							<li><a href="">Alavalinta 4</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>		</div>
+		<div class="element-group">
+			<div class="inner-block align-left">
+				<a href="#" id="hlLogo" class="header-logo"><img src="../../images/logo.png" class="logo" alt="Logo Alt Text" /><strong>ota</strong>kantaa.fi</a>			</div>
+			<div class="inner-block align-right">
+				<div class="lang-sel">
+					<ul class="lang-list">
+						<li class="selected"> <a href="">Suomeksi</a></li>
+						<li><a href="">På svenska</a></li>
 					</ul>
-				</li>
-				<li>
-					<a href="#">Valinta 2</a>
-					<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
-					<ul>
-						<li><a href="">Alavalinta 1</a></li>
-						<li><a href="">Alavalinta 2</a></li>
-						<li><a href="">Alavalinta 3</a></li>
-						<li><a href="">Alavalinta 4</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="">Valinta</a>
-				</li>
-				<li>
-					<a href="#">Valinta 3</a>
-					<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
-					<ul>
-						<li><a href="">Alavalinta 1</a></li>
-						<li><a href="">Alavalinta 2</a></li>
-						<li><a href="">Alavalinta 3</a></li>
-						<li><a href="">Alavalinta 4</a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">Valinta 4</a>
-					<a href="#" class="sub-nav-trigger"><i class="icon-menu-arrow"></i><span class="is-vishidden">Alavalikko</span></a>
-					<ul>
-						<li><a href="">Alavalinta 1</a></li>
-						<li><a href="">Alavalinta 2</a></li>
-						<li><a href="">Alavalinta 3</a></li>
-						<li><a href="">Alavalinta 4</a></li>
-					</ul>
-				</li>
-			</ul>
+				</div>			</div>
 		</div>
-	</div>
+	</section>
 </header>
 <!-- End .header -->
 							<div class="sg-code" style="display: none">
 									<div class="sg-code-contains">
 										This pattern contains: 
-											<a href="../../patterns/00-atoms-04-images-00-logo/00-atoms-04-images-00-logo.html"><code>atoms-logo</code></a>
-											<a href="../../patterns/01-molecules-04-forms-00-search/01-molecules-04-forms-00-search.html"><code>molecules-search</code></a>
-											<a href="../../patterns/01-molecules-06-components-03-lang-sel/01-molecules-06-components-03-lang-sel.html"><code>molecules-lang-sel</code></a>
+											<a href="../../patterns/00-atoms-06-buttons-02-mobile-nav-trigger/00-atoms-06-buttons-02-mobile-nav-trigger.html"><code>atoms-mobile-nav-trigger</code></a>
 											<a href="../../patterns/01-molecules-06-components-04-login/01-molecules-06-components-04-login.html"><code>molecules-login</code></a>
+											<a href="../../patterns/01-molecules-04-forms-00-search/01-molecules-04-forms-00-search.html"><code>molecules-search</code></a>
+											<a href="../../patterns/01-molecules-05-navigation-05-dropdown-nav/01-molecules-05-navigation-05-dropdown-nav.html"><code>molecules-dropdown-nav</code></a>
+											<a href="../../patterns/00-atoms-04-images-00-logo/00-atoms-04-images-00-logo.html"><code>atoms-logo</code></a>
+											<a href="../../patterns/01-molecules-06-components-03-lang-sel/01-molecules-06-components-03-lang-sel.html"><code>molecules-lang-sel</code></a>
 									</div>
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
@@ -2746,31 +2922,8 @@
 										&lt;!-- Begin .header --&gt;
 &lt;header class=&quot;header cf&quot; role=&quot;banner&quot;&gt;
 	&lt;div class=&quot;element-group&quot;&gt;
-		&lt;div class=&quot;inner-block align-left&quot;&gt;
-			&lt;a href=&quot;#&quot; id=&quot;hlLogo&quot; class=&quot;header-logo&quot;&gt;&lt;img src=&quot;../../images/logo.png&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;&lt;strong&gt;ota&lt;/strong&gt;kantaa.fi&lt;/a&gt;		&lt;/div&gt;
-		&lt;div class=&quot;inner-block align-right&quot;&gt;
-			&lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;
-				&lt;legend class=&quot;is-vishidden&quot;&gt;Search&lt;/legend&gt;
-				&lt;div class=&quot;form-element&quot;&gt;
-					&lt;label for=&quot;search-field&quot; class=&quot;is-vishidden&quot;&gt;Search&lt;/label&gt;
-					&lt;input type=&quot;search&quot; placeholder=&quot;Search&quot; id=&quot;search-field&quot; class=&quot;search-field&quot; /&gt;
-					&lt;button class=&quot;search-submit&quot;&gt;
-						&lt;i class=&quot;icon-search&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-						&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;/span&gt;
-					&lt;/button&gt;
-				&lt;/div&gt;
-			&lt;/form&gt;			&lt;div class=&quot;lang-sel&quot;&gt;
-				&lt;ul class=&quot;lang-list&quot;&gt;
-					&lt;li class=&quot;selected&quot;&gt; &lt;a href=&quot;&quot;&gt;Suomeksi&lt;/a&gt;&lt;/li&gt;
-					&lt;li&gt;&lt;a href=&quot;&quot;&gt;P&aring; svenska&lt;/a&gt;&lt;/li&gt;
-				&lt;/ul&gt;
-			&lt;/div&gt;		&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;element-group&quot;&gt;
 		&lt;!-- Use mobile trigger (molecules-responsive-dropdown) here to keep it in place when menus are open. --&gt;
-		&lt;div class=&quot;mobile-trigger&quot;&gt; &lt;a href=&quot;#&quot;&gt; &lt;i class=&quot;icon-menu&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Valikko&lt;/span&gt; &lt;/a&gt;&lt;/div&gt;
-
-		&lt;!-- Heads up! pasted code ahead --&gt;
+		&lt;div class=&quot;mobile-trigger&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;icon-menu&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Valikko&lt;/span&gt;&lt;/a&gt;&lt;/div&gt;		&lt;!-- Heads up! pasted code ahead --&gt;
 
 		&lt;div id=&quot;topnavibar&quot; class=&quot;topnavi-bar inverse-contrast expandable&quot;&gt;
 			&lt;div class=&quot;container&quot;&gt;
@@ -2780,128 +2933,124 @@
 						&lt;!-- Paste ends. --&gt;
 
 						&lt;div class=&quot;site-actions&quot;&gt;
-							&lt;a id=&quot;hlLogin&quot; class=&quot;pnlLogin&quot;&gt;Kirjaudu sis&auml;&auml;n&lt;/a&gt;
-							&lt;a id=&quot;hlRegister&quot; class=&quot;pnlRegistration&quot;&gt;Rekister&ouml;idy&lt;/a&gt;
+							&lt;a id=&quot;hlLogin&quot; class=&quot;pnlLogin&quot;&gt; &lt;span&gt;Kirjaudu sis&auml;&auml;n&lt;/span&gt;&lt;i class=&quot;icon-login&quot;&gt;&lt;/i&gt; &lt;/a&gt;
+							&lt;a id=&quot;hlRegister&quot; class=&quot;pnlRegistration&quot;&gt;&lt;span&gt;Rekister&ouml;idy&lt;/span&gt;&lt;i class=&quot;icon-register&quot;&gt;&lt;/i&gt; &lt;/a&gt;
 						&lt;/div&gt;
 
 						&lt;!-- Heads up! pasted code ahead --&gt;
 					&lt;a id=&quot;lvOtherServices_HyperLink1_0&quot; class=&quot;tab&quot; href=&quot;http://www.kansalaisaloite.fi&quot;&gt;Kansalaisaloite.fi&lt;/a&gt;
-
-					        &lt;a id=&quot;lvOtherServices_HyperLink1_1&quot; class=&quot;tab&quot; href=&quot;https://www.kuntalaisaloite.fi&quot;&gt;Kuntalaisaloite.fi&lt;/a&gt;
-
-					        &lt;a id=&quot;lvOtherServices_HyperLink1_2&quot; class=&quot;tab active&quot; href=&quot;fi-FI&quot;&gt;Otakantaa beta&lt;/a&gt;
-
-					        &lt;a id=&quot;lvOtherServices_HyperLink1_3&quot; class=&quot;tab&quot; href=&quot;fi-FI/Tietopankki&quot;&gt;Tietopankki beta&lt;/a&gt;
+					&lt;a id=&quot;lvOtherServices_HyperLink1_1&quot; class=&quot;tab&quot; href=&quot;https://www.kuntalaisaloite.fi&quot;&gt;Kuntalaisaloite.fi&lt;/a&gt;
+					&lt;a id=&quot;lvOtherServices_HyperLink1_2&quot; class=&quot;tab active&quot; href=&quot;fi-FI&quot;&gt;Otakantaa&lt;/a&gt;
+					&lt;a id=&quot;lvOtherServices_HyperLink1_3&quot; rel=&quot;nofollow&quot; class=&quot;other-service&quot; target=&quot;_blank&quot; href=&quot;fi-FI/Tietopankki&quot;&gt;Tietopankki&lt;/a&gt;
 
 					&lt;/div&gt;
-					&lt;div id=&quot;pnlLoginRegistrationContainer&quot; class=&quot;expanding&quot;&gt;
+					&lt;div id=&quot;pnlLoginRegistrationContainer&quot; class=&quot;expanding&quot; &gt;
+						&lt;div id=&quot;pnlLogin&quot; class=&quot;section login&quot; onkeypress=&quot;javascript:return WebForm_FireDefaultButton(event, 'btnLogin')&quot;&gt;
 
-					&lt;div id=&quot;pnlLogin&quot; class=&quot;section login visible&quot; onkeypress=&quot;javascript:return WebForm_FireDefaultButton(event, 'btnLogin')&quot;&gt;
+						&lt;h3&gt;Kirjaudu sis&auml;&auml;n&lt;/h3&gt;
+						&lt;p&gt;Sy&ouml;t&auml; kirjautumistietosi tai kirjaudu Facebook-tunnuksillasi&lt;/p&gt;
+						&lt;div class=&quot;column-main main-login&quot;&gt;
+							&lt;span id=&quot;lblUsername&quot; class=&quot;lbl-text lbl-input&quot;&gt;K&auml;ytt&auml;j&auml;tunnus&lt;/span&gt;
+							&lt;div class=&quot;input-with-icon fa fa-user&quot;&gt;
+								&lt;input name=&quot;ctl00$tbUsername&quot; type=&quot;text&quot; id=&quot;tbUsername&quot; tabindex=&quot;1&quot; class=&quot;ctl-text username&quot; placeholder=&quot;K&auml;ytt&auml;j&auml;tunnus&quot; onfocus=&quot;setInputValue(this, 'focus');&quot; onblur=&quot;setInputValue(this, 'blur');&quot;&gt;
+								&lt;span id=&quot;rfvLoginUsername&quot; class=&quot;login-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+							&lt;/div&gt;
+							&lt;span id=&quot;lblPassword&quot; class=&quot;lbl-text lbl-password&quot;&gt;Salasana&lt;/span&gt;
+							&lt;div class=&quot;input-with-icon fa fa-lock&quot;&gt;
+								&lt;input name=&quot;ctl00$tbPassword&quot; type=&quot;password&quot; id=&quot;tbPassword&quot; tabindex=&quot;2&quot; class=&quot;ctl-text password&quot; placeholder=&quot;Salasana&quot; onfocus=&quot;setInputValue(this, 'focus');&quot; onblur=&quot;setInputValue(this, 'blur');&quot;&gt;
+								&lt;span id=&quot;rfvLoginPassword&quot; class=&quot;login-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+							&lt;/div&gt;
+							&lt;a id=&quot;hlPasswordRecover&quot; class=&quot;forgotten show-if-js-enabled&quot;&gt;Unohtuiko salasanasi?&lt;/a&gt;
+							&lt;span class=&quot;remember&quot;&gt;&lt;input id=&quot;cbRemember&quot; type=&quot;checkbox&quot; name=&quot;ctl00$cbRemember&quot;&gt;&lt;label for=&quot;cbRemember&quot;&gt;Muista kirjautuminen&lt;/label&gt;&lt;/span&gt;
+							&lt;span id=&quot;upLogin&quot;&gt;
+									&lt;input type=&quot;submit&quot; name=&quot;ctl00$btnLogin&quot; value=&quot;OK&quot; onclick=&quot;javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&amp;quot;ctl00$btnLogin&amp;quot;, &amp;quot;&amp;quot;, true, &amp;quot;Login&amp;quot;, &amp;quot;&amp;quot;, false, false))&quot; id=&quot;btnLogin&quot; tabindex=&quot;3&quot; title=&quot;Sy&ouml;t&auml; k&auml;ytt&auml;j&auml;tunnus sek&auml; salasana niille varattuihin kenttiin ja klikkaa OK-nappia,mink&auml; j&auml;lkeen siirryt kirjautuneen k&auml;ytt&auml;j&auml;n etusivun&auml;kym&auml;&auml;n. &quot; class=&quot;ctl-btn&quot;&gt;
+									&lt;div id=&quot;loginProgess&quot; class=&quot;update-progress&quot; style=&quot;visibility:hidden;display:block;&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;
 
-					    &lt;h3&gt;Kirjaudu sis&auml;&auml;n&lt;/h3&gt;
-					    &lt;p&gt;Sy&ouml;t&auml; kirjautumistietosi tai kirjaudu Facebook-tunnuksillasi&lt;/p&gt;
-					    &lt;div class=&quot;column-main main-login&quot;&gt;
-					        &lt;span id=&quot;lblUsername&quot; class=&quot;lbl-text lbl-input&quot;&gt;K&auml;ytt&auml;j&auml;tunnus&lt;/span&gt;
-					        &lt;div class=&quot;input-with-icon fa fa-user&quot;&gt;
-					            &lt;input name=&quot;ctl00$tbUsername&quot; type=&quot;text&quot; id=&quot;tbUsername&quot; tabindex=&quot;1&quot; class=&quot;ctl-text username&quot; placeholder=&quot;K&auml;ytt&auml;j&auml;tunnus&quot; onfocus=&quot;setInputValue(this, 'focus');&quot; onblur=&quot;setInputValue(this, 'blur');&quot;&gt;
-					            &lt;span id=&quot;rfvLoginUsername&quot; class=&quot;login-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-					        &lt;/div&gt;
-					        &lt;span id=&quot;lblPassword&quot; class=&quot;lbl-text lbl-password&quot;&gt;Salasana&lt;/span&gt;
-					        &lt;div class=&quot;input-with-icon fa fa-lock&quot;&gt;
-					            &lt;input name=&quot;ctl00$tbPassword&quot; type=&quot;password&quot; id=&quot;tbPassword&quot; tabindex=&quot;2&quot; class=&quot;ctl-text password&quot; placeholder=&quot;Salasana&quot; onfocus=&quot;setInputValue(this, 'focus');&quot; onblur=&quot;setInputValue(this, 'blur');&quot;&gt;
-					            &lt;span id=&quot;rfvLoginPassword&quot; class=&quot;login-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-					        &lt;/div&gt;
-					        &lt;a id=&quot;hlPasswordRecover&quot; class=&quot;forgotten show-if-js-enabled&quot;&gt;Unohtuiko salasanasi?&lt;/a&gt;
-					        &lt;span class=&quot;remember&quot;&gt;&lt;input id=&quot;cbRemember&quot; type=&quot;checkbox&quot; name=&quot;ctl00$cbRemember&quot;&gt;&lt;label for=&quot;cbRemember&quot;&gt;Muista kirjautuminen&lt;/label&gt;&lt;/span&gt;
-					        &lt;span id=&quot;upLogin&quot;&gt;
-					                &lt;input type=&quot;submit&quot; name=&quot;ctl00$btnLogin&quot; value=&quot;OK&quot; onclick=&quot;javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&amp;quot;ctl00$btnLogin&amp;quot;, &amp;quot;&amp;quot;, true, &amp;quot;Login&amp;quot;, &amp;quot;&amp;quot;, false, false))&quot; id=&quot;btnLogin&quot; tabindex=&quot;3&quot; title=&quot;Sy&ouml;t&auml; k&auml;ytt&auml;j&auml;tunnus sek&auml; salasana niille varattuihin kenttiin ja klikkaa OK-nappia,mink&auml; j&auml;lkeen siirryt kirjautuneen k&auml;ytt&auml;j&auml;n etusivun&auml;kym&auml;&auml;n. &quot; class=&quot;ctl-btn&quot;&gt;
-					                &lt;div id=&quot;loginProgess&quot; class=&quot;update-progress&quot; style=&quot;visibility:hidden;display:block;&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;
-
-					                        &lt;img src=&quot;img/ajax-loader.gif&quot; id=&quot;imgLoginLoader&quot; alt=&quot;...&quot;&gt;
+											&lt;img src=&quot;img/ajax-loader.gif&quot; id=&quot;imgLoginLoader&quot; alt=&quot;...&quot;&gt;
 
 					&lt;/div&gt;
 
-					                &lt;div id=&quot;ValidationSummary1&quot; class=&quot;errorMessage&quot; display=&quot;Dynamic&quot; style=&quot;color:Red;display:none;&quot;&gt;
+									&lt;div id=&quot;ValidationSummary1&quot; class=&quot;errorMessage&quot; display=&quot;Dynamic&quot; style=&quot;color:Red;display:none;&quot;&gt;
 
 					&lt;/div&gt;
-					            &lt;/span&gt;
-					    &lt;/div&gt;
-					    &lt;div class=&quot;show-if-js-enabled column-alt alt-login&quot;&gt;
-					        &lt;span class=&quot;or&quot;&gt;
-					            tai
-					        &lt;/span&gt;
-					        &lt;button onclick=&quot;FB.login(); return false;&quot; class=&quot;ctl-btn facebook&quot;&gt;Kirjaudu Facebook-tunnuksillasi&lt;/button&gt;
-					    &lt;/div&gt;
-					    &lt;div class=&quot;footer&quot;&gt;
-					        tai
-					        &lt;a id=&quot;hlRegister2&quot; class=&quot;pnlRegistration&quot;&gt;Rekister&ouml;idy k&auml;ytt&auml;j&auml;ksi&lt;/a&gt;
-					    &lt;/div&gt;
+								&lt;/span&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;show-if-js-enabled column-alt alt-login&quot;&gt;
+							&lt;span class=&quot;or&quot;&gt;
+								tai
+							&lt;/span&gt;
+							&lt;button onclick=&quot;FB.login(); return false;&quot; class=&quot;ctl-btn facebook&quot;&gt;Kirjaudu Facebook-tunnuksillasi&lt;/button&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;footer&quot;&gt;
+							tai
+							&lt;a id=&quot;hlRegister2&quot; class=&quot;pnlRegistration&quot;&gt;Rekister&ouml;idy k&auml;ytt&auml;j&auml;ksi&lt;/a&gt;
+						&lt;/div&gt;
 
 					&lt;/div&gt;
 					&lt;div id=&quot;pnlPasswordRecover&quot; class=&quot;section forgotten&quot;&gt;
 
-					    &lt;h3&gt;Ongelmia kirjautumisessa?&lt;/h3&gt;
-					    &lt;p&gt;Saadaksesi uuden salasanan kirjoita s&auml;hk&ouml;postiosoitteesi, jolla olet rekister&ouml;itynyt otakantaa.fi-palveluun. Palvelu l&auml;hett&auml;&auml; sinulle s&auml;hk&ouml;postiisi linkin, jonka kautta saat uuden salasanan.&lt;/p&gt;
-					    &lt;div id=&quot;pnlPasswordRecoverEmail&quot; onkeypress=&quot;javascript:return WebForm_FireDefaultButton(event, 'btnPasswordRecoverSend')&quot;&gt;
+						&lt;h3&gt;Ongelmia kirjautumisessa?&lt;/h3&gt;
+						&lt;p&gt;Saadaksesi uuden salasanan kirjoita s&auml;hk&ouml;postiosoitteesi, jolla olet rekister&ouml;itynyt otakantaa.fi-palveluun. Palvelu l&auml;hett&auml;&auml; sinulle s&auml;hk&ouml;postiisi linkin, jonka kautta saat uuden salasanan.&lt;/p&gt;
+						&lt;div id=&quot;pnlPasswordRecoverEmail&quot; onkeypress=&quot;javascript:return WebForm_FireDefaultButton(event, 'btnPasswordRecoverSend')&quot;&gt;
 
-					        &lt;span id=&quot;lblPasswordRecoverEmail&quot; class=&quot;lbl-text lbl-input&quot;&gt;S&auml;hk&ouml;postiosoite&lt;/span&gt;
-					        &lt;div class=&quot;input-with-icon fa fa-envelope&quot;&gt;
-					            &lt;input name=&quot;ctl00$tbPasswordRecoverEmail&quot; maxlength=&quot;256&quot; id=&quot;tbPasswordRecoverEmail&quot; class=&quot;ctl-text&quot; onfocus=&quot;setInputValue(this, 'focus');&quot; onblur=&quot;setInputValue(this, 'blur');&quot; placeholder=&quot;S&auml;hk&ouml;postiosoite&quot; type=&quot;email&quot;&gt;
-					        &lt;/div&gt;
-					        &lt;span id=&quot;rfvPasswordRecoverEmail&quot; class=&quot;password-recover-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-					        &lt;span id=&quot;revPasswordRecoverEmail&quot; class=&quot;password-recover-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-					        &lt;span id=&quot;upPasswordRecover&quot;&gt;
-					                &lt;input type=&quot;submit&quot; name=&quot;ctl00$btnPasswordRecoverSend&quot; value=&quot;Jatka&quot; onclick=&quot;javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&amp;quot;ctl00$btnPasswordRecoverSend&amp;quot;, &amp;quot;&amp;quot;, true, &amp;quot;PasswordRecoverSend&amp;quot;, &amp;quot;&amp;quot;, false, false))&quot; id=&quot;btnPasswordRecoverSend&quot; title=&quot;Klikkaamalla Jatka-nappia palvelu l&auml;hett&auml;&auml; sinulle s&auml;hk&ouml;postiisi linkin, jonka kautta saat uuden salasanan.&quot; class=&quot;ctl-btn&quot;&gt;
-					                &lt;div id=&quot;passwordRecoverProgress&quot; class=&quot;update-progress&quot; style=&quot;visibility:hidden;display:block;&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;
+							&lt;span id=&quot;lblPasswordRecoverEmail&quot; class=&quot;lbl-text lbl-input&quot;&gt;S&auml;hk&ouml;postiosoite&lt;/span&gt;
+							&lt;div class=&quot;input-with-icon fa fa-envelope&quot;&gt;
+								&lt;input name=&quot;ctl00$tbPasswordRecoverEmail&quot; maxlength=&quot;256&quot; id=&quot;tbPasswordRecoverEmail&quot; class=&quot;ctl-text&quot; onfocus=&quot;setInputValue(this, 'focus');&quot; onblur=&quot;setInputValue(this, 'blur');&quot; placeholder=&quot;S&auml;hk&ouml;postiosoite&quot; type=&quot;email&quot;&gt;
+							&lt;/div&gt;
+							&lt;span id=&quot;rfvPasswordRecoverEmail&quot; class=&quot;password-recover-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+							&lt;span id=&quot;revPasswordRecoverEmail&quot; class=&quot;password-recover-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+							&lt;span id=&quot;upPasswordRecover&quot;&gt;
+									&lt;input type=&quot;submit&quot; name=&quot;ctl00$btnPasswordRecoverSend&quot; value=&quot;Jatka&quot; onclick=&quot;javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&amp;quot;ctl00$btnPasswordRecoverSend&amp;quot;, &amp;quot;&amp;quot;, true, &amp;quot;PasswordRecoverSend&amp;quot;, &amp;quot;&amp;quot;, false, false))&quot; id=&quot;btnPasswordRecoverSend&quot; title=&quot;Klikkaamalla Jatka-nappia palvelu l&auml;hett&auml;&auml; sinulle s&auml;hk&ouml;postiisi linkin, jonka kautta saat uuden salasanan.&quot; class=&quot;ctl-btn&quot;&gt;
+									&lt;div id=&quot;passwordRecoverProgress&quot; class=&quot;update-progress&quot; style=&quot;visibility:hidden;display:block;&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;
 
-					                        &lt;img src=&quot;img/ajax-loader.gif&quot; id=&quot;imgPasswordRecoverLoader&quot; alt=&quot;...&quot;&gt;
-
-					&lt;/div&gt;
-					                &lt;span id=&quot;cvEmailFieldDoesntExistsValidator&quot; class=&quot;password-recover-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-					                &lt;span id=&quot;cvAccountRegisteredWithFacebook&quot; class=&quot;password-recover-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-
-					                &lt;div id=&quot;vsPasswordRecover&quot; class=&quot;errorMessage&quot; display=&quot;Dynamic&quot; style=&quot;color:Red;display:none;&quot;&gt;
+											&lt;img src=&quot;img/ajax-loader.gif&quot; id=&quot;imgPasswordRecoverLoader&quot; alt=&quot;...&quot;&gt;
 
 					&lt;/div&gt;
-					            &lt;/span&gt;
+									&lt;span id=&quot;cvEmailFieldDoesntExistsValidator&quot; class=&quot;password-recover-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+									&lt;span id=&quot;cvAccountRegisteredWithFacebook&quot; class=&quot;password-recover-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+
+									&lt;div id=&quot;vsPasswordRecover&quot; class=&quot;errorMessage&quot; display=&quot;Dynamic&quot; style=&quot;color:Red;display:none;&quot;&gt;
+
+					&lt;/div&gt;
+								&lt;/span&gt;
 
 					&lt;/div&gt;
 
 					&lt;/div&gt;
 					&lt;div id=&quot;pnlRegistration&quot; class=&quot;section register&quot; onkeypress=&quot;javascript:return WebForm_FireDefaultButton(event, 'btnRegistration')&quot;&gt;
 
-					    &lt;h3&gt;Rekister&ouml;idy palvelun k&auml;ytt&auml;j&auml;ksi&lt;/h3&gt;
-					    &lt;p&gt;Sy&ouml;t&auml; s&auml;hk&ouml;postisi tai rekister&ouml;idy Facebook-tunnuksillasi&lt;/p&gt;
-					    &lt;div class=&quot;column-main main-register&quot;&gt;
-					        &lt;span id=&quot;lblRegistrationEmail&quot; class=&quot;lbl-text lbl-input&quot;&gt;S&auml;hk&ouml;postiosoite&lt;/span&gt;
-					        &lt;div class=&quot;input-with-icon fa fa-envelope&quot;&gt;
-					            &lt;input name=&quot;ctl00$tbRegistrationEmail&quot; id=&quot;tbRegistrationEmail&quot; class=&quot;ctl-text email&quot; placeholder=&quot;S&auml;hk&ouml;postiosoite&quot; onfocus=&quot;setInputValue(this, 'focus');&quot; onblur=&quot;setInputValue(this, 'blur');&quot; type=&quot;email&quot;&gt;
-					        &lt;/div&gt;
-					        &lt;span id=&quot;revRegistrationEmail&quot; class=&quot;registration-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-					        &lt;span id=&quot;rfvRegistrationEmail&quot; class=&quot;registration-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-					        &lt;span id=&quot;upEmailValidation&quot;&gt;
-					                &lt;input type=&quot;submit&quot; name=&quot;ctl00$btnRegistration&quot; value=&quot;Rekister&ouml;idy&quot; onclick=&quot;javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&amp;quot;ctl00$btnRegistration&amp;quot;, &amp;quot;&amp;quot;, true, &amp;quot;Registration&amp;quot;, &amp;quot;&amp;quot;, false, false))&quot; id=&quot;btnRegistration&quot; title=&quot;Sy&ouml;t&auml; s&auml;hk&ouml;postiosoitteesi sille varattuun kentt&auml;&auml;n ja klikkaa Rekister&ouml;idy-painiketta. Palvelu l&auml;hett&auml;&auml; s&auml;hk&ouml;postiisi vahvistusviestin, joka sis&auml;lt&auml;&auml; linkin rekister&ouml;itymisen viimeistelemiseksi.&quot; class=&quot;ctl-btn&quot;&gt;
-					                &lt;div id=&quot;emailValidationProgress&quot; class=&quot;update-progress&quot; style=&quot;visibility:hidden;display:block;&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;
+						&lt;h3&gt;Rekister&ouml;idy palvelun k&auml;ytt&auml;j&auml;ksi&lt;/h3&gt;
+						&lt;p&gt;Sy&ouml;t&auml; s&auml;hk&ouml;postisi tai rekister&ouml;idy Facebook-tunnuksillasi&lt;/p&gt;
+						&lt;div class=&quot;column-main main-register&quot;&gt;
+							&lt;span id=&quot;lblRegistrationEmail&quot; class=&quot;lbl-text lbl-input&quot;&gt;S&auml;hk&ouml;postiosoite&lt;/span&gt;
+							&lt;div class=&quot;input-with-icon fa fa-envelope&quot;&gt;
+								&lt;input name=&quot;ctl00$tbRegistrationEmail&quot; id=&quot;tbRegistrationEmail&quot; class=&quot;ctl-text email&quot; placeholder=&quot;S&auml;hk&ouml;postiosoite&quot; onfocus=&quot;setInputValue(this, 'focus');&quot; onblur=&quot;setInputValue(this, 'blur');&quot; type=&quot;email&quot;&gt;
+							&lt;/div&gt;
+							&lt;span id=&quot;revRegistrationEmail&quot; class=&quot;registration-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+							&lt;span id=&quot;rfvRegistrationEmail&quot; class=&quot;registration-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+							&lt;span id=&quot;upEmailValidation&quot;&gt;
+									&lt;input type=&quot;submit&quot; name=&quot;ctl00$btnRegistration&quot; value=&quot;Rekister&ouml;idy&quot; onclick=&quot;javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&amp;quot;ctl00$btnRegistration&amp;quot;, &amp;quot;&amp;quot;, true, &amp;quot;Registration&amp;quot;, &amp;quot;&amp;quot;, false, false))&quot; id=&quot;btnRegistration&quot; title=&quot;Sy&ouml;t&auml; s&auml;hk&ouml;postiosoitteesi sille varattuun kentt&auml;&auml;n ja klikkaa Rekister&ouml;idy-painiketta. Palvelu l&auml;hett&auml;&auml; s&auml;hk&ouml;postiisi vahvistusviestin, joka sis&auml;lt&auml;&auml; linkin rekister&ouml;itymisen viimeistelemiseksi.&quot; class=&quot;ctl-btn&quot;&gt;
+									&lt;div id=&quot;emailValidationProgress&quot; class=&quot;update-progress&quot; style=&quot;visibility:hidden;display:block;&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;
 
-					                        &lt;img src=&quot;img/ajax-loader.gif&quot; id=&quot;imgRegistrationLoader&quot; alt=&quot;...&quot;&gt;
-
-					&lt;/div&gt;
-					                &lt;span id=&quot;cvRegistrationEmail&quot; class=&quot;registration-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
-					                &lt;span id=&quot;lblRegistrationEmailError&quot; class=&quot;registration-validation&quot; style=&quot;color:Red;&quot;&gt;&lt;/span&gt;
-					                &lt;div id=&quot;vsRegistration&quot; class=&quot;errorMessage&quot; display=&quot;Dynamic&quot; style=&quot;color:Red;display:none;&quot;&gt;
+											&lt;img src=&quot;img/ajax-loader.gif&quot; id=&quot;imgRegistrationLoader&quot; alt=&quot;...&quot;&gt;
 
 					&lt;/div&gt;
-					            &lt;/span&gt;
-					    &lt;/div&gt;
-					    &lt;div class=&quot;show-if-js-enabled column-alt alt-register&quot;&gt;
-					        &lt;span class=&quot;or&quot;&gt;
-					            tai&lt;/span&gt;
-					        &lt;button onclick=&quot;__doPostBack('ctl00$btnFacebookRegistration','')&quot; id=&quot;btnFacebookRegistration&quot; class=&quot;ctl-btn facebook&quot;&gt;Rekister&ouml;idy Facebook-tunnuksillasi&lt;/button&gt;
-					    &lt;/div&gt;
-					    &lt;div class=&quot;footer&quot;&gt;
-					        Oletko jo rekister&ouml;itynyt?
-					        &lt;a id=&quot;hlLogin2&quot; class=&quot;pnlLogin&quot;&gt;Kirjaudu sis&auml;&auml;n&lt;/a&gt;
-					    &lt;/div&gt;
+									&lt;span id=&quot;cvRegistrationEmail&quot; class=&quot;registration-validation&quot; style=&quot;color:Red;display:none;&quot;&gt;&lt;/span&gt;
+									&lt;span id=&quot;lblRegistrationEmailError&quot; class=&quot;registration-validation&quot; style=&quot;color:Red;&quot;&gt;&lt;/span&gt;
+									&lt;div id=&quot;vsRegistration&quot; class=&quot;errorMessage&quot; display=&quot;Dynamic&quot; style=&quot;color:Red;display:none;&quot;&gt;
+
+					&lt;/div&gt;
+								&lt;/span&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;show-if-js-enabled column-alt alt-register&quot;&gt;
+							&lt;span class=&quot;or&quot;&gt;
+								tai&lt;/span&gt;
+							&lt;button onclick=&quot;__doPostBack('ctl00$btnFacebookRegistration','')&quot; id=&quot;btnFacebookRegistration&quot; class=&quot;ctl-btn facebook&quot;&gt;Rekister&ouml;idy Facebook-tunnuksillasi&lt;/button&gt;
+						&lt;/div&gt;
+						&lt;div class=&quot;footer&quot;&gt;
+							Oletko jo rekister&ouml;itynyt?
+							&lt;a id=&quot;hlLogin2&quot; class=&quot;pnlLogin&quot;&gt;Kirjaudu sis&auml;&auml;n&lt;/a&gt;
+						&lt;/div&gt;
 
 					&lt;/div&gt;
 
@@ -2909,56 +3058,77 @@
 				&lt;/div&gt;
 			&lt;/div&gt;
 		&lt;/div&gt;	&lt;/div&gt;
-	&lt;div class=&quot;element-group&quot;&gt;
-		&lt;!-- molecules-responsive-dropdown. Not called as mustache because mobile-trigger needs to be within the previous element-group  --&gt;
-		&lt;div class=&quot;navi-responsive&quot;&gt;
-			&lt;ul&gt;
-				&lt;li&gt;
-					&lt;a href=&quot;#&quot;&gt;Valinta 1&lt;/a&gt;
-					&lt;a href=&quot;#&quot; class=&quot;sub-nav-trigger&quot;&gt;&lt;i class=&quot;icon-menu-arrow&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Alavalikko&lt;/span&gt;&lt;/a&gt;
-					&lt;ul&gt;
-						&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 1&lt;/a&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 2&lt;/a&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 3&lt;/a&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 4&lt;/a&gt;&lt;/li&gt;
+	&lt;section class=&quot;responsive-modifier-block&quot;&gt;
+		&lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;
+			&lt;legend class=&quot;is-vishidden&quot;&gt;Search&lt;/legend&gt;
+			&lt;div class=&quot;form-element&quot;&gt;
+				&lt;label for=&quot;search-field&quot; class=&quot;is-vishidden&quot;&gt;Search&lt;/label&gt;
+				&lt;input type=&quot;search&quot; placeholder=&quot;Search&quot; id=&quot;search-field&quot; class=&quot;search-field&quot; /&gt;
+				&lt;button class=&quot;search-submit js-expand-search&quot;&gt;
+					&lt;i class=&quot;icon-search&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+					&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;/span&gt;
+				&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/form&gt;		&lt;div class=&quot;element-group nav-container&quot;&gt;
+			&lt;div class=&quot;navi-responsive section&quot;&gt;
+				&lt;ul&gt;
+					&lt;li&gt;
+						&lt;a href=&quot;#&quot; class=&quot;sub-nav-trigger&quot;&gt;&lt;i class=&quot;icon-menu-arrow&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Alavalikko&lt;/span&gt;&lt;/a&gt;
+						&lt;a href=&quot;#&quot;&gt;Valinta 1&lt;/a&gt;
+						&lt;ul&gt;
+							&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 1&lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 2&lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 3&lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 4&lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href=&quot;#&quot; class=&quot;sub-nav-trigger&quot;&gt;&lt;i class=&quot;icon-menu-arrow&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Alavalikko&lt;/span&gt;&lt;/a&gt;
+						&lt;a href=&quot;#&quot;&gt;Valinta 2&lt;/a&gt;
+						&lt;ul&gt;
+							&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 1&lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 2&lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 3&lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 4&lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href=&quot;&quot;&gt;Valinta&lt;/a&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href=&quot;#&quot; class=&quot;sub-nav-trigger&quot;&gt;&lt;i class=&quot;icon-menu-arrow&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Alavalikko&lt;/span&gt;&lt;/a&gt;
+						&lt;a href=&quot;#&quot;&gt;Valinta 3&lt;/a&gt;
+						&lt;ul&gt;
+							&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 1&lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 2&lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 3&lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 4&lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/li&gt;
+					&lt;li&gt;
+						&lt;a href=&quot;#&quot; class=&quot;sub-nav-trigger&quot;&gt;&lt;i class=&quot;icon-menu-arrow&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Alavalikko&lt;/span&gt;&lt;/a&gt;
+						&lt;a href=&quot;#&quot;&gt;Valinta 4&lt;/a&gt;
+						&lt;ul&gt;
+							&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 1&lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 2&lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 3&lt;/a&gt;&lt;/li&gt;
+							&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 4&lt;/a&gt;&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;		&lt;/div&gt;
+		&lt;div class=&quot;element-group&quot;&gt;
+			&lt;div class=&quot;inner-block align-left&quot;&gt;
+				&lt;a href=&quot;#&quot; id=&quot;hlLogo&quot; class=&quot;header-logo&quot;&gt;&lt;img src=&quot;../../images/logo.png&quot; class=&quot;logo&quot; alt=&quot;Logo Alt Text&quot; /&gt;&lt;strong&gt;ota&lt;/strong&gt;kantaa.fi&lt;/a&gt;			&lt;/div&gt;
+			&lt;div class=&quot;inner-block align-right&quot;&gt;
+				&lt;div class=&quot;lang-sel&quot;&gt;
+					&lt;ul class=&quot;lang-list&quot;&gt;
+						&lt;li class=&quot;selected&quot;&gt; &lt;a href=&quot;&quot;&gt;Suomeksi&lt;/a&gt;&lt;/li&gt;
+						&lt;li&gt;&lt;a href=&quot;&quot;&gt;P&aring; svenska&lt;/a&gt;&lt;/li&gt;
 					&lt;/ul&gt;
-				&lt;/li&gt;
-				&lt;li&gt;
-					&lt;a href=&quot;#&quot;&gt;Valinta 2&lt;/a&gt;
-					&lt;a href=&quot;#&quot; class=&quot;sub-nav-trigger&quot;&gt;&lt;i class=&quot;icon-menu-arrow&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Alavalikko&lt;/span&gt;&lt;/a&gt;
-					&lt;ul&gt;
-						&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 1&lt;/a&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 2&lt;/a&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 3&lt;/a&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 4&lt;/a&gt;&lt;/li&gt;
-					&lt;/ul&gt;
-				&lt;/li&gt;
-				&lt;li&gt;
-					&lt;a href=&quot;&quot;&gt;Valinta&lt;/a&gt;
-				&lt;/li&gt;
-				&lt;li&gt;
-					&lt;a href=&quot;#&quot;&gt;Valinta 3&lt;/a&gt;
-					&lt;a href=&quot;#&quot; class=&quot;sub-nav-trigger&quot;&gt;&lt;i class=&quot;icon-menu-arrow&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Alavalikko&lt;/span&gt;&lt;/a&gt;
-					&lt;ul&gt;
-						&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 1&lt;/a&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 2&lt;/a&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 3&lt;/a&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 4&lt;/a&gt;&lt;/li&gt;
-					&lt;/ul&gt;
-				&lt;/li&gt;
-				&lt;li&gt;
-					&lt;a href=&quot;#&quot;&gt;Valinta 4&lt;/a&gt;
-					&lt;a href=&quot;#&quot; class=&quot;sub-nav-trigger&quot;&gt;&lt;i class=&quot;icon-menu-arrow&quot;&gt;&lt;/i&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Alavalikko&lt;/span&gt;&lt;/a&gt;
-					&lt;ul&gt;
-						&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 1&lt;/a&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 2&lt;/a&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 3&lt;/a&gt;&lt;/li&gt;
-						&lt;li&gt;&lt;a href=&quot;&quot;&gt;Alavalinta 4&lt;/a&gt;&lt;/li&gt;
-					&lt;/ul&gt;
-				&lt;/li&gt;
-			&lt;/ul&gt;
+				&lt;/div&gt;			&lt;/div&gt;
 		&lt;/div&gt;
-	&lt;/div&gt;
+	&lt;/section&gt;
 &lt;/header&gt;
 &lt;!-- End .header --&gt;
 									</code>
@@ -3131,10 +3301,10 @@
 		</form>		<ul class="comment-list">
 				<li class="comment-container">
 					<div class="comment-meta">
-		<img src="http://placeimg.com/100/100/any/grayscale" alt="Avatar" />						<h4 class="comment-name"><a href="#">Freyr Hines</a></h4>
+		<img src="http://placeimg.com/100/100/people/grayscale" alt="Avatar" />						<h4 class="comment-name"><a href="#">Frans Keegan</a></h4>
 					</div>
 					<div class="comment-text">
-						<p>Wufoo diigo grockit sifteo divvyshot, unigo zooomr revver. Edmodo appjet joyent skype bubbli jajah zoodles joukuu xobni hojoki edmodo appjet, mozy mzinga akismet yuntaa joost yuntaa geni tivo insala yoono chumby, grockit sococo loopt zanga etsy cloudera koofers empressr jiglu blippy. Omgpop lanyrd joukuu sococo zimbra airbnb movity jibjab, foodzie.</p>
+						<p>Like button audience atomization overcome Colbert bump Free Darko inverted pyramid we will make them pay, digital circulation strategy Like button totally blowing up on Twitter church of the savvy. Pictures of Goats section open source discuss Frontline analog thinking filters paidContent.</p>
 					</div>
 				</li>				<li class="comment-container">
 					<div class="comment-meta">
@@ -3145,13 +3315,6 @@
 					</div>
 				</li>				<li class="comment-container">
 					<div class="comment-meta">
-		<img src="http://placeimg.com/100/100/any/sepia" alt="Avatar" />						<h4 class="comment-name"><a href="#">Jacobus Sneiders</a></h4>
-					</div>
-					<div class="comment-text">
-						<p>I find your lack of faith disturbing. A tremor in the Force. The last time I felt it was in the presence of my old master. Don't act so surprised, Your Highness. You weren't on any mercy mission this time. Several transmissions were beamed to this ship by Rebel spies. I want to know what happened to the plans they sent you. The plans you refer to will soon be back in our hands.</p>
-					</div>
-				</li>				<li class="comment-container">
-					<div class="comment-meta">
 		<img src="http://placeimg.com/100/100/animals" alt="Avatar" />						<h4 class="comment-name"><a href="#">Duane Wilms</a></h4>
 					</div>
 					<div class="comment-text">
@@ -3159,10 +3322,17 @@
 					</div>
 				</li>				<li class="comment-container">
 					<div class="comment-meta">
-		<img src="http://placeimg.com/100/100/people/grayscale" alt="Avatar" />						<h4 class="comment-name"><a href="#">Frans Keegan</a></h4>
+		<img src="http://placeimg.com/100/100/any/grayscale" alt="Avatar" />						<h4 class="comment-name"><a href="#">Freyr Hines</a></h4>
 					</div>
 					<div class="comment-text">
-						<p>Like button audience atomization overcome Colbert bump Free Darko inverted pyramid we will make them pay, digital circulation strategy Like button totally blowing up on Twitter church of the savvy. Pictures of Goats section open source discuss Frontline analog thinking filters paidContent.</p>
+						<p>Wufoo diigo grockit sifteo divvyshot, unigo zooomr revver. Edmodo appjet joyent skype bubbli jajah zoodles joukuu xobni hojoki edmodo appjet, mozy mzinga akismet yuntaa joost yuntaa geni tivo insala yoono chumby, grockit sococo loopt zanga etsy cloudera koofers empressr jiglu blippy. Omgpop lanyrd joukuu sococo zimbra airbnb movity jibjab, foodzie.</p>
+					</div>
+				</li>				<li class="comment-container">
+					<div class="comment-meta">
+		<img src="http://placeimg.com/100/100/any" alt="Avatar" />						<h4 class="comment-name"><a href="#">Bertil Aaij</a></h4>
+					</div>
+					<div class="comment-text">
+						<p>Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people. Like pit bulls. The dog of dogs. Pit bull can be the right man's best friend... or the wrong man's worst enemy. You going to give me a dog for a pet, give me a pit bull.</p>
 					</div>
 				</li>		</ul>
 	</div>
@@ -3210,10 +3380,10 @@
 		&lt;/form&gt;		&lt;ul class=&quot;comment-list&quot;&gt;
 				&lt;li class=&quot;comment-container&quot;&gt;
 					&lt;div class=&quot;comment-meta&quot;&gt;
-		&lt;img src=&quot;http://placeimg.com/100/100/any/grayscale&quot; alt=&quot;Avatar&quot; /&gt;						&lt;h4 class=&quot;comment-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Freyr Hines&lt;/a&gt;&lt;/h4&gt;
+		&lt;img src=&quot;http://placeimg.com/100/100/people/grayscale&quot; alt=&quot;Avatar&quot; /&gt;						&lt;h4 class=&quot;comment-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Frans Keegan&lt;/a&gt;&lt;/h4&gt;
 					&lt;/div&gt;
 					&lt;div class=&quot;comment-text&quot;&gt;
-						&lt;p&gt;Wufoo diigo grockit sifteo divvyshot, unigo zooomr revver. Edmodo appjet joyent skype bubbli jajah zoodles joukuu xobni hojoki edmodo appjet, mozy mzinga akismet yuntaa joost yuntaa geni tivo insala yoono chumby, grockit sococo loopt zanga etsy cloudera koofers empressr jiglu blippy. Omgpop lanyrd joukuu sococo zimbra airbnb movity jibjab, foodzie.&lt;/p&gt;
+						&lt;p&gt;Like button audience atomization overcome Colbert bump Free Darko inverted pyramid we will make them pay, digital circulation strategy Like button totally blowing up on Twitter church of the savvy. Pictures of Goats section open source discuss Frontline analog thinking filters paidContent.&lt;/p&gt;
 					&lt;/div&gt;
 				&lt;/li&gt;				&lt;li class=&quot;comment-container&quot;&gt;
 					&lt;div class=&quot;comment-meta&quot;&gt;
@@ -3224,13 +3394,6 @@
 					&lt;/div&gt;
 				&lt;/li&gt;				&lt;li class=&quot;comment-container&quot;&gt;
 					&lt;div class=&quot;comment-meta&quot;&gt;
-		&lt;img src=&quot;http://placeimg.com/100/100/any/sepia&quot; alt=&quot;Avatar&quot; /&gt;						&lt;h4 class=&quot;comment-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Jacobus Sneiders&lt;/a&gt;&lt;/h4&gt;
-					&lt;/div&gt;
-					&lt;div class=&quot;comment-text&quot;&gt;
-						&lt;p&gt;I find your lack of faith disturbing. A tremor in the Force. The last time I felt it was in the presence of my old master. Don't act so surprised, Your Highness. You weren't on any mercy mission this time. Several transmissions were beamed to this ship by Rebel spies. I want to know what happened to the plans they sent you. The plans you refer to will soon be back in our hands.&lt;/p&gt;
-					&lt;/div&gt;
-				&lt;/li&gt;				&lt;li class=&quot;comment-container&quot;&gt;
-					&lt;div class=&quot;comment-meta&quot;&gt;
 		&lt;img src=&quot;http://placeimg.com/100/100/animals&quot; alt=&quot;Avatar&quot; /&gt;						&lt;h4 class=&quot;comment-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Duane Wilms&lt;/a&gt;&lt;/h4&gt;
 					&lt;/div&gt;
 					&lt;div class=&quot;comment-text&quot;&gt;
@@ -3238,10 +3401,17 @@
 					&lt;/div&gt;
 				&lt;/li&gt;				&lt;li class=&quot;comment-container&quot;&gt;
 					&lt;div class=&quot;comment-meta&quot;&gt;
-		&lt;img src=&quot;http://placeimg.com/100/100/people/grayscale&quot; alt=&quot;Avatar&quot; /&gt;						&lt;h4 class=&quot;comment-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Frans Keegan&lt;/a&gt;&lt;/h4&gt;
+		&lt;img src=&quot;http://placeimg.com/100/100/any/grayscale&quot; alt=&quot;Avatar&quot; /&gt;						&lt;h4 class=&quot;comment-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Freyr Hines&lt;/a&gt;&lt;/h4&gt;
 					&lt;/div&gt;
 					&lt;div class=&quot;comment-text&quot;&gt;
-						&lt;p&gt;Like button audience atomization overcome Colbert bump Free Darko inverted pyramid we will make them pay, digital circulation strategy Like button totally blowing up on Twitter church of the savvy. Pictures of Goats section open source discuss Frontline analog thinking filters paidContent.&lt;/p&gt;
+						&lt;p&gt;Wufoo diigo grockit sifteo divvyshot, unigo zooomr revver. Edmodo appjet joyent skype bubbli jajah zoodles joukuu xobni hojoki edmodo appjet, mozy mzinga akismet yuntaa joost yuntaa geni tivo insala yoono chumby, grockit sococo loopt zanga etsy cloudera koofers empressr jiglu blippy. Omgpop lanyrd joukuu sococo zimbra airbnb movity jibjab, foodzie.&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/li&gt;				&lt;li class=&quot;comment-container&quot;&gt;
+					&lt;div class=&quot;comment-meta&quot;&gt;
+		&lt;img src=&quot;http://placeimg.com/100/100/any&quot; alt=&quot;Avatar&quot; /&gt;						&lt;h4 class=&quot;comment-name&quot;&gt;&lt;a href=&quot;#&quot;&gt;Bertil Aaij&lt;/a&gt;&lt;/h4&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;comment-text&quot;&gt;
+						&lt;p&gt;Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people. Like pit bulls. The dog of dogs. Pit bull can be the right man's best friend... or the wrong man's worst enemy. You going to give me a dog for a pet, give me a pit bull.&lt;/p&gt;
 					&lt;/div&gt;
 				&lt;/li&gt;		&lt;/ul&gt;
 	&lt;/div&gt;
@@ -3467,6 +3637,8 @@
 		</script>
 		
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
+	<script type="text/javascript" src="../../js/plugins.min.js"></script>
 	<script type="text/javascript" src="../../js/main.min.js"></script>
 	<!--DO NOT REMOVE-->
 		<script>
@@ -3501,10 +3673,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1399975107">
+	<script id="pl-js-polyfill-insert-1400243832">
 		(function() {
 			if (self != top) {
-				var cb = '1399975107';
+				var cb = '1400243832';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -3513,10 +3685,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1399975107">
+	<script id="pl-js-insert-1400243832">
 		(function() {
 			if (self != top) {
-				var cb = '1399975107';
+				var cb = '1400243832';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
