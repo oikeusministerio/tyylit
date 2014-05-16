@@ -123,15 +123,21 @@ if( $('.fadeout').length ){
 	$('.read-more').find('a').click(function(event){
 		event.preventDefault();
 
-		$('.fadeout').toggleClass('open');
 
+		$('.fadeout').addClass('open');
+		$(this).addClass('pt-fix');
+		$(this).parent().remove();
+		// In case toggle between 'lue lisää' and 'pienennä teksti' is wanted
+
+		//$('.fadeout').toggleClass('open');
+		/*
 		if( $('.fadeout').hasClass('open') ){
 			$(this).text('Pienennä teksti');
 			$(this).addClass('pt-fix');
 		}else{
 			$(this).text(orig_text);
 			$(this).removeClass('pt-fix');
-		}
+		}*/
 	});
 }
 
@@ -240,7 +246,37 @@ if( $('.fadeout').length ){
 		}
 	};
 
+// Toastr messages
 
+	function Toast(type, css, msg) {
+		this.type = type;
+		this.css = css;
+		this.msg = msg;
+	}
+
+	var toasts = [
+		new Toast('error', 'toast-top-full-width', $('.msg-error').find('.msg-toast').html() ),
+		new Toast('info', 'toast-top-full-width', $('.msg-info').find('.msg-toast').html()),
+		new Toast('warning', 'toast-top-full-width', $('.msg-warning').find('.msg-toast').html()),
+		new Toast('success', 'toast-top-full-width', $('.msg-success').find('.msg-toast').html())
+	];
+
+	toastr.options.positionClass = 'toast-top-full-width';
+	toastr.options.extendedTimeOut = 0; //1000;
+	toastr.options.timeOut = 6000;
+	toastr.options.fadeOut = 250;
+	toastr.options.fadeIn = 250;
+
+	$('.toast-container').find('.toast-trigger').on('click', function(){
+		var t;
+		toast_type = $(this).attr('id');
+		for(var i = 0; i < toasts.length; i++){
+			if( toast_type === toasts[i].type ){
+				t = toasts[i];
+			}
+		}
+		toastr[t.type](t.msg);
+	});
 
 
 

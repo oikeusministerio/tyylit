@@ -163,8 +163,12 @@ i{
 	@extend .icon-style;
 }
 
-.icon-ok:before{
+.icon-ok:before {
 	content: "\f00c";
+}
+
+.icon-info:before{
+	content: "\f129";
 }
 
 .icon-search:before{
@@ -175,7 +179,7 @@ i{
 	content: "\f04b";
 }
 
-.icon-close:before{
+.icon-close:before, .icon-error:before{
 	content: "\f00d";
 }
 
@@ -195,9 +199,10 @@ i{
 	content: "\f067";
 }
 
-.icon-tip{
-
+.icon-lbulb:before{
+	content: "\f0eb";
 }
+
 .icon-menu:before {
 	content: "\f0c9";
 }

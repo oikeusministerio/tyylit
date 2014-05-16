@@ -21,7 +21,7 @@
 					&lt;a id=&quot;lvOtherServices_HyperLink1_0&quot; class=&quot;tab&quot; href=&quot;http://www.kansalaisaloite.fi&quot;&gt;Kansalaisaloite.fi&lt;/a&gt;
 					&lt;a id=&quot;lvOtherServices_HyperLink1_1&quot; class=&quot;tab&quot; href=&quot;https://www.kuntalaisaloite.fi&quot;&gt;Kuntalaisaloite.fi&lt;/a&gt;
 					&lt;a id=&quot;lvOtherServices_HyperLink1_2&quot; class=&quot;tab active&quot; href=&quot;fi-FI&quot;&gt;Otakantaa&lt;/a&gt;
-					&lt;a id=&quot;lvOtherServices_HyperLink1_3&quot; class=&quot;tab&quot; href=&quot;fi-FI/Tietopankki&quot;&gt;Tietopankki&lt;/a&gt;
+					&lt;a id=&quot;lvOtherServices_HyperLink1_3&quot; rel=&quot;nofollow&quot; class=&quot;other-service&quot; target=&quot;_blank&quot; href=&quot;fi-FI/Tietopankki&quot;&gt;Tietopankki&lt;/a&gt;
 
 					&lt;/div&gt;
 					&lt;div id=&quot;pnlLoginRegistrationContainer&quot; class=&quot;expanding&quot; &gt;
@@ -211,9 +211,14 @@
 		&lt;/section&gt;
 	&lt;/header&gt;
 	&lt;!-- End .header --&gt;	&lt;div role=&quot;main&quot;&gt;
-			&lt;div class=&quot;alert alert-error&quot;&gt;
-				Emergency! This is a variation of the core homepage template.
-			&lt;/div&gt;			&lt;div class=&quot;block block-hero&quot;&gt;
+
+			&lt;div class=&quot;msg-warning toast-container&quot;&gt;
+				&lt;p&gt;Try toaster message by clicking the button below this message&lt;/p&gt;
+
+				&lt;div class=&quot;msg-toast is-hidden&quot;&gt; &lt;i class=&quot;icon-lbulb&quot;&gt;&lt;/i&gt;&lt;p&gt;I'm the hidden warning message&lt;/p&gt;&lt;/div&gt;
+				&lt;button id=&quot;warning&quot; class=&quot;toast-trigger warning&quot;&gt;Button&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;div class=&quot;block block-hero&quot;&gt;
 				&lt;a href=&quot;#&quot; class=&quot;b-inner&quot;&gt;
 					&lt;div class=&quot;b-thumb&quot;&gt;
 			&lt;img src=&quot;../../images/sample/landscape-16x9-mountains.jpg&quot; alt=&quot;Mountains&quot; /&gt;					&lt;/div&gt;

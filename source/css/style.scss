@@ -111,11 +111,11 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 //@import "scss/objects/lists";
 //@import "scss/objects/tooltip";
 //@import "scss/objects/accordion";
-//@import "scss/objects/tabs";
+@import "scss/objects/tabs";
 //@import "scss/objects/sections";
 //@import "scss/objects/article";
 //@import "scss/objects/comments";
-//@import "scss/objects/messaging";
+@import "scss/objects/messaging";
 
 /* Something terrible */
 @import "pasted-horror.css";

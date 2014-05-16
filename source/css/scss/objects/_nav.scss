@@ -50,7 +50,7 @@
 }
 
 // Normal old navi
-
+/*
 .navi-sample{
 	margin-left: 0px;
 	background-color: transparent;
@@ -108,7 +108,7 @@
 		&:after {
 			font-family: 'FontAwesome';
 			font-size: .75em;
-			content: '\f0d7'; /* fa-caret-down */
+			content: '\f0d7'; //fa-caret-down
 			position: absolute;
 			top: .4em;
 			right: .5em;
@@ -123,6 +123,7 @@
 		}
 	}
 }
+*/
 
 // Responsive navi
 
@@ -309,6 +310,7 @@
 
 	}
 }
+
 
 
 
