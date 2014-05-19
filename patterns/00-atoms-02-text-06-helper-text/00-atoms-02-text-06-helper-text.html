@@ -26,11 +26,15 @@
 
 	</head>
 	<body class="body">
-<div class="lang-sel">
-	<ul class="lang-list">
-		<li class="selected"> <a href="">Suomeksi</a></li>
-		<li><a href="">På svenska</a></li>
-	</ul>
+<div class="helper-container">
+	<span class="icon-help" title="Example tip text." placement="top">
+		Esimerkki
+	</span>
+	<p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+</div>
+<div class="form-element">
+	<label for="textarea">Tekstialue</label>
+	<textarea></textarea>
 </div>	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
 	<script type="text/javascript" src="../../js/plugins.min.js"></script>
@@ -39,9 +43,9 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-lang-sel";
+		var patternPartial = "atoms-helper-text";
 		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"organisms-header","lineagePath":"..\/..\/patterns\/02-organisms-00-global-00-header\/02-organisms-00-global-00-header.html"}];
+		var lineageR       = [];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

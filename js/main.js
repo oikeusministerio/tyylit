@@ -141,7 +141,13 @@ if( $('.fadeout').length ){
 	});
 }
 
-	// Pasted from old site {
+if( $('.helper-container').length ){
+	$('.icon-help').on('click', function(){
+		$(this).parent().find('.helper-text').toggleClass('is-visible is-vishidden');
+	});
+}
+
+	// Pasted from old site and heavily modified {
 
 	$('.site-actions > a, #closeButtonContainer').click(function () {
 		$('.site-actions > a').removeClass('selected');
@@ -248,35 +254,35 @@ if( $('.fadeout').length ){
 
 // Toastr messages
 
-	function Toast(type, css, msg) {
-		this.type = type;
-		this.css = css;
-		this.msg = msg;
-	}
+function Toast(type, css, msg) {
+	this.type = type;
+	this.css = css;
+	this.msg = msg;
+}
 
-	var toasts = [
-		new Toast('error', 'toast-top-full-width', $('.msg-error').find('.msg-toast').html() ),
-		new Toast('info', 'toast-top-full-width', $('.msg-info').find('.msg-toast').html()),
-		new Toast('warning', 'toast-top-full-width', $('.msg-warning').find('.msg-toast').html()),
-		new Toast('success', 'toast-top-full-width', $('.msg-success').find('.msg-toast').html())
-	];
+var toasts = [
+	new Toast('error', 'toast-top-full-width', $('.msg-error').find('.msg-toast').html() ),
+	new Toast('info', 'toast-top-full-width', $('.msg-info').find('.msg-toast').html()),
+	new Toast('warning', 'toast-top-full-width', $('.msg-warning').find('.msg-toast').html()),
+	new Toast('success', 'toast-top-full-width', $('.msg-success').find('.msg-toast').html())
+];
 
-	toastr.options.positionClass = 'toast-top-full-width';
-	toastr.options.extendedTimeOut = 0; //1000;
-	toastr.options.timeOut = 0;//6000;
-	toastr.options.fadeOut = 250;
-	toastr.options.fadeIn = 250;
+toastr.options.positionClass = 'toast-top-full-width';
+toastr.options.extendedTimeOut = 0; //1000;
+toastr.options.timeOut = 0;//6000;
+toastr.options.fadeOut = 250;
+toastr.options.fadeIn = 250;
 
-	$('.toast-container').find('.toast-trigger').on('click', function(){
-		var t;
-		toast_type = $(this).attr('id');
-		for(var i = 0; i < toasts.length; i++){
-			if( toast_type === toasts[i].type ){
-				t = toasts[i];
-			}
+$('.toast-container').find('.toast-trigger').on('click', function(){
+	var t;
+	toast_type = $(this).attr('id');
+	for(var i = 0; i < toasts.length; i++){
+		if( toast_type === toasts[i].type ){
+			t = toasts[i];
 		}
-		toastr[t.type](t.msg);
-	});
+	}
+	toastr[t.type](t.msg);
+});
 
 
 
