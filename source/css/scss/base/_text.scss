@@ -3,23 +3,20 @@ p {
 	margin-bottom: $space;
 }
 
-<<<<<<< HEAD
 .small{
 	font-size: $font-size-small;
 }
 
-=======
->>>>>>> e461091b2be1449f920d9ef22dda633f6aaf80b0
 /* Blockquote */
 blockquote {
-    font-style:italic;
-    border-left: 1px solid $gray;
-    color: $gray;
+	font-style:italic;
+	border-left: 1px solid $gray;
+	color: $gray;
 	padding-left: $pad;
 	margin-bottom: $space;
 }
 
 abbr {
-    border-bottom: 1px dotted $gray;
-    cursor: help;
+	border-bottom: 1px dotted $gray;
+	cursor: help;
 }

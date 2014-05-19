@@ -1,19 +1,25 @@
 .global-colors{
 	.color--a{ background-color: $white; }
 	.color--b{ background-color: $gray-light; }
-	.color--c{ background-color: $gray-dark; }
-	.color--d{ background-color: $blue; }
+	.color--c{ background-color: $gray-med; }
+	.color--d{ background-color: $gray-dark; }
+	.color--e{ background-color: $blue; }
+	.color--f{ background-color: $red; }
+	.color--g{ background-color: $green; }
+
 }
 .otk-colors{
-	.color--a{ background-color: $otk-red; }
-	.color--b{ background-color: $otk-gray-blue; }
-	.color--c{ background-color: $otk-cyan; }
-	.color--d{ background-color: $otk-green; }
-	.color--e{ background-color: $otk-blue; }
+	.color--a{ background-color: $otk-cyan; }
+	.color--b{ background-color: $otk-green; }
 }
 .lap-colors{
-	.color--a{ background-color: $lap-gray-light; }
-	.color--b{ background-color: $lap-gray-dark; }
-	.color--c{ background-color: $lap-cyan; }
-	.color--d{ background-color: $lap-blue; }
+	.color--a{ background-color: $lap-orange; }
+}
+.kaa-colors{
+	.color--a{ background-color: $kaa-cyan; }
+	.color--b{ background-color: $kaa-purple; }
+}
+.kua-colors{
+	.color--a{ background-color: $kua-green; }
+	.color--b{ background-color: $kua-orange; }
 }

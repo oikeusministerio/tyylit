@@ -349,7 +349,7 @@
 			}
 
 			&:hover, &:active{
-				color: $lap-cyan;
+				color: $green;
 			}
 		}
 
@@ -423,11 +423,11 @@
 		@include border-radius(2px, 2px, 2px, 2px);
 
 		&.next{
-			background-color: $lap-cyan;
+			background-color: $green;
 		}
 
 		&:hover, &:active{
-			background-color: darken($lap-cyan, 10%);
+			background-color: darken($green, 10%);
 		}
 
 		i:before{

@@ -98,10 +98,10 @@
 	}
 
 	&.alt{
-		background-color: $otk-gray-blue;
+		background-color: $otk-green;
 
 		&:hover, &:focus{
-			background-color: lighten($otk-gray-blue, 10%);
+			background-color: lighten($otk-green, 10%);
 		}
 	}
 }
@@ -115,18 +115,10 @@
 }
 
 .btn-lap{
-	background-color: $lap-cyan;
+	background-color: $lap-orange;
 
 	&:hover, &:focus{
-		background-color: lighten($lap-cyan, 10%);
-	}
-
-	&.alt{
-		background-color: $lap-gray-light;
-
-		&:hover, &:focus{
-			background-color: darken($lap-gray-light, 10%);
-		}
+		background-color: lighten($lap-orange, 10%);
 	}
 }
 
@@ -147,7 +139,7 @@
 
 
 		&.active{
-			background-color: $lap-cyan;
+			background-color: $green;
 			color: $white;
 		}
 
@@ -180,7 +172,7 @@
 			@include border-radius();
 
 			&.active{
-				background-color: $lap-cyan;
+				background-color: $green;
 				color: $white;
 				@include border-radius(2px, 2px, 2px, 2px);
 			}
@@ -189,7 +181,7 @@
 }
 
 .select-style select{
-	background: $lap-cyan;
+	background: $green;
 	border: 1px solid $border-color;
 	color: $white;
 	padding: 4px 4px 4px 6px;
