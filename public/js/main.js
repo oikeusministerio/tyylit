@@ -141,7 +141,7 @@ if( $('.fadeout').length ){
 	});
 }
 
-	// Pasted from old site {
+	// Pasted from old site and heavily modified {
 
 	$('.site-actions > a, #closeButtonContainer').click(function () {
 		$('.site-actions > a').removeClass('selected');

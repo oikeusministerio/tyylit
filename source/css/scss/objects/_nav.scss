@@ -321,7 +321,6 @@
 		list-style: none;
 		display: inline-block;
 		width: 100%;
-
 	}
 	li{
 		display: inline-block;
@@ -333,9 +332,6 @@
 		@media #{$tablet}{
 			width: 24%;
 		}
-		@media #{$laptop}{
-
-		}
 
 		@media #{$desktop}{
 			&:before{
@@ -343,11 +339,14 @@
 			}
 		}
 
-
 		a{
-			color: $text-color;
+			color: $gray-med;
 			text-decoration: none;
 			vertical-align: middle;
+
+			&.active{
+				color: $text-color;
+			}
 
 			&:hover, &:active{
 				color: $lap-cyan;
@@ -365,15 +364,12 @@
 			font-size: 3.6em;
 			position: absolute;
 			left: 0;
-
 		}
 		&:first-child{
 			text-align: left;
 			padding-left: 0;
 			@media #{$tablet}{
-
 				width: 20%;
-
 			}
 
 			&:before{
@@ -385,6 +381,60 @@
 	}
 }
 
+.process-actions{
+	ul{
+		@extend .cf;
+
+		list-style: none;
+		display: inline-block;
+		width: 100%;
+		height: 30px;
+		position: relative;
+		text-align: center;
+	}
+	li{
+		display: inline-block;
+		vertical-align: middle;
+
+		&:first-child{
+			float: left;
+		}
+
+		&:last-child{
+			float: right;
+		}
+
+		&.middle-section{
+
+
+			*{ text-align: center; }
+		}
+	}
+	input{ max-height: 30px; border: 0; }
+	a{ padding: 6px $pad; line-height: 30px; }
+
+	input, a{
+		cursor: pointer;
+		color: $white;
+		text-decoration: none;
+		vertical-align: middle;
+		background-color: $gray-med;
+
+		@include border-radius(2px, 2px, 2px, 2px);
+
+		&.next{
+			background-color: $lap-cyan;
+		}
+
+		&:hover, &:active{
+			background-color: darken($lap-cyan, 10%);
+		}
+
+		i:before{
+			margin: 0 5px;
+		}
+	}
+}
 
 
 
