@@ -3,6 +3,10 @@ p {
 	margin-bottom: $space;
 }
 
+.small{
+	font-size: $font-size-small;
+}
+
 /* Blockquote */
 blockquote {
     font-style:italic;

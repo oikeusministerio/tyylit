@@ -98,3 +98,28 @@ $fadeout-space: 70px;
 	}
 }
 
+// Helper text
+
+.helper-container{
+
+	.icon-help{
+		cursor: pointer;
+
+		&:after{
+			color: $text-color;
+			border-radius: 48px;
+			font-size: 1.8em;
+			display: inline-block;
+			border: 2px solid #666;
+			width: 32px;
+			height: 28px;
+			text-indent: 5px;
+			padding-top: 4px;
+			margin-bottom: -5px;
+		}
+	}
+	.helper-text{
+		margin: $pad-half 0;
+	}
+}
+
