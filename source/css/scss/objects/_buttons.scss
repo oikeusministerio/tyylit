@@ -20,7 +20,7 @@
 	border: 1px solid #ccc;
 	cursor: pointer;
 
-	@include border-radius(1px, 1px, 1px, 1px);
+	@include border-radius(2px, 2px, 2px, 2px);
 
 	&:hover, &:focus {
 		background: lighten($gray-dark, 10%);
@@ -153,11 +153,11 @@
 
 		&:first-child{
 			border-left: 1px solid #ccc;
-			@include border-radius(0,0, 1px, 1px);
+			@include border-radius(0,0, 2px, 2px);
 		}
 		&:last-child{
 			border-right: 1px solid #ccc;
-			@include border-radius(1px, 1px, 0, 0);
+			@include border-radius(2px, 2px, 0, 0);
 		}
 
 		.count{
@@ -182,7 +182,7 @@
 			&.active{
 				background-color: $lap-cyan;
 				color: $white;
-				@include border-radius(1px, 1px, 1px, 1px);
+				@include border-radius(2px, 2px, 2px, 2px);
 			}
 		}
 	}
@@ -194,7 +194,7 @@
 	color: $white;
 	padding: 4px 4px 4px 6px;
 	-webkit-appearance: none;
-	@include border-radius(1px, 1px, 1px, 1px);
+	@include border-radius(2px, 2px, 2px, 2px);
 }
 .select-style:after{
 	content: "\f0d7";
@@ -207,6 +207,46 @@
 
 }
 
+// Icon-lift -button.
+.icon-lift{
+
+
+	max-height: 130px;
+	max-width: 360px;
+	position: relative;
+	background-color: $gray-light;
+
+	.count-container{
+		width: 100%;
+		text-align: center;
+		a{
+			z-index: 1;
+			position: relative;
+			background-color: $gray-light;
+			padding: $pad-half;
+			@include border-radius(17px, 17px, 17px, 17px);
+		}
+	}
+
+	.icon-lift-link, .date{
+		display: block;
+		text-align: center;
+		line-height: 1.5;
+	}
+
+	.icon-span{
+		line-height: 4em;
+		&:before{ position: absolute; font-size: 5em; top: 3px; left: 42%; }
+	}
+
+	.icon-lift-link{
+
+	}
+
+	.date{
+
+	}
+}
 
 
 

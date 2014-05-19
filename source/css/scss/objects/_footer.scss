@@ -13,32 +13,7 @@
 	}
 }
 
-//Footer Nav
-.nav-footer {
-	margin: (-$pad) (-$pad) $space;
-
-	li {
-		border-bottom: 1px solid $gray-dark;
-
-		@media all and (min-width: $bp-med) {
-			border: 0;
-			float: left;
-		}
-	}
-
-	a {
-		display: block;
-		padding: $pad;
-	}
-}
-
-.copyright {
-	@media all and (min-width: $bp-med) {
-		float: right;
-	}
-}
-
-.dummy-footer{
+.sg-pattern-body .dummy-footer{
 	background-color: #1f1f1f;
 	padding-bottom: 100px;
 }
@@ -46,8 +21,6 @@
 .footer-nav{
 	@extend .cf;
 
-	max-width: 1000px;
-	margin: 0 auto;
 	padding: 0 em(10px);
 	color: $white;
 
