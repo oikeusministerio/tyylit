@@ -55,13 +55,15 @@ if( $('.form-element').length ){
 
 	//Text area word count
 	if( $('textarea').length ){
+		var maxlength;
 		// Set the counter elements
 		$('textarea').each(function(){
 			$(this).after( '<span class="textarea-word-count"></span>' );
 		});
 		// Set the counter value
 		$(".form-element textarea").keyup(function(){
-		  $(this).parent().find(".textarea-word-count").text( (400 - $(this).val().length)+" merkkiä jäljellä" );
+			maxlength = $(this).attr("maxlength");
+			$(this).parent().find(".textarea-word-count").text( (maxlength - $(this).val().length)+" merkkiä jäljellä" );
 		});
 	}
 }
