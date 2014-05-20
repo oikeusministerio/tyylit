@@ -128,3 +128,38 @@ input[type="search"]::-webkit-search-decoration {
 	border-left: 1px solid $gray;
 	color: $gray;
 }
+
+/* File attachment */
+.attachment-form{
+	background-color: $gray-light;
+	width: 200px;
+	height: 200px;
+
+	input[type=file]{
+		position: absolute;
+		left: -9999px;
+	}
+
+	.upload-file-button{
+		cursor: pointer;
+		color: $blue;
+		text-align: center;
+
+		&:before{
+			content: '+';
+			background-color: $gray-med;
+			color: $white;
+			width: 40px;
+			height: 40px;
+
+			@include border-radius();
+		}
+
+		@extend .icon-plus;
+	}
+}
+
+
+
+
+

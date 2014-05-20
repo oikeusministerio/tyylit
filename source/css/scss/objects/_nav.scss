@@ -316,7 +316,14 @@
 	overflow-x: auto;
 	overflow-y: hidden;
 	white-space: nowrap;
+	position: relative;
 
+	@media screen and( max-width: 613px ){
+		&.scroll--shadow{
+			-webkit-box-shadow:inset -10px 0 10px -10px rgba(0,0,0,0.65);
+			box-shadow: inset -10px 0 10px -10px rgba(0,0,0,0.65);
+		}
+	}
 	ul{
 		list-style: none;
 		display: inline-block;
