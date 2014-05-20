@@ -1,0 +1,26 @@
+
+<!-- Attachment state: expecting file -->
+<form action="" class="attachment-form">
+	<div class="form-element attachment-container">
+		<label for="upload-file" class="upload-file-button">Lisää tiedosto</label>
+		<input type="file" id="upload-file">
+	</div>
+</form>
+<!-- Attachment state: expecting meta and save command -->
+<form action="" class="attachment-form">
+	<div class="form-element attachment-save">
+		<textarea name="attachment-meta" maxlength="8" placeholder="Kuvaile lyhyesti liitettä"></textarea>
+		<input type="submit" class="save-attachment" value="Tallenna">
+	</div>
+</form>
+<!-- Attachment state: shows uploaded file and options -->
+<form action="" class="attachment-form">
+	<div class="form-element attachment-edit">
+		<label class="edit-file-button">muokkaa</label>
+		<div class="mime-container">
+			<p>MIME-tyypin mukainen ikoni tähän</p>
+		</div>
+		<a class="file-title">Otsikko</a>
+		<p>tiedostonimi...jpg</p>
+	</div>
+</form>

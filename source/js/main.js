@@ -63,7 +63,7 @@ if( $('.form-element').length ){
 		// Set the counter value
 		$(".form-element textarea").keyup(function(){
 			maxlength = $(this).attr("maxlength");
-			$(this).parent().find(".textarea-word-count").text( (maxlength - $(this).val().length)+" merkkiä jäljellä" );
+			$(this).parent().find(".textarea-word-count").text( (maxlength - $(this).val().length) );
 		});
 	}
 }

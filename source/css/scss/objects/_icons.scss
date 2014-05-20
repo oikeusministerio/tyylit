@@ -260,6 +260,16 @@ i{
 	content: "\f105";
 }
 
+// icons called from somewhere else than span or i. Possible to call from :after.
+
+.icon-plus{
+	content: "\f067";
+	@extend .icon-style; // Because it's used in attachment's as a label:before
+}
+.icon-edit-pen{
+	content: "\f040";
+	@extend .icon-style;
+}
 
 // Non pre-pseudos. Call from pseudos.
 .icon-process-arrow{

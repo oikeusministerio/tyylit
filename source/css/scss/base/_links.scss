@@ -4,12 +4,13 @@ a{
 	font-size: $font-size-normal;
 	text-decoration: none;
 	outline: 0;
+	cursor: pointer;
 
 	&:hover, &:focus {
-		color: $gray;
+		color: darken($blue, 5%);
 		text-decoration: none;
 	}
 	&:active{
-		color: $blue;
+		color: darken($blue, 10%);
 	}
 }
