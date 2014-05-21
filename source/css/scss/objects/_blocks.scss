@@ -140,3 +140,212 @@
 		padding: $pad-half;
 	}
 }
+
+/* Conversation component blocks */
+
+// Og post
+
+.social-post{
+	width: 100%; //temp
+}
+
+.og-share-post{
+	.share-content{
+		margin-top: 1.33em;
+		> div{ display: inline-block; position: relative; vertical-align: top; }
+		.image-container{
+			width: 100%;
+			height: auto;
+			max-height: 60px;
+
+			@media #{$tablet}{
+				width: 30%;
+				height: 100%;
+				max-height: auto;
+			}
+
+			img{
+
+				max-width: 100%;
+				width: 100%;
+				// Fake fill
+				background-color: $gray-light;
+				border: 3px solid darken($gray-light, 20%);
+
+			}
+		}
+		.text-content-container{
+			width: 100%;
+			padding-left: 0;
+
+			@media #{$tablet}{
+				width: 69%;
+				padding-left: 15px;
+			}
+
+			.content-title{
+				margin-top: 0;
+			}
+		}
+	}
+}
+
+.post-header{
+	width: 100%;
+	height: 80px; //temp
+
+	.user-avatar{
+		float: left;
+		height: 100%;
+		width: 50px;
+		margin-right: $pad-half;
+		position: relative;
+		display: block;
+	}
+
+	.user, .post-time{
+		display: inline-block;
+	}
+
+	.user{
+
+	}
+
+	.post-time{
+
+	}
+
+	.reply-content{
+
+	}
+
+}
+
+.social-actions{
+	a{ display: inline-block; width: 30%; }
+	a:last-child{ max-width: 30%; width: auto; }
+	padding-top: 5px;
+	margin-top: 5px;
+	border-top: 1px solid $gray-light;
+
+	i{
+		margin: 0 5px;
+	}
+
+	.social-replies & {
+		width: 100%;
+		margin-left: 0;
+
+		@media #{$tablet}{
+			width: 70%;
+			margin-left: 29%;
+		}
+	}
+}
+
+.reply-post{
+
+}
+
+.social-conversation{
+	// this class will probably not be needed if this component is implemented
+	margin: $pad $pad-double;
+	max-width: 600px;
+}
+
+.social-replies{
+	margin-top: 2em;
+
+
+	.first-level.has-children{ // Overqualified on purpose
+		border-left: 0;
+		padding-left: 0;
+		padding-top: 0;
+
+		> .reply-post{
+			@extend .first-level;
+		}
+	}
+	.has-children ul{ // Nicer selector and no need for overqualification
+		margin-left: 20px;
+
+		li:first-child{
+			padding-top: 0;
+			margin-top: $pad;
+		}
+
+		li{
+			margin-top: 0;
+			padding-top: $pad;
+		}
+		li:last-child{
+			margin-bottom: $pad;
+		}
+	}
+
+	.first-level{
+		border-left: 2px solid $gray-dark;
+		padding-left: $pad-half;
+		padding-top: $pad;
+	}
+
+	.second-level{
+		margin-top: $pad;
+		border-left: 2px solid $gray-dark;
+		padding-left: $pad-half;
+	}
+}
+
+.reply-block{
+	min-height: 60px;
+	width: 100%;
+	margin-top: $pad-and-half;
+
+	@extend .cf;
+
+	.form-element{
+		margin-bottom: 0;
+		width: 100%;
+
+		@media #{$tablet}{
+		float: left; width: 85%; }
+	}
+
+	.icon-reply{
+		display: block;
+
+		&:before{
+			position: absolute;
+			left: 10px;
+			top: 10px;
+		}
+	}
+	.reply-area{
+		width: 100%;
+		padding-left: 35px;
+	}
+	.send-reply{
+		width: 80px;
+		height: 38px;
+
+		background-color: $gray-light;
+		color: lighten($text-color, 10%);
+		border: 2px solid lighten($gray-dark, 40%);
+		margin-top: 10px;
+
+		@media #{$tablet}{
+			float: right;
+			margin-top: 0;
+		}
+
+		&:hover, &:active{
+			background-color: darken($gray-light,10%);
+			color: lighten($text-color, 5%);
+			border: 2px solid lighten($gray-dark, 30%);
+		}
+	}
+}
+
+
+
+

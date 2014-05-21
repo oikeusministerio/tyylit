@@ -206,10 +206,10 @@
 			z-index: 1;
 			display: none;
 			padding: 10px 0 10px 30px;
-			background-color: $gray-med;
+			background-color: lighten($gray-dark, 10%);
 
 			li{
-				background-color: $gray-med;
+				background-color: transparent;
 
 				a{
 					color: darken($white, 10%);

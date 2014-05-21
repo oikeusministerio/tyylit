@@ -91,7 +91,8 @@
 		.form-element{
 			margin: 0 0 0 40px;
 			position: relative;
-			z-index: 2;
+			z-index: 1;
+			@media #{$tablet}{ z-index: 0; }
 		}
 
 		.search-field{
@@ -156,6 +157,8 @@
 .header #topnavibar{
 	z-index: 1;
 	padding: 0;
+
+	.navigation{ overflow: visible; height: 62px; @media #{$tablet}{ height: 42px; } }
 
 	&.expanded{
 		height: 485px;
@@ -222,16 +225,17 @@
 			float: right;
 		}
 
-		a{
+		a, .logout-btn-wrapper{
 			padding: 14px 8px;
 			float: left;
 			line-height: 33px;
+
 
 			span{ display: inline; opacity: 1; }
 			i{ display: none; opacity: 0; }
 
 			@media screen and (max-width: 500px){
-				i{ display: inline; opacity: 1; }
+				i{ display: inline; opacity: 1 ; }
 				span{ display: none; opacity: 0; }
 			}
 
@@ -242,6 +246,86 @@
 			}
 			@media #{$desktop}{ float: left; display: inline; }
 		}
+		.user-navigation > ul > li > a{
+			padding: 0 10px; margin: 0;
+			border-right: 0;
+			height: 61px;
+			line-height: 61px;
+			@media #{$tablet}{ line-height: 42px; height: 42px; }
+		}
+
+		.user-navigation{
+			position: relative;
+			right: 0; top: 0; left: 0;
+
+			border-right: 1px solid #000000 !important;
+			padding-right: $pad-half;
+
+
+
+			ul.is-vishidden li a{ display: none; float: none; }
+			ul.is-visible {
+				background-color: $gray-med;
+				border: 1px solid darken($gray-med, 20%);
+				position: absolute;
+				top:61px;
+				right: -1px;
+				width: 200px;
+
+				@media #{$tablet}{
+					top: 42px;
+					right: auto;
+				}
+
+				li a{ line-height: 1em; color: $text-color; border: none; }
+			}
+
+			.icon-arrow{
+				cursor: pointer;
+				&:before{
+					font-size: $font-size-normal;
+					display: inline-block;
+					margin-left: 5px;
+					vertical-align: middle;
+					cursor: pointer;
+					background-color: $gray;
+					padding: 5px;
+					margin-top: 17px;
+					@include border-radius(3px, 3px, 3px, 3px);
+
+					@media #{$tablet}{ margin-top: 8px; }
+				}
+			}
+
+		}
+		.logout-btn-wrapper{
+			margin: 0; padding: 0;
+			height: 61px;
+			@media #{$tablet}{ height: 42px; }
+
+			i{ display: none; opacity: 0; }
+
+			@media screen and (max-width: 500px){
+				i{
+					display: inline;
+					opacity: 1;
+					right: 20px;
+				}
+			}
+
+			.ctl-btn-logout{
+				float: none;
+				line-height: 61px;
+				padding: 0 10px;
+				margin: 0;
+				@media #{$tablet}{ line-height: 42px; }
+				@media screen and (max-width: 500px){
+					color: transparent;
+					width: 50px;
+				}
+			}
+		}
+
 	}
 	.column-alt{
 		padding-top: 0;

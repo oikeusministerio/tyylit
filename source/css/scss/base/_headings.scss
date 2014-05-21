@@ -68,3 +68,7 @@ h6, .zeta    {
 	font-family: $font-secondary;
 	font-weight: normal;
 }
+
+title{
+	@extend .alpha;
+}

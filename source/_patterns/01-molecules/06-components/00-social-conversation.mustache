@@ -1,0 +1,24 @@
+
+<section class="social-conversation">
+	{{>molecules-opening-post}}
+	<ul class="social-replies">
+		<li class="first-level">
+			{{>molecules-reply-post}}
+		</li>
+		<li class="first-level has-children">
+			{{>molecules-reply-post}}
+			<ul>
+				<li class="second-level">
+					{{>molecules-reply-post}}
+				</li>
+				<li class="second-level">
+					{{>molecules-reply-post}}
+				</li>
+			</ul>
+		</li>
+		<li class="first-level">
+			{{>molecules-reply-post}}
+		</li>
+	</ul>
+	{{>molecules-reply-block}}
+</section>

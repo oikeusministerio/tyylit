@@ -259,6 +259,24 @@ i{
 .icon-arrow-forward:before{
 	content: "\f105";
 }
+.icon-off:before{
+	content: "\f090";
+}
+.icon-arrow:before{
+	content: "\f0d7";
+}
+.icon-user:before{
+	content: "\f007";
+}
+.icon-like:before{
+	content: "\f087";
+}
+.icon-dislike:before{
+	content: "\f088";
+}
+.icon-reply:before{
+	content: "\f112"; // alt. \f075
+}
 
 // icons called from somewhere else than span or i. Possible to call from :after.
 
