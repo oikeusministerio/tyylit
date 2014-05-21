@@ -55,6 +55,7 @@ if( $('.form-element').length ){
 
 	//Text area word count
 	if( $('textarea').length ){
+		var ta;
 		var maxlength;
 		// Set the counter elements
 		$('textarea').each(function(){
@@ -62,8 +63,10 @@ if( $('.form-element').length ){
 		});
 		// Set the counter value
 		$(".form-element textarea").keyup(function(){
-			maxlength = $(this).attr("maxlength");
-			$(this).parent().find(".textarea-word-count").text( (maxlength - $(this).val().length) );
+			ta = $(this);
+			ta.height(1).height( ta[0].scrollHeight );
+			maxlength = ta.attr("maxlength");
+			ta.parent().find(".textarea-word-count").text( (maxlength - ta.val().length) );
 		});
 	}
 }
@@ -253,6 +256,13 @@ if( $('.helper-container').length ){
 			$('.navi-responsive').removeClass('is-visible');
 		}
 	};
+
+	if( $('.user-navigation').length ){
+		var u_trigger = $('.user-navigation').find('.icon-arrow');
+		u_trigger.on('click', function(event){
+			$(this).parent().find('ul').toggleClass('is-visible is-vishidden');
+		});
+	}
 
 // Toastr messages
 
