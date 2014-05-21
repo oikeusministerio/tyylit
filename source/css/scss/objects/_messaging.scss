@@ -5,10 +5,12 @@
 // Toasts
 
 .toast{
-	border-width: 1px;
+	border-width: 2px;
 	border-style: solid;
 	background-color: $white;
-	i{
+	position: relative;
+
+	i.toast-icon{
 		&.inverse:before{
 			width: 28px; height: 28px; line-height: 28px; text-align: center;
 			font-size: 1em;
@@ -26,6 +28,18 @@
 			color: $text-color;
 			opacity: 0.8;
 		}
+	}
+
+	i.icon-close{
+		position: absolute;
+		right: 10px; top: 8px;
+
+		font-size: 1em;
+		opacity: .8;
+	}
+
+	&:hover i, &:hover i:before{
+		opacity: 1;
 	}
 }
 
@@ -87,24 +101,6 @@
 	  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
 	  filter: alpha(opacity=90);
 
-	@include border-radius(2px, 2px, 2px, 2px);
+	@include border-radius(2px, 3px, 3px, 2px);
 }
 
-.toast-container{
-
-}
-
-.msg-warning {
-
-}
-
-.msg-info{
-
-}
-
-.msg-success{
-
-}
-.msg-error{
-
-}

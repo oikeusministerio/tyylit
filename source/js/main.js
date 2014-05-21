@@ -296,6 +296,16 @@ $('.toast-container').find('.toast-trigger').on('click', function(){
 	toastr[t.type](t.msg);
 });
 
+// Carousel
+
+$('.carousel').carousel({
+	interval: 7000,
+	pause: 'hover'
+});
+
+// Tag-it
+
+$("#myTags").tagit();
 
 
 

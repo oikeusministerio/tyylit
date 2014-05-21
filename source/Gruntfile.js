@@ -12,9 +12,16 @@ module.exports = function( grunt ) {
 
 			plugin_js: {
 				files: [
-					'js/modernizr.js'
+					'js/bootstrap-carousel.js',
+					'js/tag-it.js'
 				],
 				tasks: ['uglify:plugin_js_min', 'shell:generate']
+			},
+			modernizr_js: {
+				files: [
+					'js/modernizr.js'
+				],
+				tasks: ['uglify:modernizr_js_min', 'shell:generate']
 			},
 
 			js: {
@@ -74,7 +81,23 @@ module.exports = function( grunt ) {
 					}
 				},
 				files: {
-					'js/plugins.min.js': 'js/modernizr.js'
+					'js/plugins.min.js': ['js/bootstrap-carousel.js', 'js/tag-it.js']
+					//'source/assets/js/basic-functions.min.js': 'source/assets/js/basic-functions.js'
+				}
+			},
+			modernizr_js_min: {
+				options: {
+					mangle: true,
+					preserveComments: false,
+					compress: {
+						global_defs: {
+							'DEBUG': false
+						},
+						drop_debugger: true
+					}
+				},
+				files: {
+					'js/modernizr.min.js': 'js/modernizr.js'
 					//'source/assets/js/basic-functions.min.js': 'source/assets/js/basic-functions.js'
 				}
 			},

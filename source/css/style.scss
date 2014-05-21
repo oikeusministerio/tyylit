@@ -105,6 +105,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
     $COMPONENTS
 \*------------------------------------*/
 @import "scss/objects/icons";
+@import "scss/objects/carousels";
 @import "scss/objects/colors";
 @import "scss/objects/buttons";
 @import "scss/objects/blocks";
@@ -117,6 +118,8 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 //@import "scss/objects/comments";
 @import "scss/objects/messaging";
 
-/* Something terrible */
-@import "pasted-horror.css";
+
+/* Imported stuff and plugins */
+@import "pasted-styles.css";
+@import "jquery.tagit.css";
 

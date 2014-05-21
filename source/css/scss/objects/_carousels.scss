@@ -1,38 +1,173 @@
-/* Horizontal Carousel */
-.carousel-horizontal {
-	margin-bottom: $space;
-	overflow: hidden;
+/* Pasted carousel styles from beta.otakantaa.fi */
+/*Carousel*/
+
+.content-carousel
+{
+	margin-bottom: 12px;
+}
+
+.carousel
+{
+	line-height: 1;
+	/*margin-bottom: 20px;*/
 	position: relative;
 }
 
-.carousel-island-container {
+.carousel-inner
+{
 	overflow: hidden;
-}
-
-.carousel-container {
 	position: relative;
-}
-
-.carousel-list {
-
-}
-
-.carousel-controls {
-	display: table;
 	width: 100%;
-	margin: (-$space-half) 0 $space;
 
-	a, div {
-		display: table-cell;
-		padding: $pad-half;
+
+	& > .item
+	{
+		display: none;
+		position: relative;
+		transition: left 0.6s ease-in-out 0s;
 	}
 
-	.carousel-pagination {
-		text-align: center;
+		& > .item > img, & > .item > a > img
+		{
+			display: block;
+			line-height: 1;
+			border: 0 none;
+			height: auto;
+			max-width: 100%;
+			vertical-align: middle;
+			/*stretch image*/
+			width: 100%;
+		}
+
+
+
+	& > .active, & > .next, & > .prev
+	{
+		display: block;
 	}
 
-	.carousel-next {
-		text-align: right;
+	& > .active
+	{
+		left: 0;
 	}
 
+	& > .next, & > .prev
+	{
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+
+	& > .next
+	{
+		left: 100%;
+	}
+
+	& > .prev
+	{
+		left: -100%;
+	}
+
+		& > .next.left, & > .prev.right
+		{
+			left: 0;
+		}
+
+	& > .active.left
+	{
+		left: -100%;
+	}
+
+	& > .active.right
+	{
+		left: 100%;
+	}
+}
+
+.carousel-control
+{
+	background: none repeat scroll 0 0 #222222;
+	border: 3px solid #FFFFFF;
+	border-radius: 23px;
+	color: #FFFFFF;
+	font-size: 60px;
+	font-weight: 100;
+	height: 40px;
+	left: 15px;
+	line-height: 30px;
+	margin-top: -20px;
+	opacity: 0.5;
+	position: absolute;
+	text-align: center;
+	top: 40%;
+	width: 40px;
+
+
+	&.right
+	{
+		left: auto;
+		right: 15px;
+	}
+
+	&:hover, &:focus
+	{
+		color: #FFFFFF;
+		opacity: 0.9;
+		text-decoration: none;
+	}
+}
+
+.carousel-indicators
+{
+	list-style: none outside none;
+	margin: 0;
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	z-index: 5;
+
+
+	li
+	{
+		background-color: rgba(255, 255, 255, 0.25);
+		border-radius: 5px;
+		display: block;
+		float: left;
+		height: 10px;
+		margin-left: 5px;
+		text-indent: -999px;
+		width: 10px;
+	}
+
+	.active
+	{
+		background-color: #FFFFFF;
+	}
+}
+.carousel-caption
+{
+	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
+	bottom: 0;
+	left: 0;
+	padding: 15px;
+	position: absolute;
+	right: 0;
+	text-align: left;
+
+
+	h4, p
+	{
+		color: #FFFFFF;
+		line-height: 20px;
+	}
+
+	h4
+	{
+		margin: 0 0 5px;
+	}
+
+	p
+	{
+		margin-bottom: 0;
+	}
 }
