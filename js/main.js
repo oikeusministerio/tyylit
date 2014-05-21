@@ -123,13 +123,13 @@ if( $('.header').find('.js-expand-search').length && $('.search-field').css('dis
 
 // Fadeout
 if( $('.fadeout').length ){
-	var orig_text = $('.read-more').find('a').text();
+	var orig_text;
 
 	$('.read-more').find('a').click(function(event){
 		event.preventDefault();
 
-
-		$('.fadeout').addClass('open');
+		orig_text = $(this).text();
+		$(this).parent().parent('.fadeout').addClass('open');
 		$(this).addClass('pt-fix');
 		$(this).parent().remove();
 		// In case toggle between 'lue lisää' and 'pienennä teksti' is wanted
