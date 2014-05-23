@@ -1,11 +1,10 @@
 &lt;form action=&quot;#&quot; method=&quot;post&quot; class=&quot;inline-form search-form&quot;&gt;
 	&lt;legend class=&quot;is-vishidden&quot;&gt;Search&lt;/legend&gt;
-	&lt;div class=&quot;form-element&quot;&gt;
-		&lt;label for=&quot;search-field&quot; class=&quot;is-vishidden&quot;&gt;Search&lt;/label&gt;
-		&lt;input type=&quot;search&quot; placeholder=&quot;Search&quot; id=&quot;search-field&quot; class=&quot;search-field&quot; /&gt;
-		&lt;button class=&quot;search-submit js-expand-search&quot;&gt;
-			&lt;i class=&quot;icon-search&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-			&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;/span&gt;
-		&lt;/button&gt;
+	&lt;div id=&quot;pnlQuickSearch&quot; class=&quot;form-element&quot; title=&quot;Hae palvelun sis&auml;lt&ouml;j&auml; Googlella&quot; onkeypress=&quot;javascript:return WebForm_FireDefaultButton(event, 'btnQuickSearch')&quot;&gt;
+		&lt;label for=&quot;tbQuickSearch&quot; class=&quot;is-vishidden&quot;&gt;Search&lt;/label&gt;
+		&lt;input type=&quot;hidden&quot; name=&quot;ctl00$ajxWatermarkQuickSearch_ClientState&quot; id=&quot;ajxWatermarkQuickSearch_ClientState&quot;&gt;
+		&lt;input name=&quot;ctl00$tbQuickSearch&quot; type=&quot;text&quot; maxlength=&quot;300&quot; id=&quot;tbQuickSearch&quot; tabindex=&quot;10&quot; class=&quot;text-quicksearch search-field ctl-text ellipsis&quot; autocomplete=&quot;off&quot;&gt;
+		&lt;input type=&quot;submit&quot; name=&quot;ctl00$btnQuickSearch&quot; value=&quot;&quot; id=&quot;btnQuickSearch&quot; tabindex=&quot;11&quot; class=&quot;button-quicksearch&quot;&gt;
+		&lt;i class=&quot;icon-search&quot;&gt;&lt;/i&gt;
 	&lt;/div&gt;
 &lt;/form&gt;
