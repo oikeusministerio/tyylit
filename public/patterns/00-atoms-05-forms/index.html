@@ -10,7 +10,7 @@
 		<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 
-		<link rel="stylesheet" href="../../css/style.css?1400675233" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1400838614" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -20,8 +20,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1400675233" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1400675233" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1400838614" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1400838614" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -34,95 +34,33 @@
 			
 			<!-- Patterns -->
 			<div id="sg-patterns">
-					<div id="atoms-checkbox" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-05-forms-02-checkbox/00-atoms-05-forms-02-checkbox.html" class="patternLink" data-patternpartial="atoms-checkbox">Checkbox</a></h2>
+					<div id="atoms-html5-inputs" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-05-forms-04-html5-inputs/00-atoms-05-forms-04-html5-inputs.html" class="patternLink" data-patternpartial="atoms-html5-inputs">Html5 Inputs</a></h2>
 						<div class="sg-pattern-body">
-							<form>
-	<div class="form-element">
-		<label>Kannatusilmoitusten keräystavat</label>
-	</div>
-	<div class="form-element">
-		<label>
-			<input type="checkbox" checked="checked">Kansalaisaloite.fi
-		</label>
-	</div>
-	<div class="form-element">
-		<label>
-			<input type="checkbox" disabled>Muu verkkopalvelu
-		</label>
-	</div>
-	<div class="form-element">
-		<label>
-			<input type="checkbox">Paperilomakkeet
-		</label>
-	</div>
-</form>
+							<fieldset>
+	<div class="field-container"><label for="ic">Color input</label> <input type="color" id="ic" value="#000000"></div>
+	<div class="field-container"><label for="in">Number input</label> <input type="number" id="in" min="0" max="10" value="5"></div>
+	<div class="field-container"><label for="ir">Range input</label> <input type="range" id="ir" value="10"></div>
+	<div class="field-container"><label for="idd">Date input</label> <input type="date" id="idd" value="1970-01-01"></div>
+	<div class="field-container"><label for="idm">Month input</label> <input type="month" id="idm" value="1970-01"></div>
+	<div class="field-container"><label for="idw">Week input</label> <input type="week" id="idw" value="1970-W01"></div>
+	<div class="field-container"><label for="idt">Datetime input</label> <input type="datetime" id="idt" value="1970-01-01T00:00:00Z"></div>
+	<div class="field-container"><label for="idtl">Datetime-local input</label> <input type="datetime-local" id="idtl" value="1970-01-01T00:00"></div>
+</fieldset>
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;form&gt;
-	&lt;div class=&quot;form-element&quot;&gt;
-		&lt;label&gt;Kannatusilmoitusten ker&auml;ystavat&lt;/label&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;form-element&quot;&gt;
-		&lt;label&gt;
-			&lt;input type=&quot;checkbox&quot; checked=&quot;checked&quot;&gt;Kansalaisaloite.fi
-		&lt;/label&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;form-element&quot;&gt;
-		&lt;label&gt;
-			&lt;input type=&quot;checkbox&quot; disabled&gt;Muu verkkopalvelu
-		&lt;/label&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;form-element&quot;&gt;
-		&lt;label&gt;
-			&lt;input type=&quot;checkbox&quot;&gt;Paperilomakkeet
-		&lt;/label&gt;
-	&lt;/div&gt;
-&lt;/form&gt;
-									</code>
-								</pre>
-							</div>
-						</div>
-					</div>
-					<div id="atoms-radio-buttons" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-05-forms-03-radio-buttons/00-atoms-05-forms-03-radio-buttons.html" class="patternLink" data-patternpartial="atoms-radio-buttons">Radio Buttons</a></h2>
-						<div class="sg-pattern-body">
-							<form role="form">
-	<div class="form-element">
-		<label>Aloitteen muoto</label>
-	</div>
-	<div class="form-element">
-		<label>
-			<input name="example" type="radio" checked="checked">Lakiehdotus
-		</label>
-	</div>
-	<div class="form-element">
-		<label>
-			<input name="example" type="radio">Ehdotus lainvalmisteluun ryhtymisestä
-		</label>
-	</div>
-</form>
-							<div class="sg-code" style="display: none">
-								<h3 class="sg-code-head">HTML</h3>
-								<pre class="sg-code-html">
-									<code>
-										&lt;form role=&quot;form&quot;&gt;
-	&lt;div class=&quot;form-element&quot;&gt;
-		&lt;label&gt;Aloitteen muoto&lt;/label&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;form-element&quot;&gt;
-		&lt;label&gt;
-			&lt;input name=&quot;example&quot; type=&quot;radio&quot; checked=&quot;checked&quot;&gt;Lakiehdotus
-		&lt;/label&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;form-element&quot;&gt;
-		&lt;label&gt;
-			&lt;input name=&quot;example&quot; type=&quot;radio&quot;&gt;Ehdotus lainvalmisteluun ryhtymisest&auml;
-		&lt;/label&gt;
-	&lt;/div&gt;
-&lt;/form&gt;
+										&lt;fieldset&gt;
+	&lt;div class=&quot;field-container&quot;&gt;&lt;label for=&quot;ic&quot;&gt;Color input&lt;/label&gt; &lt;input type=&quot;color&quot; id=&quot;ic&quot; value=&quot;#000000&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;&lt;label for=&quot;in&quot;&gt;Number input&lt;/label&gt; &lt;input type=&quot;number&quot; id=&quot;in&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;5&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;&lt;label for=&quot;ir&quot;&gt;Range input&lt;/label&gt; &lt;input type=&quot;range&quot; id=&quot;ir&quot; value=&quot;10&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;&lt;label for=&quot;idd&quot;&gt;Date input&lt;/label&gt; &lt;input type=&quot;date&quot; id=&quot;idd&quot; value=&quot;1970-01-01&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;&lt;label for=&quot;idm&quot;&gt;Month input&lt;/label&gt; &lt;input type=&quot;month&quot; id=&quot;idm&quot; value=&quot;1970-01&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;&lt;label for=&quot;idw&quot;&gt;Week input&lt;/label&gt; &lt;input type=&quot;week&quot; id=&quot;idw&quot; value=&quot;1970-W01&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;&lt;label for=&quot;idt&quot;&gt;Datetime input&lt;/label&gt; &lt;input type=&quot;datetime&quot; id=&quot;idt&quot; value=&quot;1970-01-01T00:00:00Z&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;field-container&quot;&gt;&lt;label for=&quot;idtl&quot;&gt;Datetime-local input&lt;/label&gt; &lt;input type=&quot;datetime-local&quot; id=&quot;idtl&quot; value=&quot;1970-01-01T00:00&quot;&gt;&lt;/div&gt;
+&lt;/fieldset&gt;
 									</code>
 								</pre>
 							</div>
@@ -195,7 +133,7 @@
 						<div class="sg-pattern-body">
 							<div class="form-element">
 	<label for="textarea">Tekstialue</label>
-	<textarea maxlength="400"></textarea>
+	<textarea class="js-dynamic" maxlength="400"></textarea>
 </div>
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
@@ -203,7 +141,7 @@
 									<code>
 										&lt;div class=&quot;form-element&quot;&gt;
 	&lt;label for=&quot;textarea&quot;&gt;Tekstialue&lt;/label&gt;
-	&lt;textarea maxlength=&quot;400&quot;&gt;&lt;/textarea&gt;
+	&lt;textarea class=&quot;js-dynamic&quot; maxlength=&quot;400&quot;&gt;&lt;/textarea&gt;
 &lt;/div&gt;
 									</code>
 								</pre>
@@ -213,14 +151,14 @@
 					<div id="atoms-tagit" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-05-forms-09-tagit/00-atoms-05-forms-09-tagit.html" class="patternLink" data-patternpartial="atoms-tagit">Tagit</a></h2>
 						<div class="sg-pattern-body">
-							<ul id="myTags">
+							<ul id="otakantaa-tags" class="tag-list">
 
 </ul>
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;ul id=&quot;myTags&quot;&gt;
+										&lt;ul id=&quot;otakantaa-tags&quot; class=&quot;tag-list&quot;&gt;
 
 &lt;/ul&gt;
 									</code>
@@ -278,10 +216,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1400675233">
+	<script id="pl-js-polyfill-insert-1400838614">
 		(function() {
 			if (self != top) {
-				var cb = '1400675233';
+				var cb = '1400838614';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -290,10 +228,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1400675233">
+	<script id="pl-js-insert-1400838614">
 		(function() {
 			if (self != top) {
-				var cb = '1400675233';
+				var cb = '1400838614';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}

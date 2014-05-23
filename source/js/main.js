@@ -64,7 +64,9 @@ if( $('.form-element').length ){
 		// Set the counter value
 		$(".form-element textarea").keyup(function(){
 			ta = $(this);
-			ta.height(1).height( ta[0].scrollHeight );
+			if( ta.hasClass('js-dynamic') ){
+				ta.height(1).height( ta[0].scrollHeight );
+			}
 			maxlength = ta.attr("maxlength");
 			ta.parent().find(".textarea-word-count").text( (maxlength - ta.val().length) );
 		});
@@ -305,7 +307,10 @@ $('.carousel').carousel({
 
 // Tag-it
 
-$("#myTags").tagit();
+$("#otakantaa-tags").tagit({
+	allowSpaces: true,
+	availableTags: ["demokratia", "äänestys", "mm95", "suomi", "karjala", "otakantaa", "ota kantaa", "vaalit"]
+});
 
 
 

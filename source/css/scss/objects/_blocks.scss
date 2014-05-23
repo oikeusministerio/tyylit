@@ -205,6 +205,7 @@
 
 	.user, .post-time{
 		display: inline-block;
+		margin-bottom: 0.625em;
 	}
 
 	.user{
@@ -212,7 +213,8 @@
 	}
 
 	.post-time{
-
+		font-size: 0.785em;
+		color: $gray;
 	}
 
 	.reply-content{
@@ -306,43 +308,36 @@
 	.form-element{
 		margin-bottom: 0;
 		width: 100%;
-
-		@media #{$tablet}{
-		float: left; width: 85%; }
 	}
 
-	.icon-reply{
-		display: block;
-
-		&:before{
-			position: absolute;
-			left: 10px;
-			top: 10px;
-		}
-	}
 	.reply-area{
 		width: 100%;
-		padding-left: 35px;
+		padding-right: 35px;
 	}
+
+	.icon-enter{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+
+		&:before{
+			color: lighten($text-color, 10%);
+			&:hover, &:active{
+				color: lighten($text-color, 5%);
+			}
+		}
+	}
+
 	.send-reply{
-		width: 80px;
-		height: 38px;
+		background-color: transparent;
+		border: none;
+		margin: 0;
 
-		background-color: $gray-light;
-		color: lighten($text-color, 10%);
-		border: 2px solid lighten($gray-dark, 40%);
-		margin-top: 10px;
+		width: 23px;
+		height: 23px;
+		position: absolute; right: -3px; top: -3px;
 
-		@media #{$tablet}{
-			float: right;
-			margin-top: 0;
-		}
 
-		&:hover, &:active{
-			background-color: darken($gray-light,10%);
-			color: lighten($text-color, 5%);
-			border: 2px solid lighten($gray-dark, 30%);
-		}
 	}
 }
 

@@ -201,20 +201,27 @@
 
 // Icon-lift -button.
 .icon-lift{
+	width: 175px;  // Change when the final size is decided.
+	height: 175px;  // Change when the final size is decided.
 
-
-	max-height: 130px;
-	max-width: 360px;
+	padding: 10px 5px; // Change if needed after the final size has been decided
 	position: relative;
-	background-color: $gray-light;
+	background-color: $white;
+	&.gray-base{
+		background-color: $gray-light;
+		.count-container a{ background-color: $gray-light; }
+	}
 
 	.count-container{
 		width: 100%;
 		text-align: center;
+		display: inline-block;
+		position: relative;
+
 		a{
 			z-index: 1;
 			position: relative;
-			background-color: $gray-light;
+			background-color: $white;
 			padding: $pad-half;
 			@include border-radius(17px, 17px, 17px, 17px);
 		}
@@ -228,7 +235,7 @@
 
 	.icon-span{
 		line-height: 4em;
-		&:before{ position: absolute; font-size: 5em; top: 3px; left: 42%; }
+		&:before{ position: absolute; font-size: 5em; top: 3px; margin-left: -10px; }
 	}
 
 	.icon-lift-link{
@@ -236,7 +243,7 @@
 	}
 
 	.date{
-
+		margin: $pad-half 0;
 	}
 }
 

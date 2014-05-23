@@ -57,6 +57,9 @@ td {
 			padding-right: $pad/4;
 			a, p, h4{ padding-right: $pad/4; }
 		}
+		a{
+			display: block;
+		}
 	}
 	td{
 		border: 0;
@@ -71,7 +74,6 @@ td {
 	}
 
 	td a{
-		display: block;
 		color: $blue;
 		text-decoration: none;
 	}

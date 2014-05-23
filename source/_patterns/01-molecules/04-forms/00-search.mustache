@@ -1,11 +1,10 @@
 <form action="{{ url }}" method="post" class="inline-form search-form">
 	<legend class="is-vishidden">Search</legend>
-	<div class="form-element">
-		<label for="search-field" class="is-vishidden">Search</label>
-		<input type="search" placeholder="Search" id="search-field" class="search-field" />
-		<button class="search-submit js-expand-search">
-			<i class="icon-search" aria-hidden="true"></i>
-			<span class="is-vishidden">Search</span>
-		</button>
+	<div id="pnlQuickSearch" class="form-element" title="Hae palvelun sisältöjä Googlella" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnQuickSearch')">
+		<label for="tbQuickSearch" class="is-vishidden">Search</label>
+		<input type="hidden" name="ctl00$ajxWatermarkQuickSearch_ClientState" id="ajxWatermarkQuickSearch_ClientState">
+		<input name="ctl00$tbQuickSearch" type="text" maxlength="300" id="tbQuickSearch" tabindex="10" class="text-quicksearch search-field ctl-text ellipsis" autocomplete="off">
+		<input type="submit" name="ctl00$btnQuickSearch" value="" id="btnQuickSearch" tabindex="11" class="button-quicksearch">
+		<i class="icon-search"></i>
 	</div>
 </form>

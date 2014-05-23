@@ -1,16 +1,4 @@
 
-/* Icon Font
-@font-face {
-	font-family: 'icons';
-	src:url('../fonts/icons.eot');
-	src:url('../fonts/icons.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/icons.woff') format('woff'),
-		url('../fonts/icons.ttf') format('truetype'),
-		url('../fonts/icons.svg#icons') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-*/
 @font-face {
 	font-family: ok-icons;
 	src:url("../fonts/otakantaa-icon-set.eot?1.1");
@@ -32,30 +20,6 @@
 /*
 .icon-twitter:before, .icon-stumbleupon:before, .icon-pinterest:before, .icon-linkedin:before, .icon-google-plus:before, .icon-search:before, .icon-play:before, .icon-menu:before, .icon-arrow-left:before, .icon-arrow-right:before, .icon-bubble:before, .icon-facebook:before, .icon-feed:before, .icon-youtube:before, .icon-tag:before, .icon-tumblr:before, .icon-instagram, .icon-podcast, .icon-apple,.icon-android, .icon-arrow:after, .icon-envelope:before {
 
-*/
-.icon-style-otakantaa{
-	font-family: 'ok-icons';
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-
-	&.size-s:before{
-		font-size: em(12px);
-	}
-
-	&.size-l:before{
-		font-size: em(24px);
-	}
-
-	&.size-xl:before{
-		font-size: em(36px);
-	}
-}
-/*
 .icon-twitter:before {
 	content: "\74";
 }
@@ -157,9 +121,22 @@
 .icons i{ margin: 0 10px; }
 .icons li{ line-height: 2; }
 
-.icon-style{
-	font-family: FontAwesome;
+.fa{ font-family: FontAwesome; }
+.om{ font-family: ok-icons; }
+
+.footer .om:before{
+	vertical-align: sub;
+	font-size: 2em;
+}
+
+.icon-style, .fa, .om{
+	speak: none;
 	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
 
 	&.size-s:before{
 		font-size: em(12px);
@@ -180,49 +157,61 @@ i{
 
 .icon-ok:before {
 	content: "\f00c";
+	@extend .fa;
 }
 
 .icon-info:before{
 	content: "\f129";
+	@extend .fa;
 }
 
 .icon-search:before{
 	content: "\f002";
+	@extend .fa;
 }
 
 .icon-play:before{
 	content: "\f04b";
+	@extend .fa;
 }
 
 .icon-close:before, .icon-error:before{
 	content: "\f00d";
+	@extend .fa;
 }
 
 .icon-delete:before{
 	content: "\f014";
+	@extend .fa;
 }
 
 .icon-warning:before{
 	content: "\f06a";
+	@extend .fa;
 }
 
 .icon-notify:before{
 	content: "\f071";
+	@extend .fa;
 }
 
 .icon-add:before{
 	content: "\f067";
+	@extend .fa;
 }
 
 .icon-lbulb:before{
 	content: "\f0eb";
+	@extend .fa;
 }
 
 .icon-menu:before {
 	content: "\f0c9";
+	@extend .fa;
 }
 .icon-menu-arrow:before{
 	content: "\f067";
+	@extend .fa;
 
 	.sub-nav-open &{
 		content: "\f068";
@@ -234,78 +223,112 @@ i{
 }
 
 .icon-login:before{
-	content: "\f08b";
+	content: "\f090";
+	@extend .fa;
 }
 
 .icon-logout:before{
-	content: "\f090";
+	content: "\f08b";
+	@extend .fa;
 }
 
 .icon-register:before{
 	content: "\f044";
+	@extend .fa;
 }
 .icon-mail:before{
 	content: "\f0e0";
+	@extend .fa;
 }
 .icon-people:before{
 	content: "\f0c0";
+	@extend .fa;
 }
 .icon-chart:before{
 	content: "\f080";
+	@extend .fa;
 }
 .icon-arrow-back:before{
 	content: "\f104";
+	@extend .fa;
 }
 .icon-arrow-forward:before{
 	content: "\f105";
+	@extend .fa;
 }
 .icon-off:before{
 	content: "\f090";
+	@extend .fa;
 }
 .icon-arrow:before{
 	content: "\f0d7";
+	@extend .fa;
 }
 .icon-user:before{
 	content: "\f007";
+	@extend .fa;
 }
 .icon-like:before{
 	content: "\f087";
+	@extend .fa;
 }
 .icon-dislike:before{
 	content: "\f088";
+	@extend .fa;
 }
 .icon-reply:before{
 	content: "\f112"; // alt. \f075
+	@extend .fa;
 }
 
 // icons called from somewhere else than span or i. Possible to call from :after.
 
 .icon-plus{
 	content: "\f067";
-	@extend .icon-style; // Because it's used in attachment's as a label:before
+	@extend .fa; // Because it's used in attachment's as a label:before
 }
 .icon-edit-pen{
 	content: "\f040";
-	@extend .icon-style;
+	@extend .fa;
 }
 
 // Non pre-pseudos. Call from pseudos.
 .icon-process-arrow{
 	content: "\f105";
-	@extend .icon-style;
+	@extend .fa;
 }
 
-// otakantaa icons
+// otakantaa icons. prefix om-
 
 .icon-comment:before{
 	content: "\63";
-	@extend .icon-style-otakantaa;
+	@extend .om;
 }
 
 .icon-help:after{
 	content:"\22";
-	@extend .icon-style-otakantaa;
+	@extend .om;
 }
+
+.om-facebook:before{
+	content: "\46";
+	z-index: 1;
+	position: relative;
+}
+.om-facebook:after{
+	content: "S";
+	display: none;
+}
+
+.om-twitter:before{
+	content: "\54";
+}
+
+.om-youtube:before{
+	content: "\55";
+}
+
+
 
 
 

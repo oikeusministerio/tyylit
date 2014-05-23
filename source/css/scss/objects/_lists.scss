@@ -61,3 +61,26 @@
 		margin-bottom: $space;
 	}
 }
+
+.tag-list{
+
+	.tagit-choice{
+		background-image: none;
+		background-color: $gray-med;
+
+		@include border-radius(2px, 2px, 2px, 2px);
+
+		.tagit-label{
+			color: $text-color;
+		}
+	}
+
+	.tagit-close{
+
+		.ui-icon-close{
+			@extend .icon-close;
+			@extend .icon-style;
+		}
+	}
+
+}
