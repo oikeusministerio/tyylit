@@ -104,22 +104,24 @@ $fadeout-space: 70px;
 
 	.icon-help{
 		cursor: pointer;
+		vertical-align: bottom;
+		line-height: 3;
 
 		&:after{
 			color: $text-color;
-			border-radius: 48px;
-			font-size: 1.8em;
+			border-radius: 11px;
+			font-size: 1.125em;
 			display: inline-block;
-			border: 2px solid #666;
-			width: 32px;
-			height: 28px;
-			text-indent: 5px;
-			padding-top: 4px;
-			margin-bottom: -5px;
+			border: 1px solid $text-color;
+			width: 20px;
+			height: 16.5px;
+			text-indent: 3.5px;
+			padding-top: 3.5px;
+			vertical-align: top;
 		}
 	}
 	.helper-text{
-		margin: $pad-half 0;
+		margin: -$pad-half 0 $pad-half;
 	}
 }
 

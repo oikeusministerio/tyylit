@@ -115,6 +115,14 @@ input[type="search"]::-webkit-search-decoration {
 
 }
 
+.email-el{
+	span, i{
+		&:before{
+			margin-right: 3px;
+		}
+	}
+}
+
 /* Textarea letter counter */
 .textarea-word-count{
 	color: $text-color;
@@ -123,6 +131,10 @@ input[type="search"]::-webkit-search-decoration {
 	margin-top: -35px;
 	right: 5px;
 	position: absolute;
+
+	&.inactive{
+		color: $gray;
+	}
 }
 
 
@@ -237,6 +249,63 @@ input[type="search"]::-webkit-search-decoration {
 		.file-title{ display: inline-block; margin: 10px 0; }
 
 	}
+}
+
+.form-element .picker{
+
+	button{
+		@extend .btn-small;
+		background-color: $gray-dark;
+		width: 40%;
+		margin: 0 $pad $pad-half;
+
+		@media screen and (max-width: 500px){
+			width: 100%;
+			margin: 0 auto  $pad-half;
+		}
+		&:hover, &:active{
+			color: $white;
+			background: lighten($gray-dark, 10%);
+			&:before{
+				color: white;
+			}
+		}
+
+		&.picker__button--today{
+			&:before{ content: none; }
+		}
+
+		&.picker__button--clear{
+			&:before{
+				@extend .icon-close;
+				color: $white !important;
+			}
+		}
+	}
+
+	.picker__nav--prev:hover, .picker__nav--next:hover{ background-color: $gray-dark;
+
+		&:before{
+			border-right-color: white;
+			border-left-color: white;
+		}
+	}
+
+	.picker__day--selected.picker__day--highlighted{
+		background-color: $blue;
+		border-color: darken($blue, 10%);
+	}
+
+	.picker__day--today:before{ border-top-color: $blue; }
+
+	.picker__day--infocus:hover, .picker__day--outfocus:hover{
+		background-color: $gray-light;
+		&.picker__day--selected:hover{ background-color: darken($blue, 10%); }
+	}
+
+	.picker__day--highlighted{ background-color: $gray; border-color: darken($gray, 10%); }
+
+	.picker__table{ margin-bottom: $pad-half; }
 }
 
 

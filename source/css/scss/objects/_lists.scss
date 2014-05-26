@@ -62,7 +62,8 @@
 	}
 }
 
-.tag-list{
+// For tag search/writable tags
+.tagit-list{
 
 	.tagit-choice{
 		background-image: none;
@@ -82,5 +83,30 @@
 			@extend .icon-style;
 		}
 	}
+
+}
+
+// for listing pre-defined tags
+.tag-list{
+
+	li {
+		@extend .small;
+		display: inline-block;
+		border: 2px solid $gray;
+		padding: 1px 4px;
+		margin-left: 3px;
+		background-color: transparent;
+
+		&:first-child{
+			margin-left: 0;
+		}
+	}
+
+	.tag-with-icon{
+		i, span{
+			margin-right: 5px;
+		}
+	}
+
 
 }

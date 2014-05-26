@@ -59,7 +59,9 @@ if( $('.form-element').length ){
 		var maxlength;
 		// Set the counter elements
 		$('textarea').each(function(){
-			$(this).after( '<span class="textarea-word-count"></span>' );
+			$(this).after( '<span class="textarea-word-count inactive"></span>' );
+			maxlength = $(this).attr("maxlength");
+			$(this).parent().find(".inactive").text( maxlength );
 		});
 		// Set the counter value
 		$(".form-element textarea").keyup(function(){
@@ -67,11 +69,41 @@ if( $('.form-element').length ){
 			if( ta.hasClass('js-dynamic') ){
 				ta.height(1).height( ta[0].scrollHeight );
 			}
+			if( ta.parent().find('.textarea-word-count').hasClass('inactive') ){
+				ta.parent().find('.textarea-word-count').removeClass('inactive');
+			}
+
 			maxlength = ta.attr("maxlength");
 			ta.parent().find(".textarea-word-count").text( (maxlength - ta.val().length) );
 		});
 	}
 }
+/*
+if( $('.datepicker').data('maxdate').length ){
+	var maxdate = parseInt( $('.datepicker').data('maxdate') );
+} */
+
+
+
+$('.datepicker').pickadate({
+	// Escape any “rule” characters with an exclamation mark (!).
+	format: 'd.m.yyyy',
+	formatSubmit: 'yyyy/mm/dd',
+	hiddenPrefix: 'prefix__',
+	hiddenSuffix: '__suffix',
+
+
+	// Strings and translations
+	monthsFull: ['Tammikuu', 'Helmikuu', 'Maaliskuu', 'Huhtikuu', 'Toukokuu', 'Kesäkuu', 'Heinäkuu', 'Elokuu', 'Syyskuu', 'Lokakuu', 'Marraskuu', 'Joulukuu'],
+	monthsShort: ['Tam', 'Hel', 'Maa', 'Huh', 'Tou', 'Kes', 'Hei', 'Elo', 'Syy', 'Lok', 'Mar', 'Jou'],
+	weekdaysFull: ['Sunnuntai', 'Maanantai', 'Tiistai', 'Keskiviikko', 'Torstai', 'Perjantai', 'Lauantai'],
+	weekdaysShort: ['Su', 'Ma', 'Ti', 'Ke', 'To', 'Pe', 'La'],
+	showMonthsShort: false,
+	firstDay: 'Ma',
+	today: 'Tänään',
+	clear: 'Tyhjennä valinta'
+
+});
 
 
 // Navigation
@@ -127,7 +159,7 @@ if( $('.header').find('.js-expand-search').length && $('.search-field').css('dis
 if( $('.fadeout').length ){
 	var orig_text;
 
-	$('.read-more').find('a').click(function(event){
+	$('.read-more').find('a').click( function(event) {
 		event.preventDefault();
 
 		orig_text = $(this).text();
@@ -309,7 +341,7 @@ $('.carousel').carousel({
 
 $("#otakantaa-tags").tagit({
 	allowSpaces: true,
-	availableTags: ["demokratia", "äänestys", "mm95", "suomi", "karjala", "otakantaa", "ota kantaa", "vaalit"]
+	availableTags: ["demokratia", "äänestys", "foo", "bar", "lorem", "lipsum", "otakantaa", "ota kantaa", "vaalit"]
 });
 
 
