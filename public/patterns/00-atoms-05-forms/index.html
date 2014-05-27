@@ -28,24 +28,50 @@
 
 	</head>
 	<body class="body">
-<p>Primary font: "PT Sans", "Helvetica", "Arial", sans-serif;</p>
-<p><em>Primary font italic: "PT Sans", "Helvetica", "Arial", sans-serif;</em></p>
-<p><strong>Primary font bold: "PT Sans", "Helvetica", "Arial", sans-serif;</strong></p>	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		
+		<!-- View All Patterns in a Pattern Sub-Type -->
+		<div class="sg-main" role="main">
+			
+			<!-- Patterns -->
+			<div id="sg-patterns">
+					<div id="atoms-field-text" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-05-forms-10-field-text/00-atoms-05-forms-10-field-text.html" class="patternLink" data-patternpartial="atoms-field-text">Field Text</a></h2>
+						<div class="sg-pattern-body">
+							<div class="form-element text-el">
+	<label for="text-field">Kirjoita tekstiä</label>
+	<input type="text" id="text-field" placeholder="Kirjoita tähän...">
+</div>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;form-element text-el&quot;&gt;
+	&lt;label for=&quot;text-field&quot;&gt;Kirjoita teksti&auml;&lt;/label&gt;
+	&lt;input type=&quot;text&quot; id=&quot;text-field&quot; placeholder=&quot;Kirjoita t&auml;h&auml;n...&quot;&gt;
+&lt;/div&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+			</div> <!--end #sg-patterns-->
+	
+		</div><!--end .sg-main-->
+		
+		<!-- JS to hook everything together and do annotations -->
+		<script>
+			// handle injection of items from PHP
+			var patternPartial = "viewall-atoms-forms";
+			var lineage = "";
+		</script>
+		
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
 	<script type="text/javascript" src="../../js/plugins.min.js"></script>
 	<script type="text/javascript" src="../../js/main.min.js"></script>
 
 	<!--DO NOT REMOVE-->
-		
-	<script>
-		// handle injection of items from PHP
-		var patternPartial = "atoms-fonts";
-		var lineage        = [];
-		var lineageR       = [];
-		var patternState   = "";
-		var cssEnabled     = false;
-	</script>
 		<script>
 		/*!
 		 * scriptLoader - v0.1

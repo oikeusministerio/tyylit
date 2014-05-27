@@ -60,6 +60,67 @@
 	}
 }
 
+// Event lift
+
+.event-section{
+	max-width: 800px;
+	margin: 0 auto;
+	padding-top: $pad-double;
+
+	.event-header{
+		.edit-event {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+
+	.left-block, .right-block{ width: 100%; margin: 0 $pad-half; }
+
+	@media #{$tablet}{
+		.left-block, .right-block{ width: 45%;}
+		.cf > div{
+			&:first-child{
+				margin: 0 $pad 0 0;
+			}
+			&:last-child{
+				margin: 0 0 0 $pad;
+			}
+		}
+	}
+	@media #{$laptop}{
+		.left-block, .right-block{ width: 48%;}
+	}
+
+
+	.event-date-container{
+		width: 100%;
+		margin-bottom: $pad-double;
+
+		.date-element{
+		}
+	}
+
+	.event-location-container{
+		.right-block{
+			img{
+				max-height: 100%;
+				max-width: 100%;
+			}
+		}
+	}
+
+	.event-actions{
+		margin: 25px 0;
+		input{
+			margin-left: $pad;
+		}
+	}
+}
+
+
+
+
 // Gallup. Gallup styles are mainly pasted styles from the old site and can be found from 'pasted-styles.css'. However the following styles are used to override the old styles.
 
 .gallup-section{

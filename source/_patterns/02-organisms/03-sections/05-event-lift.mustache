@@ -1,3 +1,80 @@
 <div class="event-section">
-
+	<div class="event-header">
+		<div class="inline-element event-title">
+			<div class="form-element">
+				<label for="textarea">Tapahtuman otsikko</label>
+				<textarea class="js-dynamic ta-small" maxlength="155"></textarea>
+			</div>
+			<div class="edit-event">
+				<label class="edit-file-button">Tallenna ja palaa</label>
+			</div>
+		</div>
+		<div class="form-element event-description">
+			<div class="helper-container">
+				<span class="icon-help" title="Example tip text." placement="top">
+					Esittely
+				</span>
+				<p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+				<textarea class="js-dynamic" maxlength="400"></textarea>
+			</div>
+		</div>
+	</div>
+	<div class="event-body">
+		<div class="helper-container">
+			<span class="icon-help" title="Example tip text." placement="top">
+				Tapahtuman aikataulu
+			</span>
+			<p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+		</div>
+		<div class="event-date-container cf">
+			<div class="form-element date-element left-block float-left">
+				<label for="date-picker">Tapahtuman alkupvm.</label>
+				<input type="text" id="date-picker" class="datepicker" value="24.5.2014">
+			</div>
+			<div class="form-element date-element right-block float-right">
+				<label for="date-picker">Tapahtuman loppupvm.</label>
+				<input type="text" id="date-picker" class="datepicker" value="24.5.2014">
+			</div>
+		</div>
+		<div class="event-location-container cf">
+			<div class="left-block float-left">
+				<div class="form-element">
+					<textarea class="ta-small" maxlength="15" placeholder="Tapahtumapaikka"></textarea>
+				</div>
+				<div class="form-element">
+					<textarea class="ta-small" maxlength="15" placeholder="Katuosoite"></textarea>
+				</div>
+				<div class="form-element">
+					<textarea class="ta-small" maxlength="15" placeholder="Postiosoite ja postitoimipaikka"></textarea>
+				</div>
+			</div>
+			<div class="right-block float-right">
+				<img src="{{ img.square.src }}" alt="{{ img.square.alt }}" />
+			</div>
+		</div>
+		<div class="form-element">
+			<div class="helper-container">
+				<span class="icon-help" title="Example tip text." placement="top">
+					Etäosallistuminen
+				</span>
+				<p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+			</div>
+			<!-- Editor here -->
+			<textarea class="js-dynamic" maxlength="400"></textarea>
+		</div>
+		<div class="form-element">
+			<div class="helper-container">
+				<span class="icon-help" title="Example tip text." placement="top">
+					Etäosallistuminen
+				</span>
+				<p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+			</div>
+			<!-- Editor here -->
+			<textarea class="js-dynamic" maxlength="400"></textarea>
+		</div>
+	</div>
+	<div class="event-actions float-right">
+		<input type="submit" class="btn" value="Peruuta">
+		<input type="submit" class="btn" value="Julkaise">
+	</div>
 </div>

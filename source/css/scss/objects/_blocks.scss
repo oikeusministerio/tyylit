@@ -3,6 +3,11 @@
 	margin-bottom: $space-half;
 }
 
+.inline-element{
+	display: inline-block;
+	margin-bottom: $space-half;
+}
+
 .brick {
 	background: #dcdddc;
 	padding: $pad-double;

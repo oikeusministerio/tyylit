@@ -33,6 +33,10 @@ input, textarea {
 textarea{
 	min-height: 100px;
 	overflow: hidden;
+
+	&.ta-small{
+		min-height: 25px;
+	}
 }
 
 input[type=text], input[type=search], input[type=url], input[type=number], textarea {
@@ -40,10 +44,11 @@ input[type=text], input[type=search], input[type=url], input[type=number], texta
 }
 
 button, input[type="submit"] {
-	padding: $pad-half;
+	padding: $pad;
 	background: $gray-dark;
 	border: 1px solid $gray;
 	cursor: pointer;
+	width: auto;
 }
 
 input[type="checkbox"],

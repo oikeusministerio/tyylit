@@ -28,9 +28,10 @@
 
 	</head>
 	<body class="body">
-<p>Primary font: "PT Sans", "Helvetica", "Arial", sans-serif;</p>
-<p><em>Primary font italic: "PT Sans", "Helvetica", "Arial", sans-serif;</em></p>
-<p><strong>Primary font bold: "PT Sans", "Helvetica", "Arial", sans-serif;</strong></p>	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<div class="form-element text-el">
+	<label for="text-field">Kirjoita tekstiä</label>
+	<input type="text" id="text-field" placeholder="Kirjoita tähän...">
+</div>	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
 	<script type="text/javascript" src="../../js/plugins.min.js"></script>
@@ -40,7 +41,7 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "atoms-fonts";
+		var patternPartial = "atoms-field-text";
 		var lineage        = [];
 		var lineageR       = [];
 		var patternState   = "";
