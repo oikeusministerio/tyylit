@@ -128,8 +128,13 @@
 	text-decoration: none;
 	float: left;
 	font-size: 2.1em;
+	margin: 11.5px 0;
 
 	@media #{$tablet}{
+		font-size: 2.1em;
+	}
+
+	@media #{$laptop}{
 		font-size: 2.6em;
 	}
 
@@ -142,12 +147,12 @@
 		display: inline-block;
 		height: 50px;
 		width: auto;
-		margin: 11.5px $pad/2 0 0;
+		margin-right: $pad/2;
 		vertical-align: middle;
 
 		@media #{$laptop}{
 			height: 77px;
-			margin: 14px $pad/2 0 0;
+			margin-right: $pad/2;
 		}
 
 		// for 400-320px

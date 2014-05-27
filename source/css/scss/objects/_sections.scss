@@ -59,3 +59,61 @@
 		}
 	}
 }
+
+// Gallup. Gallup styles are mainly pasted styles from the old site and can be found from 'pasted-styles.css'. However the following styles are used to override the old styles.
+
+.gallup-section{
+	background-color: $gray-light;
+	border-bottom-color: $gray-med;
+	max-width: 600px;
+
+	table, td{ border: 0; }
+
+	.participation-item > div {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.participation-icon{
+		margin: 0 $pad;
+
+		.om-gallup{
+			color: $text-color;
+			font-size: 3em;
+		}
+	}
+	.participation-data{ width: 80%; }
+
+	.gallup-answers {
+		margin-left: 0;
+
+		.progressbar-bg{
+			background-color: $white;
+			border: 1px solid darken($gray-med, 20%);
+
+			width: 390px;
+
+			@media #{$tablet}{
+				width: 450px;
+			}
+			.progressbar-progress{
+				background-color: darken($gray-med, 10%);
+
+				&.progressbar-progress_selected{
+					background-color: $otk-cyan;
+				}
+
+				.progressbar-text{
+					color: $text-color;
+
+					width: 373px;
+
+					@media #{$tablet}{
+						width: 427px;
+					}
+				}
+
+			}
+		}
+	}
+}
