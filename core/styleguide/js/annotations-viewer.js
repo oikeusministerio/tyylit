@@ -76,7 +76,7 @@ var annotationsViewer = {
 		//$('#sg-t-code').removeClass('active');
 		//codeViewer.codeActive = false;
 		var obj = JSON.stringify({ "codeToggle": "off" });
-		document.getElementById('sg-viewport').contentWindow.postMessage(obj,annotationsViewer.targetOrigin);
+		//document.getElementById('sg-viewport').contentWindow.postMessage(obj,annotationsViewer.targetOrigin);
 		codeViewer.slideCode(999);
 		
 		// tell the iframe annotation view has been turned on
