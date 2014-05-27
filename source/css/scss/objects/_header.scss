@@ -1,3 +1,26 @@
+@media screen and (max-width: 440px){
+	.header.loggedin{
+		.search-form {
+			max-width: 50%;
+		}
+	}
+}
+
+@media screen and (max-width: 370px){
+	.header.loggedin{
+		.search-form {
+			max-width: 40%;
+
+			.form-element{ margin-left: 30px; }
+
+			.search-field {
+				padding-right: 1.5em;
+				padding-left: $pad-quarter;
+			}
+		}
+	}
+}
+
 .header {
 	background: $white;
 	position: relative;
@@ -96,6 +119,7 @@
 		}
 
 		.search-field{
+			padding-right: 2em;
 		}
 	}
 }
@@ -103,7 +127,11 @@
 	color: $text-color;
 	text-decoration: none;
 	float: left;
-	font-size: 2.6em;
+	font-size: 2.1em;
+
+	@media #{$tablet}{
+		font-size: 2.6em;
+	}
 
 	&:hover{
 		text-decoration: none;
@@ -112,10 +140,17 @@
 
 	.logo {
 		display: inline-block;
-		height: 77px;
+		height: 50px;
 		width: auto;
-		margin: 11.5px $pad/2;
+		margin: 11.5px $pad/2 0 0;
 		vertical-align: middle;
+
+		@media #{$laptop}{
+			height: 77px;
+			margin: 14px $pad/2 0 0;
+		}
+
+		// for 400-320px
 	}
 }
 
@@ -124,7 +159,8 @@
 	float: right;
 	padding: 0 1em 0 0;
 	margin: 0;
-	@media #{$tablet}{ margin-right: 50%; }
+	@media #{$tablet}{ margin-right: 47%; }
+	@media #{$laptop}{ margin-right: 50%; }
 
 	.lang-list{
 		list-style: none;
@@ -244,19 +280,29 @@
 			@media #{$desktop}{ float: left; display: inline; }
 		}
 		.user-navigation > ul > li > a{
-			padding: 0 10px; margin: 0;
-			border-right: 0;
+			padding: 0 15px 0 10px; margin: 0;
 			height: 61px;
 			line-height: 61px;
-			@media #{$tablet}{ line-height: 42px; height: 42px; }
+
+			border-right: 1px solid $black;
+			float: left;
+
+
+
+			@media #{$tablet}{ line-height: 42px; height: 42px; border-left: none; border-right: none; padding: 0 10px; }
 		}
 
 		.user-navigation{
 			position: relative;
 			right: 0; top: 0; left: 0;
 
-			border-right: 1px solid #000000 !important;
 			padding-right: $pad-half;
+			border-right: 1px solid #000000 !important;
+			border-left: 1px solid #5A5A5A;
+
+			> ul > .toplevel{ float: left;
+
+			}
 
 
 
@@ -279,6 +325,14 @@
 
 			.icon-arrow{
 				cursor: pointer;
+				float: right;
+				height: 61px;
+				border-left: 1px solid #5A5A5A;
+				padding: 0 15px;
+
+				@media #{$tablet}{ border-left: 0; height: auto; float: none; padding: 0; }
+
+
 				&:before{
 					font-size: $font-size-normal;
 					display: inline-block;

@@ -332,14 +332,24 @@ $('.toast-container').find('.toast-trigger').on('click', function(){
 
 // Carousel
 
-$('.carousel').carousel({
+$('#myCarousel').carousel({
 	interval: 7000,
 	pause: 'hover'
 });
 
+$('#myCarousel').on('slid.bs.carousel', function(){
+	if( $(this).find('.active').hasClass('item-text') ){
+		console.log($('.carousel-indicators').find('.active'));
+		$('.carousel-indicators').addClass('inverse-color');
+	}
+	else{
+		$('.carousel-indicators').removeClass('inverse-color');
+	}
+});
+
 // Tag-it
 
-$("#otakantaa-tags").tagit({
+$(".tagit-list").tagit({
 	allowSpaces: true,
 	availableTags: ["demokratia", "äänestys", "foo", "bar", "lorem", "lipsum", "otakantaa", "ota kantaa", "vaalit"]
 });

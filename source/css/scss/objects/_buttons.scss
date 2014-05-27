@@ -165,6 +165,16 @@ button, input[type="button"]{
 		}
 	}
 
+	&.enlarged{
+		height: 54px;
+		a{ height: 100%; }
+
+		@media screen and (max-width: 575px){
+			height: 108px;
+			a{ height: 50%; margin-bottom: $pad-quarter; }
+		}
+	}
+
 	&.sorting{
 
 
@@ -217,30 +227,10 @@ button, input[type="button"]{
 		.count-container a{ background-color: $gray-light; }
 	}
 
-	.count-container{
-		width: 100%;
-		text-align: center;
-		display: inline-block;
-		position: relative;
-
-		a{
-			z-index: 1;
-			position: relative;
-			background-color: $white;
-			padding: $pad-half;
-			@include border-radius(17px, 17px, 17px, 17px);
-		}
-	}
-
 	.icon-lift-link, .date{
 		display: block;
 		text-align: center;
 		line-height: 1.5;
-	}
-
-	.icon-span{
-		line-height: 4em;
-		&:before{ position: absolute; font-size: 5em; top: 3px; margin-left: -10px; }
 	}
 
 	.icon-lift-link{
@@ -252,7 +242,25 @@ button, input[type="button"]{
 	}
 }
 
+.count-container{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	position: relative;
 
+	a{
+		z-index: 1;
+		position: relative;
+		background-color: $white;
+		padding: $pad-half;
+		@include border-radius(17px, 17px, 17px, 17px);
+	}
+	.icon-span{
+		line-height: 4em;
+		&:before{ position: absolute; font-size: 5em; top: 3px; margin-left: -10px; }
+	}
+
+}
 
 
 

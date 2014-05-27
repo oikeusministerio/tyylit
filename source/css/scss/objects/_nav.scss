@@ -143,14 +143,14 @@
 		vertical-align: middle;
 		line-height: 40px;
 		height: auto;
-		width: 40px;
+		width: auto;
 		position: relative;
 		display: inline-block;
 	}
 	@media #{$laptop}{ display: none; }
 }
 
-	// Kickass mobile trigger for full header tryout. This element controls navi-responsive, but is located within the previous element-group due to positioning while menus open.
+	// Tricky mobile trigger for full header tryout. This element controls navi-responsive, but is located within the previous element-group due to positioning while menus open.
 	.mobile-trigger{
 		z-index: 2;
 		background-color: transparent;
@@ -162,7 +162,7 @@
 
 		a{
 			display: block;
-			padding-right: 15px;
+			padding-right: 5px;
 		}
 
 		i{
@@ -171,7 +171,7 @@
 			vertical-align: middle;
 			line-height: 40px;
 			height: auto;
-			width: 40px;
+			width: auto;
 			position: relative;
 			display: inline-block;
 			&:hover{ color: $white; }
@@ -424,10 +424,10 @@
 
 		&.next{
 			background-color: $green;
-		}
 
-		&:hover, &:active{
-			background-color: darken($green, 10%);
+			&:hover, &:active{
+				background-color: darken($green, 10%);
+			}
 		}
 
 		i{

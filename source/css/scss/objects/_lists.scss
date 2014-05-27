@@ -64,6 +64,18 @@
 
 // For tag search/writable tags
 .tagit-list{
+	position: relative;
+	width: 100%;
+
+	.tagit-new{
+		@extend .icon-tag;
+
+		&:before{
+			position: absolute;
+			top: 9px;
+			right: 7px;
+		}
+	}
 
 	.tagit-choice{
 		background-image: none;
@@ -94,11 +106,11 @@
 		display: inline-block;
 		border: 2px solid $gray;
 		padding: 1px 4px;
-		margin-left: 3px;
+		margin: 0 3px 2px 0;
 		background-color: transparent;
 
-		&:first-child{
-			margin-left: 0;
+		&:last-child{
+			margin-right: 0;
 		}
 	}
 
@@ -107,6 +119,36 @@
 			margin-right: 5px;
 		}
 	}
+}
 
+// semantic search/list
+
+.semantic-list{
+	width: 100%;
+	// Sample stuff for responsive version
+	padding: 0 10px;
+
+	@media #{$laptop}{
+		width: 30%;
+	}
+
+	li{
+		line-height: 1.5;
+		padding: 10px 5px;
+
+		&:nth-child(2n) {
+			background-color: $gray-light;
+			width: 100%;
+		}
+
+	}
 
 }
+
+
+
+
+
+
+
+

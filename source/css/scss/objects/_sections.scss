@@ -5,3 +5,57 @@
 .section-title {
 	margin-bottom: $space-half;
 }
+
+// List lift
+
+.list-lift{
+
+	.navigation{
+		@extend .cf;
+
+		.btn-group{
+			float: left;
+		}
+		.tag-search-container{
+			float: right;
+			width: 100%;
+			margin-bottom: $space-half;
+
+			@media #{$tablet}{
+				width: auto;
+				margin: 15px 5px 0;
+			}
+		}
+	}
+}
+
+.single-list-item{
+	margin-bottom: $pad-half;
+	padding: 0.75em $pad-half $pad-quarter;
+
+	&:nth-child(2n){
+		background-color: $gray-light;
+		.count-container a{ background-color: $gray-light; }
+
+		&:hover{
+			-webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0, 0.15);
+			box-shadow: 0 1px 2px 0px rgba(0,0,0, 0.15);
+		}
+	}
+
+	&:hover{
+		-webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0, 0.125);
+		box-shadow: 0 1px 2px 0px rgba(0,0,0, 0.125);
+		@include border-radius(1px, 1px, 1px, 1px);
+	}
+
+	.block-item, .items-container{ display: inline-block; }
+	.block-item .count-container{ min-width: 70px; }
+	.block-item{
+		vertical-align: top;
+		margin-right: 5px;
+		&:nth-child(2){
+			margin: -10px 20px 0;
+		}
+	}
+}

@@ -10,7 +10,7 @@
 		<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 
-		<link rel="stylesheet" href="../../css/style.css?1401110603" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1401193283" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -20,8 +20,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1401110603" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1401110603" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1401193283" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1401193283" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -66,58 +66,6 @@
 							</div>
 						</div>
 					</div>
-					<div id="molecules-comment-form" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-04-forms-01-comment-form/01-molecules-04-forms-01-comment-form.html" class="patternLink" data-patternpartial="molecules-comment-form">Comment Form</a></h2>
-						<div class="sg-pattern-body">
-							<form method="post" action="#" class="comment-form half-form">
-	<fieldset>
-		<div class="field-container">
-			<label for="comment-name">Name</label>
-			<input id="comment-name" type="text" placeholder="Enter Your Name" />
-		</div>
-		<div class="field-container">
-			<label for="comment-email">Email</label>
-			<input id="comment-email" type="email" placeholder="Your email address" />
-		</div>
-		<div class="field-container">
-			<label for="comment-url">URL</label>
-			<input id="comment-url" type="url" placeholder="Website if you got one" />
-		</div>
-		<div class="field-container">
-			<label for="comment-field">Comment</label>
-			<textarea id="comment-field" rows="5" placeholder="Write you comment here"></textarea>
-		</div>
-	</fieldset>
-</form>
-							<div class="sg-code" style="display: none">
-								<h3 class="sg-code-head">HTML</h3>
-								<pre class="sg-code-html">
-									<code>
-										&lt;form method=&quot;post&quot; action=&quot;#&quot; class=&quot;comment-form half-form&quot;&gt;
-	&lt;fieldset&gt;
-		&lt;div class=&quot;field-container&quot;&gt;
-			&lt;label for=&quot;comment-name&quot;&gt;Name&lt;/label&gt;
-			&lt;input id=&quot;comment-name&quot; type=&quot;text&quot; placeholder=&quot;Enter Your Name&quot; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;field-container&quot;&gt;
-			&lt;label for=&quot;comment-email&quot;&gt;Email&lt;/label&gt;
-			&lt;input id=&quot;comment-email&quot; type=&quot;email&quot; placeholder=&quot;Your email address&quot; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;field-container&quot;&gt;
-			&lt;label for=&quot;comment-url&quot;&gt;URL&lt;/label&gt;
-			&lt;input id=&quot;comment-url&quot; type=&quot;url&quot; placeholder=&quot;Website if you got one&quot; /&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;field-container&quot;&gt;
-			&lt;label for=&quot;comment-field&quot;&gt;Comment&lt;/label&gt;
-			&lt;textarea id=&quot;comment-field&quot; rows=&quot;5&quot; placeholder=&quot;Write you comment here&quot;&gt;&lt;/textarea&gt;
-		&lt;/div&gt;
-	&lt;/fieldset&gt;
-&lt;/form&gt;
-									</code>
-								</pre>
-							</div>
-						</div>
-					</div>
 					<div id="molecules-basic-fields" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-04-forms-02-basic-fields/01-molecules-04-forms-02-basic-fields.html" class="patternLink" data-patternpartial="molecules-basic-fields">Basic Fields</a></h2>
 						<div class="sg-pattern-body">
@@ -143,6 +91,11 @@
 	<div class="form-element">
 		<label for="textarea">Tekstialue</label>
 		<textarea class="js-dynamic" maxlength="400"></textarea>
+	</div>
+	<h3>Päivämäärävalitsin</h3>
+	<div class="form-element">
+		<label for="date-picker">Valitse päivämäärä. Oletuspäivämäärän voit asettaa antamalla value-kentälle arvoksi esim. 25.6.2014 tai 25/6/2014</label>
+		<input type="text" id="date-picker" class="datepicker" value="24.5.2014">
 	</div></form>
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
@@ -170,6 +123,11 @@
 	&lt;div class=&quot;form-element&quot;&gt;
 		&lt;label for=&quot;textarea&quot;&gt;Tekstialue&lt;/label&gt;
 		&lt;textarea class=&quot;js-dynamic&quot; maxlength=&quot;400&quot;&gt;&lt;/textarea&gt;
+	&lt;/div&gt;
+	&lt;h3&gt;P&auml;iv&auml;m&auml;&auml;r&auml;valitsin&lt;/h3&gt;
+	&lt;div class=&quot;form-element&quot;&gt;
+		&lt;label for=&quot;date-picker&quot;&gt;Valitse p&auml;iv&auml;m&auml;&auml;r&auml;. Oletusp&auml;iv&auml;m&auml;&auml;r&auml;n voit asettaa antamalla value-kent&auml;lle arvoksi esim. 25.6.2014 tai 25/6/2014&lt;/label&gt;
+		&lt;input type=&quot;text&quot; id=&quot;date-picker&quot; class=&quot;datepicker&quot; value=&quot;24.5.2014&quot;&gt;
 	&lt;/div&gt;&lt;/form&gt;
 									</code>
 								</pre>
@@ -290,10 +248,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1401110603">
+	<script id="pl-js-polyfill-insert-1401193283">
 		(function() {
 			if (self != top) {
-				var cb = '1401110603';
+				var cb = '1401193283';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -302,10 +260,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1401110603">
+	<script id="pl-js-insert-1401193283">
 		(function() {
 			if (self != top) {
-				var cb = '1401110603';
+				var cb = '1401193283';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}

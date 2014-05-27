@@ -54,7 +54,6 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
  */
 
 
-
 @import "scss/generic/variables";
 @import "scss/generic/mixins";
 @import "scss/generic/reset";
@@ -113,7 +112,7 @@ So feel free to use any of these approaches. Or don't. It's totally up to you.
 //@import "scss/objects/tooltip";
 //@import "scss/objects/accordion";
 @import "scss/objects/tabs";
-//@import "scss/objects/sections";
+@import "scss/objects/sections";
 //@import "scss/objects/article";
 //@import "scss/objects/comments";
 @import "scss/objects/messaging";

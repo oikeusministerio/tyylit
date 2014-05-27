@@ -280,6 +280,10 @@ i{
 	content: "\f112"; // alt. \f075
 	@extend .fa;
 }
+.icon-tag:before{
+	content: "\f02b";
+	@extend .fa;
+}
 
 // icons called from somewhere else than span or i. Possible to call from :after.
 
