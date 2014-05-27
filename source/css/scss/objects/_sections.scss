@@ -68,10 +68,28 @@
 	padding-top: $pad-double;
 
 	.event-header{
+		.event-title-container{
+			position: relative;
+			width: 100%;
+
+			.event-title{
+				width: 80%;
+			}
+
+		}
 		.edit-event {
 			position: absolute;
 			top: 0;
 			right: 0;
+
+			.edit{
+
+				&:after{
+					@extend .icon-edit-pen;
+					color: $text-color;
+					margin-left: 5px;
+				}
+			}
 		}
 	}
 
