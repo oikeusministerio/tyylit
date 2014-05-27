@@ -73,8 +73,8 @@ var annotationsViewer = {
 	openComments: function() {
 		
 		// make sure the code view overlay is off before showing the annotations view
-		$('#sg-t-code').removeClass('active');
-		codeViewer.codeActive = false;
+		//$('#sg-t-code').removeClass('active');
+		//codeViewer.codeActive = false;
 		var obj = JSON.stringify({ "codeToggle": "off" });
 		document.getElementById('sg-viewport').contentWindow.postMessage(obj,annotationsViewer.targetOrigin);
 		codeViewer.slideCode(999);
