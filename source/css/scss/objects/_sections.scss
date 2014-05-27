@@ -65,7 +65,7 @@
 .event-section{
 	max-width: 800px;
 	margin: 0 auto;
-	padding-top: $pad-double;
+	padding: $pad-double $pad-quarter 0;
 
 	.event-header{
 		.event-title-container{
@@ -75,7 +75,6 @@
 			.event-title{
 				width: 80%;
 			}
-
 		}
 		.edit-event {
 			position: absolute;
@@ -93,7 +92,7 @@
 		}
 	}
 
-	.left-block, .right-block{ width: 100%; margin: 0 $pad-half; }
+	.left-block, .right-block{ width: 100%; margin: 0; padding: 0 0 1em; }
 
 	@media #{$tablet}{
 		.left-block, .right-block{ width: 45%;}
@@ -107,7 +106,7 @@
 		}
 	}
 	@media #{$laptop}{
-		.left-block, .right-block{ width: 48%;}
+		.left-block, .right-block{ width: 47%;}
 	}
 
 
@@ -116,6 +115,8 @@
 		margin-bottom: $pad-double;
 
 		.date-element{
+
+			.picker__input{ color: $blue; }
 		}
 	}
 
