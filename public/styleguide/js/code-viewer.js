@@ -83,7 +83,7 @@ var codeViewer = {
 		//$('#sg-t-annotations').removeClass('active');
 		//annotationsViewer.commentsActive = false;
 		var obj = JSON.stringify({ "commentToggle": "off" });
-		document.getElementById('sg-viewport').contentWindow.postMessage(obj,codeViewer.targetOrigin);
+		//document.getElementById('sg-viewport').contentWindow.postMessage(obj,codeViewer.targetOrigin);
 		annotationsViewer.slideComment(999);
 
 		// tell the iframe code view has been turned on
