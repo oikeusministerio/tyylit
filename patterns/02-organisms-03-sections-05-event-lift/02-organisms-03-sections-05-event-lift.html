@@ -10,7 +10,7 @@
 		<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 
-		<link rel="stylesheet" href="../../css/style.css?1401212486" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1401217138" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -20,8 +20,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1401212486" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1401212486" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1401217138" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1401217138" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -29,8 +29,86 @@
 	</head>
 	<body class="body">
 <div class="event-section">
-
-</div>	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<div class="event-header">
+		<div class="inline-element event-title">
+			<div class="form-element">
+				<label for="textarea">Tapahtuman otsikko</label>
+				<textarea class="js-dynamic ta-small" maxlength="155"></textarea>
+			</div>
+			<div class="edit-event">
+				<label class="edit-file-button">Tallenna ja palaa</label>
+			</div>
+		</div>
+		<div class="form-element event-description">
+			<div class="helper-container">
+				<span class="icon-help" title="Example tip text." placement="top">
+					Esittely
+				</span>
+				<p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+				<textarea class="js-dynamic" maxlength="400"></textarea>
+			</div>
+		</div>
+	</div>
+	<div class="event-body">
+		<div class="helper-container">
+			<span class="icon-help" title="Example tip text." placement="top">
+				Tapahtuman aikataulu
+			</span>
+			<p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+		</div>
+		<div class="event-date-container cf">
+			<div class="form-element date-element left-block float-left">
+				<label for="date-picker">Tapahtuman alkupvm.</label>
+				<input type="text" id="date-picker" class="datepicker" value="24.5.2014">
+			</div>
+			<div class="form-element date-element right-block float-right">
+				<label for="date-picker">Tapahtuman loppupvm.</label>
+				<input type="text" id="date-picker" class="datepicker" value="24.5.2014">
+			</div>
+		</div>
+		<div class="event-location-container cf">
+			<div class="left-block float-left">
+				<div class="form-element">
+					<textarea class="ta-small" maxlength="15" placeholder="Tapahtumapaikka"></textarea>
+				</div>
+				<div class="form-element">
+					<textarea class="ta-small" maxlength="15" placeholder="Katuosoite"></textarea>
+				</div>
+				<div class="form-element">
+					<textarea class="ta-small" maxlength="15" placeholder="Postiosoite ja postitoimipaikka"></textarea>
+				</div>
+			</div>
+			<div class="right-block float-right">
+				<img src="../../images/fpo_square.png" alt="Square Thumbnail" />
+			</div>
+		</div>
+		<div class="form-element">
+			<div class="helper-container">
+				<span class="icon-help" title="Example tip text." placement="top">
+					Etäosallistuminen
+				</span>
+				<p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+			</div>
+			<!-- Editor here -->
+			<textarea class="js-dynamic" maxlength="400"></textarea>
+		</div>
+		<div class="form-element">
+			<div class="helper-container">
+				<span class="icon-help" title="Example tip text." placement="top">
+					Etäosallistuminen
+				</span>
+				<p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+			</div>
+			<!-- Editor here -->
+			<textarea class="js-dynamic" maxlength="400"></textarea>
+		</div>
+	</div>
+	<div class="event-actions float-right">
+		<input type="submit" class="btn" value="Peruuta">
+		<input type="submit" class="btn" value="Julkaise">
+	</div>
+</div>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/js/toastr.min.js"></script>
 	<script type="text/javascript" src="../../js/plugins.min.js"></script>
@@ -78,10 +156,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1401212486">
+	<script id="pl-js-polyfill-insert-1401217138">
 		(function() {
 			if (self != top) {
-				var cb = '1401212486';
+				var cb = '1401217138';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -90,10 +168,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1401212486">
+	<script id="pl-js-insert-1401217138">
 		(function() {
 			if (self != top) {
-				var cb = '1401212486';
+				var cb = '1401217138';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
