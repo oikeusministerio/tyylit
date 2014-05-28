@@ -28,8 +28,6 @@
 
 	@extend .lc;
 
-
-
 	.element-group{
 		width: 100%;
 		position: relative;
@@ -102,7 +100,7 @@
 		max-width: 100%;
 
 		@media screen and (max-width: 340px){
-			max-width: 70%;
+			max-width: 60%;
 		}
 
 		@media #{$tablet}{
@@ -195,8 +193,8 @@
 	.navigation{ overflow: visible; height: 62px; @media #{$tablet}{ height: 42px; } }
 
 	&.expanded{
-		height: 485px;
-		.expanding{ height: 420px; }
+		height: 495px;
+		.expanding{ height: 430px; }
 
 		&.expanded-navi{
 			height: 280px;
@@ -264,7 +262,7 @@
 		}
 
 		a, .logout-btn-wrapper{
-			padding: 14px 8px;
+			padding: 14px 18px;
 			float: left;
 			line-height: 33px;
 
@@ -398,13 +396,13 @@
 	}
 
 	.ctl-btn {
-		margin-top: 15px;
+		margin-top: 10px;
 		margin-left: 0;
 		padding: 0.5em 2em;
 		width: 100%;
 	}
 	.update-progress{
-		height: 15px;
+		height: 10px;
 	}
 
 	.input-with-icon{
@@ -418,6 +416,7 @@
 	.forgotten{ text-align: right; }
 	.remember {
 		text-align: left;
+		float: left;
 		margin-top: 3px;
 
 		input, label{

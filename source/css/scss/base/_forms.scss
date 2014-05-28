@@ -31,11 +31,14 @@ input, textarea {
 }
 
 textarea{
-	min-height: 100px;
+	min-height: 84px;
+	height: 100px;
 	overflow: hidden;
 
 	&.ta-small{
-		min-height: 25px;
+		min-height: 58px;
+		height: 74px;
+
 	}
 }
 
