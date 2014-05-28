@@ -1,5 +1,6 @@
 //Button group toggle
 if( $('.btn-group').length ){
+
 	$('.btn-group').find('a').click(function(e){
 		e.preventDefault();
 		$(this).parent().find('a').each(function(){
@@ -7,6 +8,14 @@ if( $('.btn-group').length ){
 		});
 		$(this).addClass('active');
 	});
+	if( $('.btn-group').find('input').length ){
+		$('.btn-group').find('input').click(function(){
+			$(this).parent().find('input').each(function(){
+				$(this).removeClass('active');
+			});
+			$(this).addClass('active');
+		});
+	}
 }
 
 //Form stuff

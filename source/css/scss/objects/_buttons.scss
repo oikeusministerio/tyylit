@@ -1,11 +1,6 @@
 /*------------------------------------*\
     $BUTTONS
 \*------------------------------------*/
-
-button, input[type="button"]{
-	@extend .btn;
-}
-
 .btn {
 	display: inline-block;
 	background: $gray-dark;
@@ -133,14 +128,17 @@ button, input[type="button"]{
 	@extend .cf;
 	margin-bottom: 25px;
 
-	a{
+	a, button, input[type="submit"]{
 		padding: $pad/2 $pad;
 		float: left;
 		color: $text-color;
 		border-top: 1px solid #ccc;
 		border-bottom: 1px solid #ccc;
+		border-left: 0;
+		border-right: 0;
 		background-color: $gray-light;
 		text-decoration: none;
+		margin-bottom: $pad-quarter;
 
 
 		&.active{
@@ -171,7 +169,7 @@ button, input[type="button"]{
 
 		@media screen and (max-width: 575px){
 			height: 108px;
-			a{ height: 50%; margin-bottom: $pad-quarter; }
+			a{ height: 50%; }
 		}
 	}
 

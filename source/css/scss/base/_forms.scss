@@ -20,9 +20,9 @@ label {
 button, input, select, textarea {
 	font-family: inherit;
 	font-size: 100%;
-	margin: 0 1px 0;
 }
 
+// input:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]):not([type="file"]),
 input, textarea {
 	//width: 100%;
 	width: 100%;
@@ -44,11 +44,9 @@ input[type=text], input[type=search], input[type=url], input[type=number], texta
 }
 
 button, input[type="submit"] {
-	padding: $pad;
-	background: $gray-dark;
-	border: 1px solid $gray;
 	cursor: pointer;
 	width: auto;
+	margin: 0;
 }
 
 input[type="checkbox"],
