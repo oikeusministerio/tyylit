@@ -8,6 +8,22 @@
 	margin-bottom: $space-half;
 }
 
+.responsive-list-block{
+	width: 100%;
+
+	.inline-element{
+		width: 100%;
+
+		@media #{$tablet}{
+			width: 48%;
+		}
+
+		@media #{$laptop}{
+			width: 24%;
+		}
+	}
+}
+
 .brick {
 	background: #dcdddc;
 	padding: $pad-double;

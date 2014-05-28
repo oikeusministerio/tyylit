@@ -212,8 +212,8 @@
 
 }
 
-// Icon-lift -button.
-.icon-lift{
+// Lift-button.
+.lift-button{
 	width: 175px;  // Change when the final size is decided.
 	height: 175px;  // Change when the final size is decided.
 
@@ -225,13 +225,13 @@
 		.count-container a{ background-color: $gray-light; }
 	}
 
-	.icon-lift-link, .date{
+	.lift-button-link, .date{
 		display: block;
 		text-align: center;
 		line-height: 1.5;
 	}
 
-	.icon-lift-link{
+	.lift-button-link{
 
 	}
 

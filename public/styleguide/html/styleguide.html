@@ -10,7 +10,7 @@
 		<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 
-		<link rel="stylesheet" href="../../css/style.css?1401276584" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1401280084" media="all" />
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 				<!-- never cache patterns -->
@@ -20,8 +20,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1401276584" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1401276584" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1401280084" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1401280084" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -879,20 +879,114 @@
 					<div id="atoms-icon-lift" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-06-buttons-03-icon-lift/00-atoms-06-buttons-03-icon-lift.html" class="patternLink" data-patternpartial="atoms-icon-lift">Icon Lift</a></h2>
 						<div class="sg-pattern-body">
-							<div class="icon-lift participation">
+							<div class="lift-button participation">
 	<div class="count-container">
 		<span class="icon-span icon-comment"></span>
 		<a href="//www.foo.bar">17</a>
-	</div>	<a class="icon-lift-link" href="//www.foo.bar">Miten nyt kerättävä rahoitus tulisi sijoittaa?</a>
+	</div>	<a class="lift-button-link" href="//www.foo.bar">Miten nyt kerättävä rahoitus tulisi sijoittaa?</a>
 	<p class="date">26.5. asti</p>
 </div>
 <h4>Tummaa taustaa kutsutaan 'gray-base'-luokalla</h4>
-<div class="icon-lift gray-base participation">
+<div class="lift-button gray-base participation">
 	<div class="count-container">
 		<span class="icon-span icon-comment"></span>
 		<a href="//www.foo.bar">17</a>
-	</div>	<a class="icon-lift-link" href="//www.foo.bar">Miten nyt kerättävä rahoitus tulisi sijoittaa?</a>
+	</div>	<a class="lift-button-link" href="//www.foo.bar">Miten nyt kerättävä rahoitus tulisi sijoittaa?</a>
 	<p class="date">26.5. asti</p>
+</div>
+
+<h4>Floated list</h4>
+<div id="showParticipations" class="participations cf">
+	<h2 class="ongoing">
+		Menossa olevat osallistumiset
+	</h2>
+	<div class="lift-button gray-base participation float-left">
+		<div class="count-container">
+			<span class="icon-span icon-comment"></span>
+			<a href="//www.foo.bar">17</a>
+		</div>
+		<a class="lift-button-link" href="//www.foo.bar">Ympäristön hyvinvointi - miten sitä voidaan...</a>
+		<span class="date">26.5. asti</span>
+	</div>
+	<div class="lift-button gray-base participation float-left">
+		<div class="count-container">
+			<span class="icon-span icon-comment"></span>
+			<a href="//www.foo.bar">24</a>
+		</div>
+		<a class="lift-button-link" href="//www.foo.bar">Kaupungin asukkaiden hyvinvointi ja osallistu...</a>
+		<span class="date">26.5. asti</span>
+	</div>
+	<div class="lift-button gray-base participation float-left">
+		<div class="count-container">
+			<span class="icon-span icon-comment"></span>
+			<a href="//www.foo.bar">24</a>
+		</div>
+		<a class="lift-button-link" href="//www.foo.bar">Kaupungin asukkaiden hyvinvointi ja osallistu...</a>
+		<span class="date">26.5. asti</span>
+	</div>
+	<div class="lift-button gray-base participation float-left">
+		<div class="count-container">
+			<span class="icon-span icon-comment"></span>
+			<a href="//www.foo.bar">24</a>
+		</div>
+		<a class="lift-button-link" href="//www.foo.bar">Kaupungin asukkaiden hyvinvointi ja osallistu...</a>
+		<span class="date">26.5. asti</span>
+	</div>
+	<div class="lift-button gray-base participation float-left">
+		<div class="count-container">
+			<span class="icon-span icon-comment"></span>
+			<a href="//www.foo.bar">24</a>
+		</div>
+		<a class="lift-button-link" href="//www.foo.bar">Kaupungin asukkaiden hyvinvointi ja osallistu...</a>
+		<span class="date">26.5. asti</span>
+	</div>
+</div>
+
+<h4>Responsive list</h4>
+<div id="showParticipations" class="participations responsive-list-block">
+	<h2 class="ongoing">
+		Menossa olevat osallistumiset
+	</h2>
+	<div class="lift-button gray-base participation inline-element">
+		<div class="count-container">
+			<span class="icon-span icon-comment"></span>
+			<a href="//www.foo.bar">17</a>
+		</div>
+		<a class="lift-button-link" href="//www.foo.bar">Ympäristön hyvinvointi - miten sitä voidaan...</a>
+		<span class="date">26.5. asti</span>
+	</div>
+	<div class="lift-button gray-base participation inline-element">
+		<div class="count-container">
+			<span class="icon-span icon-comment"></span>
+			<a href="//www.foo.bar">24</a>
+		</div>
+		<a class="lift-button-link" href="//www.foo.bar">Kaupungin asukkaiden hyvinvointi ja osallistu...</a>
+		<span class="date">26.5. asti</span>
+	</div>
+	<div class="lift-button gray-base participation inline-element">
+		<div class="count-container">
+			<span class="icon-span icon-comment"></span>
+			<a href="//www.foo.bar">24</a>
+		</div>
+		<a class="lift-button-link" href="//www.foo.bar">Kaupungin asukkaiden hyvinvointi ja osallistu...</a>
+		<span class="date">26.5. asti</span>
+	</div>
+	<div class="lift-button gray-base participation inline-element">
+		<div class="count-container">
+			<span class="icon-span icon-comment"></span>
+			<a href="//www.foo.bar">24</a>
+		</div>
+		<a class="lift-button-link" href="//www.foo.bar">Kaupungin asukkaiden hyvinvointi ja osallistu...</a>
+		<span class="date">26.5. asti</span>
+	</div>
+	<div class="lift-button gray-base participation inline-element">
+		<div class="count-container">
+			<span class="icon-span icon-comment"></span>
+			<a href="//www.foo.bar">24</a>
+		</div>
+		<a class="lift-button-link" href="//www.foo.bar">Kaupungin asukkaiden hyvinvointi ja osallistu...</a>
+		<span class="date">26.5. asti</span>
+	</div>
 </div>
 							<div class="sg-code" style="display: none">
 									<div class="sg-code-contains">
@@ -902,20 +996,114 @@
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;div class=&quot;icon-lift participation&quot;&gt;
+										&lt;div class=&quot;lift-button participation&quot;&gt;
 	&lt;div class=&quot;count-container&quot;&gt;
 		&lt;span class=&quot;icon-span icon-comment&quot;&gt;&lt;/span&gt;
 		&lt;a href=&quot;//www.foo.bar&quot;&gt;17&lt;/a&gt;
-	&lt;/div&gt;	&lt;a class=&quot;icon-lift-link&quot; href=&quot;//www.foo.bar&quot;&gt;Miten nyt ker&auml;tt&auml;v&auml; rahoitus tulisi sijoittaa?&lt;/a&gt;
+	&lt;/div&gt;	&lt;a class=&quot;lift-button-link&quot; href=&quot;//www.foo.bar&quot;&gt;Miten nyt ker&auml;tt&auml;v&auml; rahoitus tulisi sijoittaa?&lt;/a&gt;
 	&lt;p class=&quot;date&quot;&gt;26.5. asti&lt;/p&gt;
 &lt;/div&gt;
 &lt;h4&gt;Tummaa taustaa kutsutaan 'gray-base'-luokalla&lt;/h4&gt;
-&lt;div class=&quot;icon-lift gray-base participation&quot;&gt;
+&lt;div class=&quot;lift-button gray-base participation&quot;&gt;
 	&lt;div class=&quot;count-container&quot;&gt;
 		&lt;span class=&quot;icon-span icon-comment&quot;&gt;&lt;/span&gt;
 		&lt;a href=&quot;//www.foo.bar&quot;&gt;17&lt;/a&gt;
-	&lt;/div&gt;	&lt;a class=&quot;icon-lift-link&quot; href=&quot;//www.foo.bar&quot;&gt;Miten nyt ker&auml;tt&auml;v&auml; rahoitus tulisi sijoittaa?&lt;/a&gt;
+	&lt;/div&gt;	&lt;a class=&quot;lift-button-link&quot; href=&quot;//www.foo.bar&quot;&gt;Miten nyt ker&auml;tt&auml;v&auml; rahoitus tulisi sijoittaa?&lt;/a&gt;
 	&lt;p class=&quot;date&quot;&gt;26.5. asti&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h4&gt;Floated list&lt;/h4&gt;
+&lt;div id=&quot;showParticipations&quot; class=&quot;participations cf&quot;&gt;
+	&lt;h2 class=&quot;ongoing&quot;&gt;
+		Menossa olevat osallistumiset
+	&lt;/h2&gt;
+	&lt;div class=&quot;lift-button gray-base participation float-left&quot;&gt;
+		&lt;div class=&quot;count-container&quot;&gt;
+			&lt;span class=&quot;icon-span icon-comment&quot;&gt;&lt;/span&gt;
+			&lt;a href=&quot;//www.foo.bar&quot;&gt;17&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;a class=&quot;lift-button-link&quot; href=&quot;//www.foo.bar&quot;&gt;Ymp&auml;rist&ouml;n hyvinvointi - miten sit&auml; voidaan...&lt;/a&gt;
+		&lt;span class=&quot;date&quot;&gt;26.5. asti&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;lift-button gray-base participation float-left&quot;&gt;
+		&lt;div class=&quot;count-container&quot;&gt;
+			&lt;span class=&quot;icon-span icon-comment&quot;&gt;&lt;/span&gt;
+			&lt;a href=&quot;//www.foo.bar&quot;&gt;24&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;a class=&quot;lift-button-link&quot; href=&quot;//www.foo.bar&quot;&gt;Kaupungin asukkaiden hyvinvointi ja osallistu...&lt;/a&gt;
+		&lt;span class=&quot;date&quot;&gt;26.5. asti&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;lift-button gray-base participation float-left&quot;&gt;
+		&lt;div class=&quot;count-container&quot;&gt;
+			&lt;span class=&quot;icon-span icon-comment&quot;&gt;&lt;/span&gt;
+			&lt;a href=&quot;//www.foo.bar&quot;&gt;24&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;a class=&quot;lift-button-link&quot; href=&quot;//www.foo.bar&quot;&gt;Kaupungin asukkaiden hyvinvointi ja osallistu...&lt;/a&gt;
+		&lt;span class=&quot;date&quot;&gt;26.5. asti&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;lift-button gray-base participation float-left&quot;&gt;
+		&lt;div class=&quot;count-container&quot;&gt;
+			&lt;span class=&quot;icon-span icon-comment&quot;&gt;&lt;/span&gt;
+			&lt;a href=&quot;//www.foo.bar&quot;&gt;24&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;a class=&quot;lift-button-link&quot; href=&quot;//www.foo.bar&quot;&gt;Kaupungin asukkaiden hyvinvointi ja osallistu...&lt;/a&gt;
+		&lt;span class=&quot;date&quot;&gt;26.5. asti&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;lift-button gray-base participation float-left&quot;&gt;
+		&lt;div class=&quot;count-container&quot;&gt;
+			&lt;span class=&quot;icon-span icon-comment&quot;&gt;&lt;/span&gt;
+			&lt;a href=&quot;//www.foo.bar&quot;&gt;24&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;a class=&quot;lift-button-link&quot; href=&quot;//www.foo.bar&quot;&gt;Kaupungin asukkaiden hyvinvointi ja osallistu...&lt;/a&gt;
+		&lt;span class=&quot;date&quot;&gt;26.5. asti&lt;/span&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;h4&gt;Responsive list&lt;/h4&gt;
+&lt;div id=&quot;showParticipations&quot; class=&quot;participations responsive-list-block&quot;&gt;
+	&lt;h2 class=&quot;ongoing&quot;&gt;
+		Menossa olevat osallistumiset
+	&lt;/h2&gt;
+	&lt;div class=&quot;lift-button gray-base participation inline-element&quot;&gt;
+		&lt;div class=&quot;count-container&quot;&gt;
+			&lt;span class=&quot;icon-span icon-comment&quot;&gt;&lt;/span&gt;
+			&lt;a href=&quot;//www.foo.bar&quot;&gt;17&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;a class=&quot;lift-button-link&quot; href=&quot;//www.foo.bar&quot;&gt;Ymp&auml;rist&ouml;n hyvinvointi - miten sit&auml; voidaan...&lt;/a&gt;
+		&lt;span class=&quot;date&quot;&gt;26.5. asti&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;lift-button gray-base participation inline-element&quot;&gt;
+		&lt;div class=&quot;count-container&quot;&gt;
+			&lt;span class=&quot;icon-span icon-comment&quot;&gt;&lt;/span&gt;
+			&lt;a href=&quot;//www.foo.bar&quot;&gt;24&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;a class=&quot;lift-button-link&quot; href=&quot;//www.foo.bar&quot;&gt;Kaupungin asukkaiden hyvinvointi ja osallistu...&lt;/a&gt;
+		&lt;span class=&quot;date&quot;&gt;26.5. asti&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;lift-button gray-base participation inline-element&quot;&gt;
+		&lt;div class=&quot;count-container&quot;&gt;
+			&lt;span class=&quot;icon-span icon-comment&quot;&gt;&lt;/span&gt;
+			&lt;a href=&quot;//www.foo.bar&quot;&gt;24&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;a class=&quot;lift-button-link&quot; href=&quot;//www.foo.bar&quot;&gt;Kaupungin asukkaiden hyvinvointi ja osallistu...&lt;/a&gt;
+		&lt;span class=&quot;date&quot;&gt;26.5. asti&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;lift-button gray-base participation inline-element&quot;&gt;
+		&lt;div class=&quot;count-container&quot;&gt;
+			&lt;span class=&quot;icon-span icon-comment&quot;&gt;&lt;/span&gt;
+			&lt;a href=&quot;//www.foo.bar&quot;&gt;24&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;a class=&quot;lift-button-link&quot; href=&quot;//www.foo.bar&quot;&gt;Kaupungin asukkaiden hyvinvointi ja osallistu...&lt;/a&gt;
+		&lt;span class=&quot;date&quot;&gt;26.5. asti&lt;/span&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;lift-button gray-base participation inline-element&quot;&gt;
+		&lt;div class=&quot;count-container&quot;&gt;
+			&lt;span class=&quot;icon-span icon-comment&quot;&gt;&lt;/span&gt;
+			&lt;a href=&quot;//www.foo.bar&quot;&gt;24&lt;/a&gt;
+		&lt;/div&gt;
+		&lt;a class=&quot;lift-button-link&quot; href=&quot;//www.foo.bar&quot;&gt;Kaupungin asukkaiden hyvinvointi ja osallistu...&lt;/a&gt;
+		&lt;span class=&quot;date&quot;&gt;26.5. asti&lt;/span&gt;
+	&lt;/div&gt;
 &lt;/div&gt;
 									</code>
 								</pre>
@@ -4434,10 +4622,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1401276584">
+	<script id="pl-js-polyfill-insert-1401280084">
 		(function() {
 			if (self != top) {
-				var cb = '1401276584';
+				var cb = '1401280084';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -4446,10 +4634,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1401276584">
+	<script id="pl-js-insert-1401280084">
 		(function() {
 			if (self != top) {
-				var cb = '1401276584';
+				var cb = '1401280084';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
