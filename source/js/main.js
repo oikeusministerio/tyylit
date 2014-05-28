@@ -364,5 +364,15 @@ $(".tagit-list").tagit({
 });
 
 
-
-
+// hankesivu-read-mode
+$("#btnAddParticipationContainer").removeClass("is-hidden");
+$("#btnCancelParticipationContainer").removeClass("is-hidden");
+$("#addParticipations").hide();
+$("#btnAddParticipation").click(function () {
+    $("#showParticipations").hide();
+    $("#addParticipations").show();
+});
+$("#btnCancelParticipation").click(function () {
+    $("#showParticipations").show();
+    $("#addParticipations").hide();
+});
