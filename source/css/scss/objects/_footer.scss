@@ -24,6 +24,8 @@
 	padding: 0 em(10px);
 	color: $white;
 
+	a:hover{ text-decoration: none; }
+
 	.footer-nav-item {
 		float: left;
 		width: 50%;
@@ -42,6 +44,10 @@
 			padding-left: 0;
 
 			p{ margin-bottom: 0; }
+
+			a span:before{
+				margin-right: 5px;
+			}
 		}
 
 		&:nth-child(2){
@@ -57,48 +63,43 @@
 					&:hover{
 						i{
 							transition-delay: 0.25s; -webkit-transition-delay: 0.25s;
+
 						}
 					}
 				}
-				a.facebook:hover{ i{ transition-delay: 0s; -webkit-transition-delay: 0s; } }
+				a.facebook i{
+					background-color: $white;
+					color: $text-color;
+					border-radius: 3px;
+				}
+				//a.facebook:hover{ i{ transition-delay: 0.25s; -webkit-transition-delay: 0.25s; } }
 				a.facebook:hover, a.facebook:active{
-					text-decoration: none;
 					i{
 
-						color: #3c5a99;
+						background-color: #3c5a99;
+						color: $white;
 						position: relative;
-
-						&:after{
-							width: 24px; height: 24px;
-							display: inline-block;
-							color: $white;
-							font-size: 2em;
-							font-family: ok-icons;
-							top: 0; left: 0; position: absolute;
-						}
 					}
 				}
 				a.twitter:hover, a.twitter:active{
-
-					text-decoration: none;
 					i{
 						color: #5fa9dd;
 						background: $white;
 					}
 				}
 				a.youtube:hover, a.youtube:active{
-					text-decoration: none;
 					i{
 						color: #cb2026;
 						background: $white;
 					}
 				}
-
 				i{
-					width: em(24px);
+					width: em(23px);
 					text-align: center;
 
-
+					&.fa{
+						font-size: 1.5em;
+					}
 				}
 				span{ margin-left: em(10px); }
 			}
@@ -178,9 +179,5 @@
 	a{
 		color: $white;
 		text-decoration: none;
-
-		&:hover{
-			text-decoration: underline;
-		}
 	}
 }

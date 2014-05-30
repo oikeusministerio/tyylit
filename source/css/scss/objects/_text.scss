@@ -109,14 +109,9 @@ $fadeout-space: 70px;
 
 		&:after{
 			color: $text-color;
-			border-radius: 50%;
-			font-size: 1.125em;
+			font-size: 1.25em;
 			display: inline-block;
-			border: 1px solid $text-color;
-			width: 20px;
-			height: 16.5px;
-			text-indent: 3.5px;
-			padding-top: 3.5px;
+			padding-top: $pad-quarter;
 			vertical-align: top;
 		}
 	}

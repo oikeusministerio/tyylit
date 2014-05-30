@@ -1,9 +1,9 @@
 
 @font-face {
 	font-family: ok-icons;
-	src:url("../fonts/otakantaa-icon-set.eot?1.1");
-	src:url("../fonts/otakantaa-icon-set.eot?1.1#iefix") format('embedded-opentype'),
-		url("../fonts/otakantaa-icon-set.ttf?1.1") format('truetype');
+	src:url("../fonts/otakantaa-icon-set.eot");
+	src:url("../fonts/otakantaa-icon-set.eot#iefix") format('embedded-opentype'),
+		url("../fonts/otakantaa-icon-set.ttf") format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -305,37 +305,56 @@ i{
 // otakantaa icons. prefix om-
 
 .icon-comment:before{
-	content: "\63";
+	content: "\E028";
 	@extend .om;
 }
 
 .icon-help:after{
-	content:"\22";
+	content:"\E063";
 	@extend .om;
 }
 
 .om-facebook:before{
-	content: "\46";
+	content: "\E031";
 	z-index: 1;
 	position: relative;
 }
+/*
 .om-facebook:after{
 	content: "S";
 	display: none;
-}
+}*/
 
 .om-twitter:before{
-	content: "\54";
+	content: "\E068";
 }
 
 .om-youtube:before{
-	content: "\55";
+	content: "\E069";
 }
 
 .om-gallup:before{
-	content: "\45";
+	content: "\E019";
 }
 
+.om-otk:before{
+	content: "\E006";
+}
 
+.om-lap:before{
+	content: "\E011";
+}
+
+.om-kua:before{
+	content: "\E008";
+}
+
+.om-kaa:before{
+	content: "\E007";
+}
+.om-enter:before{
+	content: "\E067";
+	font-size: 1.5em;
+}
 
 
