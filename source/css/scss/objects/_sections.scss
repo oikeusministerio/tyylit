@@ -185,7 +185,11 @@
 
 				.progressbar-text{ width: 353px !important; }
 			}
+			@media screen and (max-width: 375px){
+				width: 310px;
 
+				.progressbar-text{ width: 300px !important; }
+			}
 
 			.progressbar-progress{
 				background-color: darken($gray-med, 10%);

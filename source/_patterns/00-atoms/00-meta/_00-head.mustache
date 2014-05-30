@@ -11,10 +11,16 @@
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 
 		<link rel="stylesheet" href="../../css/style.css?{{ cacheBuster }}" media="all" />
+		<!-- [if gte IE 9]>
+			<style type="text/css">
+				.og-share-post .share-content .image-container{ height: 100px; }
+			</style>
+		<![endif]-->
 
 		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
 		{% pattern-lab-head %}
 		<!-- End Pattern Lab -->
 
 	</head>
+
 	<body class="{{ bodyClass }}">
