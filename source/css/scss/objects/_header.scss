@@ -145,12 +145,15 @@
 		display: inline-block;
 		height: 50px;
 		width: auto;
-		margin-right: $pad/2;
+		margin-right: em(8.5px);
 		vertical-align: middle;
+		border: 0;
+		border-width: 0;
+		outline: none;
 
 		@media #{$laptop}{
 			height: 77px;
-			margin-right: $pad/2;
+			margin-right: em(13px);
 		}
 
 		// for 400-320px
@@ -262,16 +265,16 @@
 		}
 
 		a, .logout-btn-wrapper{
-			padding: 14px 18px;
+			padding: 14px 22.5px;
 			float: left;
 			line-height: 33px;
 
 
 			span{ display: inline; opacity: 1; }
-			i{ display: none; opacity: 0; }
+			i{ margin-left: em(10px); }
 
-			@media screen and (max-width: 500px){
-				i{ display: inline; opacity: 1 ; }
+			@media screen and (max-width: 600px){
+				i{ margin-left: 0; }
 				span{ display: none; opacity: 0; }
 			}
 
@@ -283,11 +286,11 @@
 			@media #{$desktop}{ float: left; display: inline; }
 		}
 		.user-navigation > ul > li > a{
-			padding: 0 15px 0 10px; margin: 0;
+			padding: 0 5px 0 10px; margin: 0;
 			height: 61px;
 			line-height: 61px;
 
-			border-right: 1px solid $black;
+			//border-right: 1px solid $black;
 			float: left;
 
 
@@ -330,8 +333,8 @@
 				cursor: pointer;
 				float: right;
 				height: 61px;
-				border-left: 1px solid #5A5A5A;
-				padding: 0 15px;
+				//border-left: 1px solid #5A5A5A;
+				padding: 0 5px;
 
 				@media #{$tablet}{ border-left: 0; height: auto; float: none; padding: 0; }
 
@@ -356,26 +359,29 @@
 			margin: 0; padding: 0;
 			height: 61px;
 			@media #{$tablet}{ height: 42px; }
+			@media screen and (max-width: 500px){ width: 60px; }
 
-			i{ display: none; opacity: 0; }
+			i{
+				margin: 0;
+				position: absolute;
+				top: 22.5px;
+				right: 10px;
 
-			@media screen and (max-width: 500px){
-				i{
-					display: inline;
-					opacity: 1;
-					right: 20px;
-				}
+				@media #{$tablet}{ top: 13px; }
+				@media screen and (max-width: 500px){ right: 22px; }
 			}
 
 			.ctl-btn-logout{
 				float: none;
 				line-height: 61px;
-				padding: 0 10px;
+				padding: 0 30px 0 10px;
 				margin: 0;
+
 				@media #{$tablet}{ line-height: 42px; }
 				@media screen and (max-width: 500px){
+					padding: 0 60px 0 0;
 					color: transparent;
-					width: 50px;
+					width: 0;
 				}
 			}
 		}

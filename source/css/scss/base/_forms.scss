@@ -31,14 +31,19 @@ input, textarea {
 }
 
 textarea{
-	min-height: 84px;
-	height: 100px;
 	overflow: hidden;
+	min-height: 100px;
+	&.ta-small{ min-height: 50px; }
 
-	&.ta-small{
-		min-height: 58px;
-		height: 74px;
+	// Following rules stop twitching when dynamic javascript height is used.
+	&.js-dynamic{
+		min-height: 84px;
+		height: 100px;
 
+		&.ta-small{
+			min-height: 58px;
+			height: 74px;
+		}
 	}
 }
 
@@ -56,6 +61,8 @@ input[type="checkbox"],
 input[type="radio"] {
 	width: auto;
 	margin-right: 0.3em;
+	border: 0;
+	outline: 0;
 }
 
 input[type="search"] {
@@ -70,7 +77,6 @@ input[type="search"]::-webkit-search-decoration {
 
 .sg-pattern-body .half-form{
 	width: 50%;
-
 }
 
 //Form Field Container
@@ -118,7 +124,6 @@ input[type="search"]::-webkit-search-decoration {
 			}
 		}
 	}
-
 }
 
 .email-el{
@@ -182,10 +187,14 @@ input[type="search"]::-webkit-search-decoration {
 	vertical-align: top; // for patternlab only
 	margin-right: 25px; // for patternlab only
 
+	.form-element{
+		margin-left: em(12px);
+		margin-right: em(12px);
+	}
+
 
 	.attachment-container{
 		text-align: center;
-
 
 		input[type=file]{
 			position: absolute;
@@ -206,11 +215,11 @@ input[type="search"]::-webkit-search-decoration {
 				color: $white;
 				display: block;
 				margin-bottom: 25px;
-				line-height: 1;
 				font-size: 4em;
-				padding: 15px 0;
+				line-height: 97px !important;
+				padding: 0;
 
-				@include border-radius(47.5px, 47.5px, 47.5px, 47.5px);
+				@include border-radius(50%, 50%, 50%, 50%);
 			}
 
 
@@ -218,7 +227,8 @@ input[type="search"]::-webkit-search-decoration {
 	}
 	.attachment-save{
 		text-align: center;
-		margin: $pad em(12px) $pad-half;
+		margin-top: $pad;
+		margin-bottom: $pad-half;
 
 		textarea, .save-attachment{ width: 100%; }
 
@@ -248,13 +258,12 @@ input[type="search"]::-webkit-search-decoration {
 
 		.mime-container{
 			background-color: $white;
-			margin: 5px 10px;
-			padding: 10px;
+			margin: 5px 0;
+			padding: 20px 10px;
 
 			i{
 				font-size: 1.5em;
-				margin-top: 5px;
-				margin-bottom: 5px;
+				margin: 0;
 			}
 		}
 

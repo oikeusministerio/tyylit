@@ -193,24 +193,38 @@
 	}
 }
 
-.select-style select{
-	background: $green;
-	border: 1px solid $border-color;
-	color: $white;
-	padding: 4px 4px 4px 6px;
-	-webkit-appearance: none;
-	@include border-radius(2px, 2px, 2px, 2px);
-}
-.select-style:after{
-	content: "\f0d7";
-	font-family: fontAwesome;
-	margin-left: -30px;
-	display: inline-block;
-	color: $white;
-	border-left: 1px solid $white;
-	padding-left: 7px;
+.select-style {
+	position: relative;
 
+	&:after{
+		content: "\f0d7";
+		font-family: fontAwesome;
+		display: inline-block;
+		color: $white;
+		text-indent: -25px;
+	}
+
+	.border-fix:after{
+		content: ".";
+		color: $green;
+		top: -1px;
+		right: 30px;
+		position: absolute;
+		border-left: 1px solid $white;
+	}
+
+	select{
+		background: $green;
+		border: 1px solid $border-color;
+		color: $white;
+		padding: 4px 35px 4px 6px;
+		-webkit-appearance: none;
+		@include border-radius(2px, 2px, 2px, 2px);
+	}
 }
+
+
+.select-style
 
 // Lift-button.
 .lift-button{
