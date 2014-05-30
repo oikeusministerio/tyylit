@@ -93,26 +93,27 @@ if( $('.datepicker').data('maxdate').length ){
 } */
 
 
+if( $('.datepicker').length ){
+	$('.datepicker').pickadate({
+		// Escape any “rule” characters with an exclamation mark (!).
+		format: 'd.m.yyyy',
+		formatSubmit: 'yyyy/mm/dd',
+		hiddenPrefix: 'prefix__',
+		hiddenSuffix: '__suffix',
 
-$('.datepicker').pickadate({
-	// Escape any “rule” characters with an exclamation mark (!).
-	format: 'd.m.yyyy',
-	formatSubmit: 'yyyy/mm/dd',
-	hiddenPrefix: 'prefix__',
-	hiddenSuffix: '__suffix',
 
+		// Strings and translations
+		monthsFull: ['Tammikuu', 'Helmikuu', 'Maaliskuu', 'Huhtikuu', 'Toukokuu', 'Kesäkuu', 'Heinäkuu', 'Elokuu', 'Syyskuu', 'Lokakuu', 'Marraskuu', 'Joulukuu'],
+		monthsShort: ['Tam', 'Hel', 'Maa', 'Huh', 'Tou', 'Kes', 'Hei', 'Elo', 'Syy', 'Lok', 'Mar', 'Jou'],
+		weekdaysFull: ['Sunnuntai', 'Maanantai', 'Tiistai', 'Keskiviikko', 'Torstai', 'Perjantai', 'Lauantai'],
+		weekdaysShort: ['Su', 'Ma', 'Ti', 'Ke', 'To', 'Pe', 'La'],
+		showMonthsShort: false,
+		firstDay: 'Ma',
+		today: 'Tänään',
+		clear: 'Tyhjennä valinta'
 
-	// Strings and translations
-	monthsFull: ['Tammikuu', 'Helmikuu', 'Maaliskuu', 'Huhtikuu', 'Toukokuu', 'Kesäkuu', 'Heinäkuu', 'Elokuu', 'Syyskuu', 'Lokakuu', 'Marraskuu', 'Joulukuu'],
-	monthsShort: ['Tam', 'Hel', 'Maa', 'Huh', 'Tou', 'Kes', 'Hei', 'Elo', 'Syy', 'Lok', 'Mar', 'Jou'],
-	weekdaysFull: ['Sunnuntai', 'Maanantai', 'Tiistai', 'Keskiviikko', 'Torstai', 'Perjantai', 'Lauantai'],
-	weekdaysShort: ['Su', 'Ma', 'Ti', 'Ke', 'To', 'Pe', 'La'],
-	showMonthsShort: false,
-	firstDay: 'Ma',
-	today: 'Tänään',
-	clear: 'Tyhjennä valinta'
-
-});
+	});
+}
 
 
 // Navigation
