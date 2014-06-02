@@ -1,22 +1,22 @@
 <div class="page hankesivu-read-mode" id="page">
   {{> organisms-header }}
   <div role="main">
-    <div class="block">
-      <img src="../../images/fpo_16x9.png" alt="Taustakuva" />
-    </div>
-    <div class="admin-tools">
-      <h3>
-        Tietojen ylläpito
-      </h3>
-      <div class="btn-group">
-        <input class="btn btn-otk" type="submit" value="Muokkaa perustietoja" />
-        <input class="btn btn-otk" type="submit" value="Kirjoita yhteenveto" />
-        <input class="btn btn-otk" type="submit" value="Lisää kieliversio" />
-        <input class="btn btn-otk" type="submit" value="Osallistumisraportti" />
-      </div>
-    </div>
     <div class="hanke-details">
-      <h1>Hankkeen nimi</h1>
+      <div class="block backgroud">
+        <img src="../../images/fpo_16x9.png" alt="Taustakuva" />
+      </div>
+      <div class="block logo">
+        <img src="../../images/logo.png" alt="Logo" />
+      </div>
+      <h1>Hankkeen nimi Lorem ipsum dolor sit met</h1>
+      <div class="admin-tools">
+        <div class="btn-group">
+          <input class="btn btn-otk" type="submit" value="Muokkaa perustietoja" />
+          <input class="btn btn-otk" type="submit" value="Kirjoita yhteenveto" />
+          <input class="btn btn-otk" type="submit" value="Lisää kieliversio" />
+          <input class="btn btn-otk" type="submit" value="Osallistumisraportti" />
+        </div>
+      </div>
       <div class="some-buttons">
         <a href="http://www.facebook.com/otakantaa" class="facebook" target="_blank">
           <i class="om-facebook om"></i>
@@ -35,20 +35,22 @@
         </p>
       </div>
     </div>
-    <div class="invitation">
-      <img src="../../images/favicon_32x32.jpg" />
+    <div class="invitation" style="max-width: 300px;">
       <h3>
+        <img src="../../images/favicon_32x32.jpg" />
         Kutsu muita osallistumaan
       </h3>
-      <p>
-        Kenelle<small>lisää käyttäjänimiä tai sähköpostiosoitteita</small>
-      </p>
+      <div class="helper-container">
+        <span class="icon-help" title="lisää käyttäjänimiä tai sähköpostiosoitteita" placement="top">Kenelle</span>
+        <p class="helper-text small is-vishidden">lisää käyttäjänimiä tai sähköpostiosoitteita</p>
+      </div>
       <input type="text" />
-      <p>
-        Viesti<small>valinnainen viesti sähköpostikutsuun</small>
-      </p>
+      <div class="helper-container">
+        <span class="icon-help" title="valinnainen viesti sähköpostikutsuun" placement="top">Viesti</span>
+        <p class="helper-text small is-vishidden">valinnainen viesti sähköpostikutsuun</p>
+      </div>
       <textarea style="height: 70px;" cols="20" rows="2"></textarea>
-      <input type="submit" value="Lähetä kutsu" />
+      <input class="btn btn-otk" type="submit" value="Lähetä kutsu" />
       <div class="sidebar-form-errors">
       </div>
     </div>
