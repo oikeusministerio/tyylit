@@ -5,15 +5,15 @@
       <h1>Muokkaa hanketta</h1>
       <div class="block backgroud">
         <img src="../../images/fpo_16x9.png" alt="Taustakuva" />
-        <input class="btn btn-otk" type="submit" value="Muokkaa taustakuvaa" />
+        <input class="btn btn-otk" type="submit" value="Vaihda taustakuva" />
       </div>
       <div class="block logo">
-        <img src="../../images/logo.png" alt="Logo" />
-        <input class="btn btn-otk" type="submit" value="Muokkaa profiilikuvaa" />
+        <img src="../../images/fpo_avatar.png" alt="Logo" />
+        <input class="btn btn-otk" type="submit" value="Vaihda logo" />
       </div>
       <div id="hanke-title" class="form-element text-el">
         <label for="text-field">Otsikko tai nimi*</label>
-        <input type="text" id="text-field" placeholder="Kirjoita tähän otsikko tai nimi..." class="js-dynamic" maxlength="130" />
+        <textarea class="ta-small js-dynamic" placeholder="Kirjoita tähän otsikko tai nimi..." maxlength="130"></textarea>
       </div>
       <div id="hanke-intro" class="form-element text-el">
         <div class="helper-container">
@@ -27,11 +27,11 @@
           <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Kuvaus ja tavoitteet*</span>
           <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
         </div>
-        <textarea class="js-dynamic" placeholder="Kirjoita tähän kuvaus ja tavoitteet..." maxlength="2000"></textarea>
+        <textarea class="ta-small js-dynamic" placeholder="Kirjoita tähän kuvaus ja tavoitteet..." maxlength="2000"></textarea>
       </div>
       <div id="hanke-responsibility" class="form-element text-el">
         <label for="text-field">Vastuujärjestö tai -henkilö*</label>
-        <input type="text" id="text-field" placeholder="Kirjoita tähän vastuujärjestö tai -henkilö..." class="js-dynamic" maxlength="130" />
+        <textarea class="ta-small js-dynamic"  placeholder="Kirjoita tähän vastuujärjestö tai -henkilö..." maxlength="130"></textarea>
       </div>
       <div id="hanke-publicity">
         <div class="helper-container">
@@ -182,7 +182,7 @@
       </div>
       <div id="hanke-locations">
         <h3>Paikkakunnat</h3>
-        <ul id="tbLocations" class="tagit-list"></ul>
+        <ul id="tbLocations" class="location-list"></ul>
       </div>
       <div id="hanke-keywords">
         <h3>Asiasanat</h3>
@@ -190,17 +190,17 @@
       </div>
       <div id="hanke-admins">
         <h3>Vastuuhenkilöt</h3>
-        <ul id="tbAdmins" class="tagit-list"></ul>
+        <ul id="tbAdmins" class="person-list"></ul>
       </div>
       <div id="hanke-supervisors">
         <h3>Ohjaajat</h3>
-        <ul id="tbSupervisors" class="tagit-list"></ul>
+        <ul id="tbSupervisors" class="person-list"></ul>
       </div>
       <div id="hanke-save">
-        <input type="checkbox" disabled="">
+        <input type="checkbox">
           Olen tutustunut <a href="#">palvelun sääntöihin</a> ja vakuutan annettujen tietojen olevan todenmukaisia*
         </input>
-        <input type="submit" class="btn btn-otk"  />
+        <input type="submit" class="btn btn-otk" value="Tallenna muutokset" />
       </div>
     </div>
   </div><!--End role=main-->
