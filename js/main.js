@@ -363,6 +363,19 @@ $(".tagit-list").tagit({
 	allowSpaces: true,
 	availableTags: ["demokratia", "äänestys", "foo", "bar", "lorem", "lipsum", "otakantaa", "ota kantaa", "vaalit"]
 });
+$(".tagit-list .tagit-new input.ui-autocomplete-input").attr("placeholder", "Aloita kirjoittamaan asiasanaa");
+
+$(".location-list").tagit({
+    allowSpaces: true,
+    availableTags: ["Turku", "Helsinki", "Tampere", "Oulu", "Jyväskylä", "Vaasa", "Seinäjoki", "Rovaniemi", "Hanko"]
+});
+$(".location-list .tagit-new input.ui-autocomplete-input").attr("placeholder", "Aloita kirjoittamaan paikkakunnan nimeä");
+
+$(".person-list").tagit({
+    allowSpaces: true,
+    availableTags: ["Matti Meikäläinen", "Oskari Olematon", "David Hasselhoff", "Homer Simpson", "Aku Ankka", "Roope Ankka", "B Virtanen"]
+});
+$(".person-list .tagit-new input.ui-autocomplete-input").attr("placeholder", "Aloita kirjoittamaan henkilön nimeä");
 
 
 // hankesivu-read-mode
