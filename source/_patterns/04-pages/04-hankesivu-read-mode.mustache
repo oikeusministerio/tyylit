@@ -1,6 +1,6 @@
 <div class="page hankesivu-read-mode" id="page">
   {{> organisms-header }}
-  <div role="main">
+  <div role="main" class="responsive-list-block">
     <div class="hanke-details">
       <div class="block backgroud">
         <img src="../../images/fpo_16x9.png" alt="Taustakuva" />
@@ -8,16 +8,22 @@
       <div class="block logo">
         <img src="../../images/logo.png" alt="Logo" />
       </div>
-      <h1>Hankkeen nimi Lorem ipsum dolor sit met</h1>
       <div class="admin-tools">
-        <div class="btn-group">
-          <input class="btn btn-otk" type="submit" value="Muokkaa perustietoja" />
-          <input class="btn btn-otk" type="submit" value="Kirjoita yhteenveto" />
-          <input class="btn btn-otk" type="submit" value="Lisää kieliversio" />
-          <input class="btn btn-otk" type="submit" value="Osallistumisraportti" />
-        </div>
+        <input class="btn" type="submit" value="Muokkaa perustietoja" />
+        <input class="btn" type="submit" value="Kirjoita yhteenveto" />
+        <input class="btn" type="submit" value="Lisää kieliversio" />
+        <input class="btn" type="submit" value="Osallistumisraportti" />
       </div>
-      <div class="some-buttons">
+      <h1>Hankkeen nimi Lorem ipsum dolor sit met</h1>
+    </div>
+    <div class="content-item medium inline-element">      
+      <div class="fadeout">
+        <p class="ingressi">Hankkeen kuvausteksti tänne. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <p class="read-more">
+          <a href="">Lue lisää</a>
+        </p>
+      </div>
+      <div class="some-buttons inline-element">
         <a href="http://www.facebook.com/otakantaa" class="facebook" target="_blank">
           <i class="om-facebook om"></i>
           <span>Facebook</span>
@@ -27,15 +33,8 @@
           <span>Twitter</span>
         </a>
       </div>
-      <div class="fadeout">
-        <p class="ingressi">Hankkeen kuvausteksti tänne. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        <p>Hankkeen johdanto tähän. Nullam varius, metus sed elementum bibendum, neque urna suscipit libero, nec vulputate ipsum metus ut felis. Curabitur tincidunt aliquet nulla, cursus elementum ante molestie sit amet. Duis dictum leo in auctor faucibus. Morbi et adipiscing magna. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed arcu libero, elementum vitae ante in, ultricies tristique orci. Donec scelerisque vehicula odio ut semper. Ut eu odio quis risus varius consectetur in at ante. Cras lacinia urna scelerisque, auctor sapien a, pulvinar massa. Integer ut mollis odio, et mattis mi. Nunc vel condimentum mauris. Integer porta lectus vel tellus suscipit semper.</p>
-        <p class="read-more">
-          <a href="">Lue lisää</a>
-        </p>
-      </div>
     </div>
-    <div class="invitation" style="max-width: 300px;">
+    <div class="content-item medium invitation inline-element">
       <h3>
         <img src="../../images/favicon_32x32.jpg" />
         Kutsu muita osallistumaan
@@ -54,7 +53,7 @@
       <div class="sidebar-form-errors">
       </div>
     </div>
-    <div class="gantt fadeout">
+    <div class="content-item large fadeout inline-element">
       <div class="status">
         Tila: <span class="state">Käynnissä</span>
       </div>
@@ -66,7 +65,7 @@
         <a href="">Lue lisää</a>
       </p>
     </div>
-    <div id="showParticipations" class="participations responsive-list-block">
+    <div id="showParticipations" class="content-item large participations responsive-list-block inline-element">
       <h2 class="ongoing">
         Menossa olevat osallistumiset
       </h2>
@@ -101,7 +100,7 @@
         </div>
       </div>
     </div>
-    <div id="addParticipations" class="participations responsive-list-block">
+    <div id="addParticipations" class="content-item large participations responsive-list-block inline-element">
       <h2 class="create">
         Luo uusi osallistuminen
       </h2>
@@ -124,7 +123,7 @@
         </div>
       </div>
     </div>
-    <div class="participator-list">
+    <div class="content-item large participator-list inline-element">
       <div class="helper-container">
         <span class="icon-help h3" title="Lorem ipsum" placement="top">Hankkeen osallistujat</span>
         <p class="helper-text small is-vishidden">Lorem ipsum</p>
@@ -236,14 +235,14 @@
         </p>
       </div>
     </div>
-    <div class="hanke-info">
+    <div class="content-item large hanke-info inline-element">
       <h2>
         <a id="Info">
           Perustiedot
         </a>
       </h2>
       <div class="fadeout">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc bibendum velit sed nunc ultrices tincidunt. In nulla orci, lacinia at placerat non, consequat nec enim. Phasellus dignissim elit at porttitor elementum. Aliquam felis nisi, gravida sed augue at, posuere consectetur nunc. Nulla varius tempor massa sed luctus. Mauris ornare sollicitudin nulla, mollis convallis enim porta nec. Nulla non mauris eleifend, accumsan lectus id, ultrices massa. Etiam dictum ligula ac dui venenatis semper. Donec congue libero vitae neque dignissim pretium. Maecenas lacinia ultricies lorem, id vulputate turpis interdum a. Nulla ac orci elit.</p>
+        <p>Hankkeen johdanto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc bibendum velit sed nunc ultrices tincidunt. In nulla orci, lacinia at placerat non, consequat nec enim. Phasellus dignissim elit at porttitor elementum. Aliquam felis nisi, gravida sed augue at, posuere consectetur nunc. Nulla varius tempor massa sed luctus. Mauris ornare sollicitudin nulla, mollis convallis enim porta nec. Nulla non mauris eleifend, accumsan lectus id, ultrices massa. Etiam dictum ligula ac dui venenatis semper. Donec congue libero vitae neque dignissim pretium. Maecenas lacinia ultricies lorem, id vulputate turpis interdum a. Nulla ac orci elit.</p>
         <p class="read-more">
           <a href="">Lue lisää</a>
         </p>
@@ -292,7 +291,7 @@
         </tbody>
       </table>
     </div>
-    <div class="keywords">
+    <div class="content-item medium keywords inline-element">
       <div class="helper-container">
         <span class="icon-help h4" title="Lorem ipsum" placement="top">Asiasanat</span>
         <p class="helper-text small is-vishidden">Lorem ipsum</p>
@@ -305,7 +304,7 @@
         <li>Esimerkki</li>
       </ul>
     </div>
-    <div class="locations">
+    <div class="content-item medium locations inline-element">
       <div class="helper-container">
         <span class="icon-help h4" title="Lorem ipsum" placement="top">Paikkakunnat</span>
         <p class="helper-text small is-vishidden">Lorem ipsum</p>
@@ -317,7 +316,7 @@
         <li>Tampere</li>
       </ul>
     </div>
-    <div class="project-analysis">
+    <div class="content-item medium project-analysis inline-element">
       <h2>
         Yhteenveto
       </h2>

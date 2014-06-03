@@ -2,6 +2,21 @@
 .form-element{
 	margin-bottom: $space-half;
 }
+.content-item {
+	background-color: #fff;
+}
+	.content-item.small {
+		max-width: 175px;
+		min-width: 175px;
+	}
+	.content-item.medium {
+		max-width: 700px;
+		min-width: 375px;
+	}
+	.content-item.large {
+		max-width: 700px;
+		min-width: 700px;
+	}
 
 .inline-element{
 	display: inline-block;
@@ -79,22 +94,22 @@
 	.b-inner {
 		display: table-row;
 		vertical-align: top;
-  		overflow: hidden;
+		overflow: hidden;
 	}
 
 	.b-thumb {
 		@media all and (min-width: $bp-small-2) {
 			display: table-cell;
 			vertical-align: top;
-	  		width: 30%;
-	  		max-width: 10em;
+			width: 30%;
+			max-width: 10em;
 
-	 		img {
-	 			display: block;
+			img {
+				display: block;
 				  width: 100%;
 				  height: auto;
-	 		}
- 		}
+			}
+		}
 	}
 
 	.b-text {
