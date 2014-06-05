@@ -5,18 +5,27 @@
 .content-item {
 	background-color: #fff;
 }
-	.content-item.small {
-		max-width: 175px;
-		min-width: 175px;
-	}
-	.content-item.medium {
-		max-width: 700px;
-		min-width: 350px;
-	}
-	.content-item.large {
-		max-width: 700px;
-		min-width: 700px;
-	}
+	
+/* Fixed sizes */
+.content-item.fixed-small {
+	width: 175px;		
+}
+.content-item.fixed-medium {		
+	width: 350px;
+}
+.content-item.fixed-large {
+	width: 700px;		
+}
+
+.content-item.small {
+	width: 25%;
+}
+.content-item.medium {
+	width: 50%;
+}
+.content-item.large {
+	width: 100%;
+}
 
 .inline-element{
 	display: inline-block;
