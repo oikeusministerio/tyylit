@@ -737,7 +737,7 @@ td {
   .l-two-col .l-main {
     float: left;
     width: 70%;
-    padding-right: 1em;
+    padding-right: 0.5em;
   }
 }
 @media all and (max-width: 50em) {
@@ -749,7 +749,7 @@ td {
   .l-two-col .l-sidebar {
     float: left;
     width: 30%;
-    padding: 0 0 0 1em;
+    padding: 0;
   }
 }
 
@@ -3032,8 +3032,8 @@ td {
 
 .content-item {
   background-color: white;
-  margin: 0.5em 0.5em;
-  padding: 0.3em 0.3em;
+  margin: 0.5em 0;
+  padding: 0.25em 0.25em;
 }
 
 /* Fixed sizes */

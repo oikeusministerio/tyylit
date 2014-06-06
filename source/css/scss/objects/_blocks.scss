@@ -4,8 +4,8 @@
 }
 .content-item {
 	background-color: $white;
-	margin: 0.5em 0.5em;
-	padding: 0.3em 0.3em;
+	margin: $space-half 0;
+	padding: $pad-quarter $pad-quarter;
 }
 	
 /* Fixed sizes */
