@@ -127,7 +127,7 @@
 .btn-group{
 	@extend .cf;
 	margin-bottom: 25px;
-
+	
 	a, button, input[type="submit"]{
 		padding: $pad/2 $pad;
 		float: left;
@@ -192,6 +192,10 @@
 		}
 	}
 }
+
+	.btn-group.no-margin-bottom {
+		margin-bottom: 0;
+	}
 
 .select-style {
 	position: relative;
