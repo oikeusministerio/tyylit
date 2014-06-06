@@ -2919,6 +2919,10 @@ td {
   background-clip: padding-box;
 }
 
+.btn-group.no-margin-bottom {
+  margin-bottom: 0;
+}
+
 .select-style {
   position: relative;
 }
@@ -3059,6 +3063,10 @@ td {
 
 .content-item.large {
   width: 100%;
+}
+
+.block-element {
+  display: block;
 }
 
 .inline-element {
