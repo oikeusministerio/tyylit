@@ -3,7 +3,12 @@
 	<div class="element-group">
 		<!-- Use mobile trigger (molecules-responsive-dropdown) here to keep it in place when menus are open. -->
 		{{> atoms-mobile-nav-trigger }}
-		{{> molecules-login }}
+		{{#loggedin}}
+			{{> molecules-loggedin }}
+		{{/loggedin}}
+		{{^loggedin}}
+			{{> molecules-login }}			
+		{{/loggedin}}		
 	</div>
 	<section class="responsive-modifier-block">
 		{{> molecules-search }}
