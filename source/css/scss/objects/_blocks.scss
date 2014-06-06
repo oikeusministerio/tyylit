@@ -10,13 +10,13 @@
 	
 /* Fixed sizes */
 .content-item.fixed-small {
-	width: 175px;		
+	max-width: 175px;
 }
-.content-item.fixed-medium {		
-	width: 350px;
+.content-item.fixed-medium {
+	max-width: 350px;
 }
 .content-item.fixed-large {
-	width: 700px;		
+	max-width: 700px;		
 }
 
 .content-item.small {
