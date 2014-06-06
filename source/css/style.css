@@ -2919,10 +2919,6 @@ td {
   background-clip: padding-box;
 }
 
-.btn-group.no-margin-bottom {
-  margin-bottom: 0;
-}
-
 .select-style {
   position: relative;
 }
@@ -3065,7 +3061,14 @@ td {
   width: 100%;
 }
 
-.block-element {
+.project-search .block-element {
+  margin-left: 1.5em;
+  padding: 0.5em;
+}
+.project-search .btn-group {
+  margin-bottom: 0;
+}
+.project-search b {
   display: block;
 }
 

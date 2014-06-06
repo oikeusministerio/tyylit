@@ -29,8 +29,17 @@
 	width: 100%;
 }
 
-.block-element {
-	display: block;
+.project-search {
+	.block-element {
+		margin-left: $space-and-half;
+		padding: $pad-half;
+	}
+	.btn-group {
+		margin-bottom: 0;
+	}
+	b {
+		display: block;
+	}
 }
 
 .inline-element{
