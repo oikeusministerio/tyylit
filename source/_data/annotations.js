@@ -12,9 +12,66 @@ var comments = {
 	},
 	{
 		"el": "#atoms-colors",
-		"title" : "Colors",
-		"comment": "Palvelut käyttävät samaa värisarjaa. Kullekin palvelulle on valittu oma heräteväri. Värejä suunniteltaessa on huomioitava <a href=\"http://www.w3.org/Translations/WCAG20-fi/\">WCAG 2.0</a> kontrasti- luminanssi- ja fonttivaatimukset.</p><p>Huomiovärillä merkitään käyttäjätarinan mukaan seuraava painike jota käyttäjän odotetaan pääkäyttötapauksen mukaan painavan. Vaihtoehtoisten käyttötapausten painikkeet ovat tummanharmaat. Painikkeita joita ei pääse käyttämään, ei piiloteta vaan ne näytetään vaaleammalla harmaalla.</p>Services all use same colorspace. There is a primary attention color for each service, that also serves as the brand color in the logo. Colors have their luminance according to WCAG20 accessibility requirements."
+		"title" : "Värit – Colors",
+		"comment": "Palvelut käyttävät samaa värisarjaa. Kullekin palvelulle on valittu oma heräteväri. Värejä suunniteltaessa on huomioitava <a href=\"http://www.w3.org/Translations/WCAG20-fi/\" target=\"_blank\">WCAG 2.0</a> kontrasti- luminanssi- ja fonttivaatimukset.</p><p>Huomiovärillä merkitään käyttäjätarinan mukaan seuraava painike jota käyttäjän odotetaan pääkäyttötapauksen mukaan painavan. Vaihtoehtoisten käyttötapausten painikkeet ovat tummanharmaat. Painikkeita joita ei pääse käyttämään, ei piiloteta vaan ne näytetään vaaleammalla harmaalla.</p>Services all use same colorspace. There is a primary attention color for each service, that also serves as the brand color in the logo. Colors have their luminance according to WCAG20 accessibility requirements."
 	},
+	{
+		"el": "#atoms-buttons",
+		"title" : "Painikkeet – Buttons",
+		"comment": "Painikkeet ovat kulmastaan yhden pikselin verran pyöristettyjä suorakulmioita. Kaikissa painikkeissa suositellaan käyttämään selventäviä ikoneita tekstiotsikon lisäksi.
+					</p>
+					<p>Luodaan classilla, voi olla a-, input- tai button-tageilla.</p>
+
+					<h4>Painikkeiden ikonit</h4>
+					<p>Painikkeissa ikoni laitetaan painikkeen tekstin edelle tekstin värisenä.</p>
+
+					<h4>Painikkeiden tilat</h4>
+
+					<p>Painikkeen käytön voi estää lisäämällä painikkeen luokkaan <span style=\"red\">disabled</span>.</p>
+
+					"
+	},
+	{
+		"el": "#atoms-button-groups",
+		"title" : "Painikkeet – Button Groups",
+		"comment": "Voit liittää yksittäisiä painikkeita toisiinsa jolloin niiden reunat ja välit muotoutuvat ryhmittymän mukaan tyylikkäästi.
+					</p>
+					<p>Painikeryhmien painikkeet luodaan samoin kuin yksittäiset painikkeet, a-, input- tai button-tageilla. Ryhmän muodostaa painikkeiden ympäröivä div-tagin btn-group-luokka.</p>
+					
+
+
+					<p>Jos haluat lisätä painikeryhmään tarkennuksen, esimerkiksi numeron, lisää a-tagin sisään span-tagi ja laita sen luokaksi <span style=\"red\">count</span>.</p>
+
+					<p>Käytä <span style=\"red\">sorting</span>-luokkaa halutessasi lajittelupainikeryhmän.</p>
+
+					<h4>Painikkeiden ikonit</h4>
+
+					<p>Painikkeisiin voidaan liittää ikoneja samoin kuin yksittäisin painikkeisiin.</p>
+
+					"
+	},
+	{
+		"el": "#atoms-inline-elements",
+		"title" : "Linkit – Links",
+		"comment": "Linkkien väri on sininen kautta palveluiden. Se tarjoaa paremman kontrastin kuin korostusväri eikä ole sidottu yhteen palveluun. Lisäksi linkit ovat alleviivaamattomia, myös aktiivisina.
+					</p>
+					<p></p>"
+	},
+	{
+		"el": "#atoms-inline-elements",
+		"title" : "Linkit – Links",
+		"comment": "Lomakkeissa käytettävät komponentit toteutetaan HTML:n perustageja <span style=\"red\"></span>&gt;input&lt;, <span style=\"red\"></span>&gt;select&lt; ja <span style=\"red\"></span>&gt;textarea&lt; käyttäen.
+					</p>
+					<h4>Tekstikentät – Text Fields</h4>
+					<p>Perustekstiken otsikon saat lisättyä &gt;label&lt-tagin avulla. Muista paketoida jokainen lomake-elementti &gt;div&lt-tagilla, johon on lisätty form-element&lt-luokka.</p>
+
+					<h4>Lomake-elementtien tilat – Form elements' states</h4>
+					<p>Voit säädellä lomake-elementtien tiloja HTML:n peruskomennoilla sekä luokilla. Alta löydät monia eri tapoja kontrolloida lomake-elementtejä.</p>
+					"
+	},
+
+
+
 	{
 		"el": "#nav",
 		"title" : "Navigation",
