@@ -62,7 +62,7 @@ module.exports = function( grunt ) {
 			css: {
 				options: {
 					trace: false,
-					style: 'compressed' // nested, expanded, compact, compressed
+					style: 'expanded' //'compressed' // nested, expanded, compact, compressed
 				},
 				files : {
 					'css/style.css': 'css/style.scss'
