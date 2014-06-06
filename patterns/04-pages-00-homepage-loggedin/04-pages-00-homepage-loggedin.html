@@ -45,135 +45,61 @@
 				<div class="container">
 					<div id="closeButtonContainer" class="show-if-js-enabled close fa fa-times-circle selected"></div>
 						<div class="navigation">
-			
-							<!-- Paste ends. -->
-			
 							<div class="site-actions">
-								<a id="hlLogin" class="pnlLogin"> <span>Kirjaudu sisään</span><i class="icon-login"></i> </a>
-								<a id="hlRegister" class="pnlRegistration"><span>Rekisteröidy</span><i class="icon-register"></i> </a>
-							</div>
+								<div id="pnlLoggedIn" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnLogout')">
 			
-							<!-- Heads up! pasted code ahead -->
-						<a id="lvOtherServices_HyperLink1_0" class="tab" href="http://www.kansalaisaloite.fi">Kansalaisaloite.fi</a>
-						<a id="lvOtherServices_HyperLink1_1" class="tab" href="https://www.kuntalaisaloite.fi">Kuntalaisaloite.fi</a>
-						<a id="lvOtherServices_HyperLink1_2" class="tab active" href="fi-FI">Otakantaa</a>
-						<a id="lvOtherServices_HyperLink1_3" rel="nofollow" class="other-service" target="_blank" href="fi-FI/Tietopankki">Tietopankki</a>
+									<div class="user-navigation">
+										<ul>
+											<li class="toplevel">
+												<a id="hlLoggedInUser" href="fi-FI/Kayttaja"><span>Antti</span><i class="icon-user"></i></a>
+												<i class="icon-arrow"></i>
+												<!-- <div class="user-menu-trigger"><a href="#"><i class="icon-user"></i><span class="is-vishidden">Käyttäjävalikko</span></a></div> -->
+												<ul class="is-vishidden">
+													<li>
+														<a id="lvUserNavigation_HyperLink2_0" href="fi-FI/Omat_tiedot/Pyyda_tunnuksellesi_virkamiesstatusta">Pyydä tunnuksellesi virkamiesstatusta</a>
+													</li>
+													<li>
+														<a id="lvUserNavigation_HyperLink2_1" href="fi-FI/Omat_tiedot/Pyyda_tunnuksesi_poistamista_kaytosta">Pyydä tunnuksesi poistamista käytöstä</a>
+													</li>
+													<li>
+													<a id="lvUserNavigation_HyperLink2_2" href="fi-FI/Kayttaja/Kirjautunut/Muokkaa">Muokkaa profiilia</a>
+													</li>
+													<li>
+														<a id="lvUserNavigation_HyperLink2_3" href="fi-FI/Kayttaja/Kirjautunut/MuokkaaAvainsanat">Muokkaa asiasanasi</a>
+													</li>
+													<li>
+														<a id="lvUserNavigation_HyperLink2_4" href="fi-FI/Kayttaja/Kirjautunut/MuokkaaSijainnit">Muokkaa kiinnostavat paikkakunnat</a>
+													</li>
+													<li>
+														<a id="lvUserNavigation_HyperLink2_5" href="fi-FI/Kayttaja/Kirjautunut/Vaihdasalasana">Vaihda salasana</a>
+													</li>
+													<li>
+														<a id="lvUserNavigation_HyperLink2_6" href="fi-FI/Kayttaja/Kirjautunut/TilaaUutiskirje">Tilaa uutiskirje</a>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</div>
+									<div class="logout-btn-wrapper">
+										<input type="submit" name="ctl00$btnLogout" value="Kirjaudu ulos" id="btnLogout" title="Klikkaamalla nappia voit joko kirjautua palveluun sisään tai kirjautua palvelusta ulos. Kirjauduttaessa sisään napissa lukee OK, kirjauduttaessa ulos napissa lukee Kirjaudu ulos." class="ctl-btn-logout">
+										<i class="icon-off"></i>
+									</div>
+			
+								</div>
+							</div>
+							<a id="lvOtherServices_HyperLink1_0" class="tab" href="http://www.kansalaisaloite.fi">Kansalaisaloite.fi</a>
+							<a id="lvOtherServices_HyperLink1_1" class="tab" href="https://www.kuntalaisaloite.fi">Kuntalaisaloite.fi</a>
+							<a id="lvOtherServices_HyperLink1_2" class="tab active" href="fi-FI">Otakantaa</a>
+							<a id="lvOtherServices_HyperLink1_3" rel="nofollow" class="other-service" target="_blank" href="fi-FI/Tietopankki">Tietopankki</a>
 			
 						</div>
 						<div id="pnlLoginRegistrationContainer" class="expanding" >
-							<div id="pnlLogin" class="section login" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnLogin')">
-			
-							<h3>Kirjaudu sisään</h3>
-							<p>Syötä kirjautumistietosi tai kirjaudu Facebook-tunnuksillasi</p>
-							<div class="column-main main-login">
-								<span id="lblUsername" class="lbl-text lbl-input">Käyttäjätunnus</span>
-								<div class="input-with-icon fa fa-user">
-									<input name="ctl00$tbUsername" type="text" id="tbUsername" tabindex="1" class="ctl-text username" placeholder="Käyttäjätunnus" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');">
-									<span id="rfvLoginUsername" class="login-validation" style="color:Red;display:none;"></span>
-								</div>
-								<span id="lblPassword" class="lbl-text lbl-password">Salasana</span>
-								<div class="input-with-icon fa fa-lock">
-									<input name="ctl00$tbPassword" type="password" id="tbPassword" tabindex="2" class="ctl-text password" placeholder="Salasana" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');">
-									<span id="rfvLoginPassword" class="login-validation" style="color:Red;display:none;"></span>
-								</div>
-								<a id="hlPasswordRecover" class="forgotten show-if-js-enabled">Unohtuiko salasanasi?</a>
-								<span class="remember"><input id="cbRemember" type="checkbox" name="ctl00$cbRemember"><label for="cbRemember">Muista kirjautuminen</label></span>
-								<span id="upLogin">
-										<input type="submit" name="ctl00$btnLogin" value="OK" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnLogin&quot;, &quot;&quot;, true, &quot;Login&quot;, &quot;&quot;, false, false))" id="btnLogin" tabindex="3" title="Syötä käyttäjätunnus sekä salasana niille varattuihin kenttiin ja klikkaa OK-nappia,minkä jälkeen siirryt kirjautuneen käyttäjän etusivunäkymään. " class="ctl-btn">
-										<div id="loginProgess" class="update-progress" style="visibility:hidden;display:block;" role="status" aria-hidden="true">
-			
-												<img src="../../images/ajax-loader.gif" id="imgLoginLoader" alt="...">
-			
-						</div>
-			
-										<div id="ValidationSummary1" class="errorMessage" display="Dynamic" style="color:Red;display:none;">
-			
-						</div>
-									</span>
-							</div>
-							<div class="show-if-js-enabled column-alt alt-login">
-								<span class="or">
-									tai
-								</span>
-								<button onclick="FB.login(); return false;" class="ctl-btn facebook">Kirjaudu Facebook-tunnuksillasi</button>
-							</div>
-							<div class="footer">
-								tai
-								<a id="hlRegister2" class="pnlRegistration">Rekisteröidy käyttäjäksi</a>
-							</div>
-			
-						</div>
-						<div id="pnlPasswordRecover" class="section forgotten">
-			
-							<h3>Ongelmia kirjautumisessa?</h3>
-							<p>Saadaksesi uuden salasanan kirjoita sähköpostiosoitteesi, jolla olet rekisteröitynyt otakantaa.fi-palveluun. Palvelu lähettää sinulle sähköpostiisi linkin, jonka kautta saat uuden salasanan.</p>
-							<div id="pnlPasswordRecoverEmail" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnPasswordRecoverSend')">
-			
-								<span id="lblPasswordRecoverEmail" class="lbl-text lbl-input">Sähköpostiosoite</span>
-								<div class="input-with-icon fa fa-envelope">
-									<input name="ctl00$tbPasswordRecoverEmail" maxlength="256" id="tbPasswordRecoverEmail" class="ctl-text" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');" placeholder="Sähköpostiosoite" type="email">
-								</div>
-								<span id="rfvPasswordRecoverEmail" class="password-recover-validation" style="color:Red;display:none;"></span>
-								<span id="revPasswordRecoverEmail" class="password-recover-validation" style="color:Red;display:none;"></span>
-								<span id="upPasswordRecover">
-										<input type="submit" name="ctl00$btnPasswordRecoverSend" value="Jatka" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnPasswordRecoverSend&quot;, &quot;&quot;, true, &quot;PasswordRecoverSend&quot;, &quot;&quot;, false, false))" id="btnPasswordRecoverSend" title="Klikkaamalla Jatka-nappia palvelu lähettää sinulle sähköpostiisi linkin, jonka kautta saat uuden salasanan." class="ctl-btn">
-										<div id="passwordRecoverProgress" class="update-progress" style="visibility:hidden;display:block;" role="status" aria-hidden="true">
-			
-												<img src="../../images/ajax-loader.gif" id="imgPasswordRecoverLoader" alt="...">
-			
-						</div>
-										<span id="cvEmailFieldDoesntExistsValidator" class="password-recover-validation" style="color:Red;display:none;"></span>
-										<span id="cvAccountRegisteredWithFacebook" class="password-recover-validation" style="color:Red;display:none;"></span>
-			
-										<div id="vsPasswordRecover" class="errorMessage" display="Dynamic" style="color:Red;display:none;">
-			
-						</div>
-									</span>
-			
-						</div>
-			
-						</div>
-						<div id="pnlRegistration" class="section register" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnRegistration')">
-			
-							<h3>Rekisteröidy palvelun käyttäjäksi</h3>
-							<p>Syötä sähköpostisi tai rekisteröidy Facebook-tunnuksillasi</p>
-							<div class="column-main main-register">
-								<span id="lblRegistrationEmail" class="lbl-text lbl-input">Sähköpostiosoite</span>
-								<div class="input-with-icon fa fa-envelope">
-									<input name="ctl00$tbRegistrationEmail" id="tbRegistrationEmail" class="ctl-text email" placeholder="Sähköpostiosoite" onfocus="setInputValue(this, 'focus');" onblur="setInputValue(this, 'blur');" type="email">
-								</div>
-								<span id="revRegistrationEmail" class="registration-validation" style="color:Red;display:none;"></span>
-								<span id="rfvRegistrationEmail" class="registration-validation" style="color:Red;display:none;"></span>
-								<span id="upEmailValidation">
-										<input type="submit" name="ctl00$btnRegistration" value="Rekisteröidy" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnRegistration&quot;, &quot;&quot;, true, &quot;Registration&quot;, &quot;&quot;, false, false))" id="btnRegistration" title="Syötä sähköpostiosoitteesi sille varattuun kenttään ja klikkaa Rekisteröidy-painiketta. Palvelu lähettää sähköpostiisi vahvistusviestin, joka sisältää linkin rekisteröitymisen viimeistelemiseksi." class="ctl-btn">
-										<div id="emailValidationProgress" class="update-progress" style="visibility:hidden;display:block;" role="status" aria-hidden="true">
-			
-												<img src="../../images/ajax-loader.gif" id="imgRegistrationLoader" alt="...">
-			
-						</div>
-										<span id="cvRegistrationEmail" class="registration-validation" style="color:Red;display:none;"></span>
-										<span id="lblRegistrationEmailError" class="registration-validation" style="color:Red;"></span>
-										<div id="vsRegistration" class="errorMessage" display="Dynamic" style="color:Red;display:none;">
-			
-						</div>
-									</span>
-							</div>
-							<div class="show-if-js-enabled column-alt alt-register">
-								<span class="or">
-									tai</span>
-								<button onclick="__doPostBack('ctl00$btnFacebookRegistration','')" id="btnFacebookRegistration" class="ctl-btn facebook">Rekisteröidy Facebook-tunnuksillasi</button>
-							</div>
-							<div class="footer">
-								Oletko jo rekisteröitynyt?
-								<a id="hlLogin2" class="pnlLogin">Kirjaudu sisään</a>
-							</div>
-			
-						</div>
-			
 			
 					</div>
 				</div>
-			</div>    	</div>
+			</div>
+			
+    	</div>
     	<section class="responsive-modifier-block">
 		<form action="#" method="post" class="inline-form search-form">
 			<legend class="is-vishidden">Search</legend>
@@ -302,7 +228,124 @@
           	</div>
           </section>      <section class="l-two-col">
           <section class="l-main">
-            Anonyymikäyttäjän sisältöä
+            <div id="pnlFollowedProjects" class="content-item large">
+            <h3 class="section-title">Seuraamani kohteet
+            </h3>
+            <div class="list-lift">
+                <div class="content-list">
+                    <ul>
+                        <li class="single-list-item">
+                            <ul class="items-container">
+                                <!--<li class="block-item">
+                    <div class="lad">
+                        <a href="#">Lorem ipsum</a>
+                        <p class="description">test</p>
+                    </div>
+                    </li>-->
+                                <li class="block-item">
+                                    <div class="count-container">
+                                        <span class="icon-span icon-comment"></span>
+                                        <a href="//www.foo.bar">0</a>
+                                    </div>
+                                </li>
+                                <li class="block-item">
+                                    <div class="lad">
+                                        <a href="#">Lorem ipsum hanke</a>
+                                        <p class="description">
+                                            <a href="#">LoremIpsumChat</a> chatissa on vielä tilaa.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="single-list-item">
+                            <ul class="items-container">
+                                <!--<li class="block-item">
+                    <div class="lad">
+                        <a href="#">Lorem ipsum</a>
+                        <p class="description">test</p>
+                    </div>
+                    </li>-->
+                                <li class="block-item">
+                                    <div class="count-container">
+                                        <span class="icon-span icon-comment"></span>
+                                        <a href="//www.foo.bar">22</a>
+                                    </div>
+                                </li>
+                                <li class="block-item">
+                                    <div class="lad">
+                                        <a href="#">Lorem ipsum hanke</a>
+                                        <p class="description">
+                                            22 henkilöä osallistunut chattiin <a href="">Lorem lipsum chat#2</a>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="single-list-item">
+                            <ul class="items-container">
+                                <!--<li class="block-item">
+                    <div class="lad">
+                        <a href="#">Lorem ipsum</a>
+                        <p class="description">test</p>
+                    </div>
+                    </li>-->
+                                <li class="block-item">
+                                    <div class="count-container">
+                                        <span class="icon-span icon-comment"></span>
+                                        <a href="//www.foo.bar">48</a>
+                                    </div>
+                                </li>
+                                <li class="block-item">
+                                    <div class="lad">
+                                        <a href="">Lorem lipsum hanke#3</a>
+                                        <p class="description">
+                                            48 henkilöä osallistui chattiin <a href="">Lorem lipsum chat#3</a>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <p class="read-more">
+                    <a href="#">Näytä lisää</a>
+                </p>
+            </div>
+            </div>
+            <div id="pnlInterestingProjects" class="content-item large">
+                <h3 class="section-title">Kiinnostavia hankkeita
+                </h3>
+                <div class="list-lift">
+                    <div class="content-list">
+                        <ul>
+                            <li class="single-list-item">
+                                <ul class="items-container">
+                                    <li class="block-item">
+                                        <div class="lad">
+                                            <a href="#">Toinen Lorem ipsum hanke</a>
+                                            <p class="description">Lorem ipsum kuvausta tähän</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="single-list-item">
+                                <ul class="items-container">
+                                    <li class="block-item">
+                                        <div class="lad">
+                                            <a href="#">Kolmas Lorem ipsum hanke</a>
+                                            <p class="description">Lorem ipsum kuvausta tähän</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="read-more">
+                    <a href="#">Näytä kaikki hankkeet »</a>
+                </p>
+            </div>
           </section>
           <aside class="l-sidebar">
               <section id="ProjectSearch" class="content-item project-search">
@@ -573,7 +616,7 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "pages-homepage-emergency";
+		var patternPartial = "pages-homepage-loggedin";
 		var lineage        = [{"lineagePattern":"templates-homepage","lineagePath":"..\/..\/patterns\/03-templates-00-homepage\/03-templates-00-homepage.html"}];
 		var lineageR       = [];
 		var patternState   = "";
