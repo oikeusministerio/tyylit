@@ -1886,10 +1886,9 @@ td {
 [role=main] {
   padding: 0.5em 0.5em 2em;
   overflow: hidden;
-  background-color: #f0f0f0;
 }
 
-.page {
+.page.otakantaa {
   background-color: #f0f0f0;
 }
 
