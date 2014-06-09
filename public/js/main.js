@@ -57,9 +57,9 @@ if( $('.form-element').length ){
 	});
 
 	//URL validation. Not needed?
-	if( $('#url').val ){
+	/*if( $('#url').val ){
 		var url = $('#url');
-	}
+	}*/
 
 
 	//Text area word count
@@ -70,7 +70,8 @@ if( $('.form-element').length ){
 		$('textarea').each(function(){
 			$(this).after( '<span class="textarea-word-count inactive"></span>' );
 			maxlength = $(this).attr("maxlength");
-			$(this).parent().find(".inactive").text( maxlength );
+			reallength = maxlength - $(this).val().length;
+			$(this).parent().find(".textarea-word-count").text( reallength );
 		});
 		// Set the counter value
 		$(".form-element textarea").keyup(function(){
@@ -168,6 +169,15 @@ if( $('.header').find('.js-expand-search').length && $('.search-field').css('dis
 // Fadeout
 if( $('.fadeout').length ){
 	var orig_text;
+
+	$('.fadeout p:first-of-type').each( function(){
+		if( $(this).text().length < 500){
+			$(this).parent().addClass('open');
+			$(this).addClass('pt-fix');
+			$(this).parent().find('.read-more').remove();
+		}
+	});
+
 
 	$('.read-more').find('a').click( function(event) {
 		event.preventDefault();
@@ -377,6 +387,10 @@ $(".person-list").tagit({
 });
 $(".person-list .tagit-new input.ui-autocomplete-input").attr("placeholder", "Aloita kirjoittamaan henkilön nimeä");
 
+if( $('.tagit-list').length ){
+	var length = $('.tagit-list .tagit-new').find('input').attr('placeholder').length;
+	$('.tagit-list .tagit-new').find('input').attr('size', length);
+}
 
 // hankesivu-read-mode
 $("#btnAddParticipationContainer").removeClass("is-hidden");

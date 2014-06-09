@@ -127,7 +127,7 @@
 .btn-group{
 	@extend .cf;
 	margin-bottom: 25px;
-	
+
 	a, button, input[type="submit"]{
 		padding: $pad/2 $pad;
 		float: left;
@@ -222,9 +222,6 @@
 		@include border-radius(2px, 2px, 2px, 2px);
 	}
 }
-
-
-.select-style
 
 // Lift-button.
 .lift-button{

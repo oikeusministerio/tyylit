@@ -55,6 +55,12 @@ $fadeout-space: 70px;
 	max-height: 100px;
 	padding-bottom: $fadeout-space;
 
+	.no-js &{
+		max-height: 100%; padding-bottom: 10px;
+
+		.read-more{ display: none; }
+	}
+
 	&.smaller{
 		max-height: 150px;
 	}

@@ -6,8 +6,12 @@
 	overflow: hidden;
 	@extend .lc;
 	@extend .cf;
-	background-color: $gray-light;
+	background-color: $white;
 }
 .page {
+	background-color: $gray-light;
+}
+
+#patternlab-html{
 	background-color: $gray-light;
 }

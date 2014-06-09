@@ -149,6 +149,13 @@
 	&.size-xl:before{
 		font-size: em(36px);
 	}
+
+	&.align--top:after, &.align--top:before{
+		display: inline-block;
+		margin: -$pad-half $pad-quarter 0 $pad-quarter;
+		padding-top: $pad-quarter;
+		vertical-align: top;
+	}
 }
 
 i{
