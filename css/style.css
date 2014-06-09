@@ -1886,10 +1886,14 @@ td {
 [role=main] {
   padding: 0.5em 0.5em 2em;
   overflow: hidden;
-  background-color: #f0f0f0;
+  background-color: white;
 }
 
 .page {
+  background-color: #f0f0f0;
+}
+
+#patternlab-html {
   background-color: #f0f0f0;
 }
 
@@ -2092,6 +2096,13 @@ td {
   width: 100%;
   max-height: 100px;
   padding-bottom: 70px;
+}
+.no-js .fadeout {
+  max-height: 100%;
+  padding-bottom: 10px;
+}
+.no-js .fadeout .read-more {
+  display: none;
 }
 .fadeout.smaller {
   max-height: 150px;
@@ -2315,6 +2326,12 @@ td {
 }
 .icon-style.size-xl:before, i.size-xl:before, .tagit-list .tagit-close .size-xl.ui-icon-close:before, .fa.size-xl:before, .size-xl.icon-ok:before, .size-xl.icon-info:before, .size-xl.icon-search:before, .size-xl.icon-play:before, .size-xl.icon-close:before, .form-element .picker button.size-xl.picker__button--clear:before, .tagit-list .tagit-close .size-xl.ui-icon-close:before, .size-xl.icon-error:before, .size-xl.icon-delete:before, .size-xl.icon-warning:before, .size-xl.icon-notify:before, .size-xl.icon-add:before, .size-xl.icon-lbulb:before, .size-xl.icon-menu:before, .size-xl.icon-menu-arrow:before, .size-xl.icon-login:before, .size-xl.icon-logout:before, .size-xl.icon-register:before, .size-xl.icon-mail:before, .size-xl.icon-people:before, .size-xl.icon-chart:before, .size-xl.icon-arrow-back:before, .size-xl.carousel-control.left:before, .size-xl.icon-arrow-forward:before, .size-xl.carousel-control.right:before, .size-xl.icon-off:before, .size-xl.icon-arrow:before, .size-xl.icon-user:before, .size-xl.icon-like:before, .size-xl.icon-dislike:before, .size-xl.icon-reply:before, .size-xl.icon-tag:before, .tagit-list .size-xl.tagit-new:before, .size-xl.icon-plus:before, .attachment-form .attachment-container .size-xl.upload-file-button:before, .size-xl.icon-edit-pen:before, .size-xl.icon-process-arrow:before, .process-nav li.size-xl:before, .om.size-xl:before, .size-xl.icon-comment:before {
   font-size: 36px;
+}
+.icon-style.align--top:after, i.align--top:after, .tagit-list .tagit-close .align--top.ui-icon-close:after, .icon-style.align--top:before, i.align--top:before, .tagit-list .tagit-close .align--top.ui-icon-close:before, .fa.align--top:after, .align--top.icon-plus:after, .align--top.icon-edit-pen:after, .attachment-form .attachment-edit .align--top.edit-file-button:after, .event-section .event-header .edit-event .align--top.edit:after, .align--top.icon-process-arrow:after, .header-tabs .align--top.other-service:after, .fa.align--top:before, .align--top.icon-ok:before, .align--top.icon-info:before, .align--top.icon-search:before, .align--top.icon-play:before, .align--top.icon-close:before, .form-element .picker button.align--top.picker__button--clear:before, .tagit-list .tagit-close .align--top.ui-icon-close:before, .align--top.icon-error:before, .align--top.icon-delete:before, .align--top.icon-warning:before, .align--top.icon-notify:before, .align--top.icon-add:before, .align--top.icon-lbulb:before, .align--top.icon-menu:before, .align--top.icon-menu-arrow:before, .align--top.icon-login:before, .align--top.icon-logout:before, .align--top.icon-register:before, .align--top.icon-mail:before, .align--top.icon-people:before, .align--top.icon-chart:before, .align--top.icon-arrow-back:before, .align--top.carousel-control.left:before, .align--top.icon-arrow-forward:before, .align--top.carousel-control.right:before, .align--top.icon-off:before, .align--top.icon-arrow:before, .align--top.icon-user:before, .align--top.icon-like:before, .align--top.icon-dislike:before, .align--top.icon-reply:before, .align--top.icon-tag:before, .tagit-list .align--top.tagit-new:before, .align--top.icon-plus:before, .attachment-form .attachment-container .align--top.upload-file-button:before, .align--top.icon-edit-pen:before, .align--top.icon-process-arrow:before, .process-nav li.align--top:before, .om.align--top:after, .align--top.icon-help:after, .om.align--top:before, .align--top.icon-comment:before {
+  display: inline-block;
+  margin: -0.5em 0.25em 0 0.25em;
+  padding-top: 0.25em;
+  vertical-align: top;
 }
 
 .icon-ok:before {
@@ -2960,7 +2977,6 @@ td {
   background-clip: padding-box;
 }
 
-.select-style
 .lift-button {
   width: 175px;
   height: 175px;
@@ -2968,22 +2984,17 @@ td {
   position: relative;
   background-color: white;
 }
-.select-style
 .lift-button.gray-base {
   background-color: #f0f0f0;
 }
-.select-style
 .lift-button.gray-base .count-container a {
   background-color: #f0f0f0;
 }
-.select-style
-.lift-button .lift-button-link, .select-style
-.lift-button .date {
+.lift-button .lift-button-link, .lift-button .date {
   display: block;
   text-align: center;
   line-height: 1.5;
 }
-.select-style
 .lift-button .date {
   margin: 0.5em 0;
 }
