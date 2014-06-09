@@ -8,8 +8,10 @@
 	@extend .cf;
 	background-color: $white;
 }
-.page {
-	background-color: $gray-light;
+.page{
+	&.otakantaa{
+		background-color: $gray-light;
+	}
 }
 
 #patternlab-html{
