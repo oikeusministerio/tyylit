@@ -8,13 +8,107 @@ var comments = {
 	{
 		"el": ".logo",
 		"title" : "Logo",
-		"comment": "The logo image is an SVG file, which ensures that the logo displays crisply even on high resolution displays. A PNG fallback is provided for browsers that don't support SVG images.</p><p>Further reading: <a href=\"http://bradfrostweb.com/blog/mobile/hi-res-optimization/\">Optimizing Web Experiences for High Resolution Screens</a></p>"
+		"comment": "Vie palvelun etusivulle. SVG tai muu vektorikuva 48 px koossa.</p>"
 	},
 	{
 		"el": "#atoms-colors",
-		"title" : "Colors",
-		"comment": "Palvelut käyttävät samaa värisarjaa. Kullekin palvelulle on valittu oma heräteväri. Värejä suunniteltaessa on huomioitava <a href=\"http://www.w3.org/Translations/WCAG20-fi/\">WCAG 2.0</a> kontrasti- luminanssi- ja fonttivaatimukset.</p><p>Huomiovärillä merkitään käyttäjätarinan mukaan seuraava painike jota käyttäjän odotetaan pääkäyttötapauksen mukaan painavan. Vaihtoehtoisten käyttötapausten painikkeet ovat tummanharmaat. Painikkeita joita ei pääse käyttämään, ei piiloteta vaan ne näytetään vaaleammalla harmaalla.</p>Services all use same colorspace. There is a primary attention color for each service, that also serves as the brand color in the logo. Colors have their luminance according to WCAG20 accessibility requirements."
+		"title" : "Värit – Colors",
+		"comment": "Palvelut käyttävät samaa värisarjaa. Kullekin palvelulle on valittu oma heräteväri. Värejä suunniteltaessa on huomioitava <a href=\"http://www.w3.org/Translations/WCAG20-fi/\" target=\"_blank\">WCAG 2.0</a> kontrasti- luminanssi- ja fonttivaatimukset.</p><p>Huomiovärillä merkitään käyttäjätarinan mukaan seuraava painike jota käyttäjän odotetaan pääkäyttötapauksen mukaan painavan. Vaihtoehtoisten käyttötapausten painikkeet ovat tummanharmaat. Painikkeita joita ei pääse käyttämään, ei piiloteta vaan ne näytetään vaaleammalla harmaalla.</p>Services all use same colorspace. There is a primary attention color for each service, that also serves as the brand color in the logo. Colors have their luminance according to WCAG20 accessibility requirements."
 	},
+	{
+		"el": "#atoms-buttons",
+		"title" : "Painikkeet – Buttons",
+		"comment": "Painikkeet ovat kulmastaan yhden pikselin verran pyöristettyjä suorakulmioita. Kaikissa painikkeissa suositellaan käyttämään selventäviä ikoneita tekstiotsikon lisäksi.
+					</p>
+					<p>Luodaan classilla, voi olla a-, input- tai button-tageilla.</p>
+
+					<h4>Painikkeiden ikonit</h4>
+					<p>Painikkeissa ikoni laitetaan painikkeen tekstin edelle tekstin värisenä.</p>
+
+					<h4>Painikkeiden tilat</h4>
+
+					<p>Painikkeen käytön voi estää lisäämällä painikkeen luokkaan <span style=\"red\">disabled</span>.</p>
+
+					"
+	},
+	{
+		"el": "#atoms-button-groups",
+		"title" : "Painikkeet – Button Groups",
+		"comment": "Voit liittää yksittäisiä painikkeita toisiinsa jolloin niiden reunat ja välit muotoutuvat ryhmittymän mukaan tyylikkäästi.
+					</p>
+					<p>Painikeryhmien painikkeet luodaan samoin kuin yksittäiset painikkeet, a-, input- tai button-tageilla. Ryhmän muodostaa painikkeiden ympäröivä div-tagin btn-group-luokka.</p>
+					
+
+
+					<p>Jos haluat lisätä painikeryhmään tarkennuksen, esimerkiksi numeron, lisää a-tagin sisään span-tagi ja laita sen luokaksi <span style=\"red\">count</span>.</p>
+
+					<p>Käytä <span style=\"red\">sorting</span>-luokkaa halutessasi lajittelupainikeryhmän.</p>
+
+					<h4>Painikkeiden ikonit</h4>
+
+					<p>Painikkeisiin voidaan liittää ikoneja samoin kuin yksittäisin painikkeisiin.</p>
+
+					"
+	},
+	{
+		"el": "#atoms-inline-elements",
+		"title" : "Linkit – Links",
+		"comment": "Linkkien väri on sininen kautta palveluiden. Se tarjoaa paremman kontrastin kuin korostusväri eikä ole sidottu yhteen palveluun. Lisäksi linkit ovat alleviivaamattomia, myös aktiivisina.
+					</p>
+					<p></p>"
+	},
+	{
+		"el": "#atoms-inline-elements",
+		"title" : "Lomakkeet – Forms",
+		"comment": "Lomakkeissa käytettävät komponentit toteutetaan HTML:n perustageja <span style=\"red\">&gt;input&lt;</span>, <span style=\"red\">&gt;select&lt;</span> ja <span style=\"red\">&gt;textarea&lt;</span> käyttäen.
+					</p>
+					<h4>Tekstikentät – Text Fields</h4>
+					<p>Perustekstiken otsikon saat lisättyä &gt;label&lt-tagin avulla. Muista paketoida jokainen lomake-elementti &gt;div&lt-tagilla, johon on lisätty form-element&lt-luokka.</p>
+
+					<h4>Lomake-elementtien tilat – Form elements' states</h4>
+					<p>Voit säädellä lomake-elementtien tiloja HTML:n peruskomennoilla sekä luokilla. Alta löydät monia eri tapoja kontrolloida lomake-elementtejä.</p>
+					"
+	},
+	{
+		"el": "#atoms-fadeout-text",
+		"title" : "Häivytys – Fader",
+		"comment": "Häivytystä käytetään pitkien tekstien katkaisemiseen, jolloin käyttäjä halutessaan lukea pidemmälle voi linkkiä klikkaamalla nähdä tekstistä loput.
+					</p>
+					<h4>Kokovaihtoehdot</h4>
+					<p>Häivytettä alue on oletuksena 100 pikseliä korkea, mutta käytössäsi on myös kaksi muuta valmista kokoa, <span style=\"red\">smaller</span> ja <span style=\"red\">tiny</span>.</p>
+					"
+	},
+	{
+		"el": "#atoms-fadeout-text",
+		"title" : "Häivytys – Fader",
+		"comment": "Häivytystä käytetään pitkien tekstien katkaisemiseen, jolloin käyttäjä halutessaan lukea pidemmälle voi linkkiä klikkaamalla nähdä tekstistä loput.
+					</p>
+					<h4>Kokovaihtoehdot</h4>
+					<p>Häivytettä alue on oletuksena 100 pikseliä korkea, mutta käytössäsi on myös kaksi muuta valmista kokoa, <span style=\"red\">smaller</span> ja <span style=\"red\">tiny</span>.</p>
+					"
+	},
+	{
+		"el": "#organisms-header",
+		"title" : "JavaScriptitön toiminta – Functionality without JavaScript",
+		"comment": "Ylätunniste on erilainen selaimissa, joissa javascript ei ole käytössä. Sisäänkirjautumiselementti 2 on piilotettu. Kirjautumis-, salasana unohtunut- ja rekisteröintiosiot näkyvät allekkain edellä mainitussa järjestyksessä. Missään edellä mainitussa osiossa ei ole facebook-käyttöön liittyviä tekstejä tai käyttöliittymäkomponentteja. Jokaiseen lohkoon voidaan linkittää ankkurilinkeillä:
+			<ul>
+				<li>url#kirjaudu tai ruotsinkielisellä sivustolla #loggain</li>
+				<li>url#kirjaudu tai ruotsinkielisellä sivustolla #loggain</li>
+				<li>url#rekisteroidy tai ruotsinkielisellä sivustolla #registrera</li>
+			</ul>
+			</p>
+			<p>Jos taustajärjestelmä tunnistaa javascriptin puutteen, voidaan myös näyttää käyttäjälle avoimen lomakkeen sijaan linkki vaihtoehtoiselle sivulle.</p>
+			<p>Käyttäjätarina 1: Käyttäjänä, jolla javascript on estetty selaimessa, näen kirjautumis-, salasana unohtunut- ja rekisteröintiosion allekkain otakantaa-sivuston yläosassa. En näe Facebook-kirjautumiseen liittyviä tekstejä tai käyttöliittymäkomponentteja.</p>
+			<p>Käyttäjätarina 2: Käyttäjänä, jolla javascript on estetty selaimessa, voin kirjautua tai rekisteröityä palveluun.</p>
+			<p>Käyttäjätarina 3: Käyttäjänä, jolla javascript on estetty selaimessa ja joka on ennestään rekisteröitynyt, voin vaihtaa käyttäjätilini salasanan.</p>
+
+		"
+	},
+
+
+
+
+
 	{
 		"el": "#nav",
 		"title" : "Navigation",
@@ -23,7 +117,7 @@ var comments = {
 	{
 		"el": ".search-form",
 		"title" : "Search",
-		"comment": "<p>Search is an incredibly important priority, especially for mobile. It is a great idea to give users the ability to jump directly to what they are looking for without forcing them to wade through your site's navigation. Check out the <a href=\"http://burton.com\">Burton</a> and <a href=\"http://yelp.com\">Yelp</a> mobile sites for great examples of experiences that prioritize search.</p><p>We're also using the <a href=\"http://dev.w3.org/html5/markup/input.search.html\">HTML5 search input type</a>, which is great for mobile devices that can <a href=\"http://diveintohtml5.info/forms.html\">bring up the appropriate virtual keyboard</a> for many smartphones. And like the main header navigation, we're hiding the search form on small screens to save space. Clicking the search anchor toggles the form. </p>"
+		"comment": "Vain valittavissa oleva kieli näyytetään. Teksti valittavalla kielellä.</p>"
 	},
 	{
 		"el": ".article-header h1",
