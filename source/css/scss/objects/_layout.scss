@@ -21,7 +21,7 @@
 		@media all and (min-width: $bp-large) {
 			float: left;
 			width: 70%;
-			padding-right: $pad;
+			padding-right: $pad-half;
 		}
 	}
 	
@@ -33,7 +33,7 @@
 		@media all and (min-width: $bp-large) {
 			float: left;
 			width: 30%;
-			padding: 0 0 0 $pad;
+			padding: 0;
 		}
 	}
 }

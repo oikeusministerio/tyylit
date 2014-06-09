@@ -6,4 +6,8 @@
 	overflow: hidden;
 	@extend .lc;
 	@extend .cf;
+	background-color: $gray-light;
+}
+.page {
+	background-color: $gray-light;
 }
