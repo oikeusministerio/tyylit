@@ -1892,6 +1892,9 @@ td {
 .page.otakantaa {
   background-color: #f0f0f0;
 }
+.page.otakantaa [role=main] {
+  background-color: #f0f0f0;
+}
 
 #patternlab-html {
   background-color: #f0f0f0;
