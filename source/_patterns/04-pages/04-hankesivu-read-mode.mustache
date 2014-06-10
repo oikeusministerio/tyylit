@@ -1,13 +1,11 @@
 <div class="page otakantaa" id="page">
   {{> organisms-header }}
-  <div role="main">
+  <section role="main">
     <div>
       <div>
-        <div class="hanke-bg">
-          <img src="../../images/fpo_16x9.png" alt="Taustakuva" />
-        </div>
-        <div class="hanke-logo">
-          <img src="../../images/logo.png" alt="Logo" />
+        <div class="hanke-img-container">
+          <img src="../../images/fpo_16x9.png" alt="Taustakuva" class="hanke-bg" />
+          <img src="../../images/logo.png" alt="Logo" class="hanke-logo" />          
         </div>
         <div class="admin-tools">
           <input class="btn" type="submit" value="Muokkaa perustietoja" />
@@ -62,7 +60,7 @@
               <span class="icon-help" title="valinnainen viesti sähköpostikutsuun" placement="top">Viesti</span>
               <p class="helper-text small is-vishidden">valinnainen viesti sähköpostikutsuun</p>
             </div>
-            <textarea style="height: 70px;" cols="20" rows="2"></textarea>
+            <textarea class="js-dynamic" maxlength="400" placeholder="Kirjoita valinnainen viesti..."></textarea>            
             <input class="btn btn-otk" type="submit" value="Lähetä kutsu" />
             <div class="sidebar-form-errors">
             </div>
@@ -348,6 +346,6 @@
         </div>
       </div>
     </div>
-  </div><!--End role=main-->
+  </section><!--End role=main-->
   {{> organisms-footer }}
 </div>

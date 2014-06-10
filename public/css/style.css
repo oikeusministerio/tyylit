@@ -3072,6 +3072,56 @@ td {
   width: 100%;
 }
 
+.hanke-img-container {
+  max-width: 1200px;
+  min-width: 350px;
+  max-height: 750px;
+  min-height: 175px;
+  position: relative;
+}
+
+.hanke-bg {
+  width: 100%;
+  height: 100%;
+}
+
+.hanke-logo {
+  position: absolute;
+  left: auto;
+  margin-left: 1em;
+  bottom: 1em;
+  width: 5em;
+  height: 5em;
+}
+@media screen and (min-width: 48em) {
+  .hanke-logo {
+    width: 8em;
+    height: 8em;
+    margin-left: 2em;
+    bottom: 2em;
+  }
+}
+@media screen and (min-width: 60em) {
+  .hanke-logo {
+    width: 10em;
+    height: 10em;
+    margin-left: 2em;
+    bottom: 2em;
+  }
+}
+@media screen and (min-width: 80em) {
+  .hanke-logo {
+    width: 10em;
+    height: 10em;
+    margin-left: 2em;
+    bottom: 2em;
+  }
+}
+
+.admin-tools {
+  text-align: left;
+}
+
 .project-search .block-element {
   margin-left: 1.5em;
   padding: 0.5em;
