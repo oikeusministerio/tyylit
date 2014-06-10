@@ -330,6 +330,30 @@ dd {
 }
 
 /*------------------------------------*\
+    $MEDIA ELEMENTS
+\*------------------------------------*/
+/* Flexible Media */
+img, video, object {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe {
+  margin-bottom: 1em;
+}
+
+figure {
+  margin-bottom: 1em;
+}
+figure img {
+  margin-bottom: 0.5em;
+}
+
+figcaption {
+  font-style: italic;
+}
+
+/*------------------------------------*\
 	$FORMS
 \*------------------------------------*/
 form ol, form ul {

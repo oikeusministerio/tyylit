@@ -19,7 +19,7 @@ if( $('.btn-group').length ){
 }
 
 //Form stuff
-if( $('.form-element').length ){
+//if( $('.form-element').length ){
 	//Email validation
 	function IsEmail(email) {
 		var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -63,6 +63,7 @@ if( $('.form-element').length ){
 
 
 	//Text area word count and special input fields
+	/*
 	if( $('textarea').length || $('.js-word-count').length ){
 		var ta;
 		var maxlength;
@@ -74,7 +75,7 @@ if( $('.form-element').length ){
 			$(this).parent().find(".textarea-word-count").text( reallength );
 		});
 		// Set the counter value
-		$(".form-element textarea, .js-word-count").keyup(function(){
+		$("textarea, .js-word-count").keyup(function(){
 			ta = $(this);
 
 			if( ta.hasClass('js-dynamic') ){
@@ -87,8 +88,33 @@ if( $('.form-element').length ){
 			maxlength = ta.attr("maxlength");
 			ta.parent().find(".textarea-word-count").text( (maxlength - ta.val().length) );
 		});
-	}
-}
+	}*/
+
+	$("textarea, input").each(function() {
+		if ( $(this).attr("maxlength") && !$(this).hasClass('search-field') ){
+			var ti = $(this);
+			var tip = ti.parent();
+			ti.wrap('<div style="position: relative;"></div>');
+			ti.after('<span class="textarea-word-count inactive"></span>');
+			maxlength = ti.attr("maxlength");
+			reallength = maxlength - ti.val().length;
+			tip.find(".textarea-word-count").text(reallength);
+
+			ti.keyup( function(){
+				if ( tip.find(".textarea-word-count").hasClass("inactive") ) {
+					tip.find(".textarea-word-count").removeClass("inactive");
+				}
+				maxlength = ti.attr("maxlength");
+				reallength = maxlength - ti.val().length;
+				tip.find(".textarea-word-count").text(reallength);
+
+				if ( ti.is("textarea") && ti.hasClass("js-dynamic") ){
+					ti.height(1).height( ti[0].scrollHeight );
+				}
+			});
+		}
+	});
+//}
 /*
 if( $('.datepicker').data('maxdate').length ){
 	var maxdate = parseInt( $('.datepicker').data('maxdate') );
@@ -171,8 +197,9 @@ if( $('.header').find('.js-expand-search').length && $('.search-field').css('dis
 if( $('.fadeout').length ){
 	var orig_text;
 
-	$('.fadeout p:first-of-type').each( function(){
-		if( $(this).text().length < 500){
+	$('.fadeout').each( function(){
+		// console.log( $(this).children(":first")[0].clientHeight );
+		if( $(this).children(":first")[0].clientHeight < 160){
 			$(this).parent().addClass('open');
 			$(this).addClass('pt-fix');
 			$(this).parent().find('.read-more').remove();
@@ -383,7 +410,7 @@ $('input[type="range"]').rangeslider({
 	handleClass: 'rangeslider__handle',
 
 	// Callback function
-	onInit: function() { console.log('kassit');},
+	onInit: function() { },
 
 	// Callback function
 	onSlide: function(position, value) {},
