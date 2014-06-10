@@ -20,6 +20,12 @@ module.exports = function( grunt ) {
 				],
 				tasks: ['uglify:plugin_js_min', 'shell:generate']
 			},
+			rangeslider_js:{
+				files: [
+						'js/rangeslider.js'
+					],
+					tasks: ['uglify:rangeslider_js_min', 'shell:generate']
+			},
 			modernizr_js: {
 				files: [
 					'js/modernizr.js'
@@ -85,6 +91,22 @@ module.exports = function( grunt ) {
 				},
 				files: {
 					'js/plugins.min.js': ['js/bootstrap-carousel.js', 'js/tag-it.js', 'js/legacy.js', 'js/picker.js', 'js/picker.date.js']
+					//'source/assets/js/basic-functions.min.js': 'source/assets/js/basic-functions.js'
+				}
+			},
+			rangeslider_js_min: {
+				options: {
+					mangle: true,
+					preserveComments: false,
+					compress: {
+						global_defs: {
+							'DEBUG': false
+						},
+						drop_debugger: true
+					}
+				},
+				files: {
+					'js/rangeslider.min.js': 'js/rangeslider.js'
 					//'source/assets/js/basic-functions.min.js': 'source/assets/js/basic-functions.js'
 				}
 			},

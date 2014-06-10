@@ -8,41 +8,30 @@ var comments = {
 	{
 		"el": ".logo",
 		"title" : "Logo",
-		"comment": "The logo image is an SVG file, which ensures that the logo displays crisply even on high resolution displays. A PNG fallback is provided for browsers that don't support SVG images.</p><p>Further reading: <a href=\"http://bradfrostweb.com/blog/mobile/hi-res-optimization/\">Optimizing Web Experiences for High Resolution Screens</a></p>"
+		"comment": "The logo image is an SVG file, which ensures that the logo displays crisply even on high resolution displays. A PNG fallback is provided for browsers that don't support SVG images.</p><p>Further reading: <a href='http://bradfrostweb.com/blog/mobile/hi-res-optimization/'>Optimizing Web Experiences for High Resolution Screens</a></p>"
 	},
 	{
 		"el": "#atoms-colors",
 		"title" : "Värit – Colors",
-		"comment": "Palvelut käyttävät samaa värisarjaa. Kullekin palvelulle on valittu oma heräteväri. Värejä suunniteltaessa on huomioitava <a href=\"http://www.w3.org/Translations/WCAG20-fi/\" target=\"_blank\">WCAG 2.0</a> kontrasti- luminanssi- ja fonttivaatimukset.</p><p>Huomiovärillä merkitään käyttäjätarinan mukaan seuraava painike jota käyttäjän odotetaan pääkäyttötapauksen mukaan painavan. Vaihtoehtoisten käyttötapausten painikkeet ovat tummanharmaat. Painikkeita joita ei pääse käyttämään, ei piiloteta vaan ne näytetään vaaleammalla harmaalla.</p>Services all use same colorspace. There is a primary attention color for each service, that also serves as the brand color in the logo. Colors have their luminance according to WCAG20 accessibility requirements."
+		"comment": "Palvelut käyttävät samaa värisarjaa. Kullekin palvelulle on valittu oma heräteväri. Värejä suunniteltaessa on huomioitava <a href='http://www.w3.org/Translations/WCAG20-fi/' target='_blank'>WCAG 2.0</a> kontrasti- luminanssi- ja fonttivaatimukset.</p><p>Huomiovärillä merkitään käyttäjätarinan mukaan seuraava painike jota käyttäjän odotetaan pääkäyttötapauksen mukaan painavan. Vaihtoehtoisten käyttötapausten painikkeet ovat tummanharmaat. Painikkeita joita ei pääse käyttämään, ei piiloteta vaan ne näytetään vaaleammalla harmaalla.</p>Services all use same colorspace. There is a primary attention color for each service, that also serves as the brand color in the logo. Colors have their luminance according to WCAG20 accessibility requirements."
 	},
 	{
 		"el": "#atoms-buttons",
 		"title" : "Painikkeet – Buttons",
-		"comment": "Painikkeet ovat kulmastaan yhden pikselin verran pyöristettyjä suorakulmioita. Kaikissa painikkeissa suositellaan käyttämään selventäviä ikoneita tekstiotsikon lisäksi.
-					</p>
-					<p>Luodaan classilla, voi olla a-, input- tai button-tageilla.</p>
-
-					<h4>Painikkeiden ikonit</h4>
-					<p>Painikkeissa ikoni laitetaan painikkeen tekstin edelle tekstin värisenä.</p>
-
-					<h4>Painikkeiden tilat</h4>
-
-					<p>Painikkeen käytön voi estää lisäämällä painikkeen luokkaan <span style=\"red\">disabled</span>.</p>
-
-					"
+		"comment": "<p>Painikkeet ovat kulmastaan yhden pikselin verran pyöristettyjä suorakulmioita. Kaikissa painikkeissa suositellaan käyttämään selventäviä ikoneita tekstiotsikon lisäksi.</p><p>Luodaan classilla, voi olla a-, input- tai button-tageilla.</p><h4>Painikkeiden ikonit</h4><p>Painikkeissa ikoni laitetaan painikkeen tekstin edelle tekstin värisenä.</p><h4>Painikkeiden tilat</h4><p>Painikkeen käytön voi estää lisäämällä painikkeen luokkaan <span style='red'>disabled</span>.</p>"
 	},
 	{
 		"el": "#atoms-button-groups",
 		"title" : "Painikkeet – Button Groups",
-		"comment": "Voit liittää yksittäisiä painikkeita toisiinsa jolloin niiden reunat ja välit muotoutuvat ryhmittymän mukaan tyylikkäästi.
+		"comment": "<p>Voit liittää yksittäisiä painikkeita toisiinsa jolloin niiden reunat ja välit muotoutuvat ryhmittymän mukaan tyylikkäästi.
 					</p>
 					<p>Painikeryhmien painikkeet luodaan samoin kuin yksittäiset painikkeet, a-, input- tai button-tageilla. Ryhmän muodostaa painikkeiden ympäröivä div-tagin btn-group-luokka.</p>
-					
+
 
 
 					<p>Jos haluat lisätä painikeryhmään tarkennuksen, esimerkiksi numeron, lisää a-tagin sisään span-tagi ja laita sen luokaksi <span style=\"red\">count</span>.</p>
 
-					<p>Käytä <span style=\"red\">sorting</span>-luokkaa halutessasi lajittelupainikeryhmän.</p>
+					<p>Käytä <span style='red'>sorting</span>-luokkaa halutessasi lajittelupainikeryhmän.</p>
 
 					<h4>Painikkeiden ikonit</h4>
 
