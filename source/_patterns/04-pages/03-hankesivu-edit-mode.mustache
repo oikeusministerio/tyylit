@@ -2,17 +2,17 @@
   {{> organisms-header }}
   <section role="main" class="edit-hanke-form">
     <h1>Muokkaa hanketta</h1>
-    <div class="block backgroud">
-      <img src="../../images/fpo_16x9.png" alt="Taustakuva" />
-      <input class="btn btn-otk" type="submit" value="Vaihda taustakuva" />
-    </div>
-    <div class="block logo">
-      <img src="../../images/fpo_avatar.png" alt="Logo" />
-      <input class="btn btn-otk" type="submit" value="Vaihda logo" />
-    </div>
-    <div id="hanke-title" class="form-element text-el content-item">
-      <label for="text-field">Otsikko tai nimi*</label>
-      <textarea class="ta-small js-dynamic" placeholder="Kirjoita tähän otsikko tai nimi..." maxlength="130"></textarea>
+    <div>
+      <div class="hanke-img-container">
+        <img src="../../images/fpo_16x9.png" alt="Taustakuva" class="hanke-bg" />
+        <img src="../../images/fpo_avatar.png" alt="Logo" class="hanke-logo" />
+        <input class="btn edit-bg" type="submit" value="Vaihda taustakuva" />
+        <input class="btn edit-logo" type="submit" value="Vaihda logo" />
+      </div>
+      <div id="hanke-title" class="form-element text-el content-item">
+        <label for="text-field">Otsikko tai nimi*</label>
+        <input placeholder="Kirjoita tähän otsikko tai nimi..." maxlength="130" />
+      </div>
     </div>
     <div id="hanke-intro" class="form-element text-el content-item">
       <div class="helper-container">
