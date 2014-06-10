@@ -62,20 +62,21 @@ if( $('.form-element').length ){
 	}*/
 
 
-	//Text area word count
-	if( $('textarea').length ){
+	//Text area word count and special input fields
+	if( $('textarea').length || $('.js-word-count').length ){
 		var ta;
 		var maxlength;
 		// Set the counter elements
-		$('textarea').each(function(){
+		$('textarea, .js-word-count').each(function(){
 			$(this).after( '<span class="textarea-word-count inactive"></span>' );
 			maxlength = $(this).attr("maxlength");
 			reallength = maxlength - $(this).val().length;
 			$(this).parent().find(".textarea-word-count").text( reallength );
 		});
 		// Set the counter value
-		$(".form-element textarea").keyup(function(){
+		$(".form-element textarea, .js-word-count").keyup(function(){
 			ta = $(this);
+
 			if( ta.hasClass('js-dynamic') ){
 				ta.height(1).height( ta[0].scrollHeight );
 			}
@@ -359,13 +360,56 @@ $('#myCarousel').carousel({
 
 $('#myCarousel').on('slid.bs.carousel', function(){
 	if( $(this).find('.active').hasClass('item-text') ){
-		console.log($('.carousel-indicators').find('.active'));
 		$('.carousel-indicators').addClass('inverse-color');
 	}
 	else{
 		$('.carousel-indicators').removeClass('inverse-color');
 	}
 });
+
+// Slider
+
+// $( ".slider" ).slider();
+/*$('input[type="range"]').rangeslider();
+
+$('input[type="range"]').rangeslider({
+
+	// Feature detection
+	polyfill: true,
+
+	// CSS classes
+	rangeClass: 'rangeslider',
+	fillClass: 'rangeslider__fill',
+	handleClass: 'rangeslider__handle',
+
+	// Callback function
+	onInit: function() { console.log('kassit');},
+
+	// Callback function
+	onSlide: function(position, value) {},
+
+	// Callback function
+	onSlideEnd: function(position, value) { alert('joo'); }
+}); */
+
+var $document   = $(document),
+		selector    = '[data-rangeslider]',
+		$input      = $(selector);
+
+	// Normal change event to change the output's value
+	$document.on('change', selector, function(event) {
+		var value = event.target.value;
+			//output = event.target.parentNode.getElementsByTagName('output')[0];
+		//output.innerHTML = value;
+	});
+
+	// Initialize the elements
+	$input.rangeslider({
+		polyfill: false,
+	});
+
+
+
 
 // Tag-it
 
@@ -376,14 +420,14 @@ $(".tagit-list").tagit({
 $(".tagit-list .tagit-new input.ui-autocomplete-input").attr("placeholder", "Aloita kirjoittamaan asiasanaa");
 
 $(".location-list").tagit({
-    allowSpaces: true,
-    availableTags: ["Turku", "Helsinki", "Tampere", "Oulu", "Jyväskylä", "Vaasa", "Seinäjoki", "Rovaniemi", "Hanko"]
+	allowSpaces: true,
+	availableTags: ["Turku", "Helsinki", "Tampere", "Oulu", "Jyväskylä", "Vaasa", "Seinäjoki", "Rovaniemi", "Hanko"]
 });
 $(".location-list .tagit-new input.ui-autocomplete-input").attr("placeholder", "Aloita kirjoittamaan paikkakunnan nimeä");
 
 $(".person-list").tagit({
-    allowSpaces: true,
-    availableTags: ["Matti Meikäläinen", "Oskari Olematon", "David Hasselhoff", "Homer Simpson", "Aku Ankka", "Roope Ankka", "B Virtanen"]
+	allowSpaces: true,
+	availableTags: ["Matti Meikäläinen", "Oskari Olematon", "David Hasselhoff", "Homer Simpson", "Aku Ankka", "Roope Ankka", "B Virtanen"]
 });
 $(".person-list .tagit-new input.ui-autocomplete-input").attr("placeholder", "Aloita kirjoittamaan henkilön nimeä");
 
@@ -397,10 +441,10 @@ $("#btnAddParticipationContainer").removeClass("is-hidden");
 $("#btnCancelParticipationContainer").removeClass("is-hidden");
 $("#addParticipations").hide();
 $("#btnAddParticipation").click(function () {
-    $("#showParticipations").hide();
-    $("#addParticipations").show();
+	$("#showParticipations").hide();
+	$("#addParticipations").show();
 });
 $("#btnCancelParticipation").click(function () {
-    $("#showParticipations").show();
-    $("#addParticipations").hide();
+	$("#showParticipations").show();
+	$("#addParticipations").hide();
 });
