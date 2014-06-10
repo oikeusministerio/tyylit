@@ -446,11 +446,21 @@ $(".tagit-list").tagit({
 });
 $(".tagit-list .tagit-new input.ui-autocomplete-input").attr("placeholder", "Aloita kirjoittamaan asiasanaa");
 
+if( $('.tagit-list').length ){
+	var length = $('.tagit-list .tagit-new').find('input').attr('placeholder').length;
+	$('.tagit-list .tagit-new').find('input').attr('size', length);
+}
+
 $(".location-list").tagit({
 	allowSpaces: true,
 	availableTags: ["Turku", "Helsinki", "Tampere", "Oulu", "Jyväskylä", "Vaasa", "Seinäjoki", "Rovaniemi", "Hanko"]
 });
 $(".location-list .tagit-new input.ui-autocomplete-input").attr("placeholder", "Aloita kirjoittamaan paikkakunnan nimeä");
+
+if( $('.location-list').length ){
+	var length = $('.location-list .tagit-new').find('input').attr('placeholder').length;
+	$('.location-list .tagit-new').find('input').attr('size', length);
+}
 
 $(".person-list").tagit({
 	allowSpaces: true,
@@ -458,9 +468,9 @@ $(".person-list").tagit({
 });
 $(".person-list .tagit-new input.ui-autocomplete-input").attr("placeholder", "Aloita kirjoittamaan henkilön nimeä");
 
-if( $('.tagit-list').length ){
-	var length = $('.tagit-list .tagit-new').find('input').attr('placeholder').length;
-	$('.tagit-list .tagit-new').find('input').attr('size', length);
+if( $('.person-list').length ){
+	var length = $('.person-list .tagit-new').find('input').attr('placeholder').length;
+	$('.person-list .tagit-new').find('input').attr('size', length);
 }
 
 // hankesivu-read-mode
