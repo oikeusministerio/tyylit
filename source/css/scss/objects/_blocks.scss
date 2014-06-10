@@ -43,41 +43,68 @@
 		position: absolute;
 		left: auto;
 		margin-left: 1em;
-		bottom: 1em;
+		bottom: -2em;
 		width: 5em;
 		height: 5em;
 	
 		@media #{$tablet}{
 			width: 8em;
 			height: 8em;
-			margin-left: 2em;
-			bottom: 2em;
+			margin-left: 3em;
+			bottom: -3em;
 		}
 
 		@media #{$laptop}{
 			width: 10em;
 			height: 10em;
-			margin-left: 2em;
-			bottom: 2em;
+			margin-left: 3em;
+			bottom: -3em;
 		}
-
-		@media #{$desktop}{
-			width: 10em;
-			height: 10em;
-			margin-left: 2em;
-			bottom: 2em;
-		}
-	}
-
+	}	
 	.edit-bg {
 		position: absolute;
-		bottom: 1em;
+		bottom: 1.2em;
 		right: 1em;
 	}
 	.edit-logo {
 		position: absolute;
-		bottom: 2em;
-		left: 2em;
+		bottom: -2em;
+		left: 6em;
+		@media #{$tablet}{			
+			bottom: -3em;
+			left: 3em;			
+		}
+	}
+}
+
+.edit-hanke-form {
+	.hanke-title {
+		margin-top: 3em;
+
+		@media #{$tablet}{
+			margin-left: 12em;
+			margin-top: 0.1em;
+		}
+
+		@media #{$laptop}{
+			margin-left: 14em;
+			margin-top: 0.1em;
+		}
+	}
+}
+.show-hanke-form {
+	.hanke-title {
+		margin-top: 1em;
+
+		@media #{$tablet}{
+			margin-left: 6em;
+			margin-top: 0.1em;
+		}
+
+		@media #{$laptop}{
+			margin-left: 7em;
+			margin-top: 0.1em;
+		}
 	}
 }
 

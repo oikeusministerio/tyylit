@@ -2120,7 +2120,6 @@ td {
 .fadeout {
   position: relative;
   overflow: hidden;
-  max-width: 600px;
   width: 100%;
   max-height: 100px;
   padding-bottom: 70px;
@@ -3107,42 +3106,80 @@ td {
   min-height: 175px;
   position: relative;
 }
-
-.hanke-bg {
+.hanke-img-container .hanke-bg {
   width: 100%;
   height: 100%;
 }
-
-.hanke-logo {
+.hanke-img-container .hanke-logo {
   position: absolute;
   left: auto;
   margin-left: 1em;
-  bottom: 1em;
+  bottom: -2em;
   width: 5em;
   height: 5em;
 }
 @media screen and (min-width: 48em) {
-  .hanke-logo {
+  .hanke-img-container .hanke-logo {
     width: 8em;
     height: 8em;
-    margin-left: 2em;
-    bottom: 2em;
+    margin-left: 3em;
+    bottom: -3em;
   }
 }
 @media screen and (min-width: 60em) {
-  .hanke-logo {
+  .hanke-img-container .hanke-logo {
     width: 10em;
     height: 10em;
-    margin-left: 2em;
-    bottom: 2em;
+    margin-left: 3em;
+    bottom: -3em;
   }
 }
-@media screen and (min-width: 80em) {
-  .hanke-logo {
-    width: 10em;
-    height: 10em;
-    margin-left: 2em;
-    bottom: 2em;
+.hanke-img-container .edit-bg {
+  position: absolute;
+  bottom: 1.2em;
+  right: 1em;
+}
+.hanke-img-container .edit-logo {
+  position: absolute;
+  bottom: -2em;
+  left: 6em;
+}
+@media screen and (min-width: 48em) {
+  .hanke-img-container .edit-logo {
+    bottom: -3em;
+    left: 3em;
+  }
+}
+
+.edit-hanke-form .hanke-title {
+  margin-top: 3em;
+}
+@media screen and (min-width: 48em) {
+  .edit-hanke-form .hanke-title {
+    margin-left: 12em;
+    margin-top: 0.1em;
+  }
+}
+@media screen and (min-width: 60em) {
+  .edit-hanke-form .hanke-title {
+    margin-left: 14em;
+    margin-top: 0.1em;
+  }
+}
+
+.show-hanke-form .hanke-title {
+  margin-top: 1em;
+}
+@media screen and (min-width: 48em) {
+  .show-hanke-form .hanke-title {
+    margin-left: 6em;
+    margin-top: 0.1em;
+  }
+}
+@media screen and (min-width: 60em) {
+  .show-hanke-form .hanke-title {
+    margin-left: 7em;
+    margin-top: 0.1em;
   }
 }
 
