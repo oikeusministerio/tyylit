@@ -1,74 +1,72 @@
 <div class="page otakantaa" id="page">
-    {{> organisms-header }}
-  <div role="main">
-      <section class="main">
-          {{> molecules-carousel }}
-      <section class="l-two-col">
-          <section class="l-main">
-            {{#loggedin}}
-                {{> molecules-loggedin-lifts }}
-            {{/loggedin}}
-            {{^loggedin}}
-                {{> molecules-anonymous-lifts }}
-            {{/loggedin}}
-          </section>
-          <aside class="l-sidebar">
-              <section id="ProjectSearch" class="content-item project-search">
-                  <h3 class="section-title">Etsi hankkeita joihin voit osallistua
-                  </h3>
-                  <span class="select-style">
-                      <span class="border-fix">
-                          <select id="Main_ddlValitsePaikkakunta" class="btn-group">
-                              <option selected="selected" value="">---Paikkakunta---</option>
-                              <option value="11452">Helsinki</option>
-                              <option value="11453">Turku</option>
-                              <option value="11453">Tampere</option>
-                          </select>
-                      </span>
-                  </span>
-                  <b class="block-element">Tai</b>
-                  <div class="inline-form search-form">
-                      <legend class="is-vishidden">Search</legend>
-                      <div id="pnlHankeSearch" class="form-element" title="Hae asiasanalla..." onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnHaeHanke')">
-                          <label for="btnHaeHanke" class="is-vishidden">Hae asiasanalla</label>
-                          <input name="ctl00$Main$btnHaeHanke" type="search" placeholder="Hae asiasanalla..." maxlength="300" id="btnHaeHanke" tabindex="10" class="text-quicksearch search-field ctl-text ellipsis" autocomplete="off" />
-                          <input type="submit" name="ctl00$Main$btnHaeHanke" value="" id="Main_btnHaeHanke" class="button-quicksearch" />
-                          <i class="icon-search"></i>
-                      </div>
-                  </div>
-              </section>
-              <section id="ExternalRss" class="content-item">
-                  <div class="semantic-list">
-                      <h3 class="section-title">Ajankohtaista
-                      </h3>
-                      <ol>
-                          <li>
-                              <a href="http://blogi.otakantaa.fi/blogi/nuorten-osallisuus-verkossa-ja-valtionhallinnossa/" target="_blank">Nuorten osallisuus verkossa ja valtionhallinnossa</a>
-                              <p class="date">
-                                  8.4.2014 Blogi.otakantaa.fi
-                              </p>
-                          </li>
-                          <li>
-                              <a href="http://blogi.otakantaa.fi/blogi/nettiaanestamisen-mahdollisuuksista-keskustellaan-otakantaa-fi-sivustolla/" target="_blank">Nettiäänestämisen mahdollisuuksista keskustellaan otakantaa.fi-sivustolla</a>
-                              <p class="date">
-                                  3.4.2014 Blogi.otakantaa.fi
-                              </p>
-                          </li>
-                          <li>
-                              <a href="http://blogi.otakantaa.fi/blogi/syke-tarkkailijasta-ja-haravasta-demokratian-tyokaluja/" target="_blank">SYKE: Tarkkailijasta ja Haravasta demokratian työkaluja</a>
-                              <p class="date">
-                                  4.3.2014 Blogi.otakantaa.fi
-                              </p>
-                          </li>
-                      </ol>
-                  </div>
-              </section>
-          </aside>
+  {{> organisms-header }}
+  <section role="main" class="main">
+    {{> molecules-carousel }}
+    <section class="l-two-col">
+      <section class="l-main">
+        {{#loggedin}}
+        {{> molecules-loggedin-lifts }}
+        {{/loggedin}}
+        {{^loggedin}}
+        {{> molecules-anonymous-lifts }}
+        {{/loggedin}}
       </section>
-          <div class="clear">
+      <aside class="l-sidebar">
+        <section id="ProjectSearch" class="content-item project-search">
+          <h3 class="section-title">
+            Etsi hankkeita joihin voit osallistua
+          </h3>
+          <span class="select-style">
+            <span class="border-fix">
+              <select id="Main_ddlValitsePaikkakunta" class="btn-group">
+                <option selected="selected" value="">---Paikkakunta---</option>
+                <option value="11452">Helsinki</option>
+                <option value="11453">Turku</option>
+                <option value="11453">Tampere</option>
+              </select>
+            </span>
+          </span>
+          <b class="block-element">Tai</b>
+          <div class="inline-form search-form">
+            <legend class="is-vishidden">Search</legend>
+            <div id="pnlHankeSearch" class="form-element" title="Hae asiasanalla..." onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnHaeHanke')">
+              <label for="btnHaeHanke" class="is-vishidden">Hae asiasanalla</label>
+              <input name="ctl00$Main$btnHaeHanke" type="search" placeholder="Hae asiasanalla..." maxlength="300" id="btnHaeHanke" tabindex="10" class="text-quicksearch search-field ctl-text ellipsis" autocomplete="off" />
+              <input type="submit" name="ctl00$Main$btnHaeHanke" value="" id="Main_btnHaeHanke" class="button-quicksearch" />
+              <i class="icon-search"></i>
+            </div>
           </div>
-      </section>
-  </div>
-    <!--End role=main-->
-    {{> organisms-footer }}
+        </section>
+        <section id="ExternalRss" class="content-item">
+          <div class="semantic-list">
+            <h3 class="section-title">
+              Ajankohtaista
+            </h3>
+            <ol>
+              <li>
+                <a href="http://blogi.otakantaa.fi/blogi/nuorten-osallisuus-verkossa-ja-valtionhallinnossa/" target="_blank">Nuorten osallisuus verkossa ja valtionhallinnossa</a>
+                <p class="date">
+                  8.4.2014 Blogi.otakantaa.fi
+                </p>
+              </li>
+              <li>
+                <a href="http://blogi.otakantaa.fi/blogi/nettiaanestamisen-mahdollisuuksista-keskustellaan-otakantaa-fi-sivustolla/" target="_blank">Nettiäänestämisen mahdollisuuksista keskustellaan otakantaa.fi-sivustolla</a>
+                <p class="date">
+                  3.4.2014 Blogi.otakantaa.fi
+                </p>
+              </li>
+              <li>
+                <a href="http://blogi.otakantaa.fi/blogi/syke-tarkkailijasta-ja-haravasta-demokratian-tyokaluja/" target="_blank">SYKE: Tarkkailijasta ja Haravasta demokratian työkaluja</a>
+                <p class="date">
+                  4.3.2014 Blogi.otakantaa.fi
+                </p>
+              </li>
+            </ol>
+          </div>
+        </section>
+      </aside>
+    </section>
+  </section>
+  <!--End role=main-->
+  {{> organisms-footer }}
 </div>

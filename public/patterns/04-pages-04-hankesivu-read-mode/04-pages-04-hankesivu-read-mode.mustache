@@ -1,13 +1,11 @@
 &lt;div class=&quot;page otakantaa&quot; id=&quot;page&quot;&gt;
   {{&gt; organisms-header }}
-  &lt;div role=&quot;main&quot;&gt;
+  &lt;section role=&quot;main&quot;&gt;
     &lt;div&gt;
       &lt;div&gt;
-        &lt;div class=&quot;hanke-bg&quot;&gt;
-          &lt;img src=&quot;../../images/fpo_16x9.png&quot; alt=&quot;Taustakuva&quot; /&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;hanke-logo&quot;&gt;
-          &lt;img src=&quot;../../images/logo.png&quot; alt=&quot;Logo&quot; /&gt;
+        &lt;div class=&quot;hanke-img-container&quot;&gt;
+          &lt;img src=&quot;../../images/fpo_16x9.png&quot; alt=&quot;Taustakuva&quot; class=&quot;hanke-bg&quot; /&gt;
+          &lt;img src=&quot;../../images/logo.png&quot; alt=&quot;Logo&quot; class=&quot;hanke-logo&quot; /&gt;          
         &lt;/div&gt;
         &lt;div class=&quot;admin-tools&quot;&gt;
           &lt;input class=&quot;btn&quot; type=&quot;submit&quot; value=&quot;Muokkaa perustietoja&quot; /&gt;
@@ -62,7 +60,7 @@
               &lt;span class=&quot;icon-help&quot; title=&quot;valinnainen viesti s&auml;hk&ouml;postikutsuun&quot; placement=&quot;top&quot;&gt;Viesti&lt;/span&gt;
               &lt;p class=&quot;helper-text small is-vishidden&quot;&gt;valinnainen viesti s&auml;hk&ouml;postikutsuun&lt;/p&gt;
             &lt;/div&gt;
-            &lt;textarea style=&quot;height: 70px;&quot; cols=&quot;20&quot; rows=&quot;2&quot;&gt;&lt;/textarea&gt;
+            &lt;textarea class=&quot;js-dynamic&quot; maxlength=&quot;400&quot; placeholder=&quot;Kirjoita valinnainen viesti...&quot;&gt;&lt;/textarea&gt;            
             &lt;input class=&quot;btn btn-otk&quot; type=&quot;submit&quot; value=&quot;L&auml;het&auml; kutsu&quot; /&gt;
             &lt;div class=&quot;sidebar-form-errors&quot;&gt;
             &lt;/div&gt;
@@ -348,6 +346,6 @@
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;&lt;!--End role=main--&gt;
+  &lt;/section&gt;&lt;!--End role=main--&gt;
   {{&gt; organisms-footer }}
 &lt;/div&gt;

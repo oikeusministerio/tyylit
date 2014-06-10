@@ -11,6 +11,10 @@
 .page{
 	&.otakantaa{
 		background-color: $gray-light;
+		
+		[role=main] {
+			background-color: $gray-light;
+		}
 	}
 }
 
