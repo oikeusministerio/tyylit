@@ -13,28 +13,12 @@
       </section>
       <aside class="l-sidebar">
         <section id="ProjectSearch" class="content-item project-search">
-          <h3 class="section-title">
-            Etsi hankkeita joihin voit osallistua
-          </h3>
-          <span class="select-style">
-            <span class="border-fix">
-              <select id="Main_ddlValitsePaikkakunta" class="btn-group">
-                <option selected="selected" value="">---Paikkakunta---</option>
-                <option value="11452">Helsinki</option>
-                <option value="11453">Turku</option>
-                <option value="11453">Tampere</option>
-              </select>
-            </span>
-          </span>
-          <b class="block-element">Tai</b>
+          <div class="helper-container">
+            <span class="icon-help" title="Voit etsiä hankkeita asiasanojen ja paikkakuntien mukaan" placement="top">Etsi hankkeita joihin voit osallistua</span>
+            <p class="helper-text small is-vishidden">Voit etsiä hankkeita asiasanojen ja paikkakuntien mukaan</p>
+          </div>
           <div class="inline-form search-form">
-            <legend class="is-vishidden">Search</legend>
-            <div id="pnlHankeSearch" class="form-element" title="Hae asiasanalla..." onkeypress="javascript:return WebForm_FireDefaultButton(event, 'btnHaeHanke')">
-              <label for="btnHaeHanke" class="is-vishidden">Hae asiasanalla</label>
-              <input name="ctl00$Main$btnHaeHanke" type="search" placeholder="Hae asiasanalla..." maxlength="300" id="btnHaeHanke" tabindex="10" class="text-quicksearch search-field ctl-text ellipsis" autocomplete="off" />
-              <input type="submit" name="ctl00$Main$btnHaeHanke" value="" id="Main_btnHaeHanke" class="button-quicksearch" />
-              <i class="icon-search"></i>
-            </div>
+            <ul id="tbHaeHanke" class="tagit-list"></ul>
           </div>
         </section>
         <section id="ExternalRss" class="content-item">
