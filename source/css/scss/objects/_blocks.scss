@@ -28,90 +28,92 @@
 .content-item.large {
 	width: 100%;
 }
-.hanke-img-container {	
+.hanke-img-container {
+	width: 100%;
 	max-width: 1200px;
 	min-width: 350px;
-	max-height: 750px;
+	max-height: 700px;
 	min-height: 175px;
 	position: relative;
+	margin-bottom: 1em;
 
-	.hanke-bg {
-		width: 100%;
-		height: 100%;
-	}
-	.hanke-logo {
-		position: absolute;
-		left: auto;
-		margin-left: 1em;
-		bottom: -2em;
-		width: 5em;
-		height: 5em;
-	
-		@media #{$tablet}{
-			width: 8em;
-			height: 8em;
-			margin-left: 3em;
-			bottom: -3em;
-		}
-
-		@media #{$laptop}{
-			width: 10em;
-			height: 10em;
-			margin-left: 3em;
-			bottom: -3em;
-		}
-	}	
 	.edit-bg {
 		position: absolute;
-		bottom: 1.2em;
+		bottom: 1em;
 		right: 1em;
 	}
-	.edit-logo {
+
+	.logo-container {
 		position: absolute;
-		bottom: -2em;
-		left: 6em;
-		@media #{$tablet}{			
-			bottom: -3em;
-			left: 3em;			
+		width: 12em;
+		margin-left: 1em;
+		bottom: 1em;
+		
+		@media #{$tablet} {
+			margin-left: 3em;
+			bottom: 3em;
 		}
+
+		@media #{$laptop} {
+			margin-left: 3em;
+			bottom: -8em;
+		}
+
+		input.edit-logo {
+			position: absolute;
+			text-align: center;
+			bottom: 1em;
+			left: 1em;
+		}
+		
+		.edit-logo {
+			position: absolute;
+			bottom: -2em;
+			left: 6em;
+			@media #{$tablet}{			
+				bottom: -3em;
+				left: 3em;			
+			}
+		}
+
+		img.hanke-logo {
+			max-width: 100px;
+			max-height: 100px;
+
+			@media #{$tablet} {
+				max-width: 150px;
+				max-height: 150px;
+			}
+
+			@media #{$laptop} {
+				max-width: 300px;
+				max-height: 300px;
+			}
+		} 
 	}
 }
 
-.edit-hanke-form {
-	.hanke-title {
-		margin-top: 3em;
-
-		@media #{$tablet}{
-			margin-left: 12em;
-			margin-top: 0.1em;
-		}
-
-		@media #{$laptop}{
-			margin-left: 14em;
-			margin-top: 0.1em;
-		}
-	}
-}
-.show-hanke-form {
-	.hanke-title {
-		margin-top: 1em;
-
-		@media #{$tablet}{
-			margin-left: 6em;
-			margin-top: 0.1em;
-		}
-
-		@media #{$laptop}{
-			margin-left: 7em;
-			margin-top: 0.1em;
-		}
-	}
-}
-
-.admin-tools {
+.hanke-title {
+	width: 100%;
 	text-align: left;
+	
+	@media #{$laptop} {
+		padding-left: 23em;
+	}
 }
 
+.admin-tools {    
+	text-align: left;
+
+	@media #{$laptop} {
+		padding-top: 1em;
+	}
+}
+.hanke-form {
+	@media #{$laptop} {
+		margin-top: 3em;
+	}
+}
 .project-search {
 	.block-element {
 		margin-left: $space-and-half;
