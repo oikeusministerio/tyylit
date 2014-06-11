@@ -10,7 +10,7 @@
 		<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 
-		<link rel="stylesheet" href="../../css/style.css?1402406614" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1402493555" media="all" />
 		<!--[if lt IE 10]>
 			<style type="text/css">
 				.og-share-post .share-content .image-container{ height: 100px; }
@@ -25,8 +25,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1402406614" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1402406614" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1402493555" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1402493555" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -247,202 +247,190 @@
   </header>
   <!-- End .header -->  <section role="main" class="edit-hanke-form">
     <h1>Muokkaa hanketta</h1>
-    <div>
-      <div class="hanke-img-container">
-        <img src="../../images/fpo_16x9.png" alt="Taustakuva" class="hanke-bg" />
+    <div class="hanke-img-container">
+      <img src="../../images/fpo_16x9.png" alt="Taustakuva" class="hanke-bg" />
+      <input class="btn edit-bg" type="submit" value="Vaihda taustakuva" />
+      <div class="logo-container">
         <img src="../../images/fpo_avatar.png" alt="Logo" class="hanke-logo" />
-        <input class="btn edit-bg" type="submit" value="Vaihda taustakuva" />
-        <input class="btn edit-logo" type="submit" value="Vaihda logo" />
+        <input class="btn edit-logo" type="submit" value="Vaihda logo" />        
       </div>
-      <div id="hanke-title" class="form-element text-el content-item hanke-title">
+    </div>
+    <div class="form-element text-el hanke-title">
+      <div class="content-item">
         <label for="text-field">Otsikko tai nimi*</label>
-        <input placeholder="Kirjoita tähän otsikko tai nimi..." maxlength="130" />
+        <input placeholder="Kirjoita tähän otsikko tai nimi..." maxlength="130" value="Hankkeen nimi Lorem ipsum dolor sit met" />
       </div>
     </div>
-    <div id="hanke-intro" class="form-element text-el content-item large">
-      <div class="helper-container">
-        <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Esittely*</span>
-        <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
-      </div>
-      <textarea placeholder="Kirjoita tähän esittely..." maxlength="400"></textarea>
-    </div>
-    <div id="hanke-description" class="form-element text-el content-item large">
-      <div class="helper-container">
-        <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Kuvaus ja tavoitteet*</span>
-        <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
-      </div>
-      <textarea placeholder="Kirjoita tähän kuvaus ja tavoitteet..." maxlength="2000"></textarea>
-    </div>
-    <div id="hanke-responsibility" class="form-element text-el content-item large">
-      <label for="text-field">Vastuujärjestö tai -henkilö*</label>
-      <input placeholder="Kirjoita tähän vastuujärjestö tai -henkilö..." maxlength="130" />
-    </div>
-    <div id="hanke-publicity" class="content-item large">
-      <div class="helper-container">
-        <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Hankkeen näkyvyys*</span>
-        <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
-      </div>
-      <span class="select-style">
-        <span class="border-fix">
-          <select id="" class="btn-group">
-            <option selected="selected" value="0">Julkinen/näkyy kaikille</option>
-            <option value="1">Vain kutsutuille</option>
-          </select>
-        </span>
-      </span>
-    </div>
-    <div id="hanke-publish" class="content-item large">
-      <div class="helper-container">
-        <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Hankkeen julkaisun tila*</span>
-        <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
-      </div>
-      <span class="select-style">
-        <span class="border-fix">
-          <select id="" class="btn-group">
-            <option selected="selected" value="0">Suunnitteilla</option>
-            <option value="1">Julkaistu</option>
-            <option value="2">Peruttu</option>
-          </select>
-        </span>
-      </span>
-    </div>
-    <!-- This can't be done with current implementation. Requires new feature implementation -->
-    <!--<div id="hanke-status">
+    <div class="hanke-form">
+      <div id="hanke-intro" class="form-element text-el content-item large">
         <div class="helper-container">
-          <span class="icon-help" title="Lorem ipsum" placement="top">Hankkeen vaihe*</span>
-          <p class="helper-text small is-vishidden">Lorem ipsum</p>
+          <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Esittely*</span>
+          <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+        </div>
+        <textarea placeholder="Kirjoita tähän esittely..." maxlength="400"></textarea>
+      </div>
+      <div id="hanke-description" class="form-element text-el content-item large">
+        <div class="helper-container">
+          <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Kuvaus ja tavoitteet*</span>
+          <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+        </div>
+        <textarea placeholder="Kirjoita tähän kuvaus ja tavoitteet..." maxlength="2000"></textarea>
+      </div>
+      <div id="hanke-responsibility" class="form-element text-el content-item large">
+        <label for="text-field">Vastuujärjestö tai -henkilö*</label>
+        <input placeholder="Kirjoita tähän vastuujärjestö tai -henkilö..." maxlength="130" />
+      </div>
+      <div id="hanke-publicity" class="content-item large">
+        <div class="helper-container">
+          <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Hankkeen näkyvyys*</span>
+          <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
         </div>
         <span class="select-style">
           <span class="border-fix">
             <select id="" class="btn-group">
-              <option selected="selected" value="0">Odottaa käynnistymistä</option>
-              <option value="1">Käynnissä</option>
-              <option value="2">Päättynyt</option>
+              <option selected="selected" value="0">Julkinen/näkyy kaikille</option>
+              <option value="1">Vain kutsutuille</option>
             </select>
           </span>
         </span>
-      </div>-->
-    <div id="hanke-date" class="content-item large">
-      <div class="helper-container">
-        <h3 class="icon-help" title="Example tip text." placement="top">Hankkeen aikataulu*</h3>
-        <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
       </div>
-      <div class="event-date-container">
-        <div class="form-element date-element left-block">
-          <label for="date-picker">Hankkeen alkupvm.</label>
-          <input type="text" id="date-picker" class="datepicker" value="1.6.2014" />
-        </div>
-        <div class="form-element date-element right-block">
-          <label for="date-picker">Hankkeen loppupvm.</label>
-          <input type="text" id="date-picker" class="datepicker" value="14.5.2015" />
-        </div>
+      <div id="hanke-publish" class="content-item large">
         <div class="helper-container">
-          <span class="icon-help" title="Example tip text." placement="top">Hankkeen yhteenvedon julkaisu*</span>
+          <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Hankkeen julkaisun tila*</span>
+          <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+        </div>
+        <span class="select-style">
+          <span class="border-fix">
+            <select id="" class="btn-group">
+              <option selected="selected" value="0">Suunnitteilla</option>
+              <option value="1">Julkaistu</option>
+              <option value="2">Peruttu</option>
+            </select>
+          </span>
+        </span>
+      </div>
+      <div id="hanke-date" class="content-item large">
+        <div class="helper-container">
+          <h3 class="icon-help" title="Example tip text." placement="top">Hankkeen aikataulu*</h3>
           <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
         </div>
         <div class="event-date-container">
           <div class="form-element date-element left-block">
-            <label for="date-picker">Yhteenvedon julkaisupvm.</label>
+            <label for="date-picker">Hankkeen alkupvm.</label>
+            <input type="text" id="date-picker" class="datepicker" value="1.6.2014" />
+          </div>
+          <div class="form-element date-element right-block">
+            <label for="date-picker">Hankkeen loppupvm.</label>
             <input type="text" id="date-picker" class="datepicker" value="14.5.2015" />
           </div>
+          <div class="helper-container">
+            <span class="icon-help" title="Example tip text." placement="top">Hankkeen yhteenvedon julkaisu*</span>
+            <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+          </div>
+          <div class="event-date-container">
+            <div class="form-element date-element left-block">
+              <label for="date-picker">Yhteenvedon julkaisupvm.</label>
+              <input type="text" id="date-picker" class="datepicker" value="14.5.2015" />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- Optional field those will be fadeout -->
-    <div class="fadeout">
-      <div id="hanke-attachments" class="content-item large">
-        <h3>Liitteet</h3>
-        <div id="hanke-add-attachment">
-          <form action="" class="attachment-form">
-            <div class="form-element attachment-container">
-              <label for="upload-file" class="upload-file-button">Lisää tiedosto</label>
-              <input type="file" id="upload-file" />
-            </div>
-          </form>
-        </div>
-        <!-- Hanke attachment list -->
-        <div id="hanke-attachment-list">
-          <div class="attachment-form inline-element">
-            <div class="form-element attachment-edit">
-              <label class="edit-file-button">muokkaa</label>
-              <div class="mime-container">
-                <i class="fa fa-file-o"></i>
+      <!-- Optional field those will be fadeout -->
+      <div class="fadeout">
+        <div id="hanke-attachments" class="content-item large">
+          <h3>Liitteet</h3>
+          <div id="hanke-add-attachment">
+            <form action="" class="attachment-form">
+              <div class="form-element attachment-container">
+                <label for="upload-file" class="upload-file-button">Lisää tiedosto</label>
+                <input type="file" id="upload-file" />
               </div>
-              <a class="file-title">Otsikko</a>
-              <p>tiedostonimi...jpg</p>
-            </div>
+            </form>
           </div>
-          <div class="attachment-form inline-element">
-            <div class="form-element attachment-edit">
-              <label class="edit-file-button">muokkaa</label>
-              <div class="mime-container">
-                <i class="fa fa-file-o"></i>
+          <!-- Hanke attachment list -->
+          <div id="hanke-attachment-list">
+            <div class="attachment-form inline-element">
+              <div class="form-element attachment-edit">
+                <label class="edit-file-button">muokkaa</label>
+                <div class="mime-container">
+                  <i class="fa fa-file-o"></i>
+                </div>
+                <a class="file-title">Otsikko</a>
+                <p>tiedostonimi...jpg</p>
               </div>
-              <a class="file-title">Otsikko</a>
-              <p>tiedostonimi...jpg</p>
             </div>
-          </div>
-          <div class="attachment-form inline-element">
-            <div class="form-element attachment-edit">
-              <label class="edit-file-button">muokkaa</label>
-              <div class="mime-container">
-                <i class="fa fa-file-o"></i>
+            <div class="attachment-form inline-element">
+              <div class="form-element attachment-edit">
+                <label class="edit-file-button">muokkaa</label>
+                <div class="mime-container">
+                  <i class="fa fa-file-o"></i>
+                </div>
+                <a class="file-title">Otsikko</a>
+                <p>tiedostonimi...jpg</p>
               </div>
-              <a class="file-title">Otsikko</a>
-              <p>tiedostonimi...jpg</p>
+            </div>
+            <div class="attachment-form inline-element">
+              <div class="form-element attachment-edit">
+                <label class="edit-file-button">muokkaa</label>
+                <div class="mime-container">
+                  <i class="fa fa-file-o"></i>
+                </div>
+                <a class="file-title">Otsikko</a>
+                <p>tiedostonimi...jpg</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div id="hanke-links" class="content-item large">
-        <h3>Linkit</h3>
-        <div class="hanke-link-list">
-          <div class="hanke-link-item">
-            <div class="form-element text-el">
-              <input placeholder="http://" maxlength="200" value="http://www.google.com" />
+        <div id="hanke-links" class="content-item large">
+          <h3>Linkit</h3>
+          <div class="hanke-link-list">
+            <div class="hanke-link-item">
+              <div class="form-element text-el">
+                <input placeholder="http://" maxlength="200" value="http://www.google.com" />
+              </div>
+              <div class="form-element text-el">
+                <input placeholder="Kuvaus" maxlength="100" value="Hakukone" />
+              </div>
             </div>
-            <div class="form-element text-el">
-              <input placeholder="Kuvaus" maxlength="100" value="Hakukone" />
+            <div class="hanke-link-item cf">
+              <div class="form-element text-el">
+                <input placeholder="http://" maxlength="200" />
+              </div>
+              <div class="form-element text-el">
+                <input placeholder="Kuvaus" maxlength="100" />
+              </div>
+            </div>
+            <div class="hanke-link-item cf">
+              <div class="form-element text-el">
+                <input placeholder="http://" maxlength="200" />
+              </div>
+              <div class="form-element text-el">
+                <input placeholder="Kuvaus" maxlength="100" />
+              </div>
             </div>
           </div>
-          <div class="hanke-link-item cf">
-            <div class="form-element text-el">
-              <input placeholder="http://" maxlength="200" />
-            </div>
-            <div class="form-element text-el">
-              <input placeholder="Kuvaus" maxlength="100" />
-            </div>
-          </div>
-          <div class="hanke-link-item cf">
-            <div class="form-element text-el">
-              <input placeholder="http://" maxlength="200" />
-            </div>
-            <div class="form-element text-el">
-              <input placeholder="Kuvaus" maxlength="100" />
-            </div>
-          </div>
+          <input class="btn btn-otk" type="submit" value="Lisää linkki" />
         </div>
-        <input class="btn btn-otk" type="submit" value="Lisää linkki" />
+        <div id="hanke-locations" class="content-item large">
+          <h3>Paikkakunnat</h3>
+          <ul id="tbLocations" class="location-list"></ul>
+        </div>
+        <div id="hanke-keywords" class="content-item large">
+          <h3>Asiasanat</h3>
+          <ul id="tbKeywords" class="tagit-list"></ul>
+        </div>
+        <div id="hanke-admins" class="content-item large">
+          <h3>Vastuuhenkilöt</h3>
+          <ul id="tbAdmins" class="person-list"></ul>
+        </div>
+        <div id="hanke-supervisors" class="content-item large">
+          <h3>Ohjaajat</h3>
+          <ul id="tbSupervisors" class="person-list"></ul>
+        </div>
+        <p class="read-more">
+          <a href="#">Näytä valinnaiset lisätiedot</a>
+        </p>
       </div>
-      <div id="hanke-locations" class="content-item large">
-        <h3>Paikkakunnat</h3>
-        <ul id="tbLocations" class="location-list"></ul>
-      </div>
-      <div id="hanke-keywords" class="content-item large">
-        <h3>Asiasanat</h3>
-        <ul id="tbKeywords" class="tagit-list"></ul>
-      </div>
-      <div id="hanke-admins" class="content-item large">
-        <h3>Vastuuhenkilöt</h3>
-        <ul id="tbAdmins" class="person-list"></ul>
-      </div>
-      <div id="hanke-supervisors" class="content-item large">
-        <h3>Ohjaajat</h3>
-        <ul id="tbSupervisors" class="person-list"></ul>
-      </div>
-      <p class="read-more">
-        <a href="#">Näytä valinnaiset lisätiedot</a>
-      </p>
     </div>
     <div id="hanke-save" class="content-item large">
       <input type="checkbox">
@@ -700,10 +688,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1402406614">
+	<script id="pl-js-polyfill-insert-1402493555">
 		(function() {
 			if (self != top) {
-				var cb = '1402406614';
+				var cb = '1402493555';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -712,10 +700,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1402406614">
+	<script id="pl-js-insert-1402493555">
 		(function() {
 			if (self != top) {
-				var cb = '1402406614';
+				var cb = '1402493555';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
