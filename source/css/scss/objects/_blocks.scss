@@ -28,51 +28,92 @@
 .content-item.large {
 	width: 100%;
 }
-.hanke-img-container {	
+.hanke-img-container {
+	width: 100%;
 	max-width: 1200px;
 	min-width: 350px;
-	max-height: 750px;
+	max-height: 700px;
 	min-height: 175px;
 	position: relative;
+	margin-bottom: 1em;
+
+	.edit-bg {
+		position: absolute;
+		bottom: 1em;
+		right: 1em;
+	}
+
+	.logo-container {
+		position: absolute;
+		width: 12em;
+		margin-left: 1em;
+		bottom: 1em;
+		
+		@media #{$tablet} {
+			margin-left: 3em;
+			bottom: 3em;
+		}
+
+		@media #{$laptop} {
+			margin-left: 3em;
+			bottom: -8em;
+		}
+
+		input.edit-logo {
+			position: absolute;
+			text-align: center;
+			bottom: 1em;
+			left: 1em;
+		}
+		
+		.edit-logo {
+			position: absolute;
+			bottom: -2em;
+			left: 6em;
+			@media #{$tablet}{			
+				bottom: -3em;
+				left: 3em;			
+			}
+		}
+
+		img.hanke-logo {
+			max-width: 100px;
+			max-height: 100px;
+
+			@media #{$tablet} {
+				max-width: 150px;
+				max-height: 150px;
+			}
+
+			@media #{$laptop} {
+				max-width: 300px;
+				max-height: 300px;
+			}
+		} 
+	}
 }
 
-.hanke-bg {
+.hanke-title {
 	width: 100%;
-	height: 100%;
-}
-.hanke-logo {
-	position: absolute;
-	left: auto;
-	margin-left: 1em;
-	bottom: 1em;
-	width: 5em;
-	height: 5em;
-	
-	@media #{$tablet}{
-		width: 8em;
-		height: 8em;
-		margin-left: 2em;
-		bottom: 2em;
-	}
-
-	@media #{$laptop}{
-		width: 10em;
-		height: 10em;
-		margin-left: 2em;
-		bottom: 2em;
-	}
-
-	@media #{$desktop}{
-		width: 10em;
-		height: 10em;
-		margin-left: 2em;
-		bottom: 2em;
-	}
-}
-.admin-tools {
 	text-align: left;
+	
+	@media #{$laptop} {
+		padding-left: 23em;
+	}
 }
 
+.admin-tools {    
+	text-align: left;
+
+	@media #{$laptop} {
+		padding-top: 1em;
+	}
+}
+.hanke-form {
+	@media #{$laptop} {
+		margin-top: 3em;
+	}
+}
 .project-search {
 	.block-element {
 		margin-left: $space-and-half;

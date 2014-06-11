@@ -1,20 +1,20 @@
 <div class="page otakantaa" id="page">
   {{> organisms-header }}
-  <section role="main">
-    <div>
-      <div>
-        <div class="hanke-img-container">
-          <img src="../../images/fpo_16x9.png" alt="Taustakuva" class="hanke-bg" />
-          <img src="../../images/logo.png" alt="Logo" class="hanke-logo" />          
-        </div>
-        <div class="admin-tools">
-          <input class="btn" type="submit" value="Muokkaa perustietoja" />
-          <input class="btn" type="submit" value="Kirjoita yhteenveto" />
-          <input class="btn" type="submit" value="Lisää kieliversio" />
-          <input class="btn" type="submit" value="Osallistumisraportti" />
-        </div>
+  <section role="main" class="show-hanke-form">
+    <div class="hanke-img-container">
+      <img src="../../images/fpo_16x9.png" alt="Taustakuva" class="hanke-bg" />
+      <div class="logo-container">
+        <img src="../../images/fpo_avatar.png" alt="Logo" class="hanke-logo" />
       </div>
-      <h1>Hankkeen nimi Lorem ipsum dolor sit met</h1>
+    </div>
+    <div class="hanke-title">
+      <h1>Hankkeen nimi Lorem ipsum dolor sit amet,consectetur adipiscing elit. Donec eget elementum nibh</h1>
+    </div>
+    <div class="admin-tools">
+      <input class="btn" type="submit" value="Muokkaa perustietoja" />
+      <input class="btn" type="submit" value="Kirjoita yhteenveto" />
+      <input class="btn" type="submit" value="Lisää kieliversio" />
+      <input class="btn" type="submit" value="Osallistumisraportti" />
     </div>
     <div class="g">
       <div class="g-2up">
@@ -51,16 +51,20 @@
             <h3>
               <img src="../../images/favicon_32x32.jpg" />Kutsu muita osallistumaan
             </h3>
-            <div class="helper-container">
-              <span class="icon-help" title="lisää käyttäjänimiä tai sähköpostiosoitteita" placement="top">Kenelle</span>
-              <p class="helper-text small is-vishidden">lisää käyttäjänimiä tai sähköpostiosoitteita</p>
+            <div class="form-element">
+              <div class="helper-container">
+                <span class="icon-help" title="lisää käyttäjänimiä tai sähköpostiosoitteita" placement="top">Kenelle</span>
+                <p class="helper-text small is-vishidden">lisää käyttäjänimiä tai sähköpostiosoitteita</p>
+              </div>
+              <input type="text" />
             </div>
-            <input type="text" />
-            <div class="helper-container">
-              <span class="icon-help" title="valinnainen viesti sähköpostikutsuun" placement="top">Viesti</span>
-              <p class="helper-text small is-vishidden">valinnainen viesti sähköpostikutsuun</p>
+            <div class="form-element">
+              <div class="helper-container">
+                <span class="icon-help" title="valinnainen viesti sähköpostikutsuun" placement="top">Viesti</span>
+                <p class="helper-text small is-vishidden">valinnainen viesti sähköpostikutsuun</p>
+              </div>
+              <textarea class="js-dynamic" maxlength="400" placeholder="Kirjoita valinnainen viesti..."></textarea>
             </div>
-            <textarea class="js-dynamic" maxlength="400" placeholder="Kirjoita valinnainen viesti..."></textarea>            
             <input class="btn btn-otk" type="submit" value="Lähetä kutsu" />
             <div class="sidebar-form-errors">
             </div>
