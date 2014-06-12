@@ -8,7 +8,7 @@ The PHP version of Pattern Lab is, at its core, a static site generator. It comb
 
 ## Demo
 
-You can play with a demo of the front-end of Pattern Lab at [demo.patternlab.io](http://demo.patternlab.io).
+You can play with a demo of the front-end of Pattern Lab at [oikeusministerio.github.io/tyylit](http://oikeusministerio.github.io/tyylit).
 
 ## Getting Started
 
