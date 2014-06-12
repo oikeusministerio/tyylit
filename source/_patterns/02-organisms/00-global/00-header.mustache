@@ -1,28 +1,31 @@
 <!-- Begin .header -->
 <header class="header cf" role="banner">
-	<div class="element-group">
-		<!-- Use mobile trigger (molecules-responsive-dropdown) here to keep it in place when menus are open. -->
-		{{> atoms-mobile-nav-trigger }}
-		{{#loggedin}}
-			{{> molecules-loggedin }}
-		{{/loggedin}}
-		{{^loggedin}}
-			{{> molecules-login }}			
-		{{/loggedin}}		
-	</div>
-	<section class="responsive-modifier-block">
-		{{> molecules-search }}
-		<div class="element-group nav-container">
-			{{> molecules-dropdown-nav }}
-		</div>
-		<div class="element-group">
-			<div class="inner-block align-left">
-				{{> atoms-logo }}
-			</div>
-			<div class="inner-block align-right">
-				{{> molecules-lang-sel }}
-			</div>
-		</div>
-	</section>
+  <div class="header-wrapper">
+    <div class="element-group">
+      <!-- Use mobile trigger (molecules-responsive-dropdown) here to keep it in place when menus are open. -->
+      {{> atoms-mobile-nav-trigger }}
+      {{#loggedin}}
+      {{> molecules-loggedin }}
+      {{/loggedin}}
+      {{^loggedin}}
+      {{> molecules-login }}
+      {{/loggedin}}
+    </div>
+
+    <section class="responsive-modifier-block">
+      {{> molecules-search }}
+      <div class="element-group nav-container">
+        {{> molecules-dropdown-nav }}
+      </div>
+      <div class="element-group">
+        <div class="inner-block align-left">
+          {{> atoms-logo }}
+        </div>
+        <div class="inner-block align-right">
+          {{> molecules-lang-sel }}
+        </div>
+      </div>
+    </section>
+  </div>
 </header>
 <!-- End .header -->

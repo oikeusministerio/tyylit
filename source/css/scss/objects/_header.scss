@@ -1,4 +1,4 @@
-@media screen and (max-width: 440px){
+﻿@media screen and (max-width: 440px){
 	.header.loggedin{
 		.search-form {
 			max-width: 50%;
@@ -21,10 +21,9 @@
 	}
 }
 
-.header {
-	background: $white;
+.header {	
 	position: relative;
-	padding: 0;
+	padding: 0 $pad-half;
 
 	@extend .lc;
 
@@ -86,6 +85,8 @@
 
 	.responsive-modifier-block{
 		position: static;
+		padding-left: 12px;
+		padding-right: 12px;
 
 		@media #{$tablet}{
 			position: relative;
@@ -120,6 +121,10 @@
 			padding-right: 2em;
 		}
 	}
+}
+.header-wrapper
+{
+	background: none repeat scroll 0% 0% white;
 }
 .header-logo{
 	color: $text-color;

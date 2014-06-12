@@ -120,13 +120,14 @@
 
 		text-indent: 4px;
 		left: auto;
-		right: 15px;
+		right: 12px;
 	}
 
 	&.left{
 		@extend .icon-arrow-back;
 
 		text-indent: -2px;
+		left: 12px;
 	}
 
 	&:hover, &:focus
@@ -178,7 +179,7 @@
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
 	bottom: 0;
 	left: 0;
-	padding: 15px;
+	padding: 15px 12px;
 	position: absolute;
 	right: 0;
 	text-align: left;
