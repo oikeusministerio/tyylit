@@ -3183,6 +3183,9 @@ td {
     padding-top: 1em;
   }
 }
+.admin-tools input {
+  margin: 0.1em 0;
+}
 
 @media screen and (min-width: 60em) {
   .hanke-form {

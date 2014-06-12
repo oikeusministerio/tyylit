@@ -108,7 +108,12 @@
 	@media #{$laptop} {
 		padding-top: 1em;
 	}
+
+	input {
+		margin: 0.1em 0;
+	}
 }
+
 .hanke-form {
 	@media #{$laptop} {
 		margin-top: 3em;
