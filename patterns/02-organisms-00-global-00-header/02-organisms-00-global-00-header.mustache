@@ -1,28 +1,31 @@
 &lt;!-- Begin .header --&gt;
 &lt;header class=&quot;header cf&quot; role=&quot;banner&quot;&gt;
-	&lt;div class=&quot;element-group&quot;&gt;
-		&lt;!-- Use mobile trigger (molecules-responsive-dropdown) here to keep it in place when menus are open. --&gt;
-		{{&gt; atoms-mobile-nav-trigger }}
-		{{#loggedin}}
-			{{&gt; molecules-loggedin }}
-		{{/loggedin}}
-		{{^loggedin}}
-			{{&gt; molecules-login }}			
-		{{/loggedin}}		
-	&lt;/div&gt;
-	&lt;section class=&quot;responsive-modifier-block&quot;&gt;
-		{{&gt; molecules-search }}
-		&lt;div class=&quot;element-group nav-container&quot;&gt;
-			{{&gt; molecules-dropdown-nav }}
-		&lt;/div&gt;
-		&lt;div class=&quot;element-group&quot;&gt;
-			&lt;div class=&quot;inner-block align-left&quot;&gt;
-				{{&gt; atoms-logo }}
-			&lt;/div&gt;
-			&lt;div class=&quot;inner-block align-right&quot;&gt;
-				{{&gt; molecules-lang-sel }}
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/section&gt;
+  &lt;div class=&quot;header-wrapper&quot;&gt;
+    &lt;div class=&quot;element-group&quot;&gt;
+      &lt;!-- Use mobile trigger (molecules-responsive-dropdown) here to keep it in place when menus are open. --&gt;
+      {{&gt; atoms-mobile-nav-trigger }}
+      {{#loggedin}}
+      {{&gt; molecules-loggedin }}
+      {{/loggedin}}
+      {{^loggedin}}
+      {{&gt; molecules-login }}
+      {{/loggedin}}
+    &lt;/div&gt;
+
+    &lt;section class=&quot;responsive-modifier-block&quot;&gt;
+      {{&gt; molecules-search }}
+      &lt;div class=&quot;element-group nav-container&quot;&gt;
+        {{&gt; molecules-dropdown-nav }}
+      &lt;/div&gt;
+      &lt;div class=&quot;element-group&quot;&gt;
+        &lt;div class=&quot;inner-block align-left&quot;&gt;
+          {{&gt; atoms-logo }}
+        &lt;/div&gt;
+        &lt;div class=&quot;inner-block align-right&quot;&gt;
+          {{&gt; molecules-lang-sel }}
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  &lt;/div&gt;
 &lt;/header&gt;
 &lt;!-- End .header --&gt;
