@@ -329,6 +329,106 @@ input[type="search"]::-webkit-search-decoration {
 	.picker__table{ margin-bottom: $pad-half; }
 }
 
+.edit-hanke-form, .show-hanke-form {
+	.hanke-img-container {
+		width: 100%;
+		max-width: 1200px;
+		min-width: 350px;
+		max-height: 700px;
+		min-height: 175px;
+		position: relative;
+		margin-bottom: 1em;
 
+		.edit-bg {
+			position: absolute;
+			bottom: 1em;
+			right: 1em;
+		}
 
+		.logo-container {
+			position: absolute;
+			width: 12em;
+			margin-left: 1em;
+			bottom: 1em;
+		
+			@media #{$tablet} {
+				margin-left: 3em;
+				bottom: 3em;
+			}
 
+			@media #{$laptop} {
+				margin-left: 3em;
+				bottom: -8em;
+			}
+
+			input.edit-logo {
+				position: absolute;
+				text-align: center;
+				bottom: 1em;
+				left: 1em;
+			}
+		
+			.edit-logo {
+				position: absolute;
+				bottom: -2em;
+				left: 6em;
+				@media #{$tablet}{			
+					bottom: -3em;
+					left: 3em;			
+				}
+			}
+
+			img.hanke-logo {
+				max-width: 100px;
+				max-height: 100px;
+
+				@media #{$tablet} {
+					max-width: 150px;
+					max-height: 150px;
+				}
+
+				@media #{$laptop} {
+					max-width: 300px;
+					max-height: 300px;
+				}
+			} 
+		}
+	}
+	/* Basic setting for title */
+	.hanke-title {
+		width: 100%;
+		text-align: left;
+	
+		@media #{$laptop} {
+			padding-left: 23em;
+		}
+	}
+
+	.admin-tools {    
+		text-align: left;
+
+		@media #{$laptop} {
+			padding-top: 1em;
+		}
+
+		input {
+			margin: 0.1em 0;
+		}
+	}	
+}
+
+.edit-hanke-form {
+	/* Specialization of earlier declared hanke-title class */
+	.hanke-title {
+		@media #{$laptop} {
+			padding-right: 5em;
+		}
+	}
+	.hanke-form {
+		@media #{$laptop} {
+			margin-top: 3em;
+			margin-left: 3em;
+			margin-right: 5em;
+		}
+	}
+}

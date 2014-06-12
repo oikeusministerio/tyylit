@@ -663,6 +663,111 @@ input[type="search"]::-webkit-search-decoration {
   margin-bottom: 0.5em;
 }
 
+.edit-hanke-form, .show-hanke-form {
+  /* Basic setting for title */
+}
+.edit-hanke-form .hanke-img-container, .show-hanke-form .hanke-img-container {
+  width: 100%;
+  max-width: 1200px;
+  min-width: 350px;
+  max-height: 700px;
+  min-height: 175px;
+  position: relative;
+  margin-bottom: 1em;
+}
+.edit-hanke-form .hanke-img-container .edit-bg, .show-hanke-form .hanke-img-container .edit-bg {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+.edit-hanke-form .hanke-img-container .logo-container, .show-hanke-form .hanke-img-container .logo-container {
+  position: absolute;
+  width: 12em;
+  margin-left: 1em;
+  bottom: 1em;
+}
+@media screen and (min-width: 48em) {
+  .edit-hanke-form .hanke-img-container .logo-container, .show-hanke-form .hanke-img-container .logo-container {
+    margin-left: 3em;
+    bottom: 3em;
+  }
+}
+@media screen and (min-width: 60em) {
+  .edit-hanke-form .hanke-img-container .logo-container, .show-hanke-form .hanke-img-container .logo-container {
+    margin-left: 3em;
+    bottom: -8em;
+  }
+}
+.edit-hanke-form .hanke-img-container .logo-container input.edit-logo, .show-hanke-form .hanke-img-container .logo-container input.edit-logo {
+  position: absolute;
+  text-align: center;
+  bottom: 1em;
+  left: 1em;
+}
+.edit-hanke-form .hanke-img-container .logo-container .edit-logo, .show-hanke-form .hanke-img-container .logo-container .edit-logo {
+  position: absolute;
+  bottom: -2em;
+  left: 6em;
+}
+@media screen and (min-width: 48em) {
+  .edit-hanke-form .hanke-img-container .logo-container .edit-logo, .show-hanke-form .hanke-img-container .logo-container .edit-logo {
+    bottom: -3em;
+    left: 3em;
+  }
+}
+.edit-hanke-form .hanke-img-container .logo-container img.hanke-logo, .show-hanke-form .hanke-img-container .logo-container img.hanke-logo {
+  max-width: 100px;
+  max-height: 100px;
+}
+@media screen and (min-width: 48em) {
+  .edit-hanke-form .hanke-img-container .logo-container img.hanke-logo, .show-hanke-form .hanke-img-container .logo-container img.hanke-logo {
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
+@media screen and (min-width: 60em) {
+  .edit-hanke-form .hanke-img-container .logo-container img.hanke-logo, .show-hanke-form .hanke-img-container .logo-container img.hanke-logo {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+.edit-hanke-form .hanke-title, .show-hanke-form .hanke-title {
+  width: 100%;
+  text-align: left;
+}
+@media screen and (min-width: 60em) {
+  .edit-hanke-form .hanke-title, .show-hanke-form .hanke-title {
+    padding-left: 23em;
+  }
+}
+.edit-hanke-form .admin-tools, .show-hanke-form .admin-tools {
+  text-align: left;
+}
+@media screen and (min-width: 60em) {
+  .edit-hanke-form .admin-tools, .show-hanke-form .admin-tools {
+    padding-top: 1em;
+  }
+}
+.edit-hanke-form .admin-tools input, .show-hanke-form .admin-tools input {
+  margin: 0.1em 0;
+}
+
+.edit-hanke-form {
+  /* Specialization of earlier declared hanke-title class */
+}
+@media screen and (min-width: 60em) {
+  .edit-hanke-form .hanke-title {
+    padding-right: 5em;
+  }
+}
+@media screen and (min-width: 60em) {
+  .edit-hanke-form .hanke-form {
+    margin-top: 3em;
+    margin-left: 3em;
+    margin-right: 5em;
+  }
+}
+
 /*------------------------------------*\
     $Table
 \*------------------------------------*/
@@ -3121,100 +3226,6 @@ td {
 
 .content-item.large {
   width: 100%;
-}
-
-.hanke-img-container {
-  width: 100%;
-  max-width: 1200px;
-  min-width: 350px;
-  max-height: 700px;
-  min-height: 175px;
-  position: relative;
-  margin-bottom: 1em;
-}
-.hanke-img-container .edit-bg {
-  position: absolute;
-  bottom: 1em;
-  right: 1em;
-}
-.hanke-img-container .logo-container {
-  position: absolute;
-  width: 12em;
-  margin-left: 1em;
-  bottom: 1em;
-}
-@media screen and (min-width: 48em) {
-  .hanke-img-container .logo-container {
-    margin-left: 3em;
-    bottom: 3em;
-  }
-}
-@media screen and (min-width: 60em) {
-  .hanke-img-container .logo-container {
-    margin-left: 3em;
-    bottom: -8em;
-  }
-}
-.hanke-img-container .logo-container input.edit-logo {
-  position: absolute;
-  text-align: center;
-  bottom: 1em;
-  left: 1em;
-}
-.hanke-img-container .logo-container .edit-logo {
-  position: absolute;
-  bottom: -2em;
-  left: 6em;
-}
-@media screen and (min-width: 48em) {
-  .hanke-img-container .logo-container .edit-logo {
-    bottom: -3em;
-    left: 3em;
-  }
-}
-.hanke-img-container .logo-container img.hanke-logo {
-  max-width: 100px;
-  max-height: 100px;
-}
-@media screen and (min-width: 48em) {
-  .hanke-img-container .logo-container img.hanke-logo {
-    max-width: 150px;
-    max-height: 150px;
-  }
-}
-@media screen and (min-width: 60em) {
-  .hanke-img-container .logo-container img.hanke-logo {
-    max-width: 300px;
-    max-height: 300px;
-  }
-}
-
-.hanke-title {
-  width: 100%;
-  text-align: left;
-}
-@media screen and (min-width: 60em) {
-  .hanke-title {
-    padding-left: 23em;
-  }
-}
-
-.admin-tools {
-  text-align: left;
-}
-@media screen and (min-width: 60em) {
-  .admin-tools {
-    padding-top: 1em;
-  }
-}
-.admin-tools input {
-  margin: 0.1em 0;
-}
-
-@media screen and (min-width: 60em) {
-  .hanke-form {
-    margin-top: 3em;
-  }
 }
 
 .project-search .block-element {
