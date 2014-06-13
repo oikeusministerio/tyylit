@@ -94,25 +94,15 @@
 	}
 }
 
-.carousel-control
-{
-	background: none repeat scroll 0 0 #222222;
-	border: 1px solid #FFFFFF;
+.carousel-control {
 	color: #FFFFFF;
-	font-size: 24px;
+	font-size: 40px;
 	text-align: center;
-
 	margin-top: -20px;
 	opacity: 0.66;
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	left: 15px;
-
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
-	border-radius: 15px;
-
 
 	&.right
 	{
@@ -129,6 +119,16 @@
 		text-indent: -2px;
 		left: 12px;
 	}
+
+	&.right::before {
+		font-family: ok-icons;
+		content: "\E105";
+	}
+
+	&.left::before {
+		font-family: ok-icons;
+		content: "\E108";
+	}	
 
 	&:hover, &:focus
 	{
@@ -149,41 +149,29 @@
 	vertical-align: middle;
 	background-color: transparent;
 	text-align: center;
-
-	@media #{$laptop} {			
-		margin: -25px auto 0;
-	}
-		
+	font-size: 24px;
+	
 	li
 	{
-		background-color: rgba(255, 255, 255, 0.25);
-		border-radius: 15px;
 		display: inline-block;
 		cursor: pointer;
 		float: none;
-		height: 24px;
-		text-indent: -999px;
-		width: 24px;
-		margin: 0 5px;
-		-webkit-box-shadow: 0 0 3px 1px rgba(0,0,0,.2);
-		box-shadow: 0 0 3px 1px rgba(0,0,0,.2);
-		
-		@media #{$laptop} {			
-			border-radius: 5px;			
-			height: 10px;
-			width: 10px;
-			margin: 0 1px;
-		}
+		margin-left: 0.5em;
+	}	
+	li::before {
+		font-family: ok-icons;
+		content: "\E010";
 	}
-
+	 
 	.active
 	{
 		background-color: $gray-light;
 	}
-
-	&.inverse-color .active{
-		background-color: $gray;
-	}
+	.active::before {
+		font-family: ok-icons;
+		color:white;
+		content: "\E010";
+	}	
 }
 .carousel-caption
 {
@@ -210,9 +198,6 @@
 	p
 	{
 		margin-bottom: 15px;
-		@media #{$laptop} {	
-			margin-bottom: 8px;
-		}
 	}
 }
 
