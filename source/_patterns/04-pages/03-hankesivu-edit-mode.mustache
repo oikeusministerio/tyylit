@@ -4,10 +4,18 @@
     <h1>Muokkaa hanketta</h1>
     <div class="hanke-img-container">
       <img src="../../images/fpo_16x9.png" alt="Taustakuva" class="hanke-bg" />
-      <input class="btn edit-bg" type="submit" value="Vaihda taustakuva" />
+      <div class="edit-bg icon-container">
+        <span>
+          <input type="submit" value="Vaihda taustakuva" />
+        </span>
+      </div>
       <div class="logo-container">
         <img src="../../images/fpo_avatar.png" alt="Logo" class="hanke-logo" />
-        <input class="btn edit-logo" type="submit" value="Vaihda logo" />
+        <div class="edit-logo icon-container">
+          <span>
+            <input type="submit" value="Vaihda logo" />
+          </span>
+        </div>
       </div>
     </div>
     <div class="form-element text-el hanke-title">
@@ -186,17 +194,17 @@
           <span>
             Olen tutustunut <a href="#">palvelun sääntöihin</a> ja vakuutan annettujen tietojen olevan todenmukaisia*
           </span>
-          <ul class="btn-group">
+          <ul id="rblAcceptTerms" class="btn-group">
             <li>
-              <input id="rbl0" type="radio" name="group1" value="0" checked />
-              <label for="rbl0">En hyväksy ehtoja</label>
+              <input id="rblIDontAcceptTerms" type="radio" name="group2" value="0" checked="" />
+              <label for="rblIDontAcceptTerms">En hyväksy ehtoja</label>
             </li>
             <li>
-              <input id="rbl1" type="radio" name="group1" value="1" />
-              <label for="rbl1">Hyväksyn ehdot</label>
+              <input id="rblTermsAccepted" type="radio" name="group2" value="1" />
+              <label for="rblTermsAccepted">Hyväksyn ehdot</label>
             </li>
           </ul>
-          <input type="submit" class="btn btn-otk" value="Tallenna muutokset" />
+          <input id="btnSaveHanke" type="submit" class="btn" value="Tallenna muutokset" disabled="" />
         </div>
       </div>
     </div>

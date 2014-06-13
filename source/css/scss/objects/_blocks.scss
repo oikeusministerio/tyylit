@@ -398,7 +398,8 @@
 		position: absolute;
 		right: 5px;
 		top: 10px;
-
+		font-size: 1.5em;
+		
 		&:before{
 			color: lighten($text-color, 10%);
 			&:hover, &:active{

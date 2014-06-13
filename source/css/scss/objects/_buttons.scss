@@ -27,7 +27,7 @@
 		color: $white;
 	}
 
-	&.disabled {
+	&.disabled, &:disabled {
 		background: $gray-light;
 		color: rgba(128, 128, 128, 0.6);
 		cursor: default;

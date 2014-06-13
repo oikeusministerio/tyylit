@@ -361,7 +361,10 @@ i{
 }
 .om-enter:before{
 	content: "\E067";
-	font-size: 1.5em;
+}
+.om-pencil:before {
+	content: "\E032";
+	@extend .om;
 }
 
 

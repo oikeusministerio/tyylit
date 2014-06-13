@@ -342,7 +342,7 @@ input[type="search"]::-webkit-search-decoration {
 		.edit-bg {
 			position: absolute;
 			bottom: 1em;
-			right: 1em;
+			right: 1em;			
 		}
 
 		.logo-container {
@@ -361,20 +361,14 @@ input[type="search"]::-webkit-search-decoration {
 				bottom: -8em;
 			}
 
-			input.edit-logo {
-				position: absolute;
-				text-align: center;
-				bottom: 1em;
-				left: 1em;
-			}
-		
 			.edit-logo {
 				position: absolute;
-				bottom: -2em;
-				left: 6em;
-				@media #{$tablet}{			
-					bottom: -3em;
-					left: 3em;			
+				text-align: center;
+				bottom: 0;
+				left: 0;
+				@media #{$tablet} {
+					bottom: 1em;
+					left: 1em;
 				}
 			}
 
@@ -434,15 +428,26 @@ input[type="search"]::-webkit-search-decoration {
 	.fadeout {
 		max-height: 25em;
 	}
+	
+	.icon-container {
+		background-color: #f0f0f0;
+		
+		input[type="submit"] {
+			background-color: transparent;
+			padding-left: 2em;
+			border: 0;
+		}
 
-	.edit-button{
-		text-align: right;
+		span {
+			position: relative;
+		}
 
-		&:after{
-			display: inline-block;
-			margin: 0 5px;
-
-			@extend .icon-edit-pen;
+		span:before {
+			@extend .om-pencil;
+			font-size: 24px;
+			position: absolute;
+			left: 0.5em;
+			top: 0;
 		}
 	}
 
