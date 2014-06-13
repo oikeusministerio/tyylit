@@ -91,7 +91,7 @@
         </div>
       </div>
       <!-- Optional field those will be fadeout -->
-      <div class="fadeout">
+      <div class="fadeout clickable">
         <div id="hanke-attachments" class="content-item large">
           <h3>Liitteet</h3>
           <div id="hanke-add-attachment">
@@ -138,33 +138,19 @@
         </div>
         <div id="hanke-links" class="content-item large">
           <h3>Linkit</h3>
-          <div class="hanke-link-list">
-            <div class="hanke-link-item">
-              <div class="form-element text-el">
+          <div class="semantic-list">
+            <ol>
+              <li>
                 <input placeholder="http://" maxlength="200" value="http://www.google.com" />
-              </div>
-              <div class="form-element text-el">
-                <input placeholder="Kuvaus" maxlength="100" value="Hakukone" />
-              </div>
-            </div>
-            <div class="hanke-link-item cf">
-              <div class="form-element text-el">
+                <input placeholder="Kirjoita linkin kuvaus..." maxlength="100" value="Suosittu hakukone" />
+              </li>
+              <li>
                 <input placeholder="http://" maxlength="200" />
-              </div>
-              <div class="form-element text-el">
-                <input placeholder="Kuvaus" maxlength="100" />
-              </div>
-            </div>
-            <div class="hanke-link-item cf">
-              <div class="form-element text-el">
-                <input placeholder="http://" maxlength="200" />
-              </div>
-              <div class="form-element text-el">
-                <input placeholder="Kuvaus" maxlength="100" />
-              </div>
-            </div>
+                <input placeholder="Kirjoita linkin kuvaus..." maxlength="100" />
+              </li>
+            </ol>
           </div>
-          <input class="btn btn-otk" type="submit" value="Lisää linkki" />
+          <input id="btnAddHankeLink" class="btn btn-otk" type="submit" value="Lisää linkki" />
         </div>
         <div id="hanke-locations" class="content-item large">
           <h3>Paikkakunnat</h3>
@@ -186,11 +172,16 @@
           <a href="#">Näytä valinnaiset lisätiedot</a>
         </p>
       </div>
-      <div id="hanke-save" class="content-item large">
-        <input type="checkbox">
-          Olen tutustunut <a href="#">palvelun sääntöihin</a> ja vakuutan annettujen tietojen olevan todenmukaisia*
-        </input>
-        <input type="submit" class="btn btn-otk" value="Tallenna muutokset" />
+      <div id="hanke-save" class="content-item large center">
+        <div>
+          <input type="checkbox"></input>
+          <div class="terms">
+            <span>
+              Olen tutustunut <a href="#">palvelun sääntöihin</a> ja vakuutan annettujen tietojen olevan todenmukaisia*
+            </span>
+            <input type="submit" class="btn btn-otk" value="Tallenna muutokset" />
+          </div>
+        </div>
       </div>
     </div>
   </section><!--End role=main-->

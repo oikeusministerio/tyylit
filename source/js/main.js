@@ -92,9 +92,9 @@ if( $('.btn-group').length ){
 
 	$("textarea, input").each(function() {
 		if ( $(this).attr("maxlength") && !$(this).hasClass('search-field') ){
-			var ti = $(this);
-			var tip = ti.parent();
+			var ti = $(this);			
 			ti.wrap('<div style="position: relative;"></div>');
+			var tip = ti.parent();
 			ti.after('<span class="textarea-word-count inactive"></span>');
 			maxlength = ti.attr("maxlength");
 			reallength = maxlength - ti.val().length;
@@ -197,7 +197,7 @@ if( $('.header').find('.js-expand-search').length && $('.search-field').css('dis
 if( $('.fadeout').length ){
 	var orig_text;
 
-	$('.fadeout').each( function(){
+	$('.fadeout').each(function () {
 		// console.log( $(this).children(":first")[0].clientHeight );
 		if( $(this).children(":first")[0].clientHeight < 160){
 			$(this).parent().addClass('open');
@@ -205,8 +205,7 @@ if( $('.fadeout').length ){
 			$(this).parent().find('.read-more').remove();
 		}
 	});
-
-
+    
 	$('.read-more').find('a').click( function(event) {
 		event.preventDefault();
 
@@ -484,4 +483,12 @@ $("#btnAddParticipation").click(function () {
 $("#btnCancelParticipation").click(function () {
 	$("#showParticipations").show();
 	$("#addParticipations").hide();
+});
+
+// Hankesivu-edit-mode
+// NOTE: This is only for patternlab. In prod this will done by server code
+//       And new li will not have counter but when populated by server then
+//       it will be added automatically because of postback
+$("#btnAddHankeLink").click(function () {
+    $("#hanke-links ol").append('<li><div><input placeholder="http://" maxlength="200" /></div><div><input placeholder="Kirjoita linkin kuvaus..." maxlength="100" /></div></li>');
 });
