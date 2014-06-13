@@ -785,28 +785,22 @@ input[type="search"]::-webkit-search-decoration {
 }
 .edit-hanke-form .center div {
   margin: 0 auto;
-  padding: 0.5em 0;
-  width: 24em;
-  position: relative;
+  padding: 1em 1em;
+  width: 50%;
 }
-.edit-hanke-form .center div input[type="checkbox"] {
-  position: absolute;
-  left: 0;
-  margin-right: 1em;
-  top: 1em;
-}
-.edit-hanke-form .center div .terms {
-  display: inline-block;
-  height: 100%;
-  margin-left: 2em;
-}
-.edit-hanke-form .center div .terms .span {
+.edit-hanke-form .center .span {
   height: 2em;
+  text-align: center;
 }
-.edit-hanke-form .center div .terms input[type="submit"] {
+.edit-hanke-form .center ul {
+  width: 21em;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+.edit-hanke-form .center input[type="submit"] {
   display: block;
   margin-top: 1em;
-  width: 21em;
+  width: 100%;
 }
 
 /*------------------------------------*\
@@ -3020,7 +3014,7 @@ td {
 .btn-group {
   margin-bottom: 25px;
 }
-.btn-group a, .btn-group button, .btn-group input[type="submit"] {
+.btn-group a, .btn-group button, .btn-group input[type="submit"], .btn-group li {
   padding: 0.5em 1em;
   float: left;
   color: #444444;
@@ -3032,11 +3026,11 @@ td {
   text-decoration: none;
   margin-bottom: 0.25em;
 }
-.btn-group a.active, .btn-group button.active, .btn-group input[type="submit"].active {
+.btn-group a.active, .btn-group button.active, .btn-group input[type="submit"].active, .btn-group li.active {
   background-color: #2fc090;
   color: white;
 }
-.btn-group a:first-child, .btn-group button:first-child, .btn-group input[type="submit"]:first-child {
+.btn-group a:first-child, .btn-group button:first-child, .btn-group input[type="submit"]:first-child, .btn-group li:first-child {
   border-left: 1px solid #ccc;
   -webkit-border-top-right-radius: 0;
   -webkit-border-bottom-right-radius: 0;
@@ -3054,7 +3048,7 @@ td {
   -moz-background-clip: padding;
   background-clip: padding-box;
 }
-.btn-group a:last-child, .btn-group button:last-child, .btn-group input[type="submit"]:last-child {
+.btn-group a:last-child, .btn-group button:last-child, .btn-group input[type="submit"]:last-child, .btn-group li:last-child {
   border-right: 1px solid #ccc;
   -webkit-border-top-right-radius: 2px;
   -webkit-border-bottom-right-radius: 2px;
@@ -3072,7 +3066,7 @@ td {
   -moz-background-clip: padding;
   background-clip: padding-box;
 }
-.btn-group a .count, .btn-group button .count, .btn-group input[type="submit"] .count {
+.btn-group a .count, .btn-group button .count, .btn-group input[type="submit"] .count, .btn-group li .count {
   display: block;
   text-align: center;
   line-height: 1;

@@ -128,7 +128,7 @@
 	@extend .cf;
 	margin-bottom: 25px;
 
-	a, button, input[type="submit"]{
+	a, button, input[type="submit"], li{
 		padding: $pad/2 $pad;
 		float: left;
 		color: $text-color;

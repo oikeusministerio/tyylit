@@ -40,53 +40,62 @@
           <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Hankkeen näkyvyys*</span>
           <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
         </div>
-        <span class="select-style">
-          <span class="border-fix">
-            <select id="" class="btn-group">
-              <option selected="selected" value="0">Julkinen/näkyy kaikille</option>
-              <option value="1">Vain kutsutuille</option>
-            </select>
-          </span>
-        </span>
+        <ul class="btn-group">
+          <li>
+            <input id="rbl0" type="radio" name="group1" value="0" />
+            <label for="rbl0">Julkinen/näkyy kaikille</label>
+          </li>
+          <li>
+            <input id="rbl1" type="radio" name="group1" value="1" />
+            <label for="rbl1">Vain kutsutuille</label>
+          </li>
+        </ul>
       </div>
       <div id="hanke-publish" class="content-item large">
         <div class="helper-container">
           <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Hankkeen julkaisun tila*</span>
           <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
         </div>
-        <span class="select-style">
-          <span class="border-fix">
-            <select id="" class="btn-group">
-              <option selected="selected" value="0">Suunnitteilla</option>
-              <option value="1">Julkaistu</option>
-              <option value="2">Peruttu</option>
-            </select>
-          </span>
-        </span>
+        <ul class="btn-group">
+          <li>
+            <input id="rbl10" type="radio" name="group2" value="0" />
+            <label for="rbl10">Suunnitteilla</label>
+          </li>
+          <li>
+            <input id="rbl11" type="radio" name="group2" value="1" />
+            <label for="rbl11">Julkaistu</label>
+          </li>
+          <li>
+            <input id="rbl12" type="radio" name="group2" value="2" />
+            <label for="rbl12">Peruttu</label>
+          </li>
+        </ul>
       </div>
       <div id="hanke-date" class="content-item large">
         <div class="helper-container">
-          <h3 class="icon-help" title="Example tip text." placement="top">Hankkeen aikataulu*</h3>
+          <span class="icon-help" title="Example tip text." placement="top">Hankkeen aikataulu*</span>
+          <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+        </div>
+        <div class="event-date-container responsive-block-list">
+          <div class="form-element date-element left-block inline-element">
+            <label for="date-picker">Hankkeen alkupvm.</label>
+            <input type="text" id="date-picker" class="datepicker" value="1.6.2014" />
+          </div>
+          <div class="form-element date-element right-block inline-element">
+            <label for="date-picker">Hankkeen loppupvm.</label>
+            <input type="text" id="date-picker" class="datepicker" value="14.5.2015"/>
+          </div>
+        </div>
+      </div>
+      <div id="hanke-date" class="content-item large">
+        <div class="helper-container">
+          <span class="icon-help" title="Example tip text." placement="top">Hankkeen yhteenvedon julkaisu*</span>
           <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
         </div>
         <div class="event-date-container">
           <div class="form-element date-element left-block">
-            <label for="date-picker">Hankkeen alkupvm.</label>
-            <input type="text" id="date-picker" class="datepicker" value="1.6.2014" />
-          </div>
-          <div class="form-element date-element right-block">
-            <label for="date-picker">Hankkeen loppupvm.</label>
+            <label for="date-picker">Yhteenvedon julkaisupvm.</label>
             <input type="text" id="date-picker" class="datepicker" value="14.5.2015" />
-          </div>
-          <div class="helper-container">
-            <span class="icon-help" title="Example tip text." placement="top">Hankkeen yhteenvedon julkaisu*</span>
-            <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
-          </div>
-          <div class="event-date-container">
-            <div class="form-element date-element left-block">
-              <label for="date-picker">Yhteenvedon julkaisupvm.</label>
-              <input type="text" id="date-picker" class="datepicker" value="14.5.2015" />
-            </div>
           </div>
         </div>
       </div>
@@ -174,13 +183,20 @@
       </div>
       <div id="hanke-save" class="content-item large center">
         <div>
-          <input type="checkbox"></input>
-          <div class="terms">
-            <span>
-              Olen tutustunut <a href="#">palvelun sääntöihin</a> ja vakuutan annettujen tietojen olevan todenmukaisia*
-            </span>
-            <input type="submit" class="btn btn-otk" value="Tallenna muutokset" />
-          </div>
+          <span>
+            Olen tutustunut <a href="#">palvelun sääntöihin</a> ja vakuutan annettujen tietojen olevan todenmukaisia*
+          </span>
+          <ul class="btn-group">
+            <li>
+              <input id="rbl0" type="radio" name="group1" value="0" checked />
+              <label for="rbl0">En hyväksy ehtoja</label>
+            </li>
+            <li>
+              <input id="rbl1" type="radio" name="group1" value="1" />
+              <label for="rbl1">Hyväksyn ehdot</label>
+            </li>
+          </ul>
+          <input type="submit" class="btn btn-otk" value="Tallenna muutokset" />
         </div>
       </div>
     </div>

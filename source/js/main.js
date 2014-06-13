@@ -90,29 +90,33 @@ if( $('.btn-group').length ){
 		});
 	}*/
 
+	function setCounter(item) {
+	    if ( $(item).attr("maxlength") && !$(item).hasClass('search-field') ){
+	        var ti = $(item);			
+	        ti.wrap('<div style="position: relative;"></div>');
+	        var tip = ti.parent();
+	        ti.after('<span class="textarea-word-count inactive"></span>');
+	        maxlength = ti.attr("maxlength");
+	        reallength = maxlength - ti.val().length;
+	        tip.find(".textarea-word-count").text(reallength);
+
+	        ti.keyup( function(){
+	            if ( tip.find(".textarea-word-count").hasClass("inactive") ) {
+	                tip.find(".textarea-word-count").removeClass("inactive");
+	            }
+	            maxlength = ti.attr("maxlength");
+	            reallength = maxlength - ti.val().length;
+	            tip.find(".textarea-word-count").text(reallength);
+
+	            if ( ti.is("textarea") && ti.hasClass("js-dynamic") ){
+	                ti.height(1).height( ti[0].scrollHeight );
+	            }
+	        });
+	    }
+	}
+
 	$("textarea, input").each(function() {
-		if ( $(this).attr("maxlength") && !$(this).hasClass('search-field') ){
-			var ti = $(this);			
-			ti.wrap('<div style="position: relative;"></div>');
-			var tip = ti.parent();
-			ti.after('<span class="textarea-word-count inactive"></span>');
-			maxlength = ti.attr("maxlength");
-			reallength = maxlength - ti.val().length;
-			tip.find(".textarea-word-count").text(reallength);
-
-			ti.keyup( function(){
-				if ( tip.find(".textarea-word-count").hasClass("inactive") ) {
-					tip.find(".textarea-word-count").removeClass("inactive");
-				}
-				maxlength = ti.attr("maxlength");
-				reallength = maxlength - ti.val().length;
-				tip.find(".textarea-word-count").text(reallength);
-
-				if ( ti.is("textarea") && ti.hasClass("js-dynamic") ){
-					ti.height(1).height( ti[0].scrollHeight );
-				}
-			});
-		}
+	    setCounter($(this));
 	});
 //}
 /*
@@ -487,8 +491,10 @@ $("#btnCancelParticipation").click(function () {
 
 // Hankesivu-edit-mode
 // NOTE: This is only for patternlab. In prod this will done by server code
-//       And new li will not have counter but when populated by server then
-//       it will be added automatically because of postback
 $("#btnAddHankeLink").click(function () {
-    $("#hanke-links ol").append('<li><div><input placeholder="http://" maxlength="200" /></div><div><input placeholder="Kirjoita linkin kuvaus..." maxlength="100" /></div></li>');
+    $("#hanke-links ol").append('<li><input class="counterhack" placeholder="http://" maxlength="200" /><input class="counterhack" placeholder="Kirjoita linkin kuvaus..." maxlength="100" /></li>');
+    $("#hanke-links ol .counterhack").each(function () {
+        setCounter($(this));
+        $(this).removeClass("counterhack");
+    });
 });

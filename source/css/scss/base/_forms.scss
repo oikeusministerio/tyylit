@@ -458,29 +458,22 @@ input[type="search"]::-webkit-search-decoration {
 	.center {
 		div {
 			margin: 0 auto;
-			padding: 0.5em 0;
-			width: 24em;
-			position: relative;
-
-			input[type="checkbox"] {
-				position: absolute;
-				left: 0;
-				margin-right: 1em;
-				top: 1em;
-			}
-			.terms {
-				display: inline-block;
-				height: 100%;
-				margin-left: 2em;
-				.span {
-					height: 2em;					
-				}
-				input[type="submit"] {
-					display: block;
-					margin-top: 1em;
-					width: 21em;
-				}
-			}			
+			padding: 1em 1em;
+			width: 50%;		
+		}
+		.span {
+			height: 2em;
+			text-align: center;
+		}
+		ul {
+			width: 21em;
+			margin: 0 auto;
+			margin-top: 1em;
+		}
+		input[type="submit"] {
+			display: block;
+			margin-top: 1em;
+			width: 100%;
 		}
 	}
 }
