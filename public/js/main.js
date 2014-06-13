@@ -498,3 +498,11 @@ $("#btnAddHankeLink").click(function () {
         $(this).removeClass("counterhack");
     });
 });
+
+$("#rblIDontAcceptTerms").click(function () {
+    $("#btnSaveHanke").attr("disabled", true).removeClass("btn-otk");
+});
+
+$("#rblTermsAccepted").click(function () {
+    $("#btnSaveHanke").attr("disabled", false).addClass("btn-otk");
+});

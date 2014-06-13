@@ -1,3 +1,4 @@
+@charset "CP850";
 /*
                                                 ,,            ,,                          ,,
  .M"""bgd mm                                    db          `7MM        mm         mm   `7MM                                    OO OO OO
@@ -698,21 +699,16 @@ input[type="search"]::-webkit-search-decoration {
     bottom: -8em;
   }
 }
-.edit-hanke-form .hanke-img-container .logo-container input.edit-logo, .show-hanke-form .hanke-img-container .logo-container input.edit-logo {
-  position: absolute;
-  text-align: center;
-  bottom: 1em;
-  left: 1em;
-}
 .edit-hanke-form .hanke-img-container .logo-container .edit-logo, .show-hanke-form .hanke-img-container .logo-container .edit-logo {
   position: absolute;
-  bottom: -2em;
-  left: 6em;
+  text-align: center;
+  bottom: 0;
+  left: 0;
 }
 @media screen and (min-width: 48em) {
   .edit-hanke-form .hanke-img-container .logo-container .edit-logo, .show-hanke-form .hanke-img-container .logo-container .edit-logo {
-    bottom: -3em;
-    left: 3em;
+    bottom: 1em;
+    left: 1em;
   }
 }
 .edit-hanke-form .hanke-img-container .logo-container img.hanke-logo, .show-hanke-form .hanke-img-container .logo-container img.hanke-logo {
@@ -770,12 +766,22 @@ input[type="search"]::-webkit-search-decoration {
 .edit-hanke-form .fadeout {
   max-height: 25em;
 }
-.edit-hanke-form .edit-button {
-  text-align: right;
+.edit-hanke-form .icon-container {
+  background-color: #f0f0f0;
 }
-.edit-hanke-form .edit-button:after {
-  display: inline-block;
-  margin: 0 5px;
+.edit-hanke-form .icon-container input[type="submit"] {
+  background-color: transparent;
+  padding-left: 2em;
+  border: 0;
+}
+.edit-hanke-form .icon-container span {
+  position: relative;
+}
+.edit-hanke-form .icon-container span:before {
+  font-size: 24px;
+  position: absolute;
+  left: 0.5em;
+  top: 0;
 }
 @media screen and (min-width: 48em) {
   .edit-hanke-form .semantic-list div {
@@ -2154,7 +2160,7 @@ td {
   width: 23px;
   text-align: center;
 }
-.footer-nav .footer-nav-item:nth-child(2) li i.fa, .footer-nav .footer-nav-item:nth-child(2) li i.icon-ok:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-info:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-search:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-play:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-close:before, .footer-nav .footer-nav-item:nth-child(2) li .tagit-list .tagit-close i.ui-icon-close:before, .tagit-list .tagit-close .footer-nav .footer-nav-item:nth-child(2) li i.ui-icon-close:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-error:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-delete:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-warning:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-notify:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-add:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-lbulb:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-menu:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-menu-arrow:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-login:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-logout:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-register:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-mail:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-people:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-chart:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-arrow-back:before, .footer-nav .footer-nav-item:nth-child(2) li i.carousel-control.left:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-arrow-forward:before, .footer-nav .footer-nav-item:nth-child(2) li i.carousel-control.right:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-off:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-arrow:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-user:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-like:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-dislike:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-reply:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-tag:before, .footer-nav .footer-nav-item:nth-child(2) li .tagit-list i.tagit-new:before, .tagit-list .footer-nav .footer-nav-item:nth-child(2) li i.tagit-new:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-plus, .footer-nav .footer-nav-item:nth-child(2) li .attachment-form .attachment-container i.upload-file-button:before, .attachment-form .attachment-container .footer-nav .footer-nav-item:nth-child(2) li i.upload-file-button:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-edit-pen, .footer-nav .footer-nav-item:nth-child(2) li .attachment-form .attachment-edit i.edit-file-button:after, .attachment-form .attachment-edit .footer-nav .footer-nav-item:nth-child(2) li i.edit-file-button:after, .footer-nav .footer-nav-item:nth-child(2) li .edit-hanke-form i.edit-button:after, .edit-hanke-form .footer-nav .footer-nav-item:nth-child(2) li i.edit-button:after, .footer-nav .footer-nav-item:nth-child(2) li .event-section .event-header .edit-event i.edit:after, .event-section .event-header .edit-event .footer-nav .footer-nav-item:nth-child(2) li i.edit:after, .footer-nav .footer-nav-item:nth-child(2) li i.icon-process-arrow, .footer-nav .footer-nav-item:nth-child(2) li .header-tabs i.other-service:after, .header-tabs .footer-nav .footer-nav-item:nth-child(2) li i.other-service:after {
+.footer-nav .footer-nav-item:nth-child(2) li i.fa, .footer-nav .footer-nav-item:nth-child(2) li i.icon-ok:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-info:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-search:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-play:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-close:before, .footer-nav .footer-nav-item:nth-child(2) li .tagit-list .tagit-close i.ui-icon-close:before, .tagit-list .tagit-close .footer-nav .footer-nav-item:nth-child(2) li i.ui-icon-close:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-error:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-delete:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-warning:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-notify:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-add:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-lbulb:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-menu:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-menu-arrow:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-login:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-logout:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-register:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-mail:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-people:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-chart:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-arrow-back:before, .footer-nav .footer-nav-item:nth-child(2) li i.carousel-control.left:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-arrow-forward:before, .footer-nav .footer-nav-item:nth-child(2) li i.carousel-control.right:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-off:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-arrow:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-user:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-like:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-dislike:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-reply:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-tag:before, .footer-nav .footer-nav-item:nth-child(2) li .tagit-list i.tagit-new:before, .tagit-list .footer-nav .footer-nav-item:nth-child(2) li i.tagit-new:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-plus, .footer-nav .footer-nav-item:nth-child(2) li .attachment-form .attachment-container i.upload-file-button:before, .attachment-form .attachment-container .footer-nav .footer-nav-item:nth-child(2) li i.upload-file-button:before, .footer-nav .footer-nav-item:nth-child(2) li i.icon-edit-pen, .footer-nav .footer-nav-item:nth-child(2) li .attachment-form .attachment-edit i.edit-file-button:after, .attachment-form .attachment-edit .footer-nav .footer-nav-item:nth-child(2) li i.edit-file-button:after, .footer-nav .footer-nav-item:nth-child(2) li .event-section .event-header .edit-event i.edit:after, .event-section .event-header .edit-event .footer-nav .footer-nav-item:nth-child(2) li i.edit:after, .footer-nav .footer-nav-item:nth-child(2) li i.icon-process-arrow, .footer-nav .footer-nav-item:nth-child(2) li .header-tabs i.other-service:after, .header-tabs .footer-nav .footer-nav-item:nth-child(2) li i.other-service:after {
   font-size: 1.5em;
 }
 .footer-nav .footer-nav-item:nth-child(2) li span {
@@ -2468,20 +2474,20 @@ td {
   line-height: 2;
 }
 
-.fa, .icon-ok:before, .icon-info:before, .icon-search:before, .icon-play:before, .icon-close:before, .form-element .picker button.picker__button--clear:before, .tagit-list .tagit-close .ui-icon-close:before, .icon-error:before, .icon-delete:before, .icon-warning:before, .icon-notify:before, .icon-add:before, .icon-lbulb:before, .icon-menu:before, .icon-menu-arrow:before, .icon-login:before, .icon-logout:before, .icon-register:before, .icon-mail:before, .icon-people:before, .icon-chart:before, .icon-arrow-back:before, .carousel-control.left:before, .icon-arrow-forward:before, .carousel-control.right:before, .icon-off:before, .icon-arrow:before, .icon-user:before, .icon-like:before, .icon-dislike:before, .icon-reply:before, .icon-tag:before, .tagit-list .tagit-new:before, .icon-plus, .attachment-form .attachment-container .upload-file-button:before, .icon-edit-pen, .attachment-form .attachment-edit .edit-file-button:after, .edit-hanke-form .edit-button:after, .event-section .event-header .edit-event .edit:after, .icon-process-arrow, .process-nav li:before, .header-tabs .other-service:after {
+.fa, .icon-ok:before, .icon-info:before, .icon-search:before, .icon-play:before, .icon-close:before, .form-element .picker button.picker__button--clear:before, .tagit-list .tagit-close .ui-icon-close:before, .icon-error:before, .icon-delete:before, .icon-warning:before, .icon-notify:before, .icon-add:before, .icon-lbulb:before, .icon-menu:before, .icon-menu-arrow:before, .icon-login:before, .icon-logout:before, .icon-register:before, .icon-mail:before, .icon-people:before, .icon-chart:before, .icon-arrow-back:before, .carousel-control.left:before, .icon-arrow-forward:before, .carousel-control.right:before, .icon-off:before, .icon-arrow:before, .icon-user:before, .icon-like:before, .icon-dislike:before, .icon-reply:before, .icon-tag:before, .tagit-list .tagit-new:before, .icon-plus, .attachment-form .attachment-container .upload-file-button:before, .icon-edit-pen, .attachment-form .attachment-edit .edit-file-button:after, .event-section .event-header .edit-event .edit:after, .icon-process-arrow, .process-nav li:before, .header-tabs .other-service:after {
   font-family: FontAwesome;
 }
 
-.om, .icon-comment:before, .icon-help:after {
+.om, .icon-comment:before, .icon-help:after, .om-pencil:before, .edit-hanke-form .icon-container span:before {
   font-family: ok-icons;
 }
 
-.footer .om:before, .footer .icon-comment:before {
+.footer .om:before, .footer .icon-comment:before, .footer .om-pencil:before, .footer .edit-hanke-form .icon-container span:before, .edit-hanke-form .icon-container .footer span:before {
   vertical-align: sub;
   font-size: 2em;
 }
 
-.icon-style, i, .tagit-list .tagit-close .ui-icon-close, .fa, .icon-ok:before, .icon-info:before, .icon-search:before, .icon-play:before, .icon-close:before, .form-element .picker button.picker__button--clear:before, .tagit-list .tagit-close .ui-icon-close:before, .icon-error:before, .icon-delete:before, .icon-warning:before, .icon-notify:before, .icon-add:before, .icon-lbulb:before, .icon-menu:before, .icon-menu-arrow:before, .icon-login:before, .icon-logout:before, .icon-register:before, .icon-mail:before, .icon-people:before, .icon-chart:before, .icon-arrow-back:before, .carousel-control.left:before, .icon-arrow-forward:before, .carousel-control.right:before, .icon-off:before, .icon-arrow:before, .icon-user:before, .icon-like:before, .icon-dislike:before, .icon-reply:before, .icon-tag:before, .tagit-list .tagit-new:before, .icon-plus, .attachment-form .attachment-container .upload-file-button:before, .icon-edit-pen, .attachment-form .attachment-edit .edit-file-button:after, .edit-hanke-form .edit-button:after, .event-section .event-header .edit-event .edit:after, .icon-process-arrow, .process-nav li:before, .header-tabs .other-service:after, .om, .icon-comment:before, .icon-help:after {
+.icon-style, i, .tagit-list .tagit-close .ui-icon-close, .fa, .icon-ok:before, .icon-info:before, .icon-search:before, .icon-play:before, .icon-close:before, .form-element .picker button.picker__button--clear:before, .tagit-list .tagit-close .ui-icon-close:before, .icon-error:before, .icon-delete:before, .icon-warning:before, .icon-notify:before, .icon-add:before, .icon-lbulb:before, .icon-menu:before, .icon-menu-arrow:before, .icon-login:before, .icon-logout:before, .icon-register:before, .icon-mail:before, .icon-people:before, .icon-chart:before, .icon-arrow-back:before, .carousel-control.left:before, .icon-arrow-forward:before, .carousel-control.right:before, .icon-off:before, .icon-arrow:before, .icon-user:before, .icon-like:before, .icon-dislike:before, .icon-reply:before, .icon-tag:before, .tagit-list .tagit-new:before, .icon-plus, .attachment-form .attachment-container .upload-file-button:before, .icon-edit-pen, .attachment-form .attachment-edit .edit-file-button:after, .event-section .event-header .edit-event .edit:after, .icon-process-arrow, .process-nav li:before, .header-tabs .other-service:after, .om, .icon-comment:before, .icon-help:after, .om-pencil:before, .edit-hanke-form .icon-container span:before {
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -2490,16 +2496,16 @@ td {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
-.icon-style.size-s:before, i.size-s:before, .tagit-list .tagit-close .size-s.ui-icon-close:before, .fa.size-s:before, .size-s.icon-ok:before, .size-s.icon-info:before, .size-s.icon-search:before, .size-s.icon-play:before, .size-s.icon-close:before, .form-element .picker button.size-s.picker__button--clear:before, .tagit-list .tagit-close .size-s.ui-icon-close:before, .size-s.icon-error:before, .size-s.icon-delete:before, .size-s.icon-warning:before, .size-s.icon-notify:before, .size-s.icon-add:before, .size-s.icon-lbulb:before, .size-s.icon-menu:before, .size-s.icon-menu-arrow:before, .size-s.icon-login:before, .size-s.icon-logout:before, .size-s.icon-register:before, .size-s.icon-mail:before, .size-s.icon-people:before, .size-s.icon-chart:before, .size-s.icon-arrow-back:before, .size-s.carousel-control.left:before, .size-s.icon-arrow-forward:before, .size-s.carousel-control.right:before, .size-s.icon-off:before, .size-s.icon-arrow:before, .size-s.icon-user:before, .size-s.icon-like:before, .size-s.icon-dislike:before, .size-s.icon-reply:before, .size-s.icon-tag:before, .tagit-list .size-s.tagit-new:before, .size-s.icon-plus:before, .attachment-form .attachment-container .size-s.upload-file-button:before, .size-s.icon-edit-pen:before, .size-s.icon-process-arrow:before, .process-nav li.size-s:before, .om.size-s:before, .size-s.icon-comment:before {
+.icon-style.size-s:before, i.size-s:before, .tagit-list .tagit-close .size-s.ui-icon-close:before, .fa.size-s:before, .size-s.icon-ok:before, .size-s.icon-info:before, .size-s.icon-search:before, .size-s.icon-play:before, .size-s.icon-close:before, .form-element .picker button.size-s.picker__button--clear:before, .tagit-list .tagit-close .size-s.ui-icon-close:before, .size-s.icon-error:before, .size-s.icon-delete:before, .size-s.icon-warning:before, .size-s.icon-notify:before, .size-s.icon-add:before, .size-s.icon-lbulb:before, .size-s.icon-menu:before, .size-s.icon-menu-arrow:before, .size-s.icon-login:before, .size-s.icon-logout:before, .size-s.icon-register:before, .size-s.icon-mail:before, .size-s.icon-people:before, .size-s.icon-chart:before, .size-s.icon-arrow-back:before, .size-s.carousel-control.left:before, .size-s.icon-arrow-forward:before, .size-s.carousel-control.right:before, .size-s.icon-off:before, .size-s.icon-arrow:before, .size-s.icon-user:before, .size-s.icon-like:before, .size-s.icon-dislike:before, .size-s.icon-reply:before, .size-s.icon-tag:before, .tagit-list .size-s.tagit-new:before, .size-s.icon-plus:before, .attachment-form .attachment-container .size-s.upload-file-button:before, .size-s.icon-edit-pen:before, .size-s.icon-process-arrow:before, .process-nav li.size-s:before, .om.size-s:before, .size-s.icon-comment:before, .size-s.om-pencil:before, .edit-hanke-form .icon-container span.size-s:before {
   font-size: 12px;
 }
-.icon-style.size-l:before, i.size-l:before, .tagit-list .tagit-close .size-l.ui-icon-close:before, .fa.size-l:before, .size-l.icon-ok:before, .size-l.icon-info:before, .size-l.icon-search:before, .size-l.icon-play:before, .size-l.icon-close:before, .form-element .picker button.size-l.picker__button--clear:before, .tagit-list .tagit-close .size-l.ui-icon-close:before, .size-l.icon-error:before, .size-l.icon-delete:before, .size-l.icon-warning:before, .size-l.icon-notify:before, .size-l.icon-add:before, .size-l.icon-lbulb:before, .size-l.icon-menu:before, .size-l.icon-menu-arrow:before, .size-l.icon-login:before, .size-l.icon-logout:before, .size-l.icon-register:before, .size-l.icon-mail:before, .size-l.icon-people:before, .size-l.icon-chart:before, .size-l.icon-arrow-back:before, .size-l.carousel-control.left:before, .size-l.icon-arrow-forward:before, .size-l.carousel-control.right:before, .size-l.icon-off:before, .size-l.icon-arrow:before, .size-l.icon-user:before, .size-l.icon-like:before, .size-l.icon-dislike:before, .size-l.icon-reply:before, .size-l.icon-tag:before, .tagit-list .size-l.tagit-new:before, .size-l.icon-plus:before, .attachment-form .attachment-container .size-l.upload-file-button:before, .size-l.icon-edit-pen:before, .size-l.icon-process-arrow:before, .process-nav li.size-l:before, .om.size-l:before, .size-l.icon-comment:before {
+.icon-style.size-l:before, i.size-l:before, .tagit-list .tagit-close .size-l.ui-icon-close:before, .fa.size-l:before, .size-l.icon-ok:before, .size-l.icon-info:before, .size-l.icon-search:before, .size-l.icon-play:before, .size-l.icon-close:before, .form-element .picker button.size-l.picker__button--clear:before, .tagit-list .tagit-close .size-l.ui-icon-close:before, .size-l.icon-error:before, .size-l.icon-delete:before, .size-l.icon-warning:before, .size-l.icon-notify:before, .size-l.icon-add:before, .size-l.icon-lbulb:before, .size-l.icon-menu:before, .size-l.icon-menu-arrow:before, .size-l.icon-login:before, .size-l.icon-logout:before, .size-l.icon-register:before, .size-l.icon-mail:before, .size-l.icon-people:before, .size-l.icon-chart:before, .size-l.icon-arrow-back:before, .size-l.carousel-control.left:before, .size-l.icon-arrow-forward:before, .size-l.carousel-control.right:before, .size-l.icon-off:before, .size-l.icon-arrow:before, .size-l.icon-user:before, .size-l.icon-like:before, .size-l.icon-dislike:before, .size-l.icon-reply:before, .size-l.icon-tag:before, .tagit-list .size-l.tagit-new:before, .size-l.icon-plus:before, .attachment-form .attachment-container .size-l.upload-file-button:before, .size-l.icon-edit-pen:before, .size-l.icon-process-arrow:before, .process-nav li.size-l:before, .om.size-l:before, .size-l.icon-comment:before, .size-l.om-pencil:before, .edit-hanke-form .icon-container span.size-l:before {
   font-size: 24px;
 }
-.icon-style.size-xl:before, i.size-xl:before, .tagit-list .tagit-close .size-xl.ui-icon-close:before, .fa.size-xl:before, .size-xl.icon-ok:before, .size-xl.icon-info:before, .size-xl.icon-search:before, .size-xl.icon-play:before, .size-xl.icon-close:before, .form-element .picker button.size-xl.picker__button--clear:before, .tagit-list .tagit-close .size-xl.ui-icon-close:before, .size-xl.icon-error:before, .size-xl.icon-delete:before, .size-xl.icon-warning:before, .size-xl.icon-notify:before, .size-xl.icon-add:before, .size-xl.icon-lbulb:before, .size-xl.icon-menu:before, .size-xl.icon-menu-arrow:before, .size-xl.icon-login:before, .size-xl.icon-logout:before, .size-xl.icon-register:before, .size-xl.icon-mail:before, .size-xl.icon-people:before, .size-xl.icon-chart:before, .size-xl.icon-arrow-back:before, .size-xl.carousel-control.left:before, .size-xl.icon-arrow-forward:before, .size-xl.carousel-control.right:before, .size-xl.icon-off:before, .size-xl.icon-arrow:before, .size-xl.icon-user:before, .size-xl.icon-like:before, .size-xl.icon-dislike:before, .size-xl.icon-reply:before, .size-xl.icon-tag:before, .tagit-list .size-xl.tagit-new:before, .size-xl.icon-plus:before, .attachment-form .attachment-container .size-xl.upload-file-button:before, .size-xl.icon-edit-pen:before, .size-xl.icon-process-arrow:before, .process-nav li.size-xl:before, .om.size-xl:before, .size-xl.icon-comment:before {
+.icon-style.size-xl:before, i.size-xl:before, .tagit-list .tagit-close .size-xl.ui-icon-close:before, .fa.size-xl:before, .size-xl.icon-ok:before, .size-xl.icon-info:before, .size-xl.icon-search:before, .size-xl.icon-play:before, .size-xl.icon-close:before, .form-element .picker button.size-xl.picker__button--clear:before, .tagit-list .tagit-close .size-xl.ui-icon-close:before, .size-xl.icon-error:before, .size-xl.icon-delete:before, .size-xl.icon-warning:before, .size-xl.icon-notify:before, .size-xl.icon-add:before, .size-xl.icon-lbulb:before, .size-xl.icon-menu:before, .size-xl.icon-menu-arrow:before, .size-xl.icon-login:before, .size-xl.icon-logout:before, .size-xl.icon-register:before, .size-xl.icon-mail:before, .size-xl.icon-people:before, .size-xl.icon-chart:before, .size-xl.icon-arrow-back:before, .size-xl.carousel-control.left:before, .size-xl.icon-arrow-forward:before, .size-xl.carousel-control.right:before, .size-xl.icon-off:before, .size-xl.icon-arrow:before, .size-xl.icon-user:before, .size-xl.icon-like:before, .size-xl.icon-dislike:before, .size-xl.icon-reply:before, .size-xl.icon-tag:before, .tagit-list .size-xl.tagit-new:before, .size-xl.icon-plus:before, .attachment-form .attachment-container .size-xl.upload-file-button:before, .size-xl.icon-edit-pen:before, .size-xl.icon-process-arrow:before, .process-nav li.size-xl:before, .om.size-xl:before, .size-xl.icon-comment:before, .size-xl.om-pencil:before, .edit-hanke-form .icon-container span.size-xl:before {
   font-size: 36px;
 }
-.icon-style.align--top:after, i.align--top:after, .tagit-list .tagit-close .align--top.ui-icon-close:after, .icon-style.align--top:before, i.align--top:before, .tagit-list .tagit-close .align--top.ui-icon-close:before, .fa.align--top:after, .align--top.icon-plus:after, .align--top.icon-edit-pen:after, .attachment-form .attachment-edit .align--top.edit-file-button:after, .edit-hanke-form .align--top.edit-button:after, .event-section .event-header .edit-event .align--top.edit:after, .align--top.icon-process-arrow:after, .header-tabs .align--top.other-service:after, .fa.align--top:before, .align--top.icon-ok:before, .align--top.icon-info:before, .align--top.icon-search:before, .align--top.icon-play:before, .align--top.icon-close:before, .form-element .picker button.align--top.picker__button--clear:before, .tagit-list .tagit-close .align--top.ui-icon-close:before, .align--top.icon-error:before, .align--top.icon-delete:before, .align--top.icon-warning:before, .align--top.icon-notify:before, .align--top.icon-add:before, .align--top.icon-lbulb:before, .align--top.icon-menu:before, .align--top.icon-menu-arrow:before, .align--top.icon-login:before, .align--top.icon-logout:before, .align--top.icon-register:before, .align--top.icon-mail:before, .align--top.icon-people:before, .align--top.icon-chart:before, .align--top.icon-arrow-back:before, .align--top.carousel-control.left:before, .align--top.icon-arrow-forward:before, .align--top.carousel-control.right:before, .align--top.icon-off:before, .align--top.icon-arrow:before, .align--top.icon-user:before, .align--top.icon-like:before, .align--top.icon-dislike:before, .align--top.icon-reply:before, .align--top.icon-tag:before, .tagit-list .align--top.tagit-new:before, .align--top.icon-plus:before, .attachment-form .attachment-container .align--top.upload-file-button:before, .align--top.icon-edit-pen:before, .align--top.icon-process-arrow:before, .process-nav li.align--top:before, .om.align--top:after, .align--top.icon-help:after, .om.align--top:before, .align--top.icon-comment:before {
+.icon-style.align--top:after, i.align--top:after, .tagit-list .tagit-close .align--top.ui-icon-close:after, .icon-style.align--top:before, i.align--top:before, .tagit-list .tagit-close .align--top.ui-icon-close:before, .fa.align--top:after, .align--top.icon-plus:after, .align--top.icon-edit-pen:after, .attachment-form .attachment-edit .align--top.edit-file-button:after, .event-section .event-header .edit-event .align--top.edit:after, .align--top.icon-process-arrow:after, .header-tabs .align--top.other-service:after, .fa.align--top:before, .align--top.icon-ok:before, .align--top.icon-info:before, .align--top.icon-search:before, .align--top.icon-play:before, .align--top.icon-close:before, .form-element .picker button.align--top.picker__button--clear:before, .tagit-list .tagit-close .align--top.ui-icon-close:before, .align--top.icon-error:before, .align--top.icon-delete:before, .align--top.icon-warning:before, .align--top.icon-notify:before, .align--top.icon-add:before, .align--top.icon-lbulb:before, .align--top.icon-menu:before, .align--top.icon-menu-arrow:before, .align--top.icon-login:before, .align--top.icon-logout:before, .align--top.icon-register:before, .align--top.icon-mail:before, .align--top.icon-people:before, .align--top.icon-chart:before, .align--top.icon-arrow-back:before, .align--top.carousel-control.left:before, .align--top.icon-arrow-forward:before, .align--top.carousel-control.right:before, .align--top.icon-off:before, .align--top.icon-arrow:before, .align--top.icon-user:before, .align--top.icon-like:before, .align--top.icon-dislike:before, .align--top.icon-reply:before, .align--top.icon-tag:before, .tagit-list .align--top.tagit-new:before, .align--top.icon-plus:before, .attachment-form .attachment-container .align--top.upload-file-button:before, .align--top.icon-edit-pen:before, .align--top.icon-process-arrow:before, .process-nav li.align--top:before, .om.align--top:after, .align--top.icon-help:after, .om.align--top:before, .align--top.icon-comment:before, .align--top.om-pencil:before, .edit-hanke-form .icon-container span.align--top:before {
   display: inline-block;
   margin: -0.5em 0.25em 0 0.25em;
   padding-top: 0.25em;
@@ -2626,7 +2632,7 @@ td {
   content: "\f067";
 }
 
-.icon-edit-pen, .attachment-form .attachment-edit .edit-file-button:after, .edit-hanke-form .edit-button:after, .event-section .event-header .edit-event .edit:after {
+.icon-edit-pen, .attachment-form .attachment-edit .edit-file-button:after, .event-section .event-header .edit-event .edit:after {
   content: "\f040";
 }
 
@@ -2683,7 +2689,10 @@ td {
 
 .om-enter:before {
   content: "\E067";
-  font-size: 1.5em;
+}
+
+.om-pencil:before, .edit-hanke-form .icon-container span:before {
+  content: "\E032";
 }
 
 /* Pasted carousel styles from beta.otakantaa.fi */
@@ -2755,20 +2764,14 @@ td {
 }
 
 .carousel-control {
-  background: none repeat scroll 0 0 #222222;
-  border: 1px solid #FFFFFF;
   color: #FFFFFF;
-  font-size: 24px;
+  font-size: 40px;
   text-align: center;
   margin-top: -20px;
   opacity: 0.66;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 15px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  border-radius: 15px;
 }
 .carousel-control.right {
   text-indent: 4px;
@@ -2778,6 +2781,14 @@ td {
 .carousel-control.left {
   text-indent: -2px;
   left: 12px;
+}
+.carousel-control.right::before {
+  font-family: ok-icons;
+  content: "\E105";
+}
+.carousel-control.left::before {
+  font-family: ok-icons;
+  content: "\E108";
 }
 .carousel-control:hover, .carousel-control:focus {
   color: #FFFFFF;
@@ -2795,38 +2806,26 @@ td {
   vertical-align: middle;
   background-color: transparent;
   text-align: center;
-}
-@media screen and (min-width: 60em) {
-  .carousel-indicators {
-    margin: -25px auto 0;
-  }
+  font-size: 24px;
 }
 .carousel-indicators li {
-  background-color: rgba(255, 255, 255, 0.25);
-  border-radius: 15px;
   display: inline-block;
   cursor: pointer;
   float: none;
-  height: 24px;
-  text-indent: -999px;
-  width: 24px;
-  margin: 0 5px;
-  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  margin-left: 0.5em;
 }
-@media screen and (min-width: 60em) {
-  .carousel-indicators li {
-    border-radius: 5px;
-    height: 10px;
-    width: 10px;
-    margin: 0 1px;
-  }
+.carousel-indicators li::before {
+  font-family: ok-icons;
+  content: "\E010";
 }
-.carousel-indicators .active {
+.carousel-indicators  
+.active {
   background-color: #f0f0f0;
 }
-.carousel-indicators.inverse-color .active {
-  background-color: darkgrey;
+.carousel-indicators .active::before {
+  font-family: ok-icons;
+  color: white;
+  content: "\E010";
 }
 
 .carousel-caption {
@@ -2847,11 +2846,6 @@ td {
 }
 .carousel-caption p {
   margin-bottom: 15px;
-}
-@media screen and (min-width: 60em) {
-  .carousel-caption p {
-    margin-bottom: 8px;
-  }
 }
 
 .carousel-caption-text {
@@ -2944,7 +2938,7 @@ td {
   background: #5e5e5e;
   color: white;
 }
-.btn.disabled, button.disabled {
+.btn.disabled, .btn:disabled, button.disabled, button:disabled {
   background: #f0f0f0;
   color: rgba(128, 128, 128, 0.6);
   cursor: default;
@@ -3583,6 +3577,7 @@ td {
   position: absolute;
   right: 5px;
   top: 10px;
+  font-size: 1.5em;
 }
 .reply-block .om-enter:before {
   color: #5e5e5e;
