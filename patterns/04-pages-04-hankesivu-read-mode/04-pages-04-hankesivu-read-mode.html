@@ -10,7 +10,7 @@
 		<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 
-		<link rel="stylesheet" href="../../css/style.css?1402906668" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1402914970" media="all" />
 		<!--[if lt IE 10]>
 			<style type="text/css">
 				.og-share-post .share-content .image-container{ height: 100px; }
@@ -25,8 +25,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1402906668" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1402906668" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1402914970" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1402914970" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -321,11 +321,11 @@
       </div>
     </div>
     <div class="content-item large">
-      <div id="showParticipations" class="content-item large participations responsive-list-block">
+      <div id="showParticipations" class="content-item large participations cf">
         <h2 class="ongoing">
           Menossa olevat osallistumiset
         </h2>
-        <div class="lift-button gray-base participation inline-element">
+        <div class="lift-button gray-base participation float-left">
           <div class="count-container">
             <span class="icon-span icon-comment"></span>
             <a href="//www.foo.bar">17</a>
@@ -333,7 +333,7 @@
           <a class="icon-lift-link" href="//www.foo.bar">Ympäristön hyvinvointi - miten sitä voidaan...</a>
           <span class="date">26.5. asti</span>
         </div>
-        <div class="lift-button gray-base participation inline-element">
+        <div class="lift-button gray-base participation float-left">
           <div class="count-container">
             <span class="icon-span icon-comment"></span>
             <a href="//www.foo.bar">24</a>
@@ -341,7 +341,7 @@
           <a class="icon-lift-link" href="//www.foo.bar">Kaupungin asukkaiden hyvinvointi ja osallistu...</a>
           <span class="date">26.5. asti</span>
         </div>
-        <div class="lift-button gray-base participation inline-element">
+        <div class="lift-button gray-base participation float-left">
           <div class="count-container">
             <span class="icon-span icon-comment"></span>
             <a href="//www.foo.bar">17</a>
@@ -349,45 +349,51 @@
           <a class="icon-lift-link" href="//www.foo.bar">Miten nyt kerättävä rahoitus tulisi sijoittaa?</a>
           <span class="date">26.5. asti</span>
         </div>
-        <div id="btnAddParticipationContainer" class="lift-button gray-base is-hidden inline-element">
-          <div class="add-icon-container">
-            <span class="icon-span icon-add"></span>
-            <a id="btnAddParticipation">Luo uusi osallistuminen</a>
+        <div id="btnAddParticipationContainer" class="lift-button gray-base is-hidden float-left">
+          <div class="icon-container">
+            <a id="btnAddParticipationIcon">
+              <span class="icon-span icon-add"></span>
+            </a>
           </div>
+          <a class="icon-lift-link" id="btnAddParticipation">Luo uusi osallistuminen</a>
         </div>
       </div>
-      <div id="addParticipations" class="content-item large participations responsive-list-block inline-element">
+      <div id="addParticipations" class="content-item large participations cf">
         <h2 class="create">
           Luo uusi osallistuminen
         </h2>
-        <div class="lift-button gray-base participation inline-element">
-          <div class="add-icon-container">
+        <div class="lift-button gray-base participation float-left">
+          <div class="icon-container">
             <span class="icon-span icon-chat"></span>
-            <a>Luo reaaliaikainen keskustelu</a>
           </div>
+          <a>Luo reaaliaikainen keskustelu</a>
         </div>
-        <div class="lift-button gray-base participation inline-element">
-          <div class="add-icon-container">
+        <div class="lift-button gray-base participation float-left">
+          <div class="icon-container">
             <span class="icon-span icon-forum"></span>
-            <a>Luo vapaamuotoinen keskustelu</a>
           </div>
+          <a>Luo vapaamuotoinen keskustelu</a>
         </div>
-        <div id="btnCancelParticipationContainer" class="lift-button gray-base cancel is-hidden inline-element">
-          <div class="cancel-icon-container">
-            <span class="icon-span icon-cancel"></span>
-            <a id="btnCancelParticipation">Palaa osallistumislistaan</a>
+        <div id="btnCancelParticipationContainer" class="lift-button gray-base cancel is-hidden float-left">
+          <div class="icon-container">
+            <a id="btnCancelParticipationIcon">
+              <span class="icon-span icon-cancel"></span>
+            </a>
           </div>
+          <a id="btnCancelParticipation">Palaa osallistumislistaan</a>
         </div>
       </div>
     </div>
     <div class="g">
       <div class="g-2up">
         <div class="gi">
-          <div class="content-item large fadeout">
-            <img id="chartHankeGantt" src="../../images/fpo_square.png" alt="Gantt-kuva" />
-            <p class="read-more">
-              <a href="">Lue lisää</a>
-            </p>
+          <div class="content-item large">
+            <div class="fadeout">
+              <img id="chartHankeGantt" src="../../images/fpo_square.png" alt="Gantt-kuva" />
+              <p class="read-more">
+                <a href="">Lue lisää</a>
+              </p>
+            </div>
           </div>
           <div class="content-item large participator-list">
             <div class="helper-container">
@@ -586,7 +592,7 @@
               <li>Helsinki</li>
               <li>Tampere</li>
             </ul>
-          </div>          
+          </div>
         </div>
       </div>
     </div>
@@ -840,10 +846,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1402906668">
+	<script id="pl-js-polyfill-insert-1402914970">
 		(function() {
 			if (self != top) {
-				var cb = '1402906668';
+				var cb = '1402914970';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -852,10 +858,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1402906668">
+	<script id="pl-js-insert-1402914970">
 		(function() {
 			if (self != top) {
-				var cb = '1402906668';
+				var cb = '1402914970';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}

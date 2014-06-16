@@ -487,11 +487,11 @@ if( $('.person-list').length ){
 $("#btnAddParticipationContainer").removeClass("is-hidden");
 $("#btnCancelParticipationContainer").removeClass("is-hidden");
 $("#addParticipations").hide();
-$("#btnAddParticipation").click(function () {
+$("#btnAddParticipationContainer").find("a").on("click", function () {
 	$("#showParticipations").hide();
 	$("#addParticipations").show();
 });
-$("#btnCancelParticipation").click(function () {
+$("#btnCancelParticipationContainer").find("a").on("click", function () {
 	$("#showParticipations").show();
 	$("#addParticipations").hide();
 });
