@@ -388,6 +388,13 @@ $('#myCarousel').carousel({
 	pause: 'hover'
 });
 
+$("#myCarousel > a[data-slide]").click(function () {
+    $("#myCarousel").carousel("pause");    
+});
+$("#myCarousel .carousel-indicators li").click(function () {
+    $("#myCarousel").carousel("pause");    
+});
+
 $('#myCarousel').on('slid.bs.carousel', function(){
 	if( $(this).find('.active').hasClass('item-text') ){
 		$('.carousel-indicators').addClass('inverse-color');
