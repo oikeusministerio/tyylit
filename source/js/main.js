@@ -388,6 +388,13 @@ $('#myCarousel').carousel({
 	pause: 'hover'
 });
 
+$("#myCarousel > a[data-slide]").click(function () {
+    $("#myCarousel").carousel("pause");    
+});
+$("#myCarousel .carousel-indicators li").click(function () {
+    $("#myCarousel").carousel("pause");    
+});
+
 $('#myCarousel').on('slid.bs.carousel', function(){
 	if( $(this).find('.active').hasClass('item-text') ){
 		$('.carousel-indicators').addClass('inverse-color');
@@ -480,11 +487,11 @@ if( $('.person-list').length ){
 $("#btnAddParticipationContainer").removeClass("is-hidden");
 $("#btnCancelParticipationContainer").removeClass("is-hidden");
 $("#addParticipations").hide();
-$("#btnAddParticipation").click(function () {
+$("#btnAddParticipationContainer").find("a").on("click", function () {
 	$("#showParticipations").hide();
 	$("#addParticipations").show();
 });
-$("#btnCancelParticipation").click(function () {
+$("#btnCancelParticipationContainer").find("a").on("click", function () {
 	$("#showParticipations").show();
 	$("#addParticipations").hide();
 });

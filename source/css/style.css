@@ -3165,7 +3165,9 @@ td {
 .lift-button {
   width: 175px;
   height: 175px;
+  display: inline-block;
   padding: 10px 5px;
+  margin: 0.25em;
   position: relative;
   background-color: white;
 }
@@ -3182,6 +3184,22 @@ td {
 }
 .lift-button .date {
   margin: 0.5em 0;
+}
+.lift-button .icon-container {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+.lift-button .icon-container .icon-span {
+  line-height: 4em;
+}
+.lift-button .icon-container .icon-span:before {
+  font-size: 5em;
+}
+.lift-button .icon-container a {
+  color: #444444;
 }
 
 .count-container {

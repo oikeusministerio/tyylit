@@ -73,11 +73,11 @@
       </div>
     </div>
     <div class="content-item large">
-      <div id="showParticipations" class="content-item large participations responsive-list-block">
+      <div id="showParticipations" class="content-item large participations cf">
         <h2 class="ongoing">
           Menossa olevat osallistumiset
         </h2>
-        <div class="lift-button gray-base participation inline-element">
+        <div class="lift-button gray-base participation float-left">
           <div class="count-container">
             <span class="icon-span icon-comment"></span>
             <a href="//www.foo.bar">17</a>
@@ -85,7 +85,7 @@
           <a class="icon-lift-link" href="//www.foo.bar">Ympäristön hyvinvointi - miten sitä voidaan...</a>
           <span class="date">26.5. asti</span>
         </div>
-        <div class="lift-button gray-base participation inline-element">
+        <div class="lift-button gray-base participation float-left">
           <div class="count-container">
             <span class="icon-span icon-comment"></span>
             <a href="//www.foo.bar">24</a>
@@ -93,7 +93,7 @@
           <a class="icon-lift-link" href="//www.foo.bar">Kaupungin asukkaiden hyvinvointi ja osallistu...</a>
           <span class="date">26.5. asti</span>
         </div>
-        <div class="lift-button gray-base participation inline-element">
+        <div class="lift-button gray-base participation float-left">
           <div class="count-container">
             <span class="icon-span icon-comment"></span>
             <a href="//www.foo.bar">17</a>
@@ -101,34 +101,38 @@
           <a class="icon-lift-link" href="//www.foo.bar">Miten nyt kerättävä rahoitus tulisi sijoittaa?</a>
           <span class="date">26.5. asti</span>
         </div>
-        <div id="btnAddParticipationContainer" class="lift-button gray-base is-hidden inline-element">
-          <div class="add-icon-container">
-            <span class="icon-span icon-add"></span>
-            <a id="btnAddParticipation">Luo uusi osallistuminen</a>
+        <div id="btnAddParticipationContainer" class="lift-button gray-base is-hidden float-left">
+          <div class="icon-container">
+            <a id="btnAddParticipationIcon">
+              <span class="icon-span icon-add"></span>
+            </a>
           </div>
+          <a class="icon-lift-link" id="btnAddParticipation">Luo uusi osallistuminen</a>
         </div>
       </div>
-      <div id="addParticipations" class="content-item large participations responsive-list-block inline-element">
+      <div id="addParticipations" class="content-item large participations cf">
         <h2 class="create">
           Luo uusi osallistuminen
         </h2>
-        <div class="lift-button gray-base participation inline-element">
-          <div class="add-icon-container">
+        <div class="lift-button gray-base participation float-left">
+          <div class="icon-container">
             <span class="icon-span icon-chat"></span>
-            <a>Luo reaaliaikainen keskustelu</a>
           </div>
+          <a>Luo reaaliaikainen keskustelu</a>
         </div>
-        <div class="lift-button gray-base participation inline-element">
-          <div class="add-icon-container">
+        <div class="lift-button gray-base participation float-left">
+          <div class="icon-container">
             <span class="icon-span icon-forum"></span>
-            <a>Luo vapaamuotoinen keskustelu</a>
           </div>
+          <a>Luo vapaamuotoinen keskustelu</a>
         </div>
-        <div id="btnCancelParticipationContainer" class="lift-button gray-base cancel is-hidden inline-element">
-          <div class="cancel-icon-container">
-            <span class="icon-span icon-cancel"></span>
-            <a id="btnCancelParticipation">Palaa osallistumislistaan</a>
+        <div id="btnCancelParticipationContainer" class="lift-button gray-base cancel is-hidden float-left">
+          <div class="icon-container">
+            <a id="btnCancelParticipationIcon">
+              <span class="icon-span icon-cancel"></span>
+            </a>
           </div>
+          <a id="btnCancelParticipation">Palaa osallistumislistaan</a>
         </div>
       </div>
     </div>
@@ -338,7 +342,7 @@
               <li>Helsinki</li>
               <li>Tampere</li>
             </ul>
-          </div>          
+          </div>
         </div>
       </div>
     </div>
