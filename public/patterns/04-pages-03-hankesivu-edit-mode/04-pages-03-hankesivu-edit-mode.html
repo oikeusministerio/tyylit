@@ -10,7 +10,7 @@
 		<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 
-		<link rel="stylesheet" href="../../css/style.css?1402988511" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1402991702" media="all" />
 		<!--[if lt IE 10]>
 			<style type="text/css">
 				.og-share-post .share-content .image-container{ height: 100px; }
@@ -25,8 +25,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1402988511" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1402988511" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1402991702" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1402991702" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -253,16 +253,14 @@
     <div class="hanke-img-container">
       <img src="../../images/fpo_16x9.png" alt="Taustakuva" class="hanke-bg" />
       <div class="edit-bg icon-container">
-        <span>
-          <input type="submit" value="Vaihda taustakuva" />
-        </span>
+          <label for="upload-background-image" class="upload-file-button">Vaihda taustakuva</label>
+          <input type="file" id="upload-background-image" />
       </div>
       <div class="logo-container">
         <img src="../../images/fpo_avatar.png" alt="Logo" class="hanke-logo" />
         <div class="edit-logo icon-container">
-          <span>
-            <input type="submit" value="Vaihda logo" />
-          </span>
+            <label for="upload-logo-image" class="upload-file-button">Vaihda logo</label>
+            <input type="file" id="upload-logo-image" />
         </div>
       </div>
     </div>
@@ -437,22 +435,33 @@
           <a href="#">Näytä valinnaiset lisätiedot</a>
         </p>
       </div>
-      <div id="hanke-save" class="content-item large center">
-        <div>
-          <span>
-            Olen tutustunut <a href="#">palvelun sääntöihin</a> ja vakuutan annettujen tietojen olevan todenmukaisia*
-          </span>
-          <ul id="rblAcceptTerms" class="btn-group">
-            <li>
-              <input id="rblIDontAcceptTerms" type="radio" name="group2" value="0" checked="" />
-              <label for="rblIDontAcceptTerms">En hyväksy ehtoja</label>
+      <div id="hanke-save" class="content-item large save">
+        <div class="terms">
+          Olen tutustunut <a href="#">palvelun sääntöihin</a> ja vakuutan annettujen tietojen olevan todenmukaisia*
+        </div>
+        <div class="process-actions">
+          <ul>
+            <li class="action-item">
+              <a class="btn prev" rel="prev" href="">
+                <i class="icon-arrow-back"></i>Peruuta
+              </a>
             </li>
-            <li>
-              <input id="rblTermsAccepted" type="radio" name="group2" value="1" />
-              <label for="rblTermsAccepted">Hyväksyn ehdot</label>
+            <li class="action-item middle-section">
+              <ul id="rblAcceptTerms" class="btn-group">
+                <li>
+                  <input id="rblIDontAcceptTerms" type="radio" name="group2" value="0" checked="" />
+                  <label for="rblIDontAcceptTerms">En hyväksy ehtoja</label>
+                </li>
+                <li>
+                  <input id="rblTermsAccepted" type="radio" name="group2" value="1" />
+                  <label for="rblTermsAccepted">Hyväksyn ehdot</label>
+                </li>
+              </ul>
+            </li>
+            <li class="action-item">              
+              <input id="btnSaveHanke" type="submit" class="btn" value="Tallenna muutokset" disabled="" />
             </li>
           </ul>
-          <input id="btnSaveHanke" type="submit" class="btn" value="Tallenna muutokset" disabled="" />
         </div>
       </div>
     </div>
@@ -706,10 +715,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1402988511">
+	<script id="pl-js-polyfill-insert-1402991702">
 		(function() {
 			if (self != top) {
-				var cb = '1402988511';
+				var cb = '1402991702';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -718,10 +727,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1402988511">
+	<script id="pl-js-insert-1402991702">
 		(function() {
 			if (self != top) {
-				var cb = '1402988511';
+				var cb = '1402991702';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}

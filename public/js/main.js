@@ -496,6 +496,15 @@ $("#btnCancelParticipationContainer").find("a").on("click", function () {
     $("#addParticipations").hide();
 });
 
+$("#rblIDontAcceptTerms").click(function () {
+    $("#btnSaveHanke").attr("disabled", true).removeClass("btn-otk");
+});
+
+$("#rblTermsAccepted").click(function () {
+    $("#btnSaveHanke").attr("disabled", false).addClass("btn-otk");
+});
+
+/* REMOVE THESE IN PRODUCTION */
 // Hankesivu-edit-mode
 // NOTE: This is only for patternlab. In prod this will done by server code
 $("#btnAddHankeLink").click(function () {
@@ -505,14 +514,7 @@ $("#btnAddHankeLink").click(function () {
         $(this).removeClass("counterhack");
     });
 });
-
-$("#rblIDontAcceptTerms").click(function () {
-    $("#btnSaveHanke").attr("disabled", true).removeClass("btn-otk");
-});
-
-$("#rblTermsAccepted").click(function () {
-    $("#btnSaveHanke").attr("disabled", false).addClass("btn-otk");
-});
+/* For preview purposes to hide element those aren't always visible */
 $(".debug-hide").click(function () {
     $(this).parent().hide();
 })
