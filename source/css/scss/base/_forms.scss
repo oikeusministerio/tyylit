@@ -329,6 +329,26 @@ input[type="search"]::-webkit-search-decoration {
 	.picker__table{ margin-bottom: $pad-half; }
 }
 
+// Slider
+
+.rangeslider{
+	background: $gray-light;
+
+	.rangeslider__fill{
+		background: darken($gray-med, 20%);
+	}
+
+	.rangeslider__handle{
+		width: 30px;
+		height: 30px;
+		top: -5px;
+	}
+}
+
+
+
+
+
 
 
 

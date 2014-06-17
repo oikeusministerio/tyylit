@@ -663,6 +663,18 @@ input[type="search"]::-webkit-search-decoration {
   margin-bottom: 0.5em;
 }
 
+.rangeslider {
+  background: #f0f0f0;
+}
+.rangeslider .rangeslider__fill {
+  background: #b0b0b0;
+}
+.rangeslider .rangeslider__handle {
+  width: 30px;
+  height: 30px;
+  top: -5px;
+}
+
 /*------------------------------------*\
     $Table
 \*------------------------------------*/
