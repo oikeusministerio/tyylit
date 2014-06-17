@@ -4,10 +4,16 @@
     <h1>Muokkaa hanketta</h1>
     <div class="hanke-img-container">
       <img src="../../images/fpo_16x9.png" alt="Taustakuva" class="hanke-bg" />
-      <input class="btn edit-bg" type="submit" value="Vaihda taustakuva" />
+      <div class="edit-bg icon-container">
+          <label for="upload-background-image" class="upload-file-button">Vaihda taustakuva</label>
+          <input type="file" id="upload-background-image" />
+      </div>
       <div class="logo-container">
         <img src="../../images/fpo_avatar.png" alt="Logo" class="hanke-logo" />
-        <input class="btn edit-logo" type="submit" value="Vaihda logo" />        
+        <div class="edit-logo icon-container">
+            <label for="upload-logo-image" class="upload-file-button">Vaihda logo</label>
+            <input type="file" id="upload-logo-image" />
+        </div>
       </div>
     </div>
     <div class="form-element text-el hanke-title">
@@ -40,58 +46,67 @@
           <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Hankkeen näkyvyys*</span>
           <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
         </div>
-        <span class="select-style">
-          <span class="border-fix">
-            <select id="" class="btn-group">
-              <option selected="selected" value="0">Julkinen/näkyy kaikille</option>
-              <option value="1">Vain kutsutuille</option>
-            </select>
-          </span>
-        </span>
+        <ul class="btn-group">
+          <li>
+            <input id="rbl0" type="radio" name="group1" value="0" />
+            <label for="rbl0">Julkinen/näkyy kaikille</label>
+          </li>
+          <li>
+            <input id="rbl1" type="radio" name="group1" value="1" />
+            <label for="rbl1">Vain kutsutuille</label>
+          </li>
+        </ul>
       </div>
       <div id="hanke-publish" class="content-item large">
         <div class="helper-container">
           <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Hankkeen julkaisun tila*</span>
           <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
         </div>
-        <span class="select-style">
-          <span class="border-fix">
-            <select id="" class="btn-group">
-              <option selected="selected" value="0">Suunnitteilla</option>
-              <option value="1">Julkaistu</option>
-              <option value="2">Peruttu</option>
-            </select>
-          </span>
-        </span>
+        <ul class="btn-group">
+          <li>
+            <input id="rbl10" type="radio" name="group2" value="0" />
+            <label for="rbl10">Suunnitteilla</label>
+          </li>
+          <li>
+            <input id="rbl11" type="radio" name="group2" value="1" />
+            <label for="rbl11">Julkaistu</label>
+          </li>
+          <li>
+            <input id="rbl12" type="radio" name="group2" value="2" />
+            <label for="rbl12">Peruttu</label>
+          </li>
+        </ul>
       </div>
       <div id="hanke-date" class="content-item large">
         <div class="helper-container">
-          <h3 class="icon-help" title="Example tip text." placement="top">Hankkeen aikataulu*</h3>
+          <span class="icon-help" title="Example tip text." placement="top">Hankkeen aikataulu*</span>
+          <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+        </div>
+        <div class="event-date-container responsive-block-list">
+          <div class="form-element date-element left-block inline-element">
+            <label for="date-picker">Hankkeen alkupvm.</label>
+            <input type="text" id="date-picker" class="datepicker" value="1.6.2014" />
+          </div>
+          <div class="form-element date-element right-block inline-element">
+            <label for="date-picker">Hankkeen loppupvm.</label>
+            <input type="text" id="date-picker" class="datepicker" value="14.5.2015"/>
+          </div>
+        </div>
+      </div>
+      <div id="hanke-date" class="content-item large">
+        <div class="helper-container">
+          <span class="icon-help" title="Example tip text." placement="top">Hankkeen yhteenvedon julkaisu*</span>
           <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
         </div>
         <div class="event-date-container">
           <div class="form-element date-element left-block">
-            <label for="date-picker">Hankkeen alkupvm.</label>
-            <input type="text" id="date-picker" class="datepicker" value="1.6.2014" />
-          </div>
-          <div class="form-element date-element right-block">
-            <label for="date-picker">Hankkeen loppupvm.</label>
+            <label for="date-picker">Yhteenvedon julkaisupvm.</label>
             <input type="text" id="date-picker" class="datepicker" value="14.5.2015" />
-          </div>
-          <div class="helper-container">
-            <span class="icon-help" title="Example tip text." placement="top">Hankkeen yhteenvedon julkaisu*</span>
-            <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
-          </div>
-          <div class="event-date-container">
-            <div class="form-element date-element left-block">
-              <label for="date-picker">Yhteenvedon julkaisupvm.</label>
-              <input type="text" id="date-picker" class="datepicker" value="14.5.2015" />
-            </div>
           </div>
         </div>
       </div>
       <!-- Optional field those will be fadeout -->
-      <div class="fadeout">
+      <div class="fadeout clickable">
         <div id="hanke-attachments" class="content-item large">
           <h3>Liitteet</h3>
           <div id="hanke-add-attachment">
@@ -138,33 +153,19 @@
         </div>
         <div id="hanke-links" class="content-item large">
           <h3>Linkit</h3>
-          <div class="hanke-link-list">
-            <div class="hanke-link-item">
-              <div class="form-element text-el">
+          <div class="semantic-list">
+            <ol>
+              <li>
                 <input placeholder="http://" maxlength="200" value="http://www.google.com" />
-              </div>
-              <div class="form-element text-el">
-                <input placeholder="Kuvaus" maxlength="100" value="Hakukone" />
-              </div>
-            </div>
-            <div class="hanke-link-item cf">
-              <div class="form-element text-el">
+                <input placeholder="Kirjoita linkin kuvaus..." maxlength="100" value="Suosittu hakukone" />
+              </li>
+              <li>
                 <input placeholder="http://" maxlength="200" />
-              </div>
-              <div class="form-element text-el">
-                <input placeholder="Kuvaus" maxlength="100" />
-              </div>
-            </div>
-            <div class="hanke-link-item cf">
-              <div class="form-element text-el">
-                <input placeholder="http://" maxlength="200" />
-              </div>
-              <div class="form-element text-el">
-                <input placeholder="Kuvaus" maxlength="100" />
-              </div>
-            </div>
+                <input placeholder="Kirjoita linkin kuvaus..." maxlength="100" />
+              </li>
+            </ol>
           </div>
-          <input class="btn btn-otk" type="submit" value="Lisää linkki" />
+          <input id="btnAddHankeLink" class="btn btn-otk" type="submit" value="Lisää linkki" />
         </div>
         <div id="hanke-locations" class="content-item large">
           <h3>Paikkakunnat</h3>
@@ -186,12 +187,35 @@
           <a href="#">Näytä valinnaiset lisätiedot</a>
         </p>
       </div>
-    </div>
-    <div id="hanke-save" class="content-item large">
-      <input type="checkbox">
-        Olen tutustunut <a href="#">palvelun sääntöihin</a> ja vakuutan annettujen tietojen olevan todenmukaisia*
-      </input>
-      <input type="submit" class="btn btn-otk" value="Tallenna muutokset" />
+      <div id="hanke-save" class="content-item large save">
+        <div class="terms">
+          Olen tutustunut <a href="#">palvelun sääntöihin</a> ja vakuutan annettujen tietojen olevan todenmukaisia*
+        </div>
+        <div class="process-actions">
+          <ul>
+            <li class="action-item">
+              <a class="btn prev" rel="prev" href="">
+                <i class="icon-arrow-back"></i>Peruuta
+              </a>
+            </li>
+            <li class="action-item middle-section">
+              <ul id="rblAcceptTerms" class="btn-group">
+                <li>
+                  <input id="rblIDontAcceptTerms" type="radio" name="group2" value="0" checked="" />
+                  <label for="rblIDontAcceptTerms">En hyväksy ehtoja</label>
+                </li>
+                <li>
+                  <input id="rblTermsAccepted" type="radio" name="group2" value="1" />
+                  <label for="rblTermsAccepted">Hyväksyn ehdot</label>
+                </li>
+              </ul>
+            </li>
+            <li class="action-item">              
+              <input id="btnSaveHanke" type="submit" class="btn" value="Tallenna muutokset" disabled="" />
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section><!--End role=main-->
   {{> organisms-footer }}

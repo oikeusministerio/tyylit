@@ -345,10 +345,160 @@ input[type="search"]::-webkit-search-decoration {
 	}
 }
 
+.edit-hanke-form, .show-hanke-form {
+	.hanke-img-container {
+		width: 100%;
+		max-width: 1200px;
+		min-width: 350px;
+		max-height: 700px;
+		min-height: 175px;
+		position: relative;
+		margin-bottom: 1em;
 
+		.edit-bg {
+			position: absolute;
+			bottom: 1em;
+			right: 1em;
+		}
 
+		.logo-container {
+			position: absolute;
+			width: 12em;
+			margin-left: 1em;
+			bottom: 1em;
 
+			@media #{$tablet} {
+				margin-left: 3em;
+				bottom: 3em;
+			}
 
+			@media #{$laptop} {
+				margin-left: 3em;
+				bottom: -8em;
+			}
 
+			.edit-logo {
+				position: absolute;
+				text-align: center;
+				bottom: 0;
+				left: 0;
+				@media #{$tablet} {
+					bottom: 1em;
+					left: 1em;
+				}
+			}
 
+			img.hanke-logo {
+				max-width: 100px;
+				max-height: 100px;
 
+				@media #{$tablet} {
+					max-width: 150px;
+					max-height: 150px;
+				}
+
+				@media #{$laptop} {
+					max-width: 300px;
+					max-height: 300px;
+				}
+			}
+		}
+	}
+	/* Basic setting for title */
+	.hanke-title {
+		width: 100%;
+		text-align: left;
+
+		@media #{$laptop} {
+			padding-left: 23em;
+		}
+	}
+
+	.admin-tools {
+		text-align: left;
+
+		@media #{$laptop} {
+			padding-top: 1em;
+		}
+
+		input {
+			margin: 0.1em 0;
+		}
+	}
+	.invitation {
+		h3 img {
+			display: inline-block;
+			margin-right: 0.5em;
+		}
+	}
+	.hanke-status {
+		.status .state {
+			color: #17CEE4;
+			font-weight: bold;
+			float: right;
+		}
+		.gantt-title .date {
+			float: right;
+		}
+	}
+	.debug-hide {
+		font-size: 1em;
+		float: right;
+		padding: 0 0.25em;
+	}
+}
+
+.edit-hanke-form {
+	/* Specialization of earlier declared hanke-title class */
+	.hanke-title {
+		@media #{$laptop} {
+			padding-right: 5em;
+		}
+	}
+	.hanke-form {
+		@media #{$laptop} {
+			margin-top: 3em;
+			margin-left: 3em;
+			margin-right: 5em;
+		}
+	}
+	.fadeout {
+		max-height: 25em;
+	}
+
+	.icon-container {
+		background-color: #f0f0f0;
+
+		input[type="file"] {
+			position: absolute;
+			left: -9999px;
+		}
+
+		.upload-file-button{
+			cursor: pointer;
+			padding: 0.25em 0.25em 0.25em 2em;
+			&:before{
+				@extend .om-pencil;
+				font-size: 24px;
+				position: absolute;
+				left: 0.3em;
+				top: 0.1em;
+			}
+		}
+	}
+
+	.semantic-list {
+		div {
+			@media #{$tablet} {
+				width: 49%;
+				display: inline-block;
+			}
+		}
+	}
+	.save {
+		text-align: center;
+		div {
+			padding-bottom: 2em;
+		}
+	}
+}

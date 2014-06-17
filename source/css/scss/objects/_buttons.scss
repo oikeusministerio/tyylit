@@ -27,7 +27,7 @@
 		color: $white;
 	}
 
-	&.disabled {
+	&.disabled, &:disabled {
 		background: $gray-light;
 		color: rgba(128, 128, 128, 0.6);
 		cursor: default;
@@ -128,7 +128,7 @@
 	@extend .cf;
 	margin-bottom: 25px;
 
-	a, button, input[type="submit"]{
+	a, button, input[type="submit"], li{
 		padding: $pad/2 $pad;
 		float: left;
 		color: $text-color;
@@ -225,10 +225,12 @@
 
 // Lift-button.
 .lift-button{
-	width: 175px;  // Change when the final size is decided.
-	height: 175px;  // Change when the final size is decided.
+	width: 175px;
+	height: 175px;
+	display: inline-block;
 
-	padding: 10px 5px; // Change if needed after the final size has been decided
+	padding: 10px 5px;
+	margin: $pad-quarter;
 	position: relative;
 	background-color: $white;
 	&.gray-base{
@@ -248,6 +250,24 @@
 
 	.date{
 		margin: $pad-half 0;
+	}
+
+	.icon-container {
+		width: 100%;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+		padding-top: 1em;
+
+		.icon-span{
+			line-height: 4em;
+			&:before {			
+				font-size: 5em; 
+			}
+		}
+		a {
+			color: #444444;
+		}
 	}
 }
 
@@ -270,6 +290,4 @@
 	}
 
 }
-
-
 

@@ -94,25 +94,15 @@
 	}
 }
 
-.carousel-control
-{
-	background: none repeat scroll 0 0 #222222;
-	border: 1px solid #FFFFFF;
+.carousel-control {
 	color: #FFFFFF;
-	font-size: 24px;
+	font-size: 40px;
 	text-align: center;
-
 	margin-top: -20px;
 	opacity: 0.66;
 	position: absolute;
-	top: 40%;
+	top: 50%;
 	left: 15px;
-
-	width: 30px;
-	height: 30px;
-	line-height: 30px;
-	border-radius: 15px;
-
 
 	&.right
 	{
@@ -120,14 +110,25 @@
 
 		text-indent: 4px;
 		left: auto;
-		right: 15px;
+		right: 12px;
 	}
 
 	&.left{
 		@extend .icon-arrow-back;
 
 		text-indent: -2px;
+		left: 12px;
 	}
+
+	&.right::before {
+		font-family: ok-icons;
+		content: "\E105";
+	}
+
+	&.left::before {
+		font-family: ok-icons;
+		content: "\E108";
+	}	
 
 	&:hover, &:focus
 	{
@@ -140,7 +141,7 @@
 .carousel-indicators
 {
 	list-style: none outside none;
-	margin: -25px auto 0;
+	margin: -30px auto 0;
 	position: relative;
 	z-index: 5;
 	height: 10px;
@@ -148,37 +149,36 @@
 	vertical-align: middle;
 	background-color: transparent;
 	text-align: center;
-
+	font-size: 24px;
+	
 	li
 	{
-		background-color: rgba(255, 255, 255, 0.25);
-		border-radius: 5px;
 		display: inline-block;
 		cursor: pointer;
 		float: none;
-		height: 10px;
-		text-indent: -999px;
-		width: 10px;
-		margin: 0 1px;
-		-webkit-box-shadow: 0 0 3px 1px rgba(0,0,0,.2);
-		box-shadow: 0 0 3px 1px rgba(0,0,0,.2);
+		margin-left: 0.5em;
+	}	
+	li::before {
+		font-family: ok-icons;
+		content: "\E010";
 	}
-
+	 
 	.active
 	{
 		background-color: $gray-light;
 	}
-
-	&.inverse-color .active{
-		background-color: $gray;
-	}
+	.active::before {
+		font-family: ok-icons;
+		color:white;
+		content: "\E010";
+	}	
 }
 .carousel-caption
 {
 	background: none repeat scroll 0 0 rgba(0, 0, 0, 0.75);
 	bottom: 0;
 	left: 0;
-	padding: 15px;
+	padding: 15px 12px;
 	position: absolute;
 	right: 0;
 	text-align: left;
@@ -197,7 +197,7 @@
 
 	p
 	{
-		margin-bottom: 0;
+		margin-bottom: 15px;
 	}
 }
 
