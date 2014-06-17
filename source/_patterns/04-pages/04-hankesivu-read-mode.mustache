@@ -18,7 +18,7 @@
     </div>
     <!-- Menossa olevat osallistumiset -->
     <div class="content-item large">
-      <div id="showParticipations" class="content-item large participations cf">
+      <div id="showParticipations" class="participations cf">
         <h2 class="ongoing">
           Menossa olevat osallistumiset
         </h2>
@@ -55,7 +55,7 @@
           <a class="icon-lift-link" id="btnAddParticipation">Luo uusi osallistuminen</a>
         </div>
       </div>
-      <div id="addParticipations" class="content-item large participations cf">
+      <div id="addParticipations" class="participations cf">
         <h2 class="create">
           Luo uusi osallistuminen
         </h2>
@@ -81,10 +81,10 @@
         </div>
       </div>
     </div>
-    
-    <div class="g">
-      <div class="g-2up">
-        <div class="gi">
+
+    <div class="g-ext">
+      <div class="g-2up-ext">
+        <div class="gi-ext">
           <div class="content-item large">
             <div class="status">
               Tila: <span class="state">Käynnissä</span>
@@ -111,7 +111,8 @@
               </a>
             </div>
           </div>
-          <div class="content-item large project-analysis">
+
+          <div class="content-item large">
             <span class="debug-hide">x</span>
             <h2>
               Yhteenveto
@@ -123,7 +124,7 @@
               </p>
             </div>
           </div>
-          <div class="content-item large">
+          <div class="content-item large gantt">
             <div class="fadeout">
               <img id="chartHankeGantt" src="../../images/fpo_square.png" alt="Gantt-kuva" />
               <p class="read-more">
@@ -131,7 +132,7 @@
               </p>
             </div>
           </div>
-          <div class="content-item large participator-list">
+          <div class="content-item large">
             <span class="debug-hide">x</span>
             <div class="helper-container">
               <span class="icon-help h3" title="Lorem ipsum" placement="top">Hankkeen osallistujat</span>
@@ -245,30 +246,9 @@
             </div>
           </div>
         </div>
-        <div class="gi">
-          <div class="content-item large invitation">
-            <h3>
-              <img src="../../images/favicon_32x32.jpg" />Kutsu muita osallistumaan
-            </h3>
-            <div class="form-element">
-              <div class="helper-container">
-                <span class="icon-help" title="lisää käyttäjänimiä tai sähköpostiosoitteita" placement="top">Kenelle</span>
-                <p class="helper-text small is-vishidden">lisää käyttäjänimiä tai sähköpostiosoitteita</p>
-              </div>
-              <input type="text" />
-            </div>
-            <div class="form-element">
-              <div class="helper-container">
-                <span class="icon-help" title="valinnainen viesti sähköpostikutsuun" placement="top">Viesti</span>
-                <p class="helper-text small is-vishidden">valinnainen viesti sähköpostikutsuun</p>
-              </div>
-              <textarea class="js-dynamic" maxlength="400" placeholder="Kirjoita valinnainen viesti..."></textarea>
-            </div>
-            <input class="btn btn-otk" type="submit" value="Lähetä kutsu" />
-            <div class="sidebar-form-errors">
-            </div>
-          </div>
-          <div class="content-item large hanke-info">
+        <div class="gi-ext">
+          <!-- perustiedot -->
+          <div class="content-item large">
             <h2>
               <a id="Info">
                 Perustiedot
@@ -280,10 +260,10 @@
                 <a href="">Lue lisää</a>
               </p>
             </div>
-            <table class="table-borderless">
+            <table class="table-borderless narrow">
               <tbody>
                 <tr>
-                  <th>Vastuujärjestö/-henkilö</th>
+                  <th>Vastuutaho</th>
                   <td colspan="2">Lorem Ipsum</td>
                 </tr>
                 <tr>
@@ -323,8 +303,33 @@
                 </tr>
               </tbody>
             </table>
-          </div>          
-          <div class="content-item large keywords">
+          </div>
+          
+          <!-- kutsu -->
+          <div class="content-item large invitation">
+            <h3>
+              <img src="../../images/favicon_32x32.jpg" />Kutsu muita osallistumaan
+            </h3>
+            <div class="form-element">
+              <div class="helper-container">
+                <span class="icon-help" title="lisää käyttäjänimiä tai sähköpostiosoitteita" placement="top">Kenelle</span>
+                <p class="helper-text small is-vishidden">lisää käyttäjänimiä tai sähköpostiosoitteita</p>
+              </div>
+              <input type="text" />
+            </div>
+            <div class="form-element">
+              <div class="helper-container">
+                <span class="icon-help" title="valinnainen viesti sähköpostikutsuun" placement="top">Viesti</span>
+                <p class="helper-text small is-vishidden">valinnainen viesti sähköpostikutsuun</p>
+              </div>
+              <textarea class="js-dynamic" maxlength="400" placeholder="Kirjoita valinnainen viesti..."></textarea>
+            </div>
+            <input class="btn btn-otk" type="submit" value="Lähetä kutsu" />
+            <div class="sidebar-form-errors">
+            </div>
+          </div>
+          
+          <div class="content-item large">
             <div class="helper-container">
               <span class="icon-help h4" title="Lorem ipsum" placement="top">Asiasanat ja paikkakunnat</span>
               <p class="helper-text small is-vishidden">Lorem ipsum</p>
@@ -347,7 +352,7 @@
 
     <!-- Päättyneet osallistumiset -->
     <div class="content-item large">
-      <div class="content-item large participations cf">
+      <div class="content-item participations cf">
         <h2 class="ongoing">
           Päättyneet osallistumiset
         </h2>
@@ -374,7 +379,7 @@
           </div>
           <a class="icon-lift-link" href="//www.foo.bar">Miten nyt kerättävä rahoitus tulisi sijoittaa?</a>
           <span class="date">26.1. asti</span>
-        </div>        
+        </div>
       </div>
     </div>
 

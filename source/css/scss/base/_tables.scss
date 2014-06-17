@@ -27,7 +27,7 @@ td {
 		line-height: 1.6em;
 		border: 0;
 	}
-
+		
 	tr > th {
 		min-width: 200px;
 	}
@@ -82,4 +82,12 @@ td {
 		list-style: disc inside;
 	}
 
+	&.narrow {
+		td ul{
+			list-style: none;
+		}
+		tr > th {
+			min-width: 100px;
+		}
+	}
 }

@@ -5,14 +5,14 @@
     <div class="hanke-img-container">
       <img src="../../images/fpo_16x9.png" alt="Taustakuva" class="hanke-bg" />
       <div class="edit-bg icon-container">
-          <label for="upload-background-image" class="upload-file-button">Vaihda taustakuva</label>
-          <input type="file" id="upload-background-image" />
+        <label for="upload-background-image" class="upload-file-button">Vaihda taustakuva</label>
+        <input type="file" id="upload-background-image" />
       </div>
       <div class="logo-container">
         <img src="../../images/fpo_avatar.png" alt="Logo" class="hanke-logo" />
         <div class="edit-logo icon-container">
-            <label for="upload-logo-image" class="upload-file-button">Vaihda logo</label>
-            <input type="file" id="upload-logo-image" />
+          <label for="upload-logo-image" class="upload-file-button">Vaihda logo</label>
+          <input type="file" id="upload-logo-image" />
         </div>
       </div>
     </div>
@@ -23,12 +23,33 @@
       </div>
     </div>
     <div class="hanke-form">
+      <div class="form-element text-el content-item large">
+        <div class="helper-container">
+          <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Lyhyt linkki</span>
+          <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+        </div>
+        <input maxlength="130" />
+      </div>
+      <div class="form-element text-el content-item large">
+        <div class="helper-container">
+          <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Lyhyt otsikko</span>
+          <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+        </div>
+        <input maxlength="130" />
+      </div>
       <div id="hanke-intro" class="form-element text-el content-item large">
         <div class="helper-container">
           <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Esittely*</span>
           <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
         </div>
         <textarea placeholder="Kirjoita tähän esittely..." maxlength="400"></textarea>
+      </div>
+      <div id="hanke-description" class="form-element text-el content-item large">
+        <div class="helper-container">
+          <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">IFrame sisältö</span>
+          <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
+        </div>
+        <textarea placeholder="Kirjoita tähän IFrame sisältö..." maxlength="2000"></textarea>
       </div>
       <div id="hanke-description" class="form-element text-el content-item large">
         <div class="helper-container">
@@ -210,7 +231,7 @@
                 </li>
               </ul>
             </li>
-            <li class="action-item">              
+            <li class="action-item">
               <input id="btnSaveHanke" type="submit" class="btn" value="Tallenna muutokset" disabled="" />
             </li>
           </ul>
