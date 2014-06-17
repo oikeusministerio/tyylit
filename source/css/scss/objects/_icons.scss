@@ -366,5 +366,8 @@ i{
 	content: "\E032";
 	@extend .om;
 }
-
+.om-small_arrow_down:before {
+	content: "\E109";
+	@extend .om;
+}
 

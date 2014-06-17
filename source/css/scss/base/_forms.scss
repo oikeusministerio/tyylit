@@ -408,7 +408,28 @@ input[type="search"]::-webkit-search-decoration {
 		input {
 			margin: 0.1em 0;
 		}
-	}	
+	}
+	.invitation {
+		h3 img {
+			display: inline-block;
+			margin-right: 0.5em;
+		}
+	}
+	.hanke-status {
+		.status .state {
+			color: #17CEE4;
+			font-weight: bold;
+			float: right;
+		}
+		.gantt-title .date {
+			float: right;
+		}
+	}
+	.debug-hide {
+		font-size: 1em;
+		float: right;
+		padding: 0 0.25em;
+	}
 }
 
 .edit-hanke-form {
