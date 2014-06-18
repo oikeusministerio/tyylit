@@ -7,7 +7,7 @@
 	margin: $space-half 0;
 	padding: $pad-quarter $pad-quarter;
 }
-	
+
 /* Fixed sizes */
 .content-item.fixed-small {
 	max-width: 175px;
@@ -16,7 +16,7 @@
 	max-width: 350px;
 }
 .content-item.fixed-large {
-	max-width: 700px;		
+	max-width: 700px;
 }
 
 .content-item.small {
@@ -276,6 +276,7 @@
 		float: left;
 		height: auto;
 		width: 50px;
+		min-width: 50px;
 		max-width: 100%;
 		margin-right: $pad-half;
 		position: relative;
@@ -399,7 +400,7 @@
 		right: 5px;
 		top: 10px;
 		font-size: 1.5em;
-		
+
 		&:before{
 			color: lighten($text-color, 10%);
 			&:hover, &:active{

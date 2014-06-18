@@ -27,7 +27,7 @@ input, textarea {
 	//width: 100%;
 	width: 100%;
 	border: 1px solid $gray;
-	padding: $pad-half 0.65rem;
+	padding: $pad-half 0.65em;
 }
 
 textarea{
@@ -89,7 +89,7 @@ input[type="search"]::-webkit-search-decoration {
 		position: relative;
 	}
 
-	input[type=submit], button, .btn {
+	input[type="submit"], button, .btn {
 		padding: 0.65em 1.3em;
 		background: transparent;
 		position: absolute;
@@ -139,7 +139,7 @@ input[type="search"]::-webkit-search-decoration {
 	color: $text-color;
 	display: block;
 	text-align: right;
-	margin-top: -35px;
+	margin-top: -31px;
 	right: 5px;
 	position: absolute;
 
@@ -196,7 +196,7 @@ input[type="search"]::-webkit-search-decoration {
 	.attachment-container{
 		text-align: center;
 
-		input[type=file]{
+		input[type="file"]{
 			position: absolute;
 			left: -9999px;
 		}

@@ -175,7 +175,6 @@
 
 	&.sorting{
 
-
 		a{
 			padding: $pad/4 $pad/2;
 			border: none;
@@ -190,6 +189,12 @@
 				@include border-radius(2px, 2px, 2px, 2px);
 			}
 		}
+	}
+
+	input[type="radio"]{
+		margin: 0 auto;
+		height: 1.25em;
+		display: block;
 	}
 }
 
@@ -261,8 +266,8 @@
 
 		.icon-span{
 			line-height: 4em;
-			&:before {			
-				font-size: 5em; 
+			&:before {
+				font-size: 5em;
 			}
 		}
 		a {
