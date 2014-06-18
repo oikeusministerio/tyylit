@@ -230,7 +230,7 @@
     &lt;/div&gt;
     &lt;!-- Menossa olevat osallistumiset --&gt;
     &lt;div class=&quot;content-item large&quot;&gt;
-      &lt;div id=&quot;showParticipations&quot; class=&quot;content-item large participations cf&quot;&gt;
+      &lt;div id=&quot;showParticipations&quot; class=&quot;participations cf&quot;&gt;
         &lt;h2 class=&quot;ongoing&quot;&gt;
           Menossa olevat osallistumiset
         &lt;/h2&gt;
@@ -267,7 +267,7 @@
           &lt;a class=&quot;icon-lift-link&quot; id=&quot;btnAddParticipation&quot;&gt;Luo uusi osallistuminen&lt;/a&gt;
         &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div id=&quot;addParticipations&quot; class=&quot;content-item large participations cf&quot;&gt;
+      &lt;div id=&quot;addParticipations&quot; class=&quot;participations cf&quot;&gt;
         &lt;h2 class=&quot;create&quot;&gt;
           Luo uusi osallistuminen
         &lt;/h2&gt;
@@ -293,10 +293,10 @@
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    
-    &lt;div class=&quot;g&quot;&gt;
-      &lt;div class=&quot;g-2up&quot;&gt;
-        &lt;div class=&quot;gi&quot;&gt;
+
+    &lt;div class=&quot;g-ext&quot;&gt;
+      &lt;div class=&quot;g-2up-ext&quot;&gt;
+        &lt;div class=&quot;gi-ext&quot;&gt;
           &lt;div class=&quot;content-item large&quot;&gt;
             &lt;div class=&quot;status&quot;&gt;
               Tila: &lt;span class=&quot;state&quot;&gt;K&auml;ynniss&auml;&lt;/span&gt;
@@ -323,7 +323,8 @@
               &lt;/a&gt;
             &lt;/div&gt;
           &lt;/div&gt;
-          &lt;div class=&quot;content-item large project-analysis&quot;&gt;
+
+          &lt;div class=&quot;content-item large&quot;&gt;
             &lt;span class=&quot;debug-hide&quot;&gt;x&lt;/span&gt;
             &lt;h2&gt;
               Yhteenveto
@@ -335,7 +336,7 @@
               &lt;/p&gt;
             &lt;/div&gt;
           &lt;/div&gt;
-          &lt;div class=&quot;content-item large&quot;&gt;
+          &lt;div class=&quot;content-item large gantt&quot;&gt;
             &lt;div class=&quot;fadeout&quot;&gt;
               &lt;img id=&quot;chartHankeGantt&quot; src=&quot;../../images/fpo_square.png&quot; alt=&quot;Gantt-kuva&quot; /&gt;
               &lt;p class=&quot;read-more&quot;&gt;
@@ -343,7 +344,7 @@
               &lt;/p&gt;
             &lt;/div&gt;
           &lt;/div&gt;
-          &lt;div class=&quot;content-item large participator-list&quot;&gt;
+          &lt;div class=&quot;content-item large&quot;&gt;
             &lt;span class=&quot;debug-hide&quot;&gt;x&lt;/span&gt;
             &lt;div class=&quot;helper-container&quot;&gt;
               &lt;span class=&quot;icon-help h3&quot; title=&quot;Lorem ipsum&quot; placement=&quot;top&quot;&gt;Hankkeen osallistujat&lt;/span&gt;
@@ -457,30 +458,9 @@
             &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class=&quot;gi&quot;&gt;
-          &lt;div class=&quot;content-item large invitation&quot;&gt;
-            &lt;h3&gt;
-              &lt;img src=&quot;../../images/favicon_32x32.jpg&quot; /&gt;Kutsu muita osallistumaan
-            &lt;/h3&gt;
-            &lt;div class=&quot;form-element&quot;&gt;
-              &lt;div class=&quot;helper-container&quot;&gt;
-                &lt;span class=&quot;icon-help&quot; title=&quot;lis&auml;&auml; k&auml;ytt&auml;j&auml;nimi&auml; tai s&auml;hk&ouml;postiosoitteita&quot; placement=&quot;top&quot;&gt;Kenelle&lt;/span&gt;
-                &lt;p class=&quot;helper-text small is-vishidden&quot;&gt;lis&auml;&auml; k&auml;ytt&auml;j&auml;nimi&auml; tai s&auml;hk&ouml;postiosoitteita&lt;/p&gt;
-              &lt;/div&gt;
-              &lt;input type=&quot;text&quot; /&gt;
-            &lt;/div&gt;
-            &lt;div class=&quot;form-element&quot;&gt;
-              &lt;div class=&quot;helper-container&quot;&gt;
-                &lt;span class=&quot;icon-help&quot; title=&quot;valinnainen viesti s&auml;hk&ouml;postikutsuun&quot; placement=&quot;top&quot;&gt;Viesti&lt;/span&gt;
-                &lt;p class=&quot;helper-text small is-vishidden&quot;&gt;valinnainen viesti s&auml;hk&ouml;postikutsuun&lt;/p&gt;
-              &lt;/div&gt;
-              &lt;textarea class=&quot;js-dynamic&quot; maxlength=&quot;400&quot; placeholder=&quot;Kirjoita valinnainen viesti...&quot;&gt;&lt;/textarea&gt;
-            &lt;/div&gt;
-            &lt;input class=&quot;btn btn-otk&quot; type=&quot;submit&quot; value=&quot;L&auml;het&auml; kutsu&quot; /&gt;
-            &lt;div class=&quot;sidebar-form-errors&quot;&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-          &lt;div class=&quot;content-item large hanke-info&quot;&gt;
+        &lt;div class=&quot;gi-ext&quot;&gt;
+          &lt;!-- perustiedot --&gt;
+          &lt;div class=&quot;content-item large&quot;&gt;
             &lt;h2&gt;
               &lt;a id=&quot;Info&quot;&gt;
                 Perustiedot
@@ -492,10 +472,10 @@
                 &lt;a href=&quot;&quot;&gt;Lue lis&auml;&auml;&lt;/a&gt;
               &lt;/p&gt;
             &lt;/div&gt;
-            &lt;table class=&quot;table-borderless&quot;&gt;
+            &lt;table class=&quot;table-borderless narrow&quot;&gt;
               &lt;tbody&gt;
                 &lt;tr&gt;
-                  &lt;th&gt;Vastuuj&auml;rjest&ouml;/-henkil&ouml;&lt;/th&gt;
+                  &lt;th&gt;Vastuutaho&lt;/th&gt;
                   &lt;td colspan=&quot;2&quot;&gt;Lorem Ipsum&lt;/td&gt;
                 &lt;/tr&gt;
                 &lt;tr&gt;
@@ -535,8 +515,33 @@
                 &lt;/tr&gt;
               &lt;/tbody&gt;
             &lt;/table&gt;
-          &lt;/div&gt;          
-          &lt;div class=&quot;content-item large keywords&quot;&gt;
+          &lt;/div&gt;
+          
+          &lt;!-- kutsu --&gt;
+          &lt;div class=&quot;content-item large invitation&quot;&gt;
+            &lt;h3&gt;
+              &lt;img src=&quot;../../images/favicon_32x32.jpg&quot; /&gt;Kutsu muita osallistumaan
+            &lt;/h3&gt;
+            &lt;div class=&quot;form-element&quot;&gt;
+              &lt;div class=&quot;helper-container&quot;&gt;
+                &lt;span class=&quot;icon-help&quot; title=&quot;lis&auml;&auml; k&auml;ytt&auml;j&auml;nimi&auml; tai s&auml;hk&ouml;postiosoitteita&quot; placement=&quot;top&quot;&gt;Kenelle&lt;/span&gt;
+                &lt;p class=&quot;helper-text small is-vishidden&quot;&gt;lis&auml;&auml; k&auml;ytt&auml;j&auml;nimi&auml; tai s&auml;hk&ouml;postiosoitteita&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;input type=&quot;text&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;form-element&quot;&gt;
+              &lt;div class=&quot;helper-container&quot;&gt;
+                &lt;span class=&quot;icon-help&quot; title=&quot;valinnainen viesti s&auml;hk&ouml;postikutsuun&quot; placement=&quot;top&quot;&gt;Viesti&lt;/span&gt;
+                &lt;p class=&quot;helper-text small is-vishidden&quot;&gt;valinnainen viesti s&auml;hk&ouml;postikutsuun&lt;/p&gt;
+              &lt;/div&gt;
+              &lt;textarea class=&quot;js-dynamic&quot; maxlength=&quot;400&quot; placeholder=&quot;Kirjoita valinnainen viesti...&quot;&gt;&lt;/textarea&gt;
+            &lt;/div&gt;
+            &lt;input class=&quot;btn btn-otk&quot; type=&quot;submit&quot; value=&quot;L&auml;het&auml; kutsu&quot; /&gt;
+            &lt;div class=&quot;sidebar-form-errors&quot;&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          
+          &lt;div class=&quot;content-item large&quot;&gt;
             &lt;div class=&quot;helper-container&quot;&gt;
               &lt;span class=&quot;icon-help h4&quot; title=&quot;Lorem ipsum&quot; placement=&quot;top&quot;&gt;Asiasanat ja paikkakunnat&lt;/span&gt;
               &lt;p class=&quot;helper-text small is-vishidden&quot;&gt;Lorem ipsum&lt;/p&gt;
@@ -559,7 +564,7 @@
 
     &lt;!-- P&auml;&auml;ttyneet osallistumiset --&gt;
     &lt;div class=&quot;content-item large&quot;&gt;
-      &lt;div class=&quot;content-item large participations cf&quot;&gt;
+      &lt;div class=&quot;content-item participations cf&quot;&gt;
         &lt;h2 class=&quot;ongoing&quot;&gt;
           P&auml;&auml;ttyneet osallistumiset
         &lt;/h2&gt;
@@ -586,7 +591,7 @@
           &lt;/div&gt;
           &lt;a class=&quot;icon-lift-link&quot; href=&quot;//www.foo.bar&quot;&gt;Miten nyt ker&auml;tt&auml;v&auml; rahoitus tulisi sijoittaa?&lt;/a&gt;
           &lt;span class=&quot;date&quot;&gt;26.1. asti&lt;/span&gt;
-        &lt;/div&gt;        
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
 
