@@ -567,9 +567,10 @@ function cleanShortcutInput(input) {
     if (input == null || input.length == 0)
         return input;
     var raw = input.toLowerCase()
-        .normalize("NFKD") // ä to a, ö to o...
-        .replace(/[\u0300-\u036F]/g, "")
         .replace(/ /g, "_")
+        .replace(/[äÄåÅáÁ]/gi, 'a')
+        .replace(/ö/g, "o")
+        .replace(/é/g, "e")
         .replace(/[^a-z-0-9-_]/g, '')
         .trim();
 
