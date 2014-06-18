@@ -210,6 +210,15 @@ if ($('.fadeout').length) {
         }
     });
 
+    //$('.fadeout.clickable').click(function (event) {
+    //    event.preventDefault();
+
+    //    $(this).addClass('open');
+    //    $(this).removeClass('clickable');
+    //    $(this).find('a').addClass('pt-fix');
+    //    $(this).find('.read-more').remove();
+    //});
+
     $('.read-more').find('a').click(function (event) {
         event.preventDefault();
 
@@ -504,6 +513,65 @@ $("#rblTermsAccepted").click(function () {
     $("#btnSaveHanke").attr("disabled", false).addClass("btn-otk");
 });
 
+
+(function ($) {
+    $.fn.delayKeyup = function (callback, ms) {
+        $(this).keyup(function (event) {
+            var srcEl = event.currentTarget;
+            if (srcEl.delayTimer)
+                clearTimeout(srcEl.delayTimer);
+            srcEl.delayTimer = setTimeout(function () { callback($(srcEl)); }, ms);
+        });
+
+        return $(this);
+    };
+})(jQuery);
+
+$("input[data-source][data-type]").each(function () {
+    var target = $(this);
+    if (target.data("type") == "shortcut") {
+        var source = $("#" + target.data("source"));
+        
+        if (!source.val()) {
+            source.on("keyup", function () {
+                target.val(cleanShortcutInput(source.val()));
+            });
+        }
+        else {
+            source.off("keyup");
+        }
+
+        // If shortcut has been manipulated manually then remove complete function
+        target.delayKeyup(function () {
+            if (!target.val()) {
+                source.on("keyup", function () {
+                    target.val(cleanShortcutInput(source.val()));
+                });
+            }
+            else {
+                source.off("keyup");
+            }
+            target.val(cleanShortcutInput(target.val()));
+        }, 1000);
+    }
+});
+
+function cleanShortcutInput(input) {
+    if (input == null || input.length == 0)
+        return input;
+    var raw = input.toLowerCase()
+        .normalize("NFKD") // ä to a, ö to o...
+        .replace(/[\u0300-\u036F]/g, "")
+        .replace(/ /g, "_")
+        .replace(/[^a-z-0-9-_]/g, '')
+        .trim();
+
+    // html encode
+    var cleaned = $('<div/>').text(raw).html();
+    return cleaned;
+}
+
+
 /* REMOVE THESE IN PRODUCTION */
 // Hankesivu-edit-mode
 // NOTE: This is only for patternlab. In prod this will done by server code
@@ -518,3 +586,4 @@ $("#btnAddHankeLink").click(function () {
 $(".debug-hide").click(function () {
     $(this).parent().hide();
 })
+/* END OF REMOVE THESE IN PRODUCTION */
