@@ -483,13 +483,14 @@ input[type="search"]::-webkit-search-decoration {
 			cursor: pointer;
 			padding: 0.25em 0.25em 0.25em 2em;
 			&:before{
-				@extend .icon-plus;
+				@extend .om-plus_circle;
 				font-size: 24px;
 				position: absolute;
 				left: 0.3em;
-				background-color: $gray-dark;
-				color: $white;
-				display: block;
+				top: 0.1em;
+				background-color: $white;
+				color: $gray-dark;
+				padding: 0;
 				@include border-radius(50%, 50%, 50%, 50%);
 			}
 		}
