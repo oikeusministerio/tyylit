@@ -309,15 +309,162 @@ i{
 	@extend .fa;
 }
 
-// otakantaa icons. prefix om-
+/* TODO: Remove icon-help and use Democracy glyphs instead */
+.icon-help:after{
+	content:"\E063";
+	@extend .om;
+}
 
-.icon-comment:before{
+/****** Democracy glyphs ******/
+/* Naming convention from https://github.com/Oikeusministerio/tyylit/blob/master/source/fonts/glyphnames.csv */
+/* Few alias has been left those has been already implemented in the code */
+.om-lock:before {
+	content: "\E001";
+	@extend .om;
+}
+
+.om-star:before {
+	content: "\E002";
+	@extend .om;
+}
+
+.om-clock:before {
+	content: "\E003";
+	@extend .om;
+}
+
+.om-bars:before {
+	content: "\E004";
+	@extend .om;
+}
+
+.om-search:before {
+	content: "\E005";
+	@extend .om;
+}
+
+.om-otakantaa:before, .om-otk:before {
+	content: "\E006";
+	@extend .om;
+}
+
+.om-kansalaisaloite:before, .om-kaa:before {
+	content: "\E007";
+	@extend .om;
+}
+
+.om-kuntalaisaloite:before, .om-kua:before {
+	content: "\E008";
+	@extend .om;
+}
+
+.om-document_circle:before {
+	content: "\E009";
+	@extend .om;
+}
+
+.om-circle_blank:before {
+	content: "\E010";
+	@extend .om;
+}
+
+.om-lausuntopalvelu_circle:before, .om-lap:before {
+	content: "\E011";
+	@extend .om;
+}
+
+.om-iteration_circle:before {
+	content: "\E012";
+	@extend .om;
+}
+
+.om-discussion_circle:before {
+	content: "\E013";
+	@extend .om;
+}
+
+.om-phone:before {
+	content: "\E014";
+	@extend .om;
+}
+
+.om-chat_circle:before {
+	content: "\E015";
+	@extend .om;
+}
+
+.om-file_small_circle:before {
+	content: "\E016";
+	@extend .om;
+}
+
+.om-keskustelu_circle:before {
+	content: "\E017";
+	@extend .om;
+}
+
+.om-muu_verkkopalvelu_circle:before {
+	content: "\E018";
+	@extend .om;
+}
+
+.om-gallup_circle:before, .om-gallup:before {
+	content: "\E019";
+	@extend .om;
+}
+
+.om-pencil_circle:before {
+	content: "\E020";
+	@extend .om;
+}
+
+.om-legal_circle:before {
+	content: "\E021";
+	@extend .om;
+}
+
+.om-info_circle:before {
+	content: "\E022";
+	@extend .om;
+}
+
+.om-kysely_circle:before {
+	content: "\E023";
+	@extend .om;
+}
+
+.om-reload_sign:before {
+	content: "\E024";
+	@extend .om;
+}
+
+.om-ok_sign:before {
+	content: "\E025";
+	@extend .om;
+}
+
+.om-circle_search:before {
+	content: "\E026";
+	@extend .om;
+}
+
+.om-chat:before {
+	content: "\E027";
+	@extend .om;
+}
+
+.om-keskustelu:before, .icon-comment:before {
 	content: "\E028";
 	@extend .om;
 }
 
-.icon-help:after{
-	content:"\E063";
+.om-muu_verkkopalvelu:before {
+	content: "\E029";
+	@extend .om;
+}
+
+.om-gallup:before {
+	content: "\E030";
 	@extend .om;
 }
 
@@ -325,49 +472,470 @@ i{
 	content: "\E031";
 	z-index: 1;
 	position: relative;
-}
-/*
-.om-facebook:after{
-	content: "S";
-	display: none;
-}*/
-
-.om-twitter:before{
-	content: "\E068";
+	@extend .om;
 }
 
-.om-youtube:before{
-	content: "\E069";
-}
-
-.om-gallup:before{
-	content: "\E019";
-}
-
-.om-otk:before{
-	content: "\E006";
-}
-
-.om-lap:before{
-	content: "\E011";
-}
-
-.om-kua:before{
-	content: "\E008";
-}
-
-.om-kaa:before{
-	content: "\E007";
-}
-.om-enter:before{
-	content: "\E067";
-}
 .om-pencil:before {
 	content: "\E032";
 	@extend .om;
 }
+
+.om-legal:before {
+	content: "\E033";
+	@extend .om;
+}
+
+.om-info:before {
+	content: "\E034";
+	@extend .om;
+}
+
+.om-kysely:before {
+	content: "\E035";
+	@extend .om;
+}
+
+.om-signin:before {
+	content: "\E036";
+	@extend .om;
+}
+
+.om-signout:before {
+	content: "\E037";
+	@extend .om;
+}
+
+.om-exclamation_circle:before {
+	content: "\E038";
+	@extend .om;
+}
+
+.om-remove_sign:before {
+	content: "\E039";
+	@extend .om;
+}
+
+.om-ok:before {
+	content: "\E040";
+	@extend .om;
+}
+
+.om-light_bulb:before {
+	content: "\E041";
+	@extend .om;
+}
+
+.om-tasks:before {
+	content: "\E042";
+	@extend .om;
+}
+
+.om-file_small:before {
+	content: "\E043";
+	@extend .om;
+}
+
+.om-file_alt:before {
+	content: "\E044";
+	@extend .om;
+}
+
+.om-file:before {
+	content: "\E045";
+	@extend .om;
+}
+
+.om-file_text:before {
+	content: "\E046";
+	@extend .om;
+}
+
+.om-_422:before {
+	content: "\E048";
+	@extend .om;
+}
+
+.om-_423:before {
+	content: "\E049";
+	@extend .om;
+}
+
+.om-_424:before {
+	content: "\E050";
+	@extend .om;
+}
+
+.om-_425:before {
+	content: "\E051";
+	@extend .om;
+}
+
+.om-_426:before {
+	content: "\E052";
+	@extend .om;
+}
+
+.om-_427:before {
+	content: "\E053";
+	@extend .om;
+}
+
+.om-_428:before {
+	content: "\E054";
+	@extend .om;
+}
+
+.om-_429:before {
+	content: "\E055";
+	@extend .om;
+}
+
+.om-share:before {
+	content: "\E056";
+	@extend .om;
+}
+
+.om-trash:before {
+	content: "\E057";
+	@extend .om;
+}
+
+.om-print:before {
+	content: "\E058";
+	@extend .om;
+}
+
+.om-paste:before {
+	content: "\E059";
+	@extend .om;
+}
+
+.om-copy:before {
+	content: "\E060";
+	@extend .om;
+}
+
+.om-share:before {
+	content: "\E061";
+	@extend .om;
+}
+
+.om-edit:before {
+	content: "\E062";
+	@extend .om;
+}
+
+.om-question_ring:before {
+	content: "\E063";
+	@extend .om;
+}
+
+.om-question_circle:before {
+	content: "\E064";
+	@extend .om;
+}
+
+.om-question_default:before {
+	content: "\E065";
+	@extend .om;
+}
+
+.om-enter_sign:before {
+	content: "\E066";
+	@extend .om;
+}
+
+.om-enter:before {
+	content: "\E067";
+	@extend .om;
+}
+
+.om-twitter_box:before, .om-twitter:before {
+	content: "\E068";
+	@extend .om;
+}
+
+.om-youtube_box:before, .om-youtube:before {
+	content: "\E069";
+	@extend .om;
+}
+
+.om-box_blank:before {
+	content: "\E070";
+	@extend .om;
+}
+
+.om-rss_sign:before {
+	content: "\E071";
+	@extend .om;
+}
+
+.om-sign_blank:before {
+	content: "\E072";
+	@extend .om;
+}
+
+.om-facebook_sign:before {
+	content: "\E073";
+	@extend .om;
+}
+
+.om-linkedin_sign:before {
+	content: "\E074";
+	@extend .om;
+}
+
+.om-linkedin:before {
+	content: "\E075";
+	@extend .om;
+}
+
+.om-rss:before {
+	content: "\E076";
+	@extend .om;
+}
+
+.om-twitter:before {
+	content: "\E077";
+	@extend .om;
+}
+
+.om-youtube:before {
+	content: "\E078";
+	@extend .om;
+}
+
+.om-code:before {
+	content: "\E079";
+	@extend .om;
+}
+
+.om-mail_sign:before {
+	content: "\E080";
+	@extend .om;
+}
+
+.om-mail:before {
+	content: "\E081";
+	@extend .om;
+}
+
+.om-avatar_circle:before {
+	content: "\E082";
+	@extend .om;
+}
+
+.om-avatar_outline:before {
+	content: "\E083";
+	@extend .om;
+}
+
+.om-avatar_shield:before {
+	content: "\E084";
+	@extend .om;
+}
+
+.om-avatar:before {
+	content: "\E085";
+	@extend .om;
+}
+
+.om-group_circle:before {
+	content: "\E086";
+	@extend .om;
+}
+
+.om-group:before {
+	content: "\E087";
+	@extend .om;
+}
+
+.om-institution:before {
+	content: "\E088";
+	@extend .om;
+}
+
+.om-household:before {
+	content: "\E089";
+	@extend .om;
+}
+
+.om-business:before {
+	content: "\E090";
+	@extend .om;
+}
+
+.om-caret_up:before {
+	content: "\E091";
+	@extend .om;
+}
+
+.om-caret_right:before {
+	content: "\E092";
+	@extend .om;
+}
+
+.om-caret_down:before {
+	content: "\E093";
+	@extend .om;
+}
+
+.om-caret_left:before {
+	content: "\E094";
+	@extend .om;
+}
+
+.om-caret_down_sign:before {
+	content: "\E095";
+	@extend .om;
+}
+
+.om-ring_outline:before {
+	content: "\E096";
+	@extend .om;
+}
+
+.om-double_angle_left:before {
+	content: "\E097";
+	@extend .om;
+}
+
+.om-double_angle_right:before {
+	content: "\E098";
+	@extend .om;
+}
+
+.om-double_angle_up:before {
+	content: "\E099";
+	@extend .om;
+}
+
+.om-double_angle_down:before {
+	content: "\E100";
+	@extend .om;
+}
+
+.om-angle_left:before {
+	content: "\E101";
+	@extend .om;
+}
+
+.om-angle_right:before {
+	content: "\E102";
+	@extend .om;
+}
+
+.om-angle_up:before {
+	content: "\E103";
+	@extend .om;
+}
+
+.om-angle_down:before {
+	content: "\E104";
+	@extend .om;
+}
+
+.om-angle_right_circle:before {
+	content: "\E105";
+	@extend .om;
+}
+
+.om-angle_up_circle:before {
+	content: "\E106";
+	@extend .om;
+}
+
+.om-angle_down_circle:before {
+	content: "\E107";
+	@extend .om;
+}
+
+.om-angle_left_circle:before {
+	content: "\E108";
+	@extend .om;
+}
+
 .om-small_arrow_down:before {
 	content: "\E109";
 	@extend .om;
 }
 
+.om-small_arrow_up:before {
+	content: "\E110";
+	@extend .om;
+}
+
+.om-small_arrow_left:before {
+	content: "\E111";
+	@extend .om;
+}
+
+.om-small_arrow_right:before {
+	content: "\E112";
+	@extend .om;
+}
+
+.om-circle_arrow_down:before {
+	content: "\E113";
+	@extend .om;
+}
+
+.om-circle_arrow_up:before {
+	content: "\E114";
+	@extend .om;
+}
+
+.om-circle_arrow_left:before {
+	content: "\E115";
+	@extend .om;
+}
+
+.om-circle_arrow_right:before {
+	content: "\E116";
+	@extend .om;
+}
+
+.om-ring_left:before {
+	content: "\E117";
+	@extend .om;
+}
+
+.om-ring_right:before {
+	content: "\E118";
+	@extend .om;
+}
+
+.om-spinner:before {
+	content: "\E119";
+	@extend .om;
+}
+
+.om-caret_up_sign:before {
+	content: "\E120";
+	@extend .om;
+}
+
+.om-caret_right_sign:before {
+	content: "\E121";
+	@extend .om;
+}
+
+.om-caret_left_sign:before {
+	content: "\E122";
+	@extend .om;
+}
+
+.om-plus_circle:before {
+	content: "\E123";
+	@extend .om;
+}
+
+.om-plus:before {
+	content: "\E124";
+	@extend .om;
+}
+
+.om-warning_sign_outline:before {
+	content: "\E125";
+	@extend .om;
+}  

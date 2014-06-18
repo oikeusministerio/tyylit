@@ -14,9 +14,11 @@
 }
 .content-item.fixed-medium {
 	max-width: 350px;
+	min-width: 175px;
 }
 .content-item.fixed-large {
 	max-width: 700px;
+	min-width: 350px;
 }
 
 .content-item.small {

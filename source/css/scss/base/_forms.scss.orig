@@ -27,7 +27,7 @@ input, textarea {
 	//width: 100%;
 	width: 100%;
 	border: 1px solid $gray;
-	padding: $pad-half 0.65em;
+	padding: $pad-half 0.65rem;
 }
 
 textarea{
@@ -89,7 +89,7 @@ input[type="search"]::-webkit-search-decoration {
 		position: relative;
 	}
 
-	input[type="submit"], button, .btn {
+	input[type=submit], button, .btn {
 		padding: 0.65em 1.3em;
 		background: transparent;
 		position: absolute;
@@ -139,7 +139,7 @@ input[type="search"]::-webkit-search-decoration {
 	color: $text-color;
 	display: block;
 	text-align: right;
-	margin-top: -31px;
+	margin-top: -35px;
 	right: 5px;
 	position: absolute;
 
@@ -196,7 +196,7 @@ input[type="search"]::-webkit-search-decoration {
 	.attachment-container{
 		text-align: center;
 
-		input[type="file"]{
+		input[type=file]{
 			position: absolute;
 			left: -9999px;
 		}
@@ -482,15 +482,14 @@ input[type="search"]::-webkit-search-decoration {
 		.upload-file-button{
 			cursor: pointer;
 			padding: 0.25em 0.25em 0.25em 2em;
-			&:before{				
-				@extend .om-plus_circle;
+			&:before{
+				@extend .icon-plus;
 				font-size: 24px;
 				position: absolute;
 				left: 0.3em;
-				top: 0.1em;
-				background-color: $white;
-				color: $gray-dark;
-				padding: 0;
+				background-color: $gray-dark;
+				color: $white;
+				display: block;
 				@include border-radius(50%, 50%, 50%, 50%);
 			}
 		}
@@ -511,6 +510,8 @@ input[type="search"]::-webkit-search-decoration {
 		}
 	}
 }
+<<<<<<< HEAD
+=======
 
 /* Grid Container */
 .g-ext {
@@ -556,3 +557,4 @@ input[type="search"]::-webkit-search-decoration {
 		}
 	}
 }
+>>>>>>> hankepage modifications
