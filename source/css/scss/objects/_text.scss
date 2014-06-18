@@ -96,16 +96,17 @@ $fadeout-space: 70px;
 			right: 0;
 			color: $blue;
 			text-decoration: none;
-			padding-left: 1em;
+			padding-right: 1em;
 
 			&.pt-fix{
 				top: 0;
 			}
+			
 			&:before {
 				@extend .om-small_arrow_down;
 				font-size: 24px;
 				position: absolute;
-				left: 0;
+				right: -4px;
 				top: -2px;
 			}
 		}		

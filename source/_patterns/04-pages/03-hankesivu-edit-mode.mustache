@@ -19,7 +19,7 @@
     <div class="form-element text-el hanke-title">
       <div class="content-item">
         <label for="text-field">Otsikko tai nimi*</label>
-        <input placeholder="Kirjoita tähän otsikko tai nimi..." maxlength="130" value="Hankkeen nimi Lorem ipsum dolor sit met" />
+        <input id="tbName" placeholder="Kirjoita tähän otsikko tai nimi..." maxlength="130" value="" />
       </div>
     </div>
     <div class="hanke-form">
@@ -28,7 +28,7 @@
           <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Lyhyt linkki</span>
           <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
         </div>
-        <input maxlength="130" />
+        <input maxlength="130" data-source="tbName" data-type="shortcut" />
       </div>
       <div class="form-element text-el content-item large">
         <div class="helper-container">
@@ -129,46 +129,42 @@
       <!-- Optional field those will be fadeout -->
       <div class="fadeout clickable">
         <div id="hanke-attachments" class="content-item large">
-          <h3>Liitteet</h3>
-          <div id="hanke-add-attachment">
-            <form action="" class="attachment-form">
-              <div class="form-element attachment-container">
-                <label for="upload-file" class="upload-file-button">Lisää tiedosto</label>
-                <input type="file" id="upload-file" />
-              </div>
-            </form>
-          </div>
+          <h3>Liitteet</h3>          
           <!-- Hanke attachment list -->
-          <div id="hanke-attachment-list">
-            <div class="attachment-form inline-element">
-              <div class="form-element attachment-edit">
-                <label class="edit-file-button">muokkaa</label>
-                <div class="mime-container">
-                  <i class="fa fa-file-o"></i>
-                </div>
-                <a class="file-title">Otsikko</a>
-                <p>tiedostonimi...jpg</p>
+          <div class="attachment-form inline-element">
+            <div class="form-element attachment-edit">
+              <label class="edit-file-button">muokkaa</label>
+              <div class="mime-container">
+                <i class="fa fa-file-o"></i>
               </div>
+              <a class="file-title">Otsikko</a>
+              <p>tiedostonimi...jpg</p>
             </div>
-            <div class="attachment-form inline-element">
-              <div class="form-element attachment-edit">
-                <label class="edit-file-button">muokkaa</label>
-                <div class="mime-container">
-                  <i class="fa fa-file-o"></i>
-                </div>
-                <a class="file-title">Otsikko</a>
-                <p>tiedostonimi...jpg</p>
+          </div>
+          <div class="attachment-form inline-element">
+            <div class="form-element attachment-edit">
+              <label class="edit-file-button">muokkaa</label>
+              <div class="mime-container">
+                <i class="fa fa-file-o"></i>
               </div>
+              <a class="file-title">Otsikko</a>
+              <p>tiedostonimi...jpg</p>
             </div>
-            <div class="attachment-form inline-element">
-              <div class="form-element attachment-edit">
-                <label class="edit-file-button">muokkaa</label>
-                <div class="mime-container">
-                  <i class="fa fa-file-o"></i>
-                </div>
-                <a class="file-title">Otsikko</a>
-                <p>tiedostonimi...jpg</p>
+          </div>
+          <div class="attachment-form inline-element">
+            <div class="form-element attachment-edit">
+              <label class="edit-file-button">muokkaa</label>
+              <div class="mime-container">
+                <i class="fa fa-file-o"></i>
               </div>
+              <a class="file-title">Otsikko</a>
+              <p>tiedostonimi...jpg</p>
+            </div>
+          </div>
+          <div class="attachment-form inline-element">
+            <div class="form-element attachment-container">
+              <label for="upload-file" class="upload-file-button">Lisää tiedosto</label>
+              <input type="file" id="upload-file" />
             </div>
           </div>
         </div>
