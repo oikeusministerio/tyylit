@@ -500,16 +500,13 @@ if ($('.person-list').length) {
 }
 
 // hankesivu-read-mode
-$("#btnAddParticipationContainer").removeClass("is-hidden");
-$("#btnCancelParticipationContainer").removeClass("is-hidden");
-$("#addParticipations").hide();
 $("#btnAddParticipationContainer").find("a").on("click", function () {
-	$("#showParticipations").hide();
-	$("#addParticipations").show();
+    $("#showParticipations").addClass("is-hidden");
+    $("#addParticipations").removeClass("is-hidden");
 });
 $("#btnCancelParticipationContainer").find("a").on("click", function () {
-	$("#showParticipations").show();
-	$("#addParticipations").hide();
+    $("#showParticipations").removeClass("is-hidden");
+	$("#addParticipations").addClass("is-hidden");
 });
 
 $("#rblIDontAcceptTerms").click(function () {
