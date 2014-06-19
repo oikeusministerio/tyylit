@@ -28,14 +28,14 @@
           <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Lyhyt linkki</span>
           <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
         </div>
-        <input maxlength="130" data-source="tbName" data-type="shortcut" />
+        <input maxlength="130" data-source="tbName" data-type="shortcut" placeholder="Kirjoita tähän lyhyt linkki..." />
       </div>
       <div class="form-element text-el content-item large">
         <div class="helper-container">
           <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Lyhyt otsikko</span>
           <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
         </div>
-        <input maxlength="130" />
+        <input maxlength="130" placeholder="Kirjoita tähän lyhyt otsikko..." />
       </div>
       <div id="hanke-intro" class="form-element text-el content-item large">
         <div class="helper-container">
@@ -67,8 +67,8 @@
           <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Hankkeen näkyvyys*</span>
           <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
         </div>
-        <ul class="btn-group">
-          <li>
+        <ul class="btn-group radiogroup">
+          <li class="active">
             <input id="rbl0" type="radio" name="group1" value="0" />
             <label for="rbl0">Julkinen/näkyy kaikille</label>
           </li>
@@ -83,8 +83,8 @@
           <span class="icon-help" title="Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää." placement="top">Hankkeen julkaisun tila*</span>
           <p class="helper-text small is-vishidden">Tässä aputeksti. Aputeksti auttaa suuresti käyttäjää.</p>
         </div>
-        <ul class="btn-group">
-          <li>
+        <ul class="btn-group radiogroup">
+          <li class="active">
             <input id="rbl10" type="radio" name="group2" value="0" />
             <label for="rbl10">Suunnitteilla</label>
           </li>
@@ -216,8 +216,8 @@
               </a>
             </li>
             <li class="action-item middle-section">
-              <ul id="rblAcceptTerms" class="btn-group">
-                <li>
+              <ul id="rblAcceptTerms" class="btn-group radiogroup">
+                <li class="active">
                   <input id="rblIDontAcceptTerms" type="radio" name="group2" value="0" checked="" />
                   <label for="rblIDontAcceptTerms">En hyväksy ehtoja</label>
                 </li>
