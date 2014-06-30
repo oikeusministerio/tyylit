@@ -400,7 +400,7 @@ $('.toast-container').find('.toast-trigger').on('click', function () {
 // Carousel
 
 $('#myCarousel').carousel({
-	interval: 7000,
+	interval: 700000,
 	pause: 'hover'
 });
 
@@ -414,9 +414,11 @@ $("#myCarousel .carousel-indicators li").click(function () {
 $('#myCarousel').on('slid.bs.carousel', function () {
 	if ($(this).find('.active').hasClass('item-text')) {
 		$('.carousel-indicators').addClass('inverse-color');
+		$('.carousel-control').addClass('inverse-color');
 	}
 	else {
 		$('.carousel-indicators').removeClass('inverse-color');
+		$('.carousel-control').removeClass('inverse-color');
 	}
 });
 
