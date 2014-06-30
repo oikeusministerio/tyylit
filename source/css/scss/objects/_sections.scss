@@ -21,7 +21,7 @@
 			width: 100%;
 			margin-bottom: $space-half;
 
-			@media #{$tablet}{
+			@media #{$laptop}{
 				width: auto;
 				margin: 15px 5px 0;
 			}
@@ -60,8 +60,11 @@
 		&:nth-child(4){
 			width: 100%;
 
-			@media #{$tablet}{
-				width: 30%;
+			@media #{$laptop}{
+				width: 40%;
+				float: right;
+				text-align: right;
+				margin-right: 0;
 			}
 		}
 	}
