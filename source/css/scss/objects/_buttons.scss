@@ -67,6 +67,13 @@
 		}
 	}
 
+	&.white{
+		background-color: $white;
+		&:hover, &:focus{
+			background-color: $white;
+		}
+	}
+
 	& i{
 		display: inline-block;
 		vertical-align: middle;
