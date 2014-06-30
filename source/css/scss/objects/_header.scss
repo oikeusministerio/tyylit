@@ -142,7 +142,7 @@
 		display: inline-block;
 		height: 50px;
 		width: auto;
-		margin-right: em(8.5px);
+		margin-right: em(8.5);
 		vertical-align: middle;
 		border: 0;
 		border-width: 0;
@@ -150,7 +150,7 @@
 
 		@media #{$laptop}{
 			height: 77px;
-			margin-right: em(13px);
+			margin-right: em(13);
 		}
 
 		// for 400-320px
@@ -268,7 +268,7 @@
 
 
 			span{ display: inline; opacity: 1; }
-			i{ margin-left: em(10px); }
+			i{ margin-left: em(10); }
 
 			@media screen and (max-width: 600px){
 				i{ margin-left: 0; }

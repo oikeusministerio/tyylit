@@ -188,8 +188,8 @@ input[type="search"]::-webkit-search-decoration {
 	margin-right: 25px; // for patternlab only
 
 	.form-element{
-		margin-left: em(12px);
-		margin-right: em(12px);
+		margin-left: em(12);
+		margin-right: em(12);
 	}
 
 
@@ -451,7 +451,7 @@ input[type="search"]::-webkit-search-decoration {
 		float: right;
 		padding: 0 0.25em;
 	}
-	.gantt {		
+	.gantt {
 		@media all and (max-width: 700px) {
 			display: none;
 		}
@@ -487,7 +487,7 @@ input[type="search"]::-webkit-search-decoration {
 		.upload-file-button{
 			cursor: pointer;
 			padding: 0.25em 0.25em 0.25em 2em;
-			&:before{				
+			&:before{
 				@extend .om-plus_circle;
 				font-size: 24px;
 				position: absolute;
@@ -545,7 +545,7 @@ input[type="search"]::-webkit-search-decoration {
 			}
 		}
 	}
-	@media all and (min-width: 1075px) {		
+	@media all and (min-width: 1075px) {
 		> .gi-ext {
 			&:nth-of-type(odd) {
 				min-width: 375px;

@@ -139,15 +139,15 @@
 	-webkit-font-smoothing: antialiased;
 
 	&.size-s:before{
-		font-size: em(12px);
+		font-size: em(12);
 	}
 
 	&.size-l:before{
-		font-size: em(24px);
+		font-size: em(24);
 	}
 
 	&.size-xl:before{
-		font-size: em(36px);
+		font-size: em(36);
 	}
 
 	&.align--top:after, &.align--top:before{
@@ -155,6 +155,21 @@
 		margin: -$pad-half $pad-quarter 0 $pad-quarter;
 		padding-top: $pad-quarter;
 		vertical-align: top;
+	}
+}
+
+.icon-as-bg{
+	position: relative;
+	z-index: 0;
+	text-align: center;
+	background-color: transparent;
+
+	&:before{
+		position: absolute;
+		left: 0; top: 0; bottom: 0; right: 0;
+		width: 100%; height: 100%;
+		z-index: -1;
+		@include tran(color, $text-color, .25);
 	}
 }
 
@@ -938,4 +953,4 @@ i{
 .om-warning_sign_outline:before {
 	content: "\E125";
 	@extend .om;
-}  
+}

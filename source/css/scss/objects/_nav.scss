@@ -198,7 +198,7 @@
 			background-color: transparent;
 			a{
 				color: darken($white, 20%);
-				line-height: em(30px);
+				line-height: em(30);
 			}
 		}
 
@@ -239,8 +239,8 @@
 			& i:before{
 				background: #B4B4B4;
 				color: #fff;
-				width: em(23px);
-				line-height: em(24px);
+				width: em(23);
+				line-height: em(24);
 				text-align: center;
 				border-radius: .2em;
 			}

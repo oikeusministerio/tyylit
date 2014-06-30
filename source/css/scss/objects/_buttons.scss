@@ -28,9 +28,10 @@
 	}
 
 	&.disabled, &:disabled {
-		background: $gray-light;
-		color: rgba(128, 128, 128, 0.6);
+		background: $gray-light !important;
+
 		cursor: default;
+		@include tran(color, rgb(128, 128, 128), 0.6);
 	}
 
 	&.alt{
@@ -56,6 +57,13 @@
 
 		&:hover, &:focus{
 			background-color: darken($gray-light, 10%);
+		}
+	}
+
+	&.transparent{
+		background-color: transparent;
+		&:hover, &:focus{
+			background-color: transparent;
 		}
 	}
 
@@ -295,4 +303,56 @@
 	}
 
 }
+
+// Lift button version 2
+
+.lift-button-b{
+	min-height: 125px;
+	max-width: 200px;
+	padding: 1.5em em(5) $pad-half;
+
+	&:before{
+		font-size: em(140);
+		line-height: 1.2;
+	}
+
+	.count-number{
+		font-size: 2em;
+		font-weight: 700;
+		margin-bottom: 0;
+		@include tran(color, $blue, .8)
+	}
+	.info-text{
+		color: $text-color;
+		margin-bottom: $pad-quarter;
+		font-weight: 400;
+	}
+	.lift-button-b{
+		color: $blue;
+		font-weight: 400;
+	}
+
+}
+
+.count-container-b{
+	@extend .count-container;
+	padding: 1em 0;
+
+	&:before{
+		font-size: 4.5em;
+		line-height: 1.1;
+		@include tran(color, $text-color, 0.2);
+	}
+
+	a{
+		background-color: transparent !important;
+		font-size: 1.25em;
+		font-weight: 700;
+
+		@include border-radius(0);
+	}
+}
+
+
+
 

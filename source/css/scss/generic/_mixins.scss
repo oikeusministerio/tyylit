@@ -13,7 +13,10 @@
 	transition: $transition-property $transition-time $method;
 }
 
-@function em($pixels, $context-font-size: $font-size-normal) {
+$base-font-size: 16;
+
+@function em($pixels, $context-font-size: $base-font-size) {
+	@if $pixels == 0 { @return 0 }
 	@return ($pixels / $context-font-size) * 1em;
 }
 
@@ -42,4 +45,39 @@
 	-webkit-background-clip : padding-box;
 	-moz-background-clip : padding;
 	background-clip : padding-box;
+}
+
+/*----------------------------------------------*\
+		RGBA fallbacks:
+		Use like this: @include tran(bg, #00ff00, .8);
+\*----------------------------------------------*/
+
+
+@function trans($color, $percentage) {
+ @return lighten($color, (1-$percentage)*5%);
+}
+@function transd($color, $percentage) {
+ @return darken($color, (1-$percentage)*5%);
+}
+@mixin tran($type, $color, $percentage, $shade: ligthen) {
+	@if $shade == lighten {
+		@if $type == color {
+			color: trans($color, $percentage);
+			color: rgba($color, $percentage);
+		}
+		@if $type == bg {
+			background-color: trans($color, $percentage);
+			background-color: rgba($color, $percentage);
+		}
+	}
+	@else {
+		 @if $type == color {
+			color: transd($color, $percentage);
+			color: rgba($color, $percentage);
+		}
+		@if $type == bg {
+			background-color: transd($color, $percentage);
+			background-color: rgba($color, $percentage);
+		}
+	}
 }

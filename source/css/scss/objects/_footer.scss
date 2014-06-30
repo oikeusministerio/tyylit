@@ -21,7 +21,7 @@
 .footer-nav{
 	@extend .cf;
 
-	padding: 0 em(10px);
+	padding: 0 em(10);
 	color: $white;
 
 	a:hover{ text-decoration: none; }
@@ -54,7 +54,7 @@
 			float: left;
 
 			li{
-				margin-top: em(10px);
+				margin-top: em(10);
 
 				a{
 					i { width: 24px; height: 24px; display: inline-block;
@@ -94,14 +94,14 @@
 					}
 				}
 				i{
-					width: em(23px);
+					width: em(23);
 					text-align: center;
 
 					&.fa{
 						font-size: 1.5em;
 					}
 				}
-				span{ margin-left: em(10px); }
+				span{ margin-left: em(10); }
 			}
 		}
 
@@ -115,7 +115,7 @@
 				margin-bottom: 1em;
 
 				.level-1{ > a{ font-weight: 700; } }
-				.level-2{ margin-left: em(25px);  }
+				.level-2{ margin-left: em(25);  }
 			}
 
 			.column-even{
