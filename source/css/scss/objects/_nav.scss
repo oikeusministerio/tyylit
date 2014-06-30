@@ -405,11 +405,11 @@
 		display: inline-block;
 		vertical-align: middle;
 
-		&:first-child{
+		&.previous-item{
 			float: left;
 		}
 
-		&:last-child{
+		&.next-item{
 			float: right;
 		}
 
