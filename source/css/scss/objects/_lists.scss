@@ -66,6 +66,11 @@
 .tagit-list{
 	position: relative;
 	width: 100%;
+	font-size: 1em;
+
+	&.tagit {
+		overflow: hidden;
+	}
 
 	.tagit-new{
 		@extend .icon-tag;
@@ -74,6 +79,7 @@
 			position: absolute;
 			top: 9px;
 			right: 7px;
+
 		}
 	}
 
@@ -121,6 +127,29 @@
 	}
 }
 
+.person-list {
+	@extend .tagit-list;
+	.tagit-new{
+		@extend .om-avatar;
+
+		&:before{
+			position: absolute;
+			right: 7px;
+		}
+	}
+}
+
+.location-list {
+	@extend .tagit-list;
+	.tagit-new{
+		@extend .om-household;
+
+		&:before{
+			position: absolute;
+			right: 7px;
+		}
+	}
+}
 // semantic search/list
 
 .semantic-list{

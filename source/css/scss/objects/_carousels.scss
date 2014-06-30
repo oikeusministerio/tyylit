@@ -96,7 +96,7 @@
 
 .carousel-control {
 	color: #FFFFFF;
-	font-size: 40px;
+	font-size: 24px;
 	text-align: center;
 	margin-top: -20px;
 	opacity: 0.66;
@@ -122,12 +122,12 @@
 
 	&.right::before {
 		font-family: ok-icons;
-		content: "\E105";
+		content: "\E118";
 	}
 
 	&.left::before {
 		font-family: ok-icons;
-		content: "\E108";
+		content: "\E117";
 	}	
 
 	&:hover, &:focus
@@ -160,7 +160,7 @@
 	}	
 	li::before {
 		font-family: ok-icons;
-		content: "\E010";
+		content: "\E096";
 	}
 	 
 	.active
@@ -170,7 +170,7 @@
 	.active::before {
 		font-family: ok-icons;
 		color:white;
-		content: "\E010";
+		content: "\E096";
 	}	
 }
 .carousel-caption

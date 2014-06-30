@@ -500,16 +500,13 @@ if ($('.person-list').length) {
 }
 
 // hankesivu-read-mode
-$("#btnAddParticipationContainer").removeClass("is-hidden");
-$("#btnCancelParticipationContainer").removeClass("is-hidden");
-$("#addParticipations").hide();
 $("#btnAddParticipationContainer").find("a").on("click", function () {
-	$("#showParticipations").hide();
-	$("#addParticipations").show();
+    $("#showParticipations").addClass("is-hidden");
+    $("#addParticipations").removeClass("is-hidden");
 });
 $("#btnCancelParticipationContainer").find("a").on("click", function () {
-	$("#showParticipations").show();
-	$("#addParticipations").hide();
+    $("#showParticipations").removeClass("is-hidden");
+	$("#addParticipations").addClass("is-hidden");
 });
 
 $("#rblIDontAcceptTerms").click(function () {
@@ -567,9 +564,10 @@ function cleanShortcutInput(input) {
     if (input == null || input.length == 0)
         return input;
     var raw = input.toLowerCase()
-        .normalize("NFKD") // ä to a, ö to o...
-        .replace(/[\u0300-\u036F]/g, "")
         .replace(/ /g, "_")
+        .replace(/[äÄåÅáÁ]/gi, 'a')
+        .replace(/ö/g, "o")
+        .replace(/é/g, "e")
         .replace(/[^a-z-0-9-_]/g, '')
         .trim();
 

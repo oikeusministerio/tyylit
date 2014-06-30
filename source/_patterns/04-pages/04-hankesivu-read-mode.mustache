@@ -46,7 +46,7 @@
           <a class="icon-lift-link" href="//www.foo.bar">Miten nyt kerättävä rahoitus tulisi sijoittaa?</a>
           <span class="date">26.5. asti</span>
         </div>
-        <div id="btnAddParticipationContainer" class="lift-button gray-base is-hidden float-left">
+        <div id="btnAddParticipationContainer" class="lift-button gray-base float-left">
           <div class="icon-container">
             <a id="btnAddParticipationIcon">
               <span class="icon-span icon-add"></span>
@@ -55,7 +55,7 @@
           <a class="icon-lift-link" id="btnAddParticipation">Luo uusi osallistuminen</a>
         </div>
       </div>
-      <div id="addParticipations" class="participations cf">
+      <div id="addParticipations" class="participations cf is-hidden">
         <h2 class="create">
           Luo uusi osallistuminen
         </h2>
@@ -71,7 +71,7 @@
           </div>
           <a>Luo vapaamuotoinen keskustelu</a>
         </div>
-        <div id="btnCancelParticipationContainer" class="lift-button gray-base cancel is-hidden float-left">
+        <div id="btnCancelParticipationContainer" class="lift-button gray-base cancel float-left">
           <div class="icon-container">
             <a id="btnCancelParticipationIcon">
               <span class="icon-span icon-cancel"></span>
@@ -315,7 +315,7 @@
                 <span class="icon-help" title="lisää käyttäjänimiä tai sähköpostiosoitteita" placement="top">Kenelle</span>
                 <p class="helper-text small is-vishidden">lisää käyttäjänimiä tai sähköpostiosoitteita</p>
               </div>
-              <input type="text" />
+              <ul id="tbContacts" class="person-list"></ul>
             </div>
             <div class="form-element">
               <div class="helper-container">

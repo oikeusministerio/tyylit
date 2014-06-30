@@ -346,6 +346,11 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 .edit-hanke-form, .show-hanke-form {
+	.participations {
+		.no-js &{
+			.lift-button { display: none; }
+		}
+	}
 	.hanke-img-container {
 		width: 100%;
 		max-width: 1200px;
