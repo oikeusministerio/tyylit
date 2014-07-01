@@ -38,101 +38,8 @@
 	</head>
 
 	<body class="body">
-<div class="list-lift">
-	<div class="navigation">
-		<div class="btn-group enlarged">
-			<a href="#" class="active">Painike 1<span class="count">3</span></a>
-			<a href="#">Painike 2<span class="count">15</span></a>
-			<a href="#">Painike 3</a>
-			<a href="#">Painike 4</a>
-			<a href="#">Painike 5</a>
-			<a href="#">Painike 6<span class="count">66</span></a>
-		</div>
-		<div class="tag-search-container">
-			<ul id="otakantaa-tags" class="tagit-list"></ul>		</div>
-	</div>
-	<div class="content-list">
-		<ul>
-			<li class="single-list-item">
-				<ul class="items-container">
-					<li class="block-item">
-						<div class="lad">
-							<a href="">Lorem lipsum linkki</a>
-							<p class="description">Lorem lipsum kuvaus linkille</p>
-						</div>					</li>
-					<li class="block-item">
-						<div class="count-container-b icon-comment icon-as-bg">
-							<a href="//www.foo.bar">17</a>
-						</div>					</li>
-					<li class="block-item">
-						<div class="lad">
-							<a href="">Lorem lipsum linkki</a>
-							<p class="description">Lorem lipsum kuvaus linkille</p>
-						</div>					</li>
-					<li class="block-item">
-						<ul class="tag-list">
-							<li class="tag-with-icon"><i class="fa fa-university"></i>Esimerkkiministeriö</li>
-							<li>Espoo</li>
-							<li>Vantaa</li>
-							<li>Turvallisuus</li>
-							<li>Esimerkki</li>
-						</ul>					</li>
-				</ul>
-			</li>
-			<li class="single-list-item">
-				<ul class="items-container">
-					<li class="block-item">
-						<div class="lad">
-							<a href="">Lorem lipsum linkki</a>
-							<p class="description">Lorem lipsum kuvaus linkille</p>
-						</div>					</li>
-					<li class="block-item">
-						<div class="count-container-b icon-comment icon-as-bg">
-							<a href="//www.foo.bar">17</a>
-						</div>					</li>
-					<li class="block-item">
-						<div class="lad">
-							<a href="">Lorem lipsum linkki</a>
-							<p class="description">Lorem lipsum kuvaus linkille</p>
-						</div>					</li>
-					<li class="block-item">
-						<ul class="tag-list">
-							<li class="tag-with-icon"><i class="fa fa-university"></i>Esimerkkiministeriö</li>
-							<li>Espoo</li>
-							<li>Vantaa</li>
-							<li>Turvallisuus</li>
-							<li>Esimerkki</li>
-						</ul>					</li>
-				</ul>
-			</li>
-			<li class="single-list-item">
-				<ul class="items-container">
-					<li class="block-item">
-						<div class="lad">
-							<a href="">Lorem lipsum linkki</a>
-							<p class="description">Lorem lipsum kuvaus linkille</p>
-						</div>					</li>
-					<li class="block-item">
-						<div class="count-container-b icon-comment icon-as-bg">
-							<a href="//www.foo.bar">17</a>
-						</div>					</li>
-					<li class="block-item">
-						<div class="lad">
-							<a href="">Lorem lipsum linkki</a>
-							<p class="description">Lorem lipsum kuvaus linkille</p>
-						</div>					</li>
-					<li class="block-item">
-						<ul class="tag-list">
-							<li class="tag-with-icon"><i class="fa fa-university"></i>Esimerkkiministeriö</li>
-							<li>Espoo</li>
-							<li>Vantaa</li>
-							<li>Turvallisuus</li>
-							<li>Esimerkki</li>
-						</ul>					</li>
-				</ul>
-			</li>
-		</ul>
-	</div>
+<div class="edit-logo input-as-icon-container">
+	<label class="upload-file-button"><input type="file" id="upload-logo-image"><i class="fa fa-plus-circle"></i>Vaihda logo</label>
 </div>	<script type="text/javascript" src="../../js/jquery-2.0.0b2.js"></script>
 	<!--
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -148,8 +55,8 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "organisms-list-lift2";
-		var lineage        = [{"lineagePattern":"atoms-tagit","lineagePath":"..\/..\/patterns\/00-atoms-03-lists-04-tagit\/00-atoms-03-lists-04-tagit.html"},{"lineagePattern":"atoms-link-and-description","lineagePath":"..\/..\/patterns\/00-atoms-02-text-_07-link-and-description\/00-atoms-02-text-_07-link-and-description.html"},{"lineagePattern":"atoms-count-icon-b","lineagePath":"..\/..\/patterns\/00-atoms-04-images-09-count-icon-b\/00-atoms-04-images-09-count-icon-b.html"},{"lineagePattern":"atoms-tag-list","lineagePath":"..\/..\/patterns\/00-atoms-03-lists-03-tag-list\/00-atoms-03-lists-03-tag-list.html"}];
+		var patternPartial = "atoms-change-or-edit-btn";
+		var lineage        = [];
 		var lineageR       = [];
 		var patternState   = "";
 		var cssEnabled     = false;
