@@ -17,6 +17,13 @@ td {
 	padding: 0.2em;
 }
 
+.scrollable-table-wrapper{
+	overflow: auto;
+
+	table{ width: 100%; }
+	thead td{ white-space: nowrap; }
+}
+
 .table-borderless{
 	border: 0;
 	width: auto;
@@ -27,7 +34,7 @@ td {
 		line-height: 1.6em;
 		border: 0;
 	}
-		
+
 	tr > th {
 		min-width: 200px;
 	}

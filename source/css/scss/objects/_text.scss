@@ -72,6 +72,7 @@ $fadeout-space: 70px;
 	&.open{
 		max-height: 100%;
 		padding-bottom: 10px;
+		overflow: auto;
 	}
 
 	.read-more{

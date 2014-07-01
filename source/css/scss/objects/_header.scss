@@ -23,9 +23,8 @@
 
 .header {
 	position: relative;
-	padding: 0 $pad-half;
-
-	@extend .lc;
+	padding: 0;
+	width: 100%;
 
 	.element-group{
 		width: 100%;
@@ -79,6 +78,7 @@
 		position: static;
 		padding-left: 12px;
 		padding-right: 12px;
+		@extend .lc;
 
 		@media #{$tablet}{
 			position: relative;
@@ -187,6 +187,7 @@
 /* Dirty stuff to fix pasted-horror.css */
 
 .header #topnavibar{
+	width: 100%;
 	z-index: 1;
 	padding: 0;
 
@@ -223,7 +224,7 @@
 		}
 	}
 
-	.container{ width: 100%; max-width: 960px; }
+	.container{ @extend .lc; width: 100%; padding: 0; }
 	.navigation > a {
 		display: none;
 
