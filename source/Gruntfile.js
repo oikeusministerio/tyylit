@@ -145,6 +145,16 @@ module.exports = function( grunt ) {
 		},
 
 		shell: {
+			icons: {
+				command: 'php ../core/icons.php',
+				options: {
+					failOnError: false,
+					stdout: true,
+					execOptions: {
+						cwd: '.'
+					}
+				}
+			},
 			generate: {
 				command: 'php ../core/builder.php -g',
 				options: {
@@ -156,13 +166,13 @@ module.exports = function( grunt ) {
 				}
 			}
 		}
-
+		
 	});
 
 	// Dynamically load Npm Tasks
 	require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
 	// Task lists
-	grunt.registerTask('default', ["sass", "uglify", "shell", "watch"]);
+	grunt.registerTask('default', ["shell", "sass", "uglify", "watch"]);
 
 };
