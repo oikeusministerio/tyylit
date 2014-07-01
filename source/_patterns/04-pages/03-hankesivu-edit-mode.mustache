@@ -4,15 +4,13 @@
     <h1>Muokkaa hanketta</h1>
     <div class="hanke-img-container">
       <img src="../../images/fpo_16x9.png" alt="Taustakuva" class="hanke-bg" />
-      <div class="edit-bg icon-container">
-        <label for="upload-background-image" class="upload-file-button">Vaihda taustakuva</label>
-        <input type="file" id="upload-background-image" />
+      <div class="edit-bg input-as-icon-container">
+        <label class="upload-file-button"><input type="file" id="upload-background-image"><i class="fa fa-plus-circle"></i>Vaihda taustakuva</label>
       </div>
       <div class="logo-container">
         <img src="../../images/fpo_avatar.png" alt="Logo" class="hanke-logo" />
-        <div class="edit-logo icon-container">
-          <label for="upload-logo-image" class="upload-file-button">Vaihda logo</label>
-          <input type="file" id="upload-logo-image" />
+        <div class="edit-logo input-as-icon-container">
+          <label class="upload-file-button"><input type="file" id="upload-logo-image"><i class="fa fa-plus-circle"></i>Vaihda logo</label>
         </div>
       </div>
     </div>
@@ -129,7 +127,7 @@
       <!-- Optional field those will be fadeout -->
       <div class="fadeout clickable">
         <div id="hanke-attachments" class="content-item large">
-          <h3>Liitteet</h3>          
+          <h3>Liitteet</h3>
           <!-- Hanke attachment list -->
           <div class="attachment-form inline-element">
             <div class="form-element attachment-edit">

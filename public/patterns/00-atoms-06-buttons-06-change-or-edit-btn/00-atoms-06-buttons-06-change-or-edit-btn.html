@@ -38,9 +38,8 @@
 	</head>
 
 	<body class="body">
-<div class="form-element text-el">
-	<label for="text-field">Kirjoita tekstiä</label>
-	<input type="text" id="text-field" placeholder="Kirjoita tähän...">
+<div class="edit-logo input-as-icon-container">
+	<label class="upload-file-button"><input type="file" id="upload-logo-image"><i class="fa fa-plus-circle"></i>Vaihda logo</label>
 </div>	<script type="text/javascript" src="../../js/jquery-2.0.0b2.js"></script>
 	<!--
 	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -56,7 +55,7 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "atoms-field-text";
+		var patternPartial = "atoms-change-or-edit-btn";
 		var lineage        = [];
 		var lineageR       = [];
 		var patternState   = "";
