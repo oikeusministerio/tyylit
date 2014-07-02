@@ -603,3 +603,11 @@ $(".debug-hide").click(function () {
 });
 /* END OF REMOVE THESE IN PRODUCTION */
 
+// Thumbnail display on hover.
+
+$('.js-thumbnail-hover').hover( function(){
+		$(this).find('.js-thumbnail').show(300);
+	}, function() {
+		$(this).find('.js-thumbnail').hide(200);
+	}
+);

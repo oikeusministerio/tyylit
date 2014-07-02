@@ -10,7 +10,7 @@
 		<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 
-		<link rel="stylesheet" href="../../css/style.css?1404311756" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1404314299" media="all" />
 		<!--[if lt IE 9]>
 			<link href="../../ie8.css" rel="stylesheet"/>
 		<![endif]-->
@@ -29,8 +29,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1404311756" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1404311756" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1404314299" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1404314299" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -303,44 +303,56 @@
 					<div id="molecules-thumbnail-block" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-02-blocks-11-thumbnail-block/01-molecules-02-blocks-11-thumbnail-block.html" class="patternLink" data-patternpartial="molecules-thumbnail-block">Thumbnail Block</a></h2>
 						<div class="sg-pattern-body">
-							<div class="thumbnail media">
-	<div class="float-left">
-		<img class="media-object" src="https://fbcdn-profile-a.akamaihd.net/static-ak/rsrc.php/v2/yo/r/UlIqmHJn-SK.gif" alt="nimi" />
-	</div>
-	<div class="media-body">
-		<h4 class="media-heading">Nimi Tähän</h4>
-		<span>Organisaatio</span>
-		<span>Tittteli</span>
-	</div>
-	<div class="keywords">
-		<span>Asia</span>
-		<span>Sana</span>
-		<span>Foo</span>
-		<span>Baz</span>
-		<span>Bar</span>
+							<div class="js-thumbnail-hover">
+	<p>Tämän päältä saa hoverin.</p>
+
+	<div class="thumbnail media js-thumbnail">
+		<div class="float-left">
+			<img class="media-object" src="https://fbcdn-profile-a.akamaihd.net/static-ak/rsrc.php/v2/yo/r/UlIqmHJn-SK.gif" alt="nimi" />
+		</div>
+		<div class="media-body">
+			<h4 class="media-heading">Nimi Tähän</h4>
+			<span>Organisaatio</span>
+			<span>Tittteli</span>
+		</div>
+		<div class="keywords">
+			<span>Asia</span>
+			<span>Sana</span>
+			<span>Foo</span>
+			<span>Baz</span>
+			<span>Bar</span>
+		</div>
 	</div>
 </div>
+
+
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;div class=&quot;thumbnail media&quot;&gt;
-	&lt;div class=&quot;float-left&quot;&gt;
-		&lt;img class=&quot;media-object&quot; src=&quot;https://fbcdn-profile-a.akamaihd.net/static-ak/rsrc.php/v2/yo/r/UlIqmHJn-SK.gif&quot; alt=&quot;nimi&quot; /&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;media-body&quot;&gt;
-		&lt;h4 class=&quot;media-heading&quot;&gt;Nimi T&auml;h&auml;n&lt;/h4&gt;
-		&lt;span&gt;Organisaatio&lt;/span&gt;
-		&lt;span&gt;Tittteli&lt;/span&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;keywords&quot;&gt;
-		&lt;span&gt;Asia&lt;/span&gt;
-		&lt;span&gt;Sana&lt;/span&gt;
-		&lt;span&gt;Foo&lt;/span&gt;
-		&lt;span&gt;Baz&lt;/span&gt;
-		&lt;span&gt;Bar&lt;/span&gt;
+										&lt;div class=&quot;js-thumbnail-hover&quot;&gt;
+	&lt;p&gt;T&auml;m&auml;n p&auml;&auml;lt&auml; saa hoverin.&lt;/p&gt;
+
+	&lt;div class=&quot;thumbnail media js-thumbnail&quot;&gt;
+		&lt;div class=&quot;float-left&quot;&gt;
+			&lt;img class=&quot;media-object&quot; src=&quot;https://fbcdn-profile-a.akamaihd.net/static-ak/rsrc.php/v2/yo/r/UlIqmHJn-SK.gif&quot; alt=&quot;nimi&quot; /&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;media-body&quot;&gt;
+			&lt;h4 class=&quot;media-heading&quot;&gt;Nimi T&auml;h&auml;n&lt;/h4&gt;
+			&lt;span&gt;Organisaatio&lt;/span&gt;
+			&lt;span&gt;Tittteli&lt;/span&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;keywords&quot;&gt;
+			&lt;span&gt;Asia&lt;/span&gt;
+			&lt;span&gt;Sana&lt;/span&gt;
+			&lt;span&gt;Foo&lt;/span&gt;
+			&lt;span&gt;Baz&lt;/span&gt;
+			&lt;span&gt;Bar&lt;/span&gt;
+		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
+
+
 									</code>
 								</pre>
 							</div>
@@ -401,10 +413,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1404311756">
+	<script id="pl-js-polyfill-insert-1404314299">
 		(function() {
 			if (self != top) {
-				var cb = '1404311756';
+				var cb = '1404314299';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -413,10 +425,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1404311756">
+	<script id="pl-js-insert-1404314299">
 		(function() {
 			if (self != top) {
-				var cb = '1404311756';
+				var cb = '1404314299';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
