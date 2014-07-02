@@ -231,6 +231,11 @@
 		margin-bottom: 0.325em;
 		display: block;
 	}
+	&.radiogroup{
+		input[type="radio"]{
+			display: none;
+		}
+	}
 }
 
 .select-style {
@@ -334,15 +339,20 @@
 // Lift button version 2
 
 .lift-button-b{
-	min-height: 125px;
-	max-width: 200px;
-	padding: 1.5em em(5) $pad-half;
+	height: 175px;
+	overflow: hidden;
+	width: 175px;
+	padding: 3em em(5) $pad-half;
+	margin: $pad-quarter;
 
 	&:before{
 		font-size: em(140);
 		line-height: 1.2;
 	}
-
+	&.gray-base{
+		background-color: $gray-light;
+		.count-container a{ background-color: $gray-light; }
+	}
 	.count-number{
 		font-size: 2em;
 		font-weight: 700;
@@ -351,7 +361,7 @@
 	}
 	.info-text{
 		color: $text-color;
-		margin-bottom: $pad-quarter;
+		margin: $pad-half 0;
 		font-weight: 400;
 	}
 	.lift-button-b{
@@ -359,6 +369,14 @@
 		font-weight: 400;
 	}
 
+	.lift-button-link, .date{
+		display: block;
+		text-align: center;
+		line-height: 1.2;
+	}
+	.date{
+		color: $text-color;
+	}
 }
 
 .count-container-b{

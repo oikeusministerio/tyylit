@@ -23,6 +23,14 @@ if ($('.btn-group').length) {
 	}
 }
 
+// Label-as-button disabled style.
+$('.label-as-button').each( function(){
+	if( $(this).find('input').attr("disabled") === "disabled" ){
+		$(this).addClass('disabled');
+	}
+});
+
+
 //Form stuff
 //if( $('.form-element').length ){
 //Email validation

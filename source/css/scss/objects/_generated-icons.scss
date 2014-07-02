@@ -1,8 +1,8 @@
 /******  GENERATED IN ICONS.PHP ******/
 
-/****** Democracy glyphs ******/
-/* Naming convention from https://github.com/Oikeusministerio/tyylit/blob/master/source/fonts/glyphnames.csv */
-/* Few alias has been left those has been already implemented in the code */
+/****** Democracy glyphs ******/ 
+/* Naming convention from https://github.com/Oikeusministerio/tyylit/blob/master/source/fonts/glyphnames.csv */ 
+/* Few alias has been left those has been already implemented in the code */ 
 
 .om-lock:before {
 	content: "\E001";
@@ -139,7 +139,7 @@
 	@extend .om;
 }
 
-.om-keskustelu:before, .icon-comment:before {
+.om-keskustelu:before {
 	content: "\E028";
 	@extend .om;
 }
