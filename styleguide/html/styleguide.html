@@ -10,7 +10,7 @@
 		<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 
-		<link rel="stylesheet" href="../../css/style.css?1404221902" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1404290345" media="all" />
 		<!--[if lt IE 9]>
 			<link href="../../ie8.css" rel="stylesheet"/>
 		<![endif]-->
@@ -29,8 +29,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1404221902" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1404221902" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1404290345" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1404290345" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -1067,14 +1067,20 @@
 	<input type="submit" value="Osallistumisraportti">
 </div>
 
-<div class="btn-group enlarged">
-	<a href="#" class="active">Painike 1<span class="count">A</span></a>
-	<a href="#">Painike 2<span class="count">B</span></a>
-	<a href="#">Painike 3<span class="count">C</span></a>
-	<a href="#">Painike 4<span class="count">D</span></a>
-	<a href="#">Painike 5<span class="count">E</span></a>
-	<a href="#">Painike 6<span class="count">F</span></a>
+<!-- Muutokset 2.7.2014: Lisätty luokka btn-group-wrapper, jota tulee käyttää enlarged button groupin kanssa. Lisäksi enlargedin sisällä voi käyttää inline-row luokkaa, joka sitoo sen sisällä olevat sanat samalle riville.  -->
+
+<div class="btn-group-wrapper">
+	<div class="btn-group enlarged">
+		<a href="#" class="active">Painike 1<span class="count">A</span></a>
+		<a href="#"><span class="inline-row">Painike 2</span><span class="count">B</span></a>
+		<a href="#">Painike 3<span class="count">C</span></a>
+		<a href="#">Painike 4<span class="count">D</span></a>
+		<a href="#">Painike 5<span class="count">E</span></a>
+		<a href="#">Painike 6<span class="count">F</span></a>
+	</div>
 </div>
+
+
 
 <div class="btn-group sorting">
 	<a href="#" class="active">Lajittelu 1</a>
@@ -1165,14 +1171,20 @@
 	&lt;input type=&quot;submit&quot; value=&quot;Osallistumisraportti&quot;&gt;
 &lt;/div&gt;
 
-&lt;div class=&quot;btn-group enlarged&quot;&gt;
-	&lt;a href=&quot;#&quot; class=&quot;active&quot;&gt;Painike 1&lt;span class=&quot;count&quot;&gt;A&lt;/span&gt;&lt;/a&gt;
-	&lt;a href=&quot;#&quot;&gt;Painike 2&lt;span class=&quot;count&quot;&gt;B&lt;/span&gt;&lt;/a&gt;
-	&lt;a href=&quot;#&quot;&gt;Painike 3&lt;span class=&quot;count&quot;&gt;C&lt;/span&gt;&lt;/a&gt;
-	&lt;a href=&quot;#&quot;&gt;Painike 4&lt;span class=&quot;count&quot;&gt;D&lt;/span&gt;&lt;/a&gt;
-	&lt;a href=&quot;#&quot;&gt;Painike 5&lt;span class=&quot;count&quot;&gt;E&lt;/span&gt;&lt;/a&gt;
-	&lt;a href=&quot;#&quot;&gt;Painike 6&lt;span class=&quot;count&quot;&gt;F&lt;/span&gt;&lt;/a&gt;
+&lt;!-- Muutokset 2.7.2014: Lis&auml;tty luokka btn-group-wrapper, jota tulee k&auml;ytt&auml;&auml; enlarged button groupin kanssa. Lis&auml;ksi enlargedin sis&auml;ll&auml; voi k&auml;ytt&auml;&auml; inline-row luokkaa, joka sitoo sen sis&auml;ll&auml; olevat sanat samalle riville.  --&gt;
+
+&lt;div class=&quot;btn-group-wrapper&quot;&gt;
+	&lt;div class=&quot;btn-group enlarged&quot;&gt;
+		&lt;a href=&quot;#&quot; class=&quot;active&quot;&gt;Painike 1&lt;span class=&quot;count&quot;&gt;A&lt;/span&gt;&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;inline-row&quot;&gt;Painike 2&lt;/span&gt;&lt;span class=&quot;count&quot;&gt;B&lt;/span&gt;&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;Painike 3&lt;span class=&quot;count&quot;&gt;C&lt;/span&gt;&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;Painike 4&lt;span class=&quot;count&quot;&gt;D&lt;/span&gt;&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;Painike 5&lt;span class=&quot;count&quot;&gt;E&lt;/span&gt;&lt;/a&gt;
+		&lt;a href=&quot;#&quot;&gt;Painike 6&lt;span class=&quot;count&quot;&gt;F&lt;/span&gt;&lt;/a&gt;
+	&lt;/div&gt;
 &lt;/div&gt;
+
+
 
 &lt;div class=&quot;btn-group sorting&quot;&gt;
 	&lt;a href=&quot;#&quot; class=&quot;active&quot;&gt;Lajittelu 1&lt;/a&gt;
@@ -1532,8 +1544,8 @@
 							</div>
 						</div>
 					</div>
-					<div id="atoms-change-or-edit-btn" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-06-buttons-06-change-or-edit-btn/00-atoms-06-buttons-06-change-or-edit-btn.html" class="patternLink" data-patternpartial="atoms-change-or-edit-btn">Change Or Edit Btn</a></h2>
+					<div id="atoms-change-or-edit-button" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-06-buttons-06-change-or-edit-button/00-atoms-06-buttons-06-change-or-edit-button.html" class="patternLink" data-patternpartial="atoms-change-or-edit-button">Change Or Edit Button</a></h2>
 						<div class="sg-pattern-body">
 							<div class="edit-logo input-as-icon-container">
 	<label class="upload-file-button"><input type="file" id="upload-logo-image"><i class="fa fa-plus-circle"></i>Vaihda logo</label>
@@ -5473,10 +5485,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1404221902">
+	<script id="pl-js-polyfill-insert-1404290345">
 		(function() {
 			if (self != top) {
-				var cb = '1404221902';
+				var cb = '1404290345';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -5485,10 +5497,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1404221902">
+	<script id="pl-js-insert-1404290345">
 		(function() {
 			if (self != top) {
-				var cb = '1404221902';
+				var cb = '1404290345';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
