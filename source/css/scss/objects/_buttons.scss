@@ -139,6 +139,23 @@
 
 // Button groups
 
+.btn-group-wrapper{
+	overflow-x: auto;
+	overflow-y: hidden;
+	margin-bottom: $pad*1.5;
+
+	.enlarged{
+		display: table;
+		margin-bottom: $pad-half;
+		float: none;
+
+		a{
+			display: table-cell;
+			float: none;
+		}
+	}
+}
+
 .btn-group{
 	@extend .cf;
 	margin-bottom: 25px;
@@ -182,9 +199,8 @@
 		height: 54px;
 		a{ height: 100%; }
 
-		@media screen and (max-width: 575px){
-			height: 108px;
-			a{ height: 50%; }
+		.inline-row{
+			white-space: nowrap;
 		}
 	}
 

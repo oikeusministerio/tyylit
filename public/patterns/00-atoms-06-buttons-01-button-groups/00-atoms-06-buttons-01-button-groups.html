@@ -10,7 +10,7 @@
 		<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 
-		<link rel="stylesheet" href="../../css/style.css?1404221902" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1404290345" media="all" />
 		<!--[if lt IE 9]>
 			<link href="../../ie8.css" rel="stylesheet"/>
 		<![endif]-->
@@ -29,8 +29,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1404221902" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1404221902" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1404290345" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1404290345" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -56,14 +56,20 @@
 	<input type="submit" value="Osallistumisraportti">
 </div>
 
-<div class="btn-group enlarged">
-	<a href="#" class="active">Painike 1<span class="count">A</span></a>
-	<a href="#">Painike 2<span class="count">B</span></a>
-	<a href="#">Painike 3<span class="count">C</span></a>
-	<a href="#">Painike 4<span class="count">D</span></a>
-	<a href="#">Painike 5<span class="count">E</span></a>
-	<a href="#">Painike 6<span class="count">F</span></a>
+<!-- Muutokset 2.7.2014: Lisätty luokka btn-group-wrapper, jota tulee käyttää enlarged button groupin kanssa. Lisäksi enlargedin sisällä voi käyttää inline-row luokkaa, joka sitoo sen sisällä olevat sanat samalle riville.  -->
+
+<div class="btn-group-wrapper">
+	<div class="btn-group enlarged">
+		<a href="#" class="active">Painike 1<span class="count">A</span></a>
+		<a href="#"><span class="inline-row">Painike 2</span><span class="count">B</span></a>
+		<a href="#">Painike 3<span class="count">C</span></a>
+		<a href="#">Painike 4<span class="count">D</span></a>
+		<a href="#">Painike 5<span class="count">E</span></a>
+		<a href="#">Painike 6<span class="count">F</span></a>
+	</div>
 </div>
+
+
 
 <div class="btn-group sorting">
 	<a href="#" class="active">Lajittelu 1</a>
@@ -184,10 +190,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1404221902">
+	<script id="pl-js-polyfill-insert-1404290345">
 		(function() {
 			if (self != top) {
-				var cb = '1404221902';
+				var cb = '1404290345';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -196,10 +202,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1404221902">
+	<script id="pl-js-insert-1404290345">
 		(function() {
 			if (self != top) {
-				var cb = '1404221902';
+				var cb = '1404290345';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}

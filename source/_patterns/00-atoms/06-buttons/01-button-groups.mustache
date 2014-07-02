@@ -16,14 +16,20 @@
 	<input type="submit" value="Osallistumisraportti">
 </div>
 
-<div class="btn-group enlarged">
-	<a href="#" class="active">Painike 1<span class="count">A</span></a>
-	<a href="#">Painike 2<span class="count">B</span></a>
-	<a href="#">Painike 3<span class="count">C</span></a>
-	<a href="#">Painike 4<span class="count">D</span></a>
-	<a href="#">Painike 5<span class="count">E</span></a>
-	<a href="#">Painike 6<span class="count">F</span></a>
+<!-- Muutokset 2.7.2014: Lisätty luokka btn-group-wrapper, jota tulee käyttää enlarged button groupin kanssa. Lisäksi enlargedin sisällä voi käyttää inline-row luokkaa, joka sitoo sen sisällä olevat sanat samalle riville.  -->
+
+<div class="btn-group-wrapper">
+	<div class="btn-group enlarged">
+		<a href="#" class="active">Painike 1<span class="count">A</span></a>
+		<a href="#"><span class="inline-row">Painike 2</span><span class="count">B</span></a>
+		<a href="#">Painike 3<span class="count">C</span></a>
+		<a href="#">Painike 4<span class="count">D</span></a>
+		<a href="#">Painike 5<span class="count">E</span></a>
+		<a href="#">Painike 6<span class="count">F</span></a>
+	</div>
 </div>
+
+
 
 <div class="btn-group sorting">
 	<a href="#" class="active">Lajittelu 1</a>
