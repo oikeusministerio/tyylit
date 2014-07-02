@@ -72,10 +72,6 @@
 }
 .toast-info {
 	border-color: #e2e2e2;
-
-	& i.inverse:before{
-		background-color: #ccc;
-	}
 }
 .toast-warning {
 	border-color: $warning;
