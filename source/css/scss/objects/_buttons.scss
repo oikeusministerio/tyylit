@@ -144,6 +144,10 @@
 	overflow-y: hidden;
 	margin-bottom: $pad*1.5;
 
+	@media screen and(max-width: 600px){
+		float: none;
+	}
+
 	.enlarged{
 		display: table;
 		margin-bottom: $pad-half;
