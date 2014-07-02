@@ -124,6 +124,7 @@
 	}
 
 	.b-thumb {
+		line-height: 0;
 		@media all and (min-width: $bp-small-2) {
 			display: table-cell;
 			vertical-align: top;
@@ -142,8 +143,19 @@
 		@media all and (min-width: $bp-small-2) {
 			display: table-cell;
 			width: 70%;
-			padding: 0 $pad;
+			padding: 0;
 		}
+
+		p{
+			padding: $pad;
+		}
+	}
+
+	.b-title{
+		background-color: $blue;
+		color: $white;
+		padding: $pad;
+		margin: 0;
 	}
 }
 
