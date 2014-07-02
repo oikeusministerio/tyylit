@@ -491,6 +491,36 @@ Original:
 	}
 }
 
+.thumbnail{
+	&.media{
+		@extend .cf;
+		max-width: 250px;
+		width: 100%;
+		background-color: #fff;
+		border: 1px solid $border-color;
+		padding: 0;
+
+		display: none;
+
+		.float-left{
+			padding: $pad-quarter 0 0 $pad-quarter;
+		}
+
+		.media-body{
+			padding: $pad-quarter $pad-quarter 0 0;
+			margin-left: 60px;
+			h4{ margin: 0 0 $pad-quarter; }
+			span{ display: block; }
+		}
+
+		.keywords{
+			clear: left;
+			padding: $pad-half $pad-quarter;
+			background-color: $gray-light;
+		}
+	}
+}
+
 
 
 
