@@ -408,7 +408,7 @@ $('.toast-container').find('.toast-trigger').on('click', function () {
 // Carousel
 
 $('#myCarousel').carousel({
-	interval: 700000,
+	interval: 7000,
 	pause: 'hover'
 });
 
@@ -606,8 +606,8 @@ $(".debug-hide").click(function () {
 // Thumbnail display on hover.
 
 $('.js-thumbnail-hover').hover( function(){
-		$(this).find('.js-thumbnail').show(300);
+		$(this).find('.js-thumbnail').delay(250).show(100);
 	}, function() {
-		$(this).find('.js-thumbnail').hide(200);
+		$(this).find('.js-thumbnail').hide(50).stop(true, true);
 	}
 );

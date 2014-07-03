@@ -70,6 +70,11 @@
 		font-size: 1.2em;
 	}
 }
+.toast-info, .toast-warning{
+	.toast-icon{
+		font-size: 1.4em;
+	}
+}
 .toast-info {
 	border-color: #e2e2e2;
 }

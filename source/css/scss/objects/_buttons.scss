@@ -143,6 +143,7 @@
 	overflow-x: auto;
 	overflow-y: hidden;
 	margin-bottom: $pad*1.5;
+	float: left;
 
 	@media screen and(max-width: 600px){
 		float: none;
@@ -266,7 +267,9 @@
 		border: 1px solid $border-color;
 		color: $white;
 		padding: 4px 35px 4px 6px;
+		appearance: none;
 		-webkit-appearance: none;
+		-moz-appearance: none;
 		@include border-radius(2px, 2px, 2px, 2px);
 	}
 }

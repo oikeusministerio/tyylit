@@ -300,10 +300,14 @@ Original:
 
 			img{
 				max-width: 100%;
-				max-height: 100%;
+				max-height: 100px;
 				// Fake fill
 				//background-color: $gray-light;
 				border: 3px solid darken($gray-light, 20%);
+
+				@media #{$tablet}{
+					max-height: 100%;
+				}
 
 			}
 		}
@@ -491,6 +495,8 @@ Original:
 	}
 }
 
+.js-thumbnail-hover{ position: relative; }
+
 .thumbnail{
 	&.media{
 		@extend .cf;
@@ -499,6 +505,9 @@ Original:
 		background-color: #fff;
 		border: 1px solid $border-color;
 		padding: 0;
+		z-index: 2;
+
+		position: absolute;
 
 		display: none;
 
