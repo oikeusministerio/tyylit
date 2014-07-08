@@ -139,11 +139,13 @@
 
 // Button groups
 
+.sg-pattern-body .btn-group-wrapper{ width: 100%; }
+
 .btn-group-wrapper{
 	overflow-x: auto;
 	overflow-y: hidden;
 	margin-bottom: $pad*1.5;
-	float: left;
+	float: left; // Remove and use .float-left as addition if this causes problems.
 
 	@media screen and(max-width: 600px){
 		float: none;

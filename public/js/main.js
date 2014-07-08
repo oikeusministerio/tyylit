@@ -1,3 +1,9 @@
+// Set language for moment. In multi-lang pages use something like if(html.hasClass(fi){ moment.lang('fi'); } else...)
+moment.lang('fi');
+
+// Show stuff that only is available through javascript and which are hidden as default
+$('.js-show').removeClass('js-show');
+
 //Button group toggle
 if ($('.btn-group').length) {
 
@@ -23,10 +29,19 @@ if ($('.btn-group').length) {
 	}
 }
 
-// Label-as-button disabled style.
+// Label-as-button disabled style and checkbox active.
 $('.label-as-button').each( function(){
 	if( $(this).find('input').attr("disabled") === "disabled" ){
 		$(this).addClass('disabled');
+	}
+
+	if( $(this).find('input[type=checkbox]') ){
+		if( $(this).find('input[type=checkbox]').is(':checked') ){
+			$(this).addClass('active');
+		}
+		$(this).find('input[type=checkbox]').on('change', function(){
+			$(this).parent().toggleClass('active');
+		});
 	}
 });
 
@@ -131,35 +146,39 @@ function setCounter(item) {
 $("textarea, input").each(function () {
 	setCounter($(this));
 });
-//}
-/*
-if( $('.datepicker').data('maxdate').length ){
-	var maxdate = parseInt( $('.datepicker').data('maxdate') );
-} */
 
+// use pickadate unless browser supports input type=date.
 
-if ($('.datepicker').length) {
-	$('.datepicker').pickadate({
-		// Escape any “rule” characters with an exclamation mark (!).
-		format: 'd.m.yyyy',
-		formatSubmit: 'yyyy/mm/dd',
-		hiddenPrefix: 'prefix__',
-		hiddenSuffix: '__suffix',
+function checkDateInput() {
+	var input = document.createElement('input');
+	input.setAttribute('type','date');
 
+	var notADateValue = 'not-a-date';
+	input.setAttribute('value', notADateValue);
 
-		// Strings and translations
-		monthsFull: ['Tammikuu', 'Helmikuu', 'Maaliskuu', 'Huhtikuu', 'Toukokuu', 'Kesäkuu', 'Heinäkuu', 'Elokuu', 'Syyskuu', 'Lokakuu', 'Marraskuu', 'Joulukuu'],
-		monthsShort: ['Tam', 'Hel', 'Maa', 'Huh', 'Tou', 'Kes', 'Hei', 'Elo', 'Syy', 'Lok', 'Mar', 'Jou'],
-		weekdaysFull: ['Sunnuntai', 'Maanantai', 'Tiistai', 'Keskiviikko', 'Torstai', 'Perjantai', 'Lauantai'],
-		weekdaysShort: ['Su', 'Ma', 'Ti', 'Ke', 'To', 'Pe', 'La'],
-		showMonthsShort: false,
-		firstDay: 'Ma',
-		today: 'Tänään',
-		clear: 'Tyhjennä valinta'
-
-	});
+	return !(input.value === notADateValue) && input.type == 'date';
 }
 
+if( checkDateInput() ){
+	$('.datepicker').remove();
+}else{
+	$('input[type=date]').remove();
+
+	$('.datepicker').each( function(){
+		var picker = new Pikaday({
+			field: $(this)[0],
+			format: 'dd D.M.YYYY',
+			i18n: {
+				previousMonth : 'Edellinen kuukausi',
+				nextMonth     : 'Seuraava kuukaus',
+				months        : ['January','February','March','April','May','June','July','August','September','October','November','December'],
+				months        : ['Tammikuu','Helmikuu','Maaliskuu','Huhtikuu','Toukokuu','Kesäkuu','Heinäkuu','Elokuu','Syyskuu','Lokakuu','Marraskuu','Joulukuu'],
+				weekdays      : ['Sunnuntai','Maanantai','Tiistai','Keskiviikko','Torstai','Perjantai','Lauantai'],
+				weekdaysShort : ['Su','Ma','Ti','Ke','To','Pe','La']
+			}
+		});
+	});
+}
 
 // Navigation
 

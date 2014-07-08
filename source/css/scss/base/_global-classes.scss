@@ -102,4 +102,10 @@
 	color: $information;
 }
 
+// Javascript helpers
+.js-show{
+	@extend .is-hidden;
+}
+
+
 

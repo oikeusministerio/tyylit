@@ -181,6 +181,11 @@ input[type="search"]::-webkit-search-decoration {
 		border-color: lighten($border-color, 10%);
 		color: lighten($text-color, 15%);
 	}
+	&.active{
+		background-color: $green;
+		color: $white;
+		font-weight: 700;
+	}
 }
 
 
@@ -214,7 +219,8 @@ input[type="search"]::-webkit-search-decoration {
 
 /* File attachment */
 .attachment-form{
-	background-color: $gray-light;
+	border: 1px solid $gray-light;
+	background-color: $white;
 	width: 200px;
 	height: 200px;
 
@@ -368,27 +374,38 @@ input[type="search"]::-webkit-search-decoration {
 
 .rangeslider{
 	background: $gray-light;
-	height: 25px;
+	height: 35px;
 	border-radius: 2px;
+	border: 1px solid $border-color;
+
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
 
 	.rangeslider__fill{
-		background: $green;
-		height: 25px;
+		background: $gray-light;
+		height: 34px;
 		border-radius: 2px;
+		border: 1px solid $border-color;
+		border-top: 0;
+		border-left: 0;
 
-		box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.15), inset 0px 1px 2px rgba(0, 0, 0, 0.2);
-		-webkit-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.15), inset 0px 1px 2px rgba(0, 0, 0, 0.2);
-		-moz-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.15), inset 0px 1px 2px rgba(0, 0, 0, 0.2);
+		box-shadow: none; // 0px 1px 1px rgba(255, 255, 255, 0.15), inset 0px 1px 2px rgba(0, 0, 0, 0.2);
+		-webkit-box-shadow: none; // 0px 1px 1px rgba(255, 255, 255, 0.15), inset 0px 1px 2px rgba(0, 0, 0, 0.2);
+		-moz-box-shadow: none; // 0px 1px 1px rgba(255, 255, 255, 0.15), inset 0px 1px 2px rgba(0, 0, 0, 0.2);
 	}
 
 	.rangeslider__handle{
-		width: 30px;
-		height: 45px;
-		top: -10px;
-		background-color: $gray-light;
+		width: 35px;
+		height: 35px;
+		top: -1px;
+		background-color: $green;
 		border-radius: 2px;
 		background-image: none;
-		box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+		box-shadow: none; // -1px 0 3px rgba(0,0,0,0.35);
+		-webkit-box-shadow: none; // -1px 0 3px rgba(0,0,0,0.35);
+		-moz-box-shadow: none; // -1px 0 3px rgba(0,0,0,0.35);
+		border: 0;
 
 		&:after{
 			content: none;

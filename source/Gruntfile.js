@@ -12,11 +12,11 @@ module.exports = function( grunt ) {
 
 			plugin_js: {
 				files: [
+					'js/legacy.js',
 					'js/bootstrap-carousel.js',
 					'js/tag-it.js',
-					'js/legacy.js',
-					'js/picker.js',
-					'js/picker.date.js'
+					'js/moment.lang_custom.js',
+					'js/pikaday.js'
 				],
 				tasks: ['uglify:plugin_js_min', 'shell:generate']
 			},
@@ -90,7 +90,7 @@ module.exports = function( grunt ) {
 					}
 				},
 				files: {
-					'js/plugins.min.js': ['js/bootstrap-carousel.js', 'js/tag-it.js', 'js/legacy.js', 'js/picker.js', 'js/picker.date.js']
+					'js/plugins.min.js': ['js/bootstrap-carousel.js', 'js/tag-it.js', 'js/legacy.js', 'js/moment.lang_custom.js', 'js/pikaday.js']
 					//'source/assets/js/basic-functions.min.js': 'source/assets/js/basic-functions.js'
 				}
 			},
@@ -166,7 +166,7 @@ module.exports = function( grunt ) {
 				}
 			}
 		}
-		
+
 	});
 
 	// Dynamically load Npm Tasks
