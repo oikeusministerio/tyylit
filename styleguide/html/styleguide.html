@@ -10,7 +10,7 @@
 		<link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.2/css/toastr.min.css" rel="stylesheet"/>
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
 
-		<link rel="stylesheet" href="../../css/style.css?1404372487" media="all" />
+		<link rel="stylesheet" href="../../css/style.css?1404825982" media="all" />
 		<!--[if lt IE 9]>
 			<link href="../../ie8.css" rel="stylesheet"/>
 		<![endif]-->
@@ -29,8 +29,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1404372487" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1404372487" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1404825982" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1404825982" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -912,6 +912,30 @@
 							</div>
 						</div>
 					</div>
+					<div id="atoms-date" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-05-forms-09-date/00-atoms-05-forms-09-date.html" class="patternLink" data-patternpartial="atoms-date">Date</a></h2>
+						<div class="sg-pattern-body">
+							<div class="form-element date-element">
+	<!-- Works like this: javascript created pikadate is used if browser doesn't support input type=date. If javascript is turned off, only the input type="date" is shown. If the browser doesn't support input type date adn javascript is turned off, it simply can't be helped. -->
+	<label for="date-picker">Valitse päivämäärä. <span class="is-vishidden"> Oletuspäivämäärän voit asettaa antamalla value-kentälle arvoksi esim. 25.6.2014 tai 25/6/2014</span></label>
+	<input type="date" value="2014-04-25">
+	<input type="text" class="datepicker js-show" value="24.5.2014">
+</div>
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;div class=&quot;form-element date-element&quot;&gt;
+	&lt;!-- Works like this: javascript created pikadate is used if browser doesn't support input type=date. If javascript is turned off, only the input type=&quot;date&quot; is shown. If the browser doesn't support input type date adn javascript is turned off, it simply can't be helped. --&gt;
+	&lt;label for=&quot;date-picker&quot;&gt;Valitse p&auml;iv&auml;m&auml;&auml;r&auml;. &lt;span class=&quot;is-vishidden&quot;&gt; Oletusp&auml;iv&auml;m&auml;&auml;r&auml;n voit asettaa antamalla value-kent&auml;lle arvoksi esim. 25.6.2014 tai 25/6/2014&lt;/span&gt;&lt;/label&gt;
+	&lt;input type=&quot;date&quot; value=&quot;2014-04-25&quot;&gt;
+	&lt;input type=&quot;text&quot; class=&quot;datepicker js-show&quot; value=&quot;24.5.2014&quot;&gt;
+&lt;/div&gt;
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
 					<div id="atoms-field-text" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-05-forms-10-field-text/00-atoms-05-forms-10-field-text.html" class="patternLink" data-patternpartial="atoms-field-text">Field Text</a></h2>
 						<div class="sg-pattern-body">
@@ -1343,10 +1367,6 @@
 	<a href="//www.foo.bar" class="lift-button-link">Osallistu</a>
 </div>
 							<div class="sg-code" style="display: none">
-									<div class="sg-code-contains">
-										This pattern contains: 
-											<a href="../../patterns/00-atoms-04-images-09-count-icon/00-atoms-04-images-09-count-icon.html"><code>atoms-count-icon</code></a>
-									</div>
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
@@ -1956,8 +1976,10 @@
 	</div>
 	<h3>Päivämäärävalitsin</h3>
 	<div class="form-element date-element">
+		<!-- Works like this: javascript created pikadate is used if browser doesn't support input type=date. If javascript is turned off, only the input type="date" is shown. If the browser doesn't support input type date adn javascript is turned off, it simply can't be helped. -->
 		<label for="date-picker">Valitse päivämäärä. <span class="is-vishidden"> Oletuspäivämäärän voit asettaa antamalla value-kentälle arvoksi esim. 25.6.2014 tai 25/6/2014</span></label>
-		<input type="text" id="date-picker" class="datepicker" value="24.5.2014">
+		<input type="date" value="2014-04-25">
+		<input type="text" class="datepicker js-show" value="24.5.2014">
 	</div></form>
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
@@ -1988,8 +2010,10 @@
 	&lt;/div&gt;
 	&lt;h3&gt;P&auml;iv&auml;m&auml;&auml;r&auml;valitsin&lt;/h3&gt;
 	&lt;div class=&quot;form-element date-element&quot;&gt;
+		&lt;!-- Works like this: javascript created pikadate is used if browser doesn't support input type=date. If javascript is turned off, only the input type=&quot;date&quot; is shown. If the browser doesn't support input type date adn javascript is turned off, it simply can't be helped. --&gt;
 		&lt;label for=&quot;date-picker&quot;&gt;Valitse p&auml;iv&auml;m&auml;&auml;r&auml;. &lt;span class=&quot;is-vishidden&quot;&gt; Oletusp&auml;iv&auml;m&auml;&auml;r&auml;n voit asettaa antamalla value-kent&auml;lle arvoksi esim. 25.6.2014 tai 25/6/2014&lt;/span&gt;&lt;/label&gt;
-		&lt;input type=&quot;text&quot; id=&quot;date-picker&quot; class=&quot;datepicker&quot; value=&quot;24.5.2014&quot;&gt;
+		&lt;input type=&quot;date&quot; value=&quot;2014-04-25&quot;&gt;
+		&lt;input type=&quot;text&quot; class=&quot;datepicker js-show&quot; value=&quot;24.5.2014&quot;&gt;
 	&lt;/div&gt;&lt;/form&gt;
 									</code>
 								</pre>
@@ -2553,8 +2577,7 @@
 					</div>
 					</li>-->
 						<li class="block-item">
-							<div class="count-container">
-								<span class="icon-span om-keskustelu"></span>
+							<div class="count-container-b om-keskustelu icon-as-bg">
 								<a href="//www.foo.bar">0</a>
 							</div>
 						</li>
@@ -2577,8 +2600,7 @@
 					</div>
 					</li>-->
 						<li class="block-item">
-							<div class="count-container">
-								<span class="icon-span om-keskustelu"></span>
+							<div class="count-container-b om-keskustelu icon-as-bg">
 								<a href="//www.foo.bar">22</a>
 							</div>
 						</li>
@@ -2601,8 +2623,7 @@
 					</div>
 					</li>-->
 						<li class="block-item">
-							<div class="count-container">
-								<span class="icon-span om-keskustelu"></span>
+							<div class="count-container-b om-keskustelu icon-as-bg">
 								<a href="//www.foo.bar">48</a>
 							</div>
 						</li>
@@ -2642,8 +2663,7 @@
 					&lt;/div&gt;
 					&lt;/li&gt;--&gt;
 						&lt;li class=&quot;block-item&quot;&gt;
-							&lt;div class=&quot;count-container&quot;&gt;
-								&lt;span class=&quot;icon-span om-keskustelu&quot;&gt;&lt;/span&gt;
+							&lt;div class=&quot;count-container-b om-keskustelu icon-as-bg&quot;&gt;
 								&lt;a href=&quot;//www.foo.bar&quot;&gt;0&lt;/a&gt;
 							&lt;/div&gt;
 						&lt;/li&gt;
@@ -2666,8 +2686,7 @@
 					&lt;/div&gt;
 					&lt;/li&gt;--&gt;
 						&lt;li class=&quot;block-item&quot;&gt;
-							&lt;div class=&quot;count-container&quot;&gt;
-								&lt;span class=&quot;icon-span om-keskustelu&quot;&gt;&lt;/span&gt;
+							&lt;div class=&quot;count-container-b om-keskustelu icon-as-bg&quot;&gt;
 								&lt;a href=&quot;//www.foo.bar&quot;&gt;22&lt;/a&gt;
 							&lt;/div&gt;
 						&lt;/li&gt;
@@ -2690,8 +2709,7 @@
 					&lt;/div&gt;
 					&lt;/li&gt;--&gt;
 						&lt;li class=&quot;block-item&quot;&gt;
-							&lt;div class=&quot;count-container&quot;&gt;
-								&lt;span class=&quot;icon-span om-keskustelu&quot;&gt;&lt;/span&gt;
+							&lt;div class=&quot;count-container-b om-keskustelu icon-as-bg&quot;&gt;
 								&lt;a href=&quot;//www.foo.bar&quot;&gt;48&lt;/a&gt;
 							&lt;/div&gt;
 						&lt;/li&gt;
@@ -2736,8 +2754,7 @@
                     </div>
                     </li>-->
                         <li class="block-item">
-                            <div class="count-container">
-                                <span class="icon-span om-keskustelu"></span>
+                            <div class="count-container-b om-keskustelu icon-as-bg">
                                 <a href="//www.foo.bar">0</a>
                             </div>
                         </li>
@@ -2760,8 +2777,7 @@
                     </div>
                     </li>-->
                         <li class="block-item">
-                            <div class="count-container">
-                                <span class="icon-span om-keskustelu"></span>
+                            <div class="count-container-b om-keskustelu icon-as-bg">
                                 <a href="//www.foo.bar">22</a>
                             </div>
                         </li>
@@ -2784,8 +2800,7 @@
                     </div>
                     </li>-->
                         <li class="block-item">
-                            <div class="count-container">
-                                <span class="icon-span om-keskustelu"></span>
+                            <div class="count-container-b om-keskustelu icon-as-bg">
                                 <a href="//www.foo.bar">48</a>
                             </div>
                         </li>
@@ -2859,8 +2874,7 @@
                     &lt;/div&gt;
                     &lt;/li&gt;--&gt;
                         &lt;li class=&quot;block-item&quot;&gt;
-                            &lt;div class=&quot;count-container&quot;&gt;
-                                &lt;span class=&quot;icon-span om-keskustelu&quot;&gt;&lt;/span&gt;
+                            &lt;div class=&quot;count-container-b om-keskustelu icon-as-bg&quot;&gt;
                                 &lt;a href=&quot;//www.foo.bar&quot;&gt;0&lt;/a&gt;
                             &lt;/div&gt;
                         &lt;/li&gt;
@@ -2883,8 +2897,7 @@
                     &lt;/div&gt;
                     &lt;/li&gt;--&gt;
                         &lt;li class=&quot;block-item&quot;&gt;
-                            &lt;div class=&quot;count-container&quot;&gt;
-                                &lt;span class=&quot;icon-span om-keskustelu&quot;&gt;&lt;/span&gt;
+                            &lt;div class=&quot;count-container-b om-keskustelu icon-as-bg&quot;&gt;
                                 &lt;a href=&quot;//www.foo.bar&quot;&gt;22&lt;/a&gt;
                             &lt;/div&gt;
                         &lt;/li&gt;
@@ -2907,8 +2920,7 @@
                     &lt;/div&gt;
                     &lt;/li&gt;--&gt;
                         &lt;li class=&quot;block-item&quot;&gt;
-                            &lt;div class=&quot;count-container&quot;&gt;
-                                &lt;span class=&quot;icon-span om-keskustelu&quot;&gt;&lt;/span&gt;
+                            &lt;div class=&quot;count-container-b om-keskustelu icon-as-bg&quot;&gt;
                                 &lt;a href=&quot;//www.foo.bar&quot;&gt;48&lt;/a&gt;
                             &lt;/div&gt;
                         &lt;/li&gt;
@@ -5253,10 +5265,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1404372487">
+	<script id="pl-js-polyfill-insert-1404825982">
 		(function() {
 			if (self != top) {
-				var cb = '1404372487';
+				var cb = '1404825982';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -5265,10 +5277,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1404372487">
+	<script id="pl-js-insert-1404825982">
 		(function() {
 			if (self != top) {
-				var cb = '1404372487';
+				var cb = '1404825982';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
