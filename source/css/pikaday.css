@@ -90,6 +90,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 75% 75%;
+
 	opacity: .5;
 	*position: absolute;
 	*top: 0;
@@ -98,6 +99,7 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 .pika-prev:hover,
 .pika-next:hover {
 	opacity: 1;
+	background-color: transparent;
 }
 
 .pika-prev,
@@ -112,6 +114,14 @@ http://nicolasgallagher.com/micro-clearfix-hack/
 	float: right;
 	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAU0lEQVR42u3VOwoAMAgE0dwfAnNjU26bYkBCFGwfiL9VVWoO+BJ4Gf3gtsEKKoFBNTCoCAYVwaAiGNQGMUHMkjGbgjk2mIONuXo0nC8XnCf1JXgArVIZAQh5TKYAAAAASUVORK5CYII=');
 	*right: 0;
+}
+
+.pika-next:hover{
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAU0lEQVR42u3VOwoAMAgE0dwfAnNjU26bYkBCFGwfiL9VVWoO+BJ4Gf3gtsEKKoFBNTCoCAYVwaAiGNQGMUHMkjGbgjk2mIONuXo0nC8XnCf1JXgArVIZAQh5TKYAAAAASUVORK5CYII=');
+}
+
+.pika-prev:hover{
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAeCAYAAAAsEj5rAAAAUklEQVR42u3VMQoAIBADQf8Pgj+OD9hG2CtONJB2ymQkKe0HbwAP0xucDiQWARITIDEBEnMgMQ8S8+AqBIl6kKgHiXqQqAeJepBo/z38J/U0uAHlaBkBl9I4GwAAAABJRU5ErkJggg==');
 }
 
 .pika-prev.is-disabled,
