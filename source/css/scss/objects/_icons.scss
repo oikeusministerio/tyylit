@@ -122,7 +122,7 @@
 .icons li{ line-height: 2; }
 
 .fa{ font-family: FontAwesome; }
-.om{ font-family: ok-icons; }
+.om:before, .om:after{ font-family: ok-icons; }
 
 .footer .om:before{
 	vertical-align: sub;
