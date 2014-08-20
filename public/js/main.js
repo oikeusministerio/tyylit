@@ -283,7 +283,6 @@ if ($('.helper-container').length) {
 // Pasted from old site and heavily modified {
 
 $('.site-actions > a, #closeButtonContainer').click(function () {
-	console.log('joo');
 	$('.site-actions > a').removeClass('selected');
 	//$('#pnlLoginRegistrationContainer').find('.section').removeClass('is-visible');
 	$(this).addClass('selected');
@@ -370,7 +369,6 @@ if ($('.navi-responsive').length) {
 		if ($('.expandable').hasClass('expanded-navi')) {
 			$('.expandable').addClass('expanded-full-navi');
 		}
-
 	});
 
 	$('html').click(function () {
