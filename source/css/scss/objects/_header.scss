@@ -235,7 +235,7 @@
 			margin: 8px 4px 0 0;
 		}
 		@media #{$laptop}{
-			padding: 0 20px 3px;
+			padding: 0 10px 3px;
 			margin: 8px 8px 0 0;
 		}
 	}
@@ -433,6 +433,19 @@
 		position: relative;
 		top: auto;
 		margin-top: 1em;
+	}
+}
+
+.topnavi-bar{
+	height: 62px;
+	-webkit-transition: height .5s;
+	-moz-transition: height .5s;
+	-ms-transition: height .5s;
+	-o-transition: height .5s;
+	transition: height .5s;
+
+	@media #{$tablet}{
+		height: 42px;
 	}
 }
 
