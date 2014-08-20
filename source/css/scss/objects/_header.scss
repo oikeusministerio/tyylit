@@ -418,7 +418,24 @@
 		}
 	}
 	.section.register .ctl-text.email{ float: none; }
-	.forgotten{ text-align: right; }
+	.forgotten{
+		text-align: center;
+
+		p{
+			max-width: 600px;
+			margin: 1em auto;
+		}
+
+		.recover-btn-container{
+			display: block;
+			margin-top: 0.5em;
+		}
+		.ctl-btn{
+			width: auto;
+			padding: 0.5em 3em;
+		}
+
+	}
 	.remember {
 		text-align: left;
 		float: left;
