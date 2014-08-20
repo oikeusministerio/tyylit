@@ -263,7 +263,6 @@
 
 	.main-login .input-with-icon{
 		margin-top: 10px;
-		line-height: 1;
 	}
 	.input-with-icon:before{
 		z-index: 1;
@@ -440,6 +439,7 @@
 
 		input{
 			width: 100%;
+			line-height: 1;
 		}
 	}
 	.section.register .ctl-text.email{ float: none; }
