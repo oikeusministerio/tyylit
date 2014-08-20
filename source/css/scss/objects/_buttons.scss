@@ -179,7 +179,6 @@
 		text-decoration: none;
 		margin-bottom: $pad-quarter;
 
-
 		&.active{
 			background-color: $green;
 			color: $white;
@@ -194,6 +193,17 @@
 			@include border-radius(2px, 2px, 0, 0);
 		}
 
+		@media screen and (max-width: 600px){
+			float: none;
+			display: block;
+			width: 100%;
+			margin: 0.5em auto;
+			border: 1px solid #ccc;
+			@include border-radius(2px, 2px, 2px, 2px);
+			&:first-child, &:last-child{
+				@include border-radius(2px, 2px, 2px, 2px);
+			}
+		}
 		.count{
 			display: block;
 			text-align: center;
@@ -208,6 +218,17 @@
 
 		.inline-row{
 			white-space: nowrap;
+		}
+
+		@media screen and (max-width: 600px){
+			float: none !important;
+			width: 100%;
+			height: auto;
+
+			a{
+				display: block;
+				text-align: center;
+			}
 		}
 	}
 
