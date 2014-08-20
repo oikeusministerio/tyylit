@@ -249,7 +249,7 @@
 
 		@media #{$tablet}{
 			display: inline-block;
-			padding: 0 14px 3px;
+			padding: 0 11px 3px;
 			margin: 8px 4px 0 0;
 		}
 		@media #{$laptop}{
@@ -261,6 +261,7 @@
 
 	.main-login .input-with-icon{
 		margin-top: 10px;
+		line-height: 1;
 	}
 	.input-with-icon:before{
 		z-index: 1;
