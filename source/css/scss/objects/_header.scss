@@ -97,6 +97,7 @@
 		@media #{$tablet}{
 			width: 50%;
 			right: 10px;
+			padding: 23px 0;
 		}
 
 		@media #{$laptop}{ padding: 31px 0; }
@@ -124,7 +125,7 @@
 	text-decoration: none;
 	float: left;
 	font-size: 2.1em;
-	margin: 11.5px 0;
+	margin: 21.5px 0;
 
 	@media #{$tablet}{
 		font-size: 2.1em;
@@ -132,6 +133,7 @@
 
 	@media #{$laptop}{
 		font-size: 2.6em;
+		margin: 11.5px 0;
 	}
 
 	@media screen and (max-width: 370px){
@@ -166,9 +168,9 @@
 .lang-sel{
 	float: right;
 	padding: 0 1em 0 0;
-	margin: 0;
-	@media #{$tablet}{ margin-right: 47%; }
-	@media #{$laptop}{ margin-right: 50%; }
+	margin: 10px 0 0;
+	@media #{$tablet}{ margin-right: 50%; }
+	@media #{$laptop}{ margin-top: 0; }
 
 	.lang-list{
 		list-style: none;
