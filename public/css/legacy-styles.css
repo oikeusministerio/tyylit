@@ -404,12 +404,12 @@ body.noscript .topnavi-bar.expanded .close {
     width: 430px;
 }
 
-/* topnavi-bar background, IE8 and IE9 styles */
+/* topnavi-bar background, IE8 and IE9 styles -- No longer works.
 .topnavi-bar {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#444444,endColorstr=#2d2d2d);
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#444444,endColorstr=#2d2d2d)";
 }
-
+*/
 /* Password Recover */
 #topnavibar #pnlPasswordRecover .errorMessage {
     float: none;
