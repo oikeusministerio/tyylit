@@ -226,9 +226,20 @@
 		}
 	}
 
-	.close{ right: 10px;
+	.close{
+		right: 10px;
+		bottom: -15px;
+		height: 30px; width: 30px;
+		border-radius: 50%;
+
 		@media #{$tablet}{
-			bottom: -26px;
+			bottom: -36px;
+		}
+
+		&:before{
+			left: -1px;
+			margin: auto;
+			line-height: 30px;
 		}
 	}
 
@@ -465,6 +476,7 @@
 
 .topnavi-bar{
 	height: 62px;
+	background-color: $gray-dark;
 	-webkit-transition: height .5s;
 	-moz-transition: height .5s;
 	-ms-transition: height .5s;
