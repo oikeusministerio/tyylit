@@ -283,7 +283,9 @@ if ($('.helper-container').length) {
 // Pasted from old site and heavily modified {
 
 $('.site-actions > a, #closeButtonContainer').click(function () {
+	console.log('joo');
 	$('.site-actions > a').removeClass('selected');
+	//$('#pnlLoginRegistrationContainer').find('.section').removeClass('is-visible');
 	$(this).addClass('selected');
 	// Tyhjennetään lomakkeiden kenttien arvot IE8/IE9 selaimilla
 	/* if (getInternetExplorerVersion() <= 9 && getInternetExplorerVersion() != -1) {
