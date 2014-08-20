@@ -73,7 +73,15 @@
 				margin-right: 0;
 			}
 		}
+		@media screen and (max-width: 600px){
+			display: block;
+
+			&:first-child{
+				margin-bottom: 1em;
+			}
+		}
 	}
+
 }
 
 // Event lift
