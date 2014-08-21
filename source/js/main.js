@@ -3,7 +3,23 @@ moment.lang('fi');
 
 // Show stuff that only is available through javascript and which are hidden as default
 $('.js-show').removeClass('js-show');
-
+if(!Modernizr.input.placeholder){
+	$("input").each(function(){
+		if($(this).val()=="" && $(this).attr("placeholder")!=""){
+			$(this).val( $(this).attr("placeholder") );
+			$(this).addClass('ie9-placeholder');
+			$(this).focus(function(){
+				if( $(this).val() == $(this).attr("placeholder") ){ $(this).val(""); }
+			});
+			$(this).blur(function(){
+				if($(this).val()=="") $(this).val($(this).attr("placeholder"));
+			});
+		}
+	});
+	$('.ie9-placeholder').on('keydown', function(){
+		$(this).removeClass('ie9-placeholder');
+	});
+}
 //Button group toggle
 if ($('.btn-group').length) {
 
@@ -243,14 +259,14 @@ if ($('.fadeout').length) {
 		}
 	});
 
-    //$('.fadeout.clickable').click(function (event) {
-    //    event.preventDefault();
+	//$('.fadeout.clickable').click(function (event) {
+	//    event.preventDefault();
 
-    //    $(this).addClass('open');
-    //    $(this).removeClass('clickable');
-    //    $(this).find('a').addClass('pt-fix');
-    //    $(this).find('.read-more').remove();
-    //});
+	//    $(this).addClass('open');
+	//    $(this).removeClass('clickable');
+	//    $(this).find('a').addClass('pt-fix');
+	//    $(this).find('.read-more').remove();
+	//});
 
 	$('.read-more').find('a').click(function (event) {
 		event.preventDefault();
@@ -260,10 +276,10 @@ if ($('.fadeout').length) {
 		$(this).addClass('pt-fix');
 		$(this).parent().remove();
 
-        // In case toggle between 'lue lisää' and 'pienennä teksti' is wanted
+		// In case toggle between 'lue lisää' and 'pienennä teksti' is wanted
 
-        //$('.fadeout').toggleClass('open');
-        /*
+		//$('.fadeout').toggleClass('open');
+		/*
 		if( $('.fadeout').hasClass('open') ){
 			$(this).text('Pienennä teksti');
 			$(this).addClass('pt-fix');
@@ -530,11 +546,11 @@ if ($('.person-list').length) {
 
 // hankesivu-read-mode
 $("#btnAddParticipationContainer").find("a").on("click", function () {
-    $("#showParticipations").addClass("is-hidden");
-    $("#addParticipations").removeClass("is-hidden");
+	$("#showParticipations").addClass("is-hidden");
+	$("#addParticipations").removeClass("is-hidden");
 });
 $("#btnCancelParticipationContainer").find("a").on("click", function () {
-    $("#showParticipations").removeClass("is-hidden");
+	$("#showParticipations").removeClass("is-hidden");
 	$("#addParticipations").addClass("is-hidden");
 });
 
@@ -548,61 +564,61 @@ $("#rblTermsAccepted").click(function () {
 
 
 (function ($) {
-    $.fn.delayKeyup = function (callback, ms) {
-        $(this).keyup(function (event) {
-            var srcEl = event.currentTarget;
-            if (srcEl.delayTimer)
-                clearTimeout(srcEl.delayTimer);
-            srcEl.delayTimer = setTimeout(function () { callback($(srcEl)); }, ms);
-        });
+	$.fn.delayKeyup = function (callback, ms) {
+		$(this).keyup(function (event) {
+			var srcEl = event.currentTarget;
+			if (srcEl.delayTimer)
+				clearTimeout(srcEl.delayTimer);
+			srcEl.delayTimer = setTimeout(function () { callback($(srcEl)); }, ms);
+		});
 
-        return $(this);
-    };
+		return $(this);
+	};
 })(jQuery);
 
 $("input[data-source][data-type]").each(function () {
-    var target = $(this);
-    if (target.data("type") == "shortcut") {
-        var source = $("#" + target.data("source"));
+	var target = $(this);
+	if (target.data("type") == "shortcut") {
+		var source = $("#" + target.data("source"));
 
-        if (!source.val()) {
-            source.on("keyup", function () {
-                target.val(cleanShortcutInput(source.val()));
-            });
-        }
-        else {
-            source.off("keyup");
-        }
+		if (!source.val()) {
+			source.on("keyup", function () {
+				target.val(cleanShortcutInput(source.val()));
+			});
+		}
+		else {
+			source.off("keyup");
+		}
 
-        // If shortcut has been manipulated manually then remove complete function
-        target.delayKeyup(function () {
-            if (!target.val()) {
-                source.on("keyup", function () {
-                    target.val(cleanShortcutInput(source.val()));
-                });
-            }
-            else {
-                source.off("keyup");
-            }
-            target.val(cleanShortcutInput(target.val()));
-        }, 1000);
-    }
+		// If shortcut has been manipulated manually then remove complete function
+		target.delayKeyup(function () {
+			if (!target.val()) {
+				source.on("keyup", function () {
+					target.val(cleanShortcutInput(source.val()));
+				});
+			}
+			else {
+				source.off("keyup");
+			}
+			target.val(cleanShortcutInput(target.val()));
+		}, 1000);
+	}
 });
 
 function cleanShortcutInput(input) {
-    if (input == null || input.length == 0)
-        return input;
-    var raw = input.toLowerCase()
-        .replace(/ /g, "_")
-        .replace(/[äÄåÅáÁ]/gi, 'a')
-        .replace(/ö/g, "o")
-        .replace(/é/g, "e")
-        .replace(/[^a-z-0-9-_]/g, '')
-        .trim();
+	if (input == null || input.length == 0)
+		return input;
+	var raw = input.toLowerCase()
+		.replace(/ /g, "_")
+		.replace(/[äÄåÅáÁ]/gi, 'a')
+		.replace(/ö/g, "o")
+		.replace(/é/g, "e")
+		.replace(/[^a-z-0-9-_]/g, '')
+		.trim();
 
-    // html encode
-    var cleaned = $('<div/>').text(raw).html();
-    return cleaned;
+	// html encode
+	var cleaned = $('<div/>').text(raw).html();
+	return cleaned;
 }
 
 
