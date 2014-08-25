@@ -1,7 +1,9 @@
 <?php
 	echo "Generating icon classes and sass declarations... \n";
 	
-	$handle   = fopen("../source/fonts/glyphnames.csv", "r"); 
+	$handle = file_get_contents('../source/fonts/selection.json');
+	//$handle   = fopen("../source/fonts/glyphnames.csv", "r"); 
+	
 	$mustache = fopen("../source/_patterns/00-atoms/04-images/05-icons.mustache", "w+");
 	$sass     = fopen("../source/css/scss/objects/_generated-icons.scss", "w+");
 	
@@ -30,16 +32,17 @@
 
 		
 		
-		while (($data = fgetcsv($handle, 0, "\t")) !== FALSE) {
-			fwrite($mustache,"\t<li> <i class='om-".$data[0]."'></i>om-".$data[0]."</li>\n");
-		
-			fwrite($sass, ".om-".$data[0].":before {\n");
-			fwrite($sass, "\tcontent: \"\\".$data[1]."\";\n");
+		$json = json_decode($handle, true);
+		$icons = $json['icons'];
+		foreach ($icons as $icon) {
+			
+			fwrite($mustache,"\t<li> <i class='".$icon['properties']['name']."'></i>".$icon['properties']['name']."</li>\n");
+			echo dechex( intval( $icon['properties']['code'], 10) )."\n";
+			fwrite($sass, ".".$icon['properties']['name'].":before {\n");
+			fwrite($sass, "\tcontent: \"\\".dechex( intval( $icon['properties']['code'], 10) )."\";\n");
 			fwrite($sass, "\t@extend .om;\n");
 			fwrite($sass, "}\n\n");
-		
 		}
-		
 		fwrite($mustache, "</ul>\n\n");
 		fwrite($mustache, "<h4>Esimerkki iconien eri koista</h4>\n");
 		fwrite($mustache, "<ul class='icons icons-compare'>\n");
