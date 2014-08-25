@@ -37,8 +37,11 @@
 		foreach ($icons as $icon) {
 			
 			fwrite($mustache,"\t<li> <i class='".$icon['properties']['name']."'></i>".$icon['properties']['name']."</li>\n");
-			echo dechex( intval( $icon['properties']['code'], 10) )."\n";
 			fwrite($sass, ".".$icon['properties']['name'].":before {\n");
+			fwrite($sass, "\tcontent: \"\\".dechex( intval( $icon['properties']['code'], 10) )."\";\n");
+			fwrite($sass, "\t@extend .om;\n");
+			fwrite($sass, "}\n\n");
+			fwrite($sass, ".icon-".$icon['properties']['name'].":before {\n");
 			fwrite($sass, "\tcontent: \"\\".dechex( intval( $icon['properties']['code'], 10) )."\";\n");
 			fwrite($sass, "\t@extend .om;\n");
 			fwrite($sass, "}\n\n");
@@ -56,7 +59,6 @@
 	} else {
 		echo "failed to load csv file";
 	}
-	fclose($handle);
 	fclose($mustache);
 	fclose($sass);
 ?>
