@@ -414,7 +414,7 @@
 
 	&:before{
 		font-size: 4.5em;
-		line-height: 1.1;
+		line-height: 1;
 		@include tran(color, $text-color, 0.2);
 	}
 

@@ -26,7 +26,6 @@
 	padding: 0;
 	width: 100%;
 
-
 	.element-group{
 		width: 100%;
 		position: relative;
@@ -251,7 +250,7 @@
 
 		@media #{$tablet}{
 			display: inline-block;
-			padding: 0 11px 3px;
+			padding: 0 9px 3px;
 			margin: 8px 4px 0 0;
 		}
 		@media #{$laptop}{

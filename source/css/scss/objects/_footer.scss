@@ -57,8 +57,9 @@
 				margin-top: em(10);
 
 				a{
-					i { width: 24px; height: 24px; display: inline-block;
-
+					i { width: 24px; height: 24px;
+						display: inline-block; vertical-align: middle;
+						position: relative;
 					}
 					&:hover{
 						i{
@@ -67,27 +68,34 @@
 						}
 					}
 				}
-				a.facebook i{
+				.facebook i{
 					background-color: $white;
 					color: $text-color;
-					border-radius: 3px;
+
 				}
 				//a.facebook:hover{ i{ transition-delay: 0.25s; -webkit-transition-delay: 0.25s; } }
-				a.facebook:hover, a.facebook:active{
+				.facebook i:before, .twitter i:before, .youtube i:before{
+					position: absolute;
+					line-height: 24px; width: 24px;
+					left: -4px;
+				}
+				.facebook i{
+					border-radius: 3px;
+				}
+				.facebook:hover, .facebook:active{
 					i{
-
 						background-color: #3c5a99;
 						color: $white;
-						position: relative;
+						border-radius: 3px;
 					}
 				}
-				a.twitter:hover, a.twitter:active{
+				.twitter:hover, .twitter:active{
 					i{
 						color: #5fa9dd;
 						background: $white;
 					}
 				}
-				a.youtube:hover, a.youtube:active{
+				.youtube:hover, .youtube:active{
 					i{
 						color: #cb2026;
 						background: $white;

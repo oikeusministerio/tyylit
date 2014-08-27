@@ -95,11 +95,10 @@
 }
 
 .carousel-control {
-	color: #FFFFFF;
+	color: $gray-med;
 	font-size: 24px;
 	text-align: center;
 	margin-top: -20px;
-	opacity: 0.9;
 	position: absolute;
 	top: 50%;
 	left: 15px;
@@ -110,11 +109,10 @@
 		display: inline-block;
 		vertical-align: sub;
 		line-height: 29px !important;
-		}
+	}
 
-	&.right
-	{
-		@extend .icon-arrow-forward;
+	&.right {
+		@extend .om-ring_right;
 
 		text-indent: 4px;
 		left: auto;
@@ -122,44 +120,23 @@
 	}
 
 	&.left{
-		@extend .icon-arrow-back;
+		@extend .om-ring_left;
 
 		text-indent: -2px;
 		left: 12px;
 	}
 
-	&.right::before {
-		font-family: ok-icons;
-		content: "\E118";
-	}
-
-	&.left::before {
-		font-family: ok-icons;
-		content: "\E117";
-	}
-
 	&:hover, &:focus
 	{
-		color: #FFFFFF;
-		opacity: 1;
-		text-decoration: none;
-	}
-}
-.inverse-color {
-	color: $gray-dark;
-	li.active:before{
 		color: $gray-dark;
-	}
-	li:before{
-		color: $gray-med;
-
+		text-decoration: none;
 		-webkit-transition: all 0.30s ease-in-out;
 		-moz-transition: all 0.30s ease-in-out;
 		-ms-transition: all 0.30s ease-in-out;
 		-o-transition: all 0.30s ease-in-out;
 	}
-	&:hover{ color: $gray-dark; opacity: 1; }
 }
+
 
 .carousel-indicators
 {
@@ -181,21 +158,45 @@
 		float: none;
 		margin-left: 0.5em;
 		text-align: center;
+
+		&:hover{
+			&:before{
+				opacity: 1;
+			}
+		}
 	}
 
 	li:before {
-		font-family: ok-icons;
-		content: "\E096";
+		@extend .om-ring_outline;
 		display: inline-block;
 		vertical-align: bottom;
 		line-height: 29px;
 		width: 25px;
+		color: $white;
+		opacity: 0.8;
 	}
 
-	.active::before {
-		font-family: ok-icons;
-		color:white;
-		content: "\E096";
+	.active:before {
+		@extend .om-circle_blank;
+		color: $white;
+		opacity: 0.9;
+	}
+
+	&.inverse-color {
+		color: $gray-dark;
+		li.active:before{
+			color: $gray-dark;
+			opacity: 0.9;
+		}
+		li:before{
+			color: $gray-med;
+
+			-webkit-transition: all 0.30s ease-in-out;
+			-moz-transition: all 0.30s ease-in-out;
+			-ms-transition: all 0.30s ease-in-out;
+			-o-transition: all 0.30s ease-in-out;
+		}
+		&:hover{ color: $gray-dark; opacity: 1; }
 	}
 }
 .carousel-caption
