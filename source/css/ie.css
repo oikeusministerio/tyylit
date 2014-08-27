@@ -1,0 +1,7 @@
+/* Put all IE fixes here */
+.footer .om:before{
+	font-size: 32px;
+}
+.toast i.toast-icon:before{
+	font-size: 16px;
+}
