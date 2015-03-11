@@ -16,7 +16,8 @@ module.exports = function( grunt ) {
 					'js/bootstrap-carousel.js',
 					'js/tag-it.js',
 					'js/moment.lang_custom.js',
-					'js/pikaday.js'
+					'js/pikaday.js',
+					'js/jquery.headernav.js'
 				],
 				tasks: ['uglify:plugin_js_min', 'shell:generate']
 			},
@@ -90,7 +91,7 @@ module.exports = function( grunt ) {
 					}
 				},
 				files: {
-					'js/plugins.min.js': ['js/bootstrap-carousel.js', 'js/tag-it.js', 'js/legacy.js', 'js/moment.lang_custom.js', 'js/pikaday.js']
+					'js/plugins.min.js': ['js/bootstrap-carousel.js', 'js/tag-it.js', 'js/legacy.js', 'js/moment.lang_custom.js', 'js/pikaday.js', 'js/jquery.headernav.js']
 					//'source/assets/js/basic-functions.min.js': 'source/assets/js/basic-functions.js'
 				}
 			},

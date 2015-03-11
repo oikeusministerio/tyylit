@@ -81,3 +81,67 @@ $base-font-size: 16;
 		}
 	}
 }
+
+
+/* CSS Gradient
+	Usage: @include omGradient(#434443, #2e2f2f);
+*/
+@mixin omGradient($start, $stop){
+    background: $start;
+    background: linear-gradient(top,  $start,  $stop);
+    background: -ms-linear-gradient(top,  $start,  $stop);
+    background: -webkit-gradient(linear, left top, left bottom, from($start), to($stop));
+    background: -moz-linear-gradient(top,  $start, $stop);
+    background: -o-linear-gradient(top,  $start, $stop);
+}
+
+/* Icon position for icon sprites
+	Usage: @include iconPosition(0, 0, 60px);
+*/
+@mixin iconPosition($xIndex, $yIndex, $offsetSize: 24px) {
+    background-position: (-$xIndex*$offsetSize)+0px (-$yIndex*$offsetSize)+0px;
+}
+
+
+/* SVG background image with PNG fallback
+	Usage: @include omBackgroundImage('om-header-nav-icon', 16px auto);
+*/
+@mixin omBackgroundImage($fileName, $size: 100%, $postFix: "") {
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: $size;
+  background-image: url("#{$images-path}/#{$fileName}${postFix}.png");
+  background-image: url("#{$images-path}/#{$fileName}.svg"), none;
+}
+
+/* Ellipsis
+	Usage: @include omEllipsis();
+*/
+@mixin omEllipsis(){
+    white-space:nowrap;
+    overflow:hidden;
+    -ms-text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    text-overflow:ellipsis;
+}
+
+/* Triangle base
+	Usage: @include triangleBase();
+*/
+@mixin triangleBase() {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+}
+
+/* Triangle right
+	Usage: @include triangleRight(4px, #fff);
+*/
+@mixin triangleRight($size, $color) {
+    @include triangleBase();
+
+    border-top: $size solid transparent;
+    border-bottom: $size solid transparent;
+    border-left: $size solid $color;
+}
