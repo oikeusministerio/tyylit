@@ -364,6 +364,16 @@ $('#hlPasswordRecover').click(function (event) {
 
 // } - Paste ends.
 
+
+// Responsive OM header navigation
+var headerNav = $('#headerNav');
+headerNav.headerNav({
+ 	btnTitle: 'Näytä lisää'
+});
+if (headerNav !== undefined) {
+    headerNav.headerNav('resize');
+}
+
 // Modification/addon to previous paste
 if ($('.navi-responsive').length) {
 	var m_trigger = $('.mobile-trigger a');
@@ -398,6 +408,11 @@ window.onresize = function () {
 	if ($('.expandable').hasClass('expanded-navi') && window.innerWidth > 768) {
 		$('.expandable').removeClass('expanded expanded-navi expanded-full-navi');
 		$('.navi-responsive').removeClass('is-visible');
+	}
+
+	// Update header navigation
+	if (headerNav !== undefined) {
+		headerNav.headerNav('resize');
 	}
 };
 
