@@ -131,8 +131,10 @@ $omHeaderNavOffset: 20px;
                 height: $omHeaderHeight;
 
                 a {
+                    box-sizing: border-box;
                     display: inline-block;
                     padding: $omHeaderPad $omHeaderPad 0 $omHeaderPad;
+                    height: $omHeaderHeight;
                     line-height: $omHeaderHeight - $omHeaderPad;
 
                     &.active {
