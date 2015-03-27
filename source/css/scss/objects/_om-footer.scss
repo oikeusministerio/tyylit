@@ -1,4 +1,5 @@
 $omFooterFont: "PT Sans", "Trebuchet MS", Helvetica, sans-serif;
+$footerFontSize: 14px;
 $footerWidth: 960px;
 $footerColor: #017380;
 $footerTextColor: #fff;
@@ -16,7 +17,7 @@ $footerLogoHeight: 80px;
     color: $footerTextColor;
 
     font-family: $omFooterFont;
-    font-size: 0.9em;
+    font-size: $footerFontSize;
 
     .container {
         clear: both;
