@@ -1,4 +1,5 @@
 $omHeaderFont: "PT Sans", "Trebuchet MS", Helvetica, sans-serif;
+$omHeaderFontSize: 11px;
 $omHeaderHeight: 40px;
 $omHeaderTextColor: #fff;
 $omHeaderTextColorHover: #bcdade;
@@ -20,6 +21,7 @@ $omHeaderNavOffset: 20px;
     width: 100%;
     text-transform: uppercase;
     font-family: $omHeaderFont;
+    font-size: $omHeaderFontSize;
 
     @include omGradient(#434443, #2e2f2f);
 
@@ -29,7 +31,7 @@ $omHeaderNavOffset: 20px;
 
     a {
         color: $omHeaderTextColor;
-        font-size: 11px;
+        font-size: $omHeaderFontSize;
 
         &:hover {
             color: $omHeaderTextColorHover;
@@ -38,7 +40,7 @@ $omHeaderNavOffset: 20px;
 
     .logged-in-info {
         position: relative;
-        font-size: 11px;
+        font-size: $omHeaderFontSize;
         border-left: 1px solid #000;
         border-right: 1px solid #5a5a5a;
         float: right;
